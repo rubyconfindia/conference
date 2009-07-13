@@ -13,13 +13,13 @@ app_root_url: 'http://opensourcebridge.org/'
 session_notes_wiki_url_format: '%1$s%2$s/wiki/'
 
 # Organization running event:
-organization: 'Open Source Bridge'
+organization: 'RubyConf India'
 
 # Abbreviated name for use in URLs and proposal slugs.
-organization_slug: 'osb'
+organization_slug: 'rubyconf'
 
 # Top-level tagline or description.
-tagline: 'The conference for open source citizens / June 17-19, 2009 / Portland, OR'
+tagline: 'The conference for Indian Ruby Gems / January 1-4, 2010 / Bangalore, India'
 
 # Breadcrumbs that are always visible, each breadcrumb is a name and URI:
 breadcrumbs: []
