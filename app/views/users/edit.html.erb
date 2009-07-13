@@ -1,0 +1,140 @@
+<% page_title "Edit user: #{h @user.label}" %>
+
+<div class="standard-form">
+  <% form_for(@user, :html => {:multipart => true}) do |f| %>
+  <%= f.error_messages %>
+  <table cellspacing="0">
+    <%= hidden_field_tag :require_complete_profile, true if params[:require_complete_profile] %>
+    <% if admin? %>
+      <tr>
+        <td class="label-cell">
+          <label>Admin?</label>
+        </td>
+        <td class="data-cell">
+          <%= f.check_box :admin %>
+        </td>
+      </tr>
+      <tr>
+        <td class="label-cell">
+          <label>Complete profile?</label>
+        </td>
+        <td class="data-cell">
+          <%= f.check_box :complete_profile %>
+        </td>
+      </tr>
+    <% end %>
+    <% if admin? %>
+      <tr>
+        <td class="label-cell">
+          <label>Login</label>
+        </td>
+        <td class="data-cell">
+          <%= f.text_field :login %>
+        </td>
+      </tr>
+    <% end %>
+    <% if admin? || can_edit?(@user) %>
+      <tr>
+        <td class="label-cell">
+          <label><%= required_field if @user.complete_profile %>Email (kept private)</label>
+        </td>
+        <td class="data-cell">
+          <%= f.text_field :email %>
+        </td>
+      </tr>
+    <% end %>
+    <tr>
+      <td class="label-cell">
+        <label><%= required_field if @user.complete_profile %>First Name</label>
+      </td>
+      <td class="data-cell">
+        <%= f.text_field :first_name %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-cell">
+        <label><%= required_field if @user.complete_profile %>Last Name</label>
+      </td>
+      <td class="data-cell">
+        <%= f.text_field :last_name %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-cell">
+        <label>Affiliation</label>
+      </td>
+      <td class="data-cell">
+        <%= f.text_field :affiliation %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-cell">
+        <label>Website URL</label>
+      </td>
+      <td class="data-cell">
+        <%= f.text_field :website %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-cell">
+        <label>Blog URL</label>
+      </td>
+      <td class="data-cell">
+        <%= f.text_field :blog_url %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-cell">
+        <label>Twitter handle</label>
+      </td>
+      <td class="data-cell">
+        <%= f.text_field :twitter %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-cell">
+        <label>Identi.ca handle</label>
+      </td>
+      <td class="data-cell">
+        <%= f.text_field :identica %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-cell">
+        <label>Photo</label>
+      </td>
+      <td class="data-cell">
+        <%= image_tag @user.photo.url(:avatar) if @user.photo.file? %>
+        <%= f.file_field :photo %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-cell">
+        <label><%= required_field if @user.complete_profile %>Biography</label>
+        <br />
+        (<%= display_textile_help_link %>)
+      </td>
+      <td class="data-cell">
+        <%= f.text_area :biography %>
+      </td>
+    </tr>
+    <tr>
+      <td class="label-cell">
+        &nbsp;
+      </td>
+      <td class="data-cell">
+        <%= f.submit("Save my profile") %>
+        <%= f.submit("Complete my speaker profile...", :name => :require_complete_profile) unless @user.complete_profile? %>
+        <% if admin? %>
+          <%= link_to "Delete...", @user, :method => :delete, :confirm => "Delete user #{h @user.label}?", :class => "deletable" %>
+        <% end %>
+        <%= link_to "Back", @user, :class => "cancelable" %>
+
+        <p style="margin-top: 2em; margin-bottom: 0">
+          <%= required_field %> Fields marked with a red asterisk required and must be filled.
+        </p>
+      </td>
+    </tr>
+  </table>
+  <% end %>
+</div>

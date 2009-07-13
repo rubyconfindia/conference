@@ -1,0 +1,150 @@
+Changes
+=======
+
+OpenConferenceWare stable releases and changes included, with latest at top:
+
+* v0.20090616
+
+- FIXED bug that showed proposal statuses (e.g., "Accepted session")
+  before these statues were published. They're now only shown if the
+  Admin sets the "Proposal statuses published?" flag on an event.
+- FIXED the login "remember me" feature. Previously it was ignored.
+- FIXED proposals feeds. Made top-level "/proposal.atom" and
+  event-specific "/events/2009/proposals.atom" feed. Also fixed the feed
+  article timestamps so proposals aren't relisted if edited.
+- FIXED the views to use "record-controls" wrappers around controls.
+- CHANGED logic for finding the current event: first try using the
+  "settings.yml" file's "current_event_slug" field and find an event
+  with a matching slug, else use the old latest-deadline logic. Setting
+  a current event is necessary if you have multiple open events and want
+  a specific one to respond to URLs like "/proposals".
+- CHANGED anonymous user's label from something like "myopenid.com" to
+  "User #123 at myopenid.com", which is much clearer.
+- CHANGED "rake db:dump" and "rake db:restore" to "rake db:raw:dump" and
+  "rake db:raw:restore" to avoid collisions with YamlDB.
+- Improved "rake db:raw:dump" and "rake db:raw:restore" to support both
+  SQLite and MySQL.
+- Improved proposal form, if an event has a single track or session
+  type, it's used as the default and no UI is shown. This helps child
+  events, e.g., parent has many tracks, child has one track.
+- Improved events, added parent/child relationships between them. Change
+  these these associations via the Admin's manage events UI.
+- Added user favorites, these show up as stars next to all proposals.
+- Added speaker list, e.g., "/events/2009/speakers".
+- Improved display of sublists (e.g., a user's sessions and proposals).
+  These list links back to sessions and display favorites.
+- Improved CSV exports for proposals and added these to speakers.
+- Improved session sidebox, added room and scheduling information.
+
+* v0.20090605
+
+- FIXED schema/migrations for MySQL, it was truncating important columns
+  to 255 characters. This fix upgrades these "varchar(255)" columns to
+  "text": proposal descriptions, schedule items excerpts and
+  descriptions, snippets descriptions, and tracks descriptions. If you
+  were using SQLite, you were not affected by this bug.
+
+* v0.20090524
+
+- FIXED layout, it no longer raises an exception if there's no event.
+- FIXED cache expiration, it no longer raises an exception if called
+  when there's no cache directory.
+- FIXED events#index and events#show, they now keep flash notifications,
+  these were previously getting discarded.
+- FIXED schedule, it now only displays proposals that are confirmed and
+  scheduled, previously it displayed proposals that were just scheduled.
+- Added event slugs. These provide unique string identifiers for events
+  (e.g., "2009bof"), rather the old integer identifiers (e.g., 2009).
+- Improved proposal's admin UI, the room and schedule controls are only
+  shown if the proposal is in a confirmed state.
+- Added new CSV export system that provides more flexible exporting.
+- Added DeferProxy, a clearer way to defer expensive queries.
+
+* v0.20090516
+
+- Added schedule. It can be displayed as HTML or imported as iCalendar
+  and hCalendar data. New admin interfaces provide ways to create and
+  manage ScheduleItems, non-session scheduled items such as a lunch
+  break, and toggle whether the schedule is available to the public. A
+  new "schedule:import:google_spreadheet" rake task is provided for
+  importing schedule data from Google Spreadsheets as an alternative to
+  using the per-item and bulk edit interfaces for setting the schedule.
+- Improved the ProposalsController#sort_proposals method to use
+  arguments rather than params, making it much easier to use and extend.
+- Improved Track color handling with Color objects to make fancy color
+  transformations easy.
+
+* v0.20090514
+
+- FIXED lookup of current event when no events where in the database.
+- FIXED compatibility with Ruby 1.8.6p111, which doesn't have Enumerable#count.
+- Added association from rooms to events.
+- Added "rake export:speakers" task.
+
+* v0.20090505
+- FIXED bug introduced by new ruby-openid and passengerl libraries that broke logins.
+- FIXED bug introduced by new RubyGems library that broke Time::today.
+- Refactored sorting and caching code used by proposals#index and
+  proposals#sessions_index. Added specs.
+- Added "rake tags" task that automatically uses ctags or rtags.
+- Added initial support for publishing schedule as iCalendar.
+
+* v0.20090425
+- Added support for displaying sessions differently than proposals.
+- Added heavy caching to proposals and sessions indexes.
+- Added helpers to display main and sub navigation based on proposal
+  status and portion of the site being used.
+- Improved user profiles, added Twitter and Identi.ca handles, and Blog URL.
+- Improved proposals, sessions and schedule, if non-admin visits these
+  paths before status is published, they'll be redirected away.
+- Improved NormalizeUrlMixin to validate multiple URLs at once.
+- Improved boot, added check that ensures migrations have been applied.
+- Improved documentation.
+
+* v0.20090416
+- FIXED login to work with current versions of ruby_openid and Passenger.
+- FIXED schema, made it compatible with other databases. SQLite was too lax.
+- HACKED proposal#edit, allowing owners to edit forever. This will be revised.
+- Improved manage/events#proposals, added display of proposal counts by
+- status to bulk editor.
+- Improved proposal#edit, added instructions for asking other speakers to
+  complete their profile so they can be added.
+- Improved users#show, added a "me" route for accessing current user's profile
+  via </users/me>.
+- Added users#complete_profile, which provides a way to complete a person's
+  profile, typically offered as link to </users/me/complete_profile>.
+- Improved database support, added MySQL. See
+  "config/database~mysql.sample.yml" for sample.
+- Improved caching support, added memcache. See
+  "lib/rails_cache_configurator.rb" for details.
+- Improved caching, added many caches and eliminated many queries.
+- Added "rake clear:cache" task which empties memcache or filesystem caches.
+
+* v0.20090412
+- Improved logit, made it more efficient by avoiding calls based on log level.
+- Added cucumber specifications for comments.
+- Added cucumber (rake features).
+- Upgraded rspec, switched to gem-based dependency.
+
+Changes
+=======
+
+Below are the list of OpenProposals versions by GIT id (latest is at top) and the
+changes made to them:
+
+6098fe90a3e652a7e57497f31fa38d2df8912dd1
+- IMPROVED: ExceptionHandlingMixin now notifies on InvalidAuthenticityToken exceptions.
+
+3a07223c1ed0d59d6f0bdcba83be519c9db4f81b
+- FIXED: ExceptionHandlingMixin now catches InvalidAuthenticityToken errors.
+
+a9e00d9d22dcc16b53d2e8f1a5d167b53b69a9a2
+- FIXED: themes/*/layouts/application.html.erb now doesn't raise exceptions if @events wasn't assigned.
+- FIXED: AuthenticationSystem#current_user now works in specs when no one is logged in.
+- IMPROVED: ExceptionHandlingMixin now sends errors even if error template rending fails.
+- IMPROVED: ApplicationController#can_edit? now works on Proposals and Users.
+
+85dcb7365a455d5b21de80ec04e54c271d47e913
+* Published source code
+
+# vim:tw=72:

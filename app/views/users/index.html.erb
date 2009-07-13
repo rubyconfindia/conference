@@ -1,0 +1,27 @@
+<% page_title "Users" %>
+
+<div id="user-index">
+  <table class="scaffolded">
+    <tr>
+      <th>Name</th>
+      <% if admin? %>
+        <th>Actions</th>
+      <% end %>
+    </tr>
+    <% @users.each do |user| -%>
+    <tr class="<%= cycle('odd', 'even') %>">
+      <td>
+        <%= user.admin? ? "(<strong class='admin'>admin</strong>)" : '' if admin? %>
+        <%= link_to(user.label, user_path(user)) %><%= (", " + user.affiliation) unless user.affiliation.blank? %> 
+      </td>
+      <% if admin? %>
+        <td nowrap="nowrap">
+          <%= link_to "Edit", edit_user_path(user), :class => "editable" %>
+          <%= link_to "Delete...", user, :method => :delete, :confirm => "Delete user #{h user.label}?", :class => "deletable" %>
+          <%= link_to "Login as this user", browser_session_path(:login_as => user.login), :method => :post, :class => "cancelable" %>
+        </td>
+      <% end %>
+    </tr>
+    <% end -%>
+  </table>
+</div>

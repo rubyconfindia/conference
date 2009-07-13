@@ -44,7 +44,6 @@ module Rails
     def load_initializer
       require "#{RAILS_ROOT}/vendor/rails/railties/lib/initializer"
       Rails::Initializer.run(:install_gem_spec_stubs)
-      Rails::GemDependency.add_frozen_gem_path
     end
   end
 
@@ -68,7 +67,7 @@ module Rails
 
     class << self
       def rubygems_version
-        Gem::RubyGemsVersion rescue nil
+        Gem::RubyGemsVersion if defined? Gem::RubyGemsVersion
       end
 
       def gem_version
@@ -83,7 +82,7 @@ module Rails
 
       def load_rubygems
         require 'rubygems'
-        min_version = '1.3.1'
+        min_version = '1.1.1'
         unless rubygems_version >= min_version
           $stderr.puts %Q(Rails requires RubyGems >= #{min_version} (you have #{rubygems_version}). Please `gem update --system` and try again.)
           exit 1

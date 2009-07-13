@@ -1,0 +1,41 @@
+<% content_for :scripts do %>
+  <%= javascript_include_tag "farbtastic" %>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#colorpicker').farbtastic('#track_color');
+    });
+  </script>
+<% end %>
+<% content_for :stylesheets do %>
+  <%= stylesheet_link_tag "farbtastic" %>
+<% end %>
+
+<% focus :track_title %>
+
+<% form_for(@track) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :excerpt %> (one line description, used in track selector)<br />
+    <%= f.text_area :excerpt, :rows => 8 %>
+  </p>
+  <p>
+    <%= f.label :description %> (<%= display_textile_help_link %>)<br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.label :color %><br />
+    <%= f.text_field :color %>
+    <div id="colorpicker"></div>
+  </p>
+  <p>
+    <%= f.submit @track.new_record? ? "Create" : "Update" %>
+    <%= link_to 'Cancel', @track, :class => "showable" %>
+    <%= link_to 'Back', tracks_path, :class => "cancelable" %>
+    <%= link_to 'Destroy', track_path(@track), :method => :delete, :confirm => %{Destroy track "#{@track.title}"?}, :class => "deletable" unless @track.new_record? %>
+  </p>
+<% end %>
