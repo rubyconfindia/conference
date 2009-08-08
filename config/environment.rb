@@ -92,6 +92,8 @@ Rails::Initializer.run do |config|
   require 'secrets_reader'
   SECRETS = SecretsReader.read
 
+  # rake bridgepdx:styles to install this theme
+  ENV["THEME"] = 'bridgepdx'
   # Read theme
   require 'theme_reader'
   THEME_NAME = ThemeReader.read
