@@ -109,6 +109,11 @@ ERROR!  You must have a file on your server with the database configuration.
   task :clear_cache do
     run "(cd #{current_path} && rake RAILS_ENV=production clear)"
   end
+  
+  desc "Update the styles"
+  task :update_styles do
+    run "(cd #{current_path} && rake RAILS_ENV=production bridgepdx:styles)"
+  end
 end
 
 # After setup
@@ -121,3 +126,4 @@ after "deploy:finalize_update", "deploy:theme_txt"
 
 # After symlink
 after "deploy:symlink", "deploy:clear_cache"
+after "deploy:symlink", "deploy:update_styles"

@@ -4,6 +4,9 @@
 # you don't control web/app server and can't set it the proper way
 # ENV['RAILS_ENV'] ||= 'production'
 
+# Serve CSS from the same server. Need to setup proper rewrite rules in apache to avoid this
+ENV['LOCALCSS'] = 'true'
+
 # Specifies gem version of Rails to use when vendor/rails is not present
 RAILS_GEM_VERSION = '~> 2.1.0' unless defined? RAILS_GEM_VERSION
 

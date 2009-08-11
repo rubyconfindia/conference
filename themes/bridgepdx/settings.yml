@@ -1,8 +1,8 @@
 # Public URL of website:
-public_url: 'http://opensourcebridge.org/'
+public_url: 'http://rubyconfindia.org/'
 
 # URL where OCW is installed
-app_root_url: 'http://opensourcebridge.org/'
+app_root_url: 'http://rubyconfindia.org/'
 
 # URL of wiki with session notes (optional). This 'printf' format contains
 # positional variables that filled by Proposal#session_notes_url:
