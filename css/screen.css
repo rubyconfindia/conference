@@ -75,6 +75,13 @@ h1.logo {
 	color: #633f41;
 	font-size: .7em;
 }
+.blurb a {
+    color: #66323B;
+   
+}
+.blurb a:hover {
+    text-decoration: none;
+}
 .nav {
 	text-align: right;
 	color: #8a5653;
