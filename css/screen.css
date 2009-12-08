@@ -55,7 +55,7 @@ h1.logo {
 .blurb address, .blurb div {
 	float: left;
 	color: #000;
-	font-size: 1.45em;
+	font-size: 1.4em;
 	font-weight: bold;
 	font-style: normal;
 }
@@ -90,8 +90,7 @@ h1.logo {
 .content {
 	background: transparent url(../images/bg_content_top.png) no-repeat 0 0;
 	width: 885px;
-	min-height:258px;
-	padding:31px 28px 0;
+	padding:31px 28px 1.2em;
 	margin-top: 15px;
 	line-height: 1.4em;
 }
@@ -142,11 +141,42 @@ h1.logo {
 	margin-right:1.3em;
 }
 
-.content h4 {
+.content h4,
+.bg h4 {
 	color: #e96100;
 	font-size:1.25em;
 	font-size:bold;
 	padding-bottom: 10px;
+}
+
+.proposals {
+	padding-top: 1em;
+	overflow: hidden;
+	border-top:1px solid #5A1F14;
+}
+
+.proposals .col_1 {
+	width: 383px;
+	padding-left: 30px;
+}
+
+.proposals .blrb {
+	padding-bottom: 1em;
+}
+
+.proposals .blrb2 {
+	padding: 1.5em 0 .5em 0;
+	clear: left;
+}
+
+.proposals h5 {
+	color: #FEC6A2;
+}
+
+
+.proposals ul {
+	float: left;
+	padding-left: 1.5em;
 }
 
 .footer {
