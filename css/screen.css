@@ -50,12 +50,12 @@ h1.logo {
 	letter-spacing: -1px;
 	line-height: 1.32em;
 	font-size: 1.6em;
-	padding-bottom: 1.4em;
+	padding-bottom: 1em;
 }
 .blurb address, .blurb div {
 	float: left;
 	color: #000;
-	font-size: 1.4em;
+	font-size: 1.3em;
 	font-weight: bold;
 	font-style: normal;
 }
@@ -151,8 +151,6 @@ h1.logo {
 
 .proposals {
 	padding-top: 1em;
-	overflow: hidden;
-	border-top:1px solid #5A1F14;
 }
 
 .proposals .col_1 {
