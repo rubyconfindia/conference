@@ -183,3 +183,26 @@ h1.logo {
 	font-size: .6em;
 	text-align: center;
 }
+
+/* ADD ONS */ 
+.badges {
+}
+
+.badge {
+	padding-top: 1em;
+}
+
+.bg .badge {
+	padding-bottom: 0.5em;	
+}
+
+.badge_html {
+	margin-left: 1em;
+	margin-bottom: 0.3em;
+	height: 5em;
+	width: 40em;
+}
+
+.bg .col_2 {
+	padding-top: 0.2em;
+}
