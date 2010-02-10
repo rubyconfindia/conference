@@ -1,29 +1,31 @@
 body {
-	background:#000 url(../images/background.jpg) no-repeat 0 0; 
-	font: normal 89% Lucida Grande,Verdana,sans-serif; 
-	color:#c9827c; 
-	
+	background: #000000 url(../images/background.jpg) no-repeat scroll 0 0;
+	font: normal 89% Lucida Grande, Verdana, sans-serif;
+	color:#c9827c;
 }
-
-blockquote,html,body,h1,h2,h3,h4,h5,h6,li,ul,ol,p,pre ,hr{
+blockquote, html, body, h1, h2, h3, h4, h5, h6, li, ul, ol, p, pre, hr {
 	margin:0;
 	padding:0;
 	border: none;
 }
 a, a:link {
-	color: #fec6a2; 
+	color: #fec6a2;
 	text-decoration: underline;
 }
 a:hover, a:focus, a:active {
-	color: #FFBD2E; 
+	color: #FFBD2E;
 	text-decoration: none;
-}	
+}
 .wrapper {
-	margin: 36px auto;
+	margin: 0 auto 36px;
 	width: 940px;
 }
 .header {
-	padding-bottom: 13px;
+	overflow:hidden;
+	padding-bottom:5px;
+}
+a img {
+	border: none;
 }
 h1.logo {
 	background:transparent url(../images/logo_ruby_conference_India.png) no-repeat 0 0;
@@ -31,6 +33,16 @@ h1.logo {
 	width: 341px;
 	height: 275px;
 	text-indent: -9999px;
+}
+h2 {
+	border-bottom:1px solid;
+	margin-bottom:12px;
+	padding-bottom:5px;
+}
+.main_sponsor {
+	padding-bottom:10px;
+	padding-top:25px;
+	text-align:center;
 }
 .blurb {
 	background: transparent url(../images/blurb_bg.png) no-repeat 0 0;
@@ -43,27 +55,47 @@ h1.logo {
 	width: 367px;
 	height: 36px;
 	text-indent: -9999px;
-	padding-bottom: 8px;
+	padding-bottom: 0px;
+	border: 0;
+	margin-bottom: 8px;
 }
 .blurb blockquote {
-	color: #66323b;
-	letter-spacing: -1px;
-	line-height: 1.32em;
-	font-size: 1.6em;
-	padding-bottom: 1em;
+	color:#66323B;
+	font-size:1.43em;
+	letter-spacing:-1px;
+	line-height:1.5em;
+	padding-bottom:0.9em;
 }
-.blurb address, .blurb div {
-	float: left;
-	color: #000;
-	font-size: 1.3em;
+.blurb blockquote span {
 	font-weight: bold;
-	font-style: normal;
+}
+/*.blurb address {
+	color:#000000;
+font-size:1.2em;
+font-style:normal;
+font-weight:bold;
+line-height:1.4em;
 }
 .blurb div {
-	background: transparent url(../images/devider.png) no-repeat 0 0;
+background: transparent url(../images/devider.png) no-repeat 0 0;
 	float: right;
 	padding-left: 12px;
 	white-space: nowrap;
+}*/
+
+.blurb address, .blurb div {
+	color:#000000;
+	float:left;
+	font-size:1.25em;
+	font-style:normal;
+	font-weight:bold;
+	line-height:1.7em;
+}
+.blurb div {
+	background:transparent url(../images/devider.png) repeat-y scroll 0 0;
+	float:right;
+	padding-left:15px;
+	white-space:nowrap;
 }
 .blurb div span {
 	display: block;
@@ -73,23 +105,40 @@ h1.logo {
 	font-size: .7em;
 }
 .blurb a {
-    color: #66323B;
-   
+	color: #66323B;
 }
 .blurb a:hover {
-    text-decoration: none;
+	text-decoration: none;
 }
 .nav {
-	text-align: right;
-	color: #8a5653;
+	overflow: hidden;
+	margin-bottom: 10px;
+	height: 50px;
+	background: url('../images/top_nav_bg.png') no-repeat 0 0;
+	margin:0 0 20px;
 }
-.nav a {
-	margin-left: 12px;
-	display: inline-block;
+.nav ul {
+	list-style: none;
+	margin-left:26px;
 }
-.content {
+.nav li {
+	float:left;
+	margin-right:15px;
+}
+.nav li a, .nav li a:visited {
+	color:#FFDBC1;
+	display:block;
+	padding:10px;
+	text-decoration:none;
+}
+.nav li a:hover {
+	text-decoration: underline;
+}
+/*
+.content,
+.sidebar .content{
 	background: transparent url(../images/bg_content_top.png) no-repeat 0 0;
-	width: 885px;
+
 	padding:31px 28px 1.2em;
 	margin-top: 15px;
 	line-height: 1.4em;
@@ -97,112 +146,165 @@ h1.logo {
 .bg {
 	background: transparent url(../images/bg_content.png) repeat-y 0 0;
 	padding: 0 28px;
+
 }
 .content_end {
 	background: transparent url(../images/bg_content_btm.png) no-repeat 0 0;
-	width: 941px;
+	padding: 0 28px;
 	height: 20px;
-}
+}*/
 .latest_news {
-	background: transparent url(../images/twitter_bird.png) no-repeat 0 0;
-	padding: 0 0 40px 50px;
-	border-bottom: 1px solid #5a1f14;
 	margin-bottom: 18px;
 }
-.latest_news h3 {
-	color: #fec6a2;
+.sidebar .latest_news h4 {
+	/*color: #fec6a2;
 	font-size:1.6em;
-	font-size:bold;
-	padding-bottom: 10px;
+	font-size:bold;*/
+	line-height:40px;
+	margin-left: 10px;
+	padding:0 0 0 47px;
+	background: transparent url(../images/twitter_bird.png) no-repeat 0 0;
 }
-.latest_news a.btn_yellow {
-	display: block;
-	background: transparent url(../images/bg_btn.png) no-repeat 0 0;
-	width: 89px;
-	height: 29px;
-	clear: left;
-	color: #FFF;
-	text-decoration: none;
-	font-size: .85em;
+a.btn_yellow {
+	background:transparent url(../images/bg_btn.png) no-repeat scroll 0 0;
+	color:#FFFFFF;
+	display:block;
+	font-size:0.85em;
+	height:29px;
 	line-height:2.3em;
 	text-align:center;
-	float: right;
+	text-decoration:none;
+	width:89px;
 }
-
-.latest_news a.btn_yellow:hover {
-	color: #FFBD2E; 
+.latest_news a.btn_yellow {
+	float:right;
+	margin-top:-35px;
+	margin-right: 10px;
 }
-
-.col_1 {
+a.btn_yellow:hover {
+	color: #FFBD2E;
+}
+.col {
 	float: left;
-	width: 413px;
-	padding-right: 15px;
-	border-right: 1px solid #5a1f14;
-	margin-right:1.3em;
+	margin-bottom: 1em;
 }
-
-.content h4,
-.bg h4 {
-	color: #e96100;
+h4 {
+	color:#E96100;
 	font-size:1.25em;
-	font-size:bold;
-	padding-bottom: 10px;
+	padding-bottom:13px;
 }
-
+.sidebar h4 {
+	padding-left:18px;
+}
 .proposals {
 	padding-top: 1em;
 }
-
 .proposals .col_1 {
 	width: 383px;
 	padding-left: 30px;
 }
-
 .proposals .blrb {
 	padding-bottom: 1em;
 }
-
 .proposals .blrb2 {
 	padding: 1.5em 0 .5em 0;
 	clear: left;
 }
-
 .proposals h5 {
 	color: #FEC6A2;
 }
-
-
 .proposals ul {
 	float: left;
 	padding-left: 1.5em;
 }
-
 .footer {
-	padding-top: 1em;
+	padding: 2em 0;
 	color: #8a5653;
 	font-size: .6em;
 	text-align: center;
+	clear: both;
 }
-
+.main_content, .content, .sidebar {
+	width: 540px;
+	;
+	float: left;
+	padding: 20px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	background: url(../images/bg_cont.png) repeat 0 0;
+}
+.sidebar {
+	background-image:url(../images/bg_sb_cont.png);
+	float:left;
+	margin-left:20px;
+	padding:10px 0 0;
+	width:340px;
+	margin-bottom: 15px;
+}
+.sidebar .sb_content {
+	width: 100%;
+	padding: 0;
+}
+.sponsor_logos ul {
+	list-style: none;
+}
+.sponsor_logos ul.main-sponsor {
+	margin-bottom: 30px;
+}
+.sponsor_logos ul li {
+	margin-bottom: 15px;
+	text-align: center;
+	display: block;
+}
 /* ADD ONS */ 
 .badges {
 }
-
 .badge {
 	padding-top: 1em;
 }
-
 .bg .badge {
-	padding-bottom: 0.5em;	
+	padding-bottom: 0.5em;
 }
-
 .badge_html {
 	margin-left: 1em;
 	margin-bottom: 0.3em;
 	height: 5em;
 	width: 40em;
 }
-
 .bg .col_2 {
 	padding-top: 0.2em;
+}
+table {
+	border-collapse: collapse;
+	margin-top: 15px;
+	width: 100%;
+}
+table tr.odd {
+	background: #510103;
+}
+table td, table th {
+	padding: 5px;
+	border: 1px solid #610000;
+}
+table th {
+	text-align: left;
+	color: #e96100;
+}
+.register {
+	float:right;
+	position:relative;
+	right:90px;
+	top:-50px;
+}
+.register a {
+	width: 145px;
+	height: 32px;
+	background: url('../images/register_sprite.png') no-repeat 0 0;
+	text-indent: -9999em;
+	display:block;
+	outline: none;
+}
+.register a:hover {
+	background-position: 0 -32px;
 }
