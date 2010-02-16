@@ -4,14 +4,13 @@
 }
 .tweet .tweet_list {
 	font-size:1.05em;
-font-style:italic;
-line-height:1.4em;
-list-style-type:none;
-	
+	font-style:italic;
+	line-height:1.4em;
+	list-style-type:none;
 }
 .tweet .tweet_list li {
 	overflow: auto;
-	padding: 0 10px 10px;
+	padding: 0 0 10px;
 }
 .tweet .tweet_list li.tweet_first {
 	border-top:0;
@@ -26,9 +25,7 @@ list-style-type:none;
 	display: inline;
 	font-size: 1em;
 }
-
 .tweet .tweet_list .tweet_even {
-	
 }
 .tweet .tweet_list .tweet_avatar {
 	padding-right: .5em;
