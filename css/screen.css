@@ -84,6 +84,23 @@ background: transparent url(../images/devider.png) no-repeat 0 0;
 	white-space: nowrap;
 }*/
 
+p {
+	color: #FEC6A2;
+}
+
+ul.news {
+	margin-bottom: -1em;
+}
+
+ul.news li {
+	color: #FEC6A2;
+	padding-bottom: 1em;
+}
+
+#about p {
+	margin-bottom: 1.5em;
+}
+
 .blurb address, .blurb div {
 	color:#000000;
 	float:left;
