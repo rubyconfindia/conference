@@ -587,8 +587,11 @@ table td, table th {
 	border: 1px solid #511a13;
 }
 table th {
-	text-align: left;
+	text-align: center;
 	color: #e96100;
+}
+.lighter {
+	color: #C9827C;
 }
 .register {
 	float:right;
