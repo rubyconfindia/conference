@@ -385,7 +385,7 @@ ul.sponsor_list .sponsor_logos {
 	text-align: center;
 }
 ul.speakers {
-	margin: 20px 0 0 10px;
+	margin: 25px 0 0 15px;
 }
 ul.speakers li {
 	position: relative;
@@ -397,23 +397,23 @@ ul.speakers li {
 }
 ul.speakers li .spkr_photo {
 	position: absolute;
-	top: -10px;
-	left: -10px;
-	padding: 10px;
-	border: 1px solid #511A13;
+	top: -15px;
+	left: -15px;
+	padding: 7px;
 	background: #faf9f5;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
+	box-shadow: 6px 6px #5d1c14;
+	-moz-box-shadow: 6px 6px #5d1c14;
+	-webkit-box-shadow: 6px 6px #5d1c14;
 }
 ul.speakers li .spkr_photo img {
-	border: 1px solid #ccc;
+	border: 1px solid #757575;
 	border-radius: 1px;
 	-moz-border-radius: 1px;
 	-webkit-border-radius: 1px;
-	box-shadow: 6px 6px #CCC;
-	-moz-box-shadow: 6px 6px #CCC;
-	-webkit-box-shadow: 6px 6px #CCC;
+	
 }
 ul.speakers li .spkr_details {
 	margin-left: 150px;
