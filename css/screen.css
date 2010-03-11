@@ -106,6 +106,11 @@ ul.news li {
 	font-weight:bold;
 	line-height:1.7em;
 }
+.blurb address a,
+.blurb address a:hover,
+.blurb address a:visited{
+	color:#000000;
+}
 .blurb div {
 	background:transparent url(../images/devider.png) repeat-y scroll 0 0;
 	float:right;
@@ -158,7 +163,6 @@ ul.news li {
 .nav li#twitter {
 	border-right: 1px solid #4d2720;
 }
-
 /*
 .content,
 .sidebar .content{
@@ -220,7 +224,8 @@ h4 {
 }
 .sidebar h4 {
 	padding-left:18px;
-	text-shadow:2px 2px 10px;
+	text-shadow: -1px -3px 5px #FF0000;
+	font-size:1.5em;
 }
 .proposals {
 	padding-top: 1em;
@@ -302,7 +307,8 @@ h4 {
 	padding: 0;
 }
 .sidebar2 h4 {
-	margin-top: 15px;
+font-size:1.5em;
+margin-top: 15px;
 }
 .bg .badge {
 	padding-bottom: 0.5em;
@@ -394,6 +400,13 @@ ul.speakers li {
 	background:#2C0B0D;
 	padding: 10px;
 	list-style: none;
+	border-radius-topright: 35px;
+	-moz-border-radius-topright: 35px;
+	-webkit-border-radius-topright: 35px;
+	box-shadow: 5px 2px #5d1c14;
+	-moz-box-shadow: 5px 2px #5d1c14;
+	-webkit-box-shadow: 5px 2px #5d1c14;
+	min-height: 200px;
 }
 ul.speakers li .spkr_photo {
 	position: absolute;
@@ -413,7 +426,6 @@ ul.speakers li .spkr_photo img {
 	border-radius: 1px;
 	-moz-border-radius: 1px;
 	-webkit-border-radius: 1px;
-	
 }
 ul.speakers li .spkr_details {
 	margin-left: 150px;
@@ -423,9 +435,36 @@ ul.speakers li .spkr_details a {
 }
 ul.speakers li .spkr_name {
 	font-weight: bold;
-	color:#E96100;
+	color:#FAAB47;
 	margin-bottom: 0.5em;
+	font-size: 1.8em;
+	text-shadow: 2px 2px 3px #FF1200;
+	letter-spacing: 5px;
+}
+ul.speakers li p {
+	text-align: justify;
+	margin-bottom: 10px;
+}
+ul.speakers li p strong{
+	display: block;
+	margin-bottom: 1em;
+	color: #ff8043; 
+	font-size: 1.1em;
 }
 ul.speakers li .spkr_desc {
-	min-height: 125px;
+	margin-bottom: 2.5em;
+}
+ul.speakers li .spkr_desc p:first-child:first-line {
+	
+}
+ul.speakers li .spkr_desc p:first-child:first-letter {
+	font-size:400%; 
+	display:block;
+	float:left;
+	margin: 0.06em 0 0;
+
+
+}
+ul.speakers li .spkr_abstract p{
+	color: #fbd9c9;
 }
