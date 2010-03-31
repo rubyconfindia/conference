@@ -135,7 +135,7 @@ ul.news li {
 	margin-bottom: 10px;
 	height: 50px;
 	background: url('../images/top_nav_bg.png') no-repeat 0 0;
-	margin:0 0 20px;
+	margin:0 0 50px;
 }
 .nav ul {
 	list-style: none;
@@ -216,6 +216,7 @@ a.btn_yellow:hover {
 .col {
 	float: left;
 	margin-bottom: 1em;
+	width: 100%;
 }
 h4 {
 	color:#E96100;
@@ -367,7 +368,7 @@ table th {
 .support {
 	position: absolute;
 	right: -68px;
-	top: 110px;
+	top: 160px;
 }
 ul.sponsor_list {
 	list-style: none;
@@ -482,6 +483,10 @@ ul.speakers li .spkr_abstract p{
 ul.speakers li .presentation_links li {
 	-moz-border-radius: 0;
 	-moz-box-shadow: none;
+	-webkit-border-radius: 0;
+	-webkit-box-shadow: none;
+	border-radius: 0;
+	box-shadow: none;
 	background:none ;
 	border: 0;
 	list-style:none;
@@ -491,13 +496,15 @@ ul.speakers li .presentation_links li {
 	position: static;
 }
 .flash_news {
-	position: absolute;
-	top: 42px;
-	left: 35px;
+	right: 5px;
+	position:absolute;
+	top: 50px;
 }
 .flash_news p a{
-	text-shadow: -2px 2px 3px rgba(0, 0, 0, 0.8);
+	text-shadow: -5px -5px 5px rgba(255, 0, 0, 0.8);
 	color: #fff;
 	font-size: 1.5em;
+	font-weight: bold;
+	
 	padding: 5px;
 }
