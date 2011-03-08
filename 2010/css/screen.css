@@ -231,10 +231,28 @@ h4 {
 .proposals {
 	padding-top: 1em;
 }
-.proposals .col_1 {
-	width: 383px;
-	padding-left: 30px;
+
+.col_cont{overflow:hidden;}
+
+
+.col_cont{
+    margin: 15px 0;
+    width: 540px;
 }
+
+.proposals .col_1 {
+    float: left;
+    padding-left: 30px;
+    width: 220px;
+}
+
+
+.proposals .col_2 {
+    float: left;
+    width: 220px;
+}
+
+
 .proposals .blrb {
 	padding-bottom: 1em;
 }
@@ -244,6 +262,7 @@ h4 {
 }
 .proposals h5 {
 	color: #FEC6A2;
+	margin-bottom: 10px;
 }
 .proposals ul {
 	float: left;
