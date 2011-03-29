@@ -161,7 +161,7 @@ ul.news li {
 	padding: 10px 15px;
 }
 .nav li#twitter {
-	border-right: 1px solid #4d2720;
+	border-right: 0px solid #4d2720;
 }
 /*
 .content,
