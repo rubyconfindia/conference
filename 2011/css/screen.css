@@ -134,16 +134,18 @@ ul.news li {
 	overflow: hidden;
 	margin-bottom: 10px;
 	height: 50px;
-	background: url('../images/top_nav_bg.png') no-repeat 0 0;
 	margin:0 0 50px;
 }
 .nav ul {
 	list-style: none;
-	margin-left:26px;
+  margin-left:26px;
 }
 .nav li {
 	float:left;
-	margin-right:15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-left: 1px solid #592924;
+	border-right: 1px solid #592924;
 }
 .nav li a {
 	color:#FFDBC1;
@@ -156,9 +158,6 @@ ul.news li {
 }
 .nav li a:hover {
 	text-decoration: underline;
-}
-.nav li#speakers a {
-	padding: 10px 15px;
 }
 .nav li#twitter {
 	border-right: 0px solid #4d2720;
