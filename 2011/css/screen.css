@@ -83,8 +83,14 @@ background: transparent url(../images/devider.png) no-repeat 0 0;
 	padding-left: 12px;
 	white-space: nowrap;
 }*/
-.speaker, .talk_title {
+.speaker {
   color: #FEC6A2;
+  margin-bottom: 10px;
+}
+
+.talk_title {
+  color: #FEC6A2;
+  font-size: 1.1em;
   margin-bottom: 10px;
 }
 
