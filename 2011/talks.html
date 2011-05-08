@@ -39,8 +39,8 @@
           <li id="program">
             <a href="program.html"><span>Program</span></a>
           </li>
-          <li id="speakers">
-            <a href="speakers.html"><span>Speakers</span></a>
+          <li id="talks">
+            <a href="talks.html"><span>Talks</span></a>
           </li>
           <li id="sponsors">
             <a href="sponsors.html"><span>Sponsors</span></a>
@@ -90,16 +90,16 @@
       </div>
       <div class="content wide_content">
         <h2>
-          Speakers
+          Talks
         </h2>
         <div class="proposals">
           <p>
-            Here's the list of talks in no particular order along with the speaker bios:
+            Here are talks in no particular order along with the speaker bios:
           </p><br />
           <ul>
             <li class="talk">
               <div class="talk_title">
-                Software Quality and Test Strategies for Ruby and Rails Applications
+                :talk => "Software Quality and Test Strategies for Ruby and Rails Applications"
               </div>
               <div class="talk_description">
                 Quality is one of the most important factors in deriving business value from software. However, many teams find it difficult to incorporate the appropriate quality and testing practices into their development processes. A test strategy helps create a shared understanding of what testing will be required and how and when it will be executed.<br />
@@ -125,7 +125,7 @@
               </div>
               <!-- <div class="spkr_photo"> <img title="" alt="" src=""> </div> -->
               <div class="speaker">
-                Bhavin Javia
+                :speaker => "Bhavin Javia"
               </div>
               <div class="speaker_bio">
                 Bhavin is an Agile Rubyist with several years of experience in designing, developing, testing and deployment of business critical applications in a wide variety of domains. He spent many years at ThoughtWorks, working and leading adoption of Ruby as a viable platform for enterprise class applications in India and abroad. A passionate proponent of Agile methodologies, he was a founding member of <a href="http://agileindia.org">ASCI</a> (Agile Software Community of India).<br />
@@ -135,14 +135,14 @@
             </li>
             <li class="talk">
               <div class="talk_title">
-                Ruby Plus Rails Plus Your Application Minus Rails
+                :talk => "Ruby Plus Rails Plus Your Application Minus Rails"
               </div>
               <div class="talk_description">
                 Ruby on Rails is a famously opinionated framework that handles ninety percent of the problems a typical web application faces. But what about the last ten percent? Every app has to jump off the Rails eventually, whether that means integrating with an external web service, importing data from another database, or providing enhanced search functionality. In this talk I'll lead you through some patterns for handling those cases, and discuss certain features of Rails 3 that let you leverage the best pieces of the core framework without resorting to ugly hacks. Finally we'll discuss what a new, more modular core framework means for a post-Rails world.
               </div>
               <!-- <div class="spkr_photo"> <img title="" alt="" src=""> </div> -->
               <div class="speaker">
-                Brian Guthrie
+                :speaker => "Brian Guthrie"
               </div>
               <div class="speaker_bio">
                 Brian Guthrie has been writing bad Ruby code for five years, every line of it worse than the last. He started his Ruby career in Boston, and after joining ThoughtWorks went on to write increasingly bad Ruby code in Chicago, New York, Texas, California, and India. He is currently writing the worst Ruby code of his career in Melbourne, Australia. He is thrilled to return once more to India to share his mistakes with the vibrant Ruby community there, in the sincere and humble spirit of collective mistake-repetition avoidance.
@@ -150,7 +150,7 @@
             </li>
             <li class="talk">
               <div class="talk_title">
-                Anti-Patterns and Patterns in Rails
+                :talk => "Anti-Patterns and Patterns in Rails"
               </div>
               <div class="talk_description">
                 The presenters, Chiku and Habib, were team members on an distributed Agile Software project. Their job was to quickly write mission critical Rails applications and they practiced various aspects of Continuous Delivery. Over the duration of this project they noticed the evolution of interesting patterns that were thought to be great ideas. Many were, some weren't.<br />
@@ -160,23 +160,18 @@
                 At the end of this presentation the audience would have the knowledge of identifying and subsequently fixing, similar manifestations of these problems in their code.
               </div>
               <!-- <div class="spkr_photo"> <img title="" alt="" src=""> </div> -->
-              <div class="speaker">
-                Chirantan Mitra
-              </div>
-              <div class="speaker_bio">
-                Chirantan Mitra is better known as Chiku. He is a developer at ThoughtWorks with experience in working on complex domains mostly involving Ruby or C#. He has been programming since the age of nine - he loved it back then and still does so now. He conveniently forgets his Twitter handle from time to time but remembers to <a href="https://github.com/chiku">share his code</a>.
-              </div>
               <!-- <div class="spkr_photo"> <img title="" alt="" src=""> </div> -->
               <div class="speaker">
-                Habibullah Pagarkar
+                :speakers => ["Chirantan Mitra", "Habibullah Pagarkar"]
               </div>
               <div class="speaker_bio">
-                Habibullah Pagarkar is almost always known as Habib. He juggles various roles at ThoughtWorks but is primarily a software engineer. He abhors waste and loves efficiency - not just in software. In his minimal spare time he cycles along Bangalore's Old Airport Road. He very rarely updates his <a href="http://www.cs.jhu.edu/~habib">website</a> but regularly tweets as <a href="http://www.twitter.com/mhabibp">@mhabibp</a>
+                Chirantan Mitra is better known as Chiku. He is a developer at ThoughtWorks with experience in working on complex domains mostly involving Ruby or C#. He has been programming since the age of nine - he loved it back then and still does so now. He conveniently forgets his Twitter handle from time to time but remembers to <a href="https://github.com/chiku">share his code</a>.<br /><br />
+                                Habibullah Pagarkar is almost always known as Habib. He juggles various roles at ThoughtWorks but is primarily a software engineer. He abhors waste and loves efficiency - not just in software. In his minimal spare time he cycles along Bangalore's Old Airport Road. He very rarely updates his <a href="http://www.cs.jhu.edu/~habib">website</a> but regularly tweets as <a href="http://www.twitter.com/mhabibp">@mhabibp</a>
               </div>
             </li>
             <li class="talk">
               <div class="talk_title">
-                Test Load Balancer: rocket booster for your build
+                :talk => "Test Load Balancer: rocket booster for your build"
               </div>
               <div class="talk_description">
                 <a href="http://test-load-balancer.github.com/">Test Load Balancer (TLB)</a> is a tool that can automatically partition tests into multiple subsets each one of which can be executed in parallel. The execution can happen on different physical/virtual machines or on the same machine as different processes or threads. More the partitions, lesser are the number of tests executed on each one, and since all of the partitions start at the same time(and finish almost at the same time) overall test-execution time gets divided by the number of partitions you make. Test-running is by far the longest step in most(if not all) builds, and cutting down test-running time speeds up the build and hence the feedback loop. TLB can be used for any kind of test-suite - unit, integration or functional tests.<br />
@@ -188,23 +183,18 @@
                 This talk will introduce the audience to TLB concepts and include a demo of using TLB to partition RSpec and Test::Unit suites. It'll also includes a case-study on how TLB helped cut build time from approximately 70 minutes to 11 minutes(which can of-course be further reduced) just by throwing more hardware at it.
               </div>
               <!-- <div class="spkr_photo"> <img title="" alt="" src=""> </div> -->
-              <div class="speaker">
-                Janmejay Singh
-              </div>
-              <div class="speaker_bio">
-                JJ is a developer working at ThoughtWorks Inc working in the Studios division. He has around 5 years of professional experience. He blogs <a href="http://codehunk.wordpress.com">here</a> and shares his code <a href="http://github.com/janmejay">here</a>.
-              </div>
               <!-- <div class="spkr_photo"> <img title="" alt="" src=""> </div> -->
               <div class="speaker">
-                Pavan K Sudarshan
+                :speakers => ["Janmejay Singh", "Pavan K Sudarshan"]
               </div>
               <div class="speaker_bio">
-                Pavan is a developer working at ThoughtWorks Inc working in the Studios division. He has around 5 years of professional experience. He blogs <a href="http://pavanks.blogspot.com">here</a> and shares his code <a href="http://github.com/itspanzi">here</a>.
+                JJ is a developer working at ThoughtWorks Inc working in the Studios division. He has around 5 years of professional experience. He blogs <a href="http://codehunk.wordpress.com">here</a> and shares his code <a href="http://github.com/janmejay">here</a>. <br /><br />
+                                Pavan is a developer working at ThoughtWorks Inc working in the Studios division. He has around 5 years of professional experience. He blogs <a href="http://pavanks.blogspot.com">here</a> and shares his code <a href="http://github.com/itspanzi">here</a>.
               </div>
             </li>
             <li class="talk">
               <div class="talk_title">
-                Deciphering The Ruby Object Model
+                :talk => "Deciphering The Ruby Object Model"
               </div>
               <div class="talk_description">
                 By personal experience, while transitioning from the world of Java to the world of Ruby, I felt great pain and agony, whenever I read statements like "Everything in Ruby is an object; classes themselves are objects". It took me, more than a while to get it all right. Am of the belief that the experience is same for many who transitioned to the Ruby platform. If you didn't experience this - lucky you! My reason for this experience that I had undergone, is that during early days of learning Ruby I felt that the Ruby Object Model is some advanced topic as it is comes under Ruby Meta-programming, and that I can do away with it until I'm more than an intermediate level Ruby developer. In reality though, any decent programming in Ruby meant understanding rightly - the Ruby Object Model. Understanding Ruby Object Model, helps not just in learning Meta-programming, but also improves code design with enriched knowledge and appreciations of the object model.<br /><br />
@@ -212,7 +202,7 @@
               </div>
               <!-- <div class="spkr_photo"> <img title="" alt="" src=""> </div> -->
               <div class="speaker">
-                Karthik Sirasanagandla
+                :speaker => "Karthik Sirasanagandla"
               </div>
               <div class="speaker_bio">
                 Karthik Sirasanagandla is an application developer at ThoughtWorks in India. Karthik has over 5 and half years experience, primarily in Java/JEE platform. In his current capacity, he is working on both development and deployment of a JRuby on Rails application; this experience transitioned him from being a hard-core Java techy to a passionate Ruby programmer. An avid reader of both technical and non-technical books, he also occasionally blogs <a href="http://kartzontech.blogspot.com">here</a>.
@@ -220,7 +210,7 @@
             </li>
             <li class="talk">
               <div class="talk_title">
-                Refactoring a Legacy Java Application to Rails
+                :talk => "Refactoring a Legacy Java Application to Rails"
               </div>
               <div class="talk_description">
                 The JRuby team has been proclaiming JRuby on Rails as the cure to
@@ -235,7 +225,7 @@
               </div>
               <!-- <div class="spkr_photo"> <img title="" alt="" src=""> </div> -->
               <div class="speaker">
-                Nick Sieger
+                :speaker => "Nick Sieger"
               </div>
               <div class="speaker_bio">
                 Nick Sieger is an engineer at Engine Yard, working on JRuby and leading the effort to make the Java Virtual Machine a robust yet easy-to-use deployment platform for Rails and Ruby web applications. He created and co-maintains the JDBC adapter for ActiveRecord that JRuby on Rails uses for database connectivity, as well as the Warbler tool and JRuby-Rack library for dealing with Java application server deployment. He maintains a blog on Ruby and JRuby-related topics <a href="http://blog.nicksieger.com/">here</a>.
@@ -243,7 +233,7 @@
             </li>
             <li class="talk">
               <div class="talk_title">
-                How Ruby helps Rackspace challenge Amazon
+                :talk => "How Ruby helps Rackspace challenge Amazon"
               </div>
               <div class="talk_description">
                 ThoughtWorks has been working with Rackspace, one of the leading hosting companies in the world, on a large scale data center automation project using Ruby. We want to share some insights on how Ruby enabled Rackspace, with a small development force, to challenge Amazon.<br /><br />
@@ -260,7 +250,7 @@
               </div>
               <!-- <div class="spkr_photo"> <img title="" alt="" src=""> </div> -->
               <div class="speaker">
-                Munjal Budhabhatti
+                :speaker => "Munjal Budhabhatti"
               </div>
               <div class="speaker_bio">
                 Munjal Budhabhatti is a lead consultant at ThoughtWorks, an internationally recognized software development company. He possesses over 13 years of experience in designing large-scale enterprise applications and has implemented innovative solutions for some of the leading data centers, microfinance, and financial organizations in Africa, Asia, Europe, and North America. He spends most of his time creating well-designed applications using agile processes.
@@ -268,7 +258,7 @@
             </li>
             <li class="talk">
               <div class="talk_title">
-                Single page Web apps with Backbone.js and Ruby on Rails
+                :talk => "Single page Web apps with Backbone.js and Ruby on Rails"
               </div>
               <div class="talk_description">
                 jQuery is great for websites that need simple AJAX interactions and
@@ -311,7 +301,7 @@
               </div>
               <!-- <div class="spkr_photo"> <img title="" alt="" src=""> </div> -->
               <div class="speaker">
-                Prateek Mohan Dayal
+                :speaker => "Prateek Mohan Dayal"
               </div>
               <div class="speaker_bio">
                 Prateek is the technology backbone for SupportBee.com. After
@@ -325,7 +315,7 @@
             </li>
             <li class="talk">
               <div class="talk_title">
-                But the language supports it
+                :talk => "But the language supports it"
               </div>
               <div class="talk_description">
                 Discussing language constructs with fellow developers in the context of solving a particular problem is something we do routinely. While most such conversations are productive and useful, a fair portion degenerate into angry brawls. A pattern we've observed in the latter situation is that a surprising number of times the argument is that "Why shouldn't I use language feature X to achieve objective Y- after all, the language supports X."<br /><br />
@@ -355,26 +345,23 @@
                 </ol>
               </div>
               <!-- <div class="spkr_photo"> <img title="" alt="" src=""> </div> -->
+              <!-- <div class="spkr_photo"> <img title="" alt="" src=""> </div> -->
               <div class="speaker">
-                Niranjan Paranjape
+                :speakers => ["Niranjan Paranjape", "Aakash Dharmadhikari"]
               </div>
               <div class="speaker_bio">
                 Niranjan has spent five years writing code for a living. He started out at Infosys, wised up to the game and moved on to ThoughtWorks where he spent two pleasant years first working on Java and then on Ruby. All told, he's spent about three years building Ruby and Rails projects thus far. He left ThoughtWorks early in 2010 to co-found C42 Engineering, a boutique Ruby and Rails services firm based out of Bangalore.<br /><br />
 
-                He is the co-author of several obscure opensource projects such as Wrest, PoxPaginate and Goldberg. You can find the full list of the projects he hacks on at <a href="http://github.com/achamian">here</a> and <a href="http://github.com/c42">here</a>.
+                He is the co-author of several obscure opensource projects such as Wrest, PoxPaginate and Goldberg. You can find the full list of the projects he hacks on at <a href="http://github.com/achamian">here</a> and <a href="http://github.com/c42">here</a>.<br /><br />
+                                Aakash has spent five years working on software projects in a variety of companies; an Indian Services giant, a Fortune 500 company and a funded product startup before moving on to co-found <a href="http://c42.in">C42 Engineering</a>, a Ruby and Rails services firm based out of Bangalore. He has worked on Ruby for the last year and a half year; before that he'd spent four years on Java. He is a committer on the <a href="http://github.com/c42/goldberg">Goldberg</a> project and his open source contribution can be found <a href="http://github.com/aakashd">here</a>.
                 
               </div>
-              <!-- <div class="spkr_photo"> <img title="" alt="" src=""> </div> -->
-              <div class="speaker">
-                Aakash Dharmadhikari
-              </div>
-              <div class="speaker_bio">
-                Aakash has spent five years working on software projects in a variety of companies; an Indian Services giant, a Fortune 500 company and a funded product startup before moving on to co-found <a href="http://c42.in">C42 Engineering</a>, a Ruby and Rails services firm based out of Bangalore. He has worked on Ruby for the last year and a half year; before that he'd spent four years on Java. He is a committer on the <a href="http://github.com/c42/goldberg">Goldberg</a> project and his open source contribution can be found <a href="http://github.com/aakashd">here</a>.
-              </div>
+
+
             </li>
             <li class="talk">
               <div class="talk_title">
-                Let's have a cup of CoffeeScript
+                :talk => "Let's have a cup of CoffeeScript"
               </div>
               <div class="talk_description">
                 CoffeeScript is a great way to write javascript. It provides many
@@ -390,7 +377,7 @@
               </div>
               <!-- <div class="spkr_photo"> <img title="" alt="" src=""> </div> -->
               <div class="speaker">
-                Nicolás Sanguinetti
+                :speaker => "Nicolás Sanguinetti"
               </div>
               <div class="speaker_bio">
               Nicolás (probably more known as foca) has been working with Rails
@@ -404,14 +391,14 @@
             </li>
             <li class="talk">
               <div class="talk_title">
-                MacRuby
+                :talk => "MacRuby"
               </div>
               <div class="talk_description">I am going to start with an update of MacRuby (hopefully what's new in 1.0) and then I am going to walk people through building their first meaningful MacRuby app and my thoughts on when to use MacRuby and when to keep it in Objective-C.
 
               I intend to build something like a Twitter client while giving the talk to demonstrate the power and simplicity of MacRuby.</div>
               <!-- <div class="spkr_photo"> <img title="" alt="" src=""> </div> -->
               <div class="speaker">
-                Mark Madsen
+                :speaker => "Mark Madsen"
               </div>
               <div class="speaker_bio">Mark Madsen was appointed as the Chief Technology Officer of Castle Rock Research Corp. in January of 2010 but has been leading the technology group as a Director since shortly after his return to the company in 2007. Since that time Mark has grown the development team at Castle Rock from 10 developers to 100 developers spanning 2 continents and 3 cities. The expansion has provided Castle Rock with the capacity to deliver both web applications (primarily .NET and Ruby on Rails) and mobile applications (primarily iOS and Android) to their growing customer base.<br /><br />
               Mark has been involved in mobile application development since before the dawn of the iPhone (in 2007) and has built the technology group at Castle Rock with mobile in mind. This is most evident in Castle Rocks mobile educational platform, SOLARO which launched with the iPad App Store this spring. SOLARO gives students access to a variety of standards-aligned supplemental resources through their choice of iOS, Android or Web apps.<br /><br />
@@ -420,7 +407,7 @@
             </li>
             <li class="talk">
               <div class="talk_title">
-                Designing High Throughput Web Service Clients
+                :talk => "Designing High Throughput Web Service Clients"
               </div>
               <div class="talk_description">Consuming web services is an inexorable practice nowadays. You could be eating your own dogfood(internal) or a third partys'(external). The consuming process can be modelled either as multi-threaded or event driven. Ruby accommodates either way with stable library support(eventmachine, threadpool) and implementations(JRuby, Ruby-1.8 or 1.9).<br /><br />
 
@@ -435,13 +422,13 @@
               </div>
               <!-- <div class="spkr_photo"> <img title="" alt="" src=""> </div> -->
               <div class="speaker">
-                Sherin C
+                :speaker => "Sherin C"
               </div>
               <div class="speaker_bio">Sherin is an Engineering Lead at MobME Wireless Solutions Pvt. Ltd. Sherin has 3+ years of programming experience in Ruby/Python, integrating various services from India's largest telecom operators Airtel and Vodafone. This at scale, for VAS(value-added-service) products with over 4+ million subscribers.</div>
             </li>
             <li class="talk">
               <div class="talk_title">
-                Writing Compilers the Easy Way
+                :talk => "Writing Compilers the Easy Way"
               </div>
               <div class="talk_description">
                 The Dragon Book by Aho and Ullman teaches many great things about writing compilers and parsers. But writing a compiler from scratch is often a daunting step for a fledgling programmer. Yet, compilers are useful little things that extend our craft in surprising ways. Ruby provides wonderfully accessible libraries to dive into compiler construction and the talk will focus on one of them: Treetop<br /><br />
@@ -450,7 +437,7 @@
               </div>
               <!-- <div class="spkr_photo"> <img title="" alt="" src=""> </div> -->
               <div class="speaker">
-                Vishnu Gopal
+                :speaker => "Vishnu Gopal"
               </div>
               <div class="speaker_bio">
                 Vishnu is the CTO of MobME Wireless Solutions Pvt. Ltd and has been a developer for 10+ years. He has worked at SlideShare Inc. in its early years, building the backend, and then moved on to do a degree in HCI from University College, London. He now heads a team of 40 Ruby developers working in the mobile core network sector. He still programs more than his job description warrants.
@@ -458,7 +445,7 @@
             </li>
             <li class="talk">
               <div class="talk_title">
-                Rubyizing the Dev and Ops in an Enterprise
+                :talk => "Rubyizing the Dev and Ops in an Enterprise"
               </div>
               <div class="talk_description">
                 This talk would highlight the story of an Enterprise that adopted Ruby
@@ -489,7 +476,7 @@
               </div>
               <!-- <div class="spkr_photo"> <img title="" alt="" src=""> </div> -->
               <div class="speaker">
-                Yashasree Barve
+                :speaker => "Yashasree Barve"
               </div>
               <div class="speaker_bio">
                 Yashasree Barve is working at Tata Consultancy Services for last 13
@@ -509,7 +496,7 @@
             </li>
             <li class="talk">
               <div class="talk_title">
-                Continuous Delivery in Ruby
+                :talk => "Continuous Delivery in Ruby"
               </div>
               <div class="talk_description">
                 The Ruby community has driven a lot of technical innovation in
@@ -523,24 +510,21 @@
                 developers, QAs, and client to be "production-ready, any time."
               </div>
               <!-- <div class="spkr_photo"> <img title="" alt="" src=""> </div> -->
+              <!-- <div class="spkr_photo"> <img title="" alt="" src=""> </div> -->
               <div class="speaker">
-                Srushti Ambekallu
+                :speakers => ["Srushti Ambekallu", "Brian Guthrie"]
               </div>
               <div class="speaker_bio">
                 Srushti Ambekallu has been involved in all areas of a project lifecycle - inception, development, business analysis (& even a bit of project management, but don't hold it against him), all the way to deployment. He has worked with multinational companies & startups.  He spent the first few years working on .Net & Java and Ruby projects at ThoughtWorks before moving on to co-found <a href="http://c42.in">C42 Engineering</a>, a Ruby consultancy based out of Bangalore where he now works as a developer. He's worked with Ruby for a year and a half now.<br /><br />
 
-                As far as open source is concerned, he is the author of <a href="http://github.com/srushti/xstream-net">XStream.net</a> & <a href="http://github.com/c42/goldberg">Goldberg</a> and has contributed features and bug fixes to other projects like Mogli & the Mail gem.            </div>
-              <!-- <div class="spkr_photo"> <img title="" alt="" src=""> </div> -->
-              <div class="speaker">
-                Brian Guthrie
-              </div>
-              <div class="speaker_bio">
+                As far as open source is concerned, he is the author of <a href="http://github.com/srushti/xstream-net">XStream.net</a> & <a href="http://github.com/c42/goldberg">Goldberg</a> and has contributed features and bug fixes to other projects like Mogli & the Mail gem. <br /><br />
                 Brian Guthrie has been writing bad Ruby code for five years, every line of it worse than the last. He started his Ruby career in Boston, and after joining ThoughtWorks went on to write increasingly bad Ruby code in Chicago, New York, Texas, California, and India. He is currently writing the worst Ruby code of his career in Melbourne, Australia. He is thrilled to return once more to India to share his mistakes with the vibrant Ruby community there, in the sincere and humble spirit of collective mistake-repetition avoidance.
-              </div>
+                </div>
+
             </li>
             <li class="talk">
               <div class="talk_title">
-                I can haz HTTP: Consuming and producing HTTP APIs in the Ruby ecosystem
+                :talk => "I can haz HTTP: Consuming and producing HTTP APIs in the Ruby ecosystem"
               </div>
               <div class="talk_description">
                 The Ruby ecosystem is pretty awesome when it comes to developing or
@@ -589,8 +573,9 @@
                 the can do to work around the limitations.
               </div>
               <!-- <div class="spkr_photo"> <img title="" alt="" src=""> </div> -->
+              <!-- <div class="spkr_photo"> <img title="" alt="" src=""> </div> -->
               <div class="speaker">
-                Sidu Ponnappa
+                :speakers => ["Sidu Ponnappa", "Niranjan Paranjape"]
               </div>
               <div class="speaker_bio">
                 Sidu Ponnappa has been writing code since he was six. He spent several
@@ -605,17 +590,12 @@
 
                 On the open source front he is involved in the <a href="http://github.com/kaiwren/wrest">Wrest</a>, <a href="http://github.com/c42/pox_paginate">Pox
                 Paginate</a> and <a href="http://github.com/c42/goldberg">Goldberg</a> projects and has contributed features and
-                bug fixes to the RSpec project.
+                bug fixes to the RSpec project.<br/ ><br />
+                  Niranjan has spent five years writing code for a living. He started out at Infosys, wised up to the game and moved on to ThoughtWorks where he spent two pleasant years first working on Java and then on Ruby. All told, he's spent about three years building Ruby and Rails projects thus far. He left ThoughtWorks early in 2010 to co-found C42 Engineering, a boutique Ruby and Rails services firm based out of Bangalore.<br /><br />
+
+                He is the co-author of several obscure opensource projects such as Wrest, PoxPaginate and Goldberg. You can find the full list of the projects he hacks on at <a href="http://github.com/achamian">here</a> and <a href="http://github.com/c42">here</a>.
 
               </div>
-              <!-- <div class="spkr_photo"> <img title="" alt="" src=""> </div> -->
-              <div class="speaker">
-                Niranjan Paranjape
-              </div>
-              <div class="speaker_bio">
-                Niranjan has spent five years writing code for a living. He started out at Infosys, wised up to the game and moved on to ThoughtWorks where he spent two pleasant years first working on Java and then on Ruby. All told, he's spent about three years building Ruby and Rails projects thus far. He left ThoughtWorks early in 2010 to co-found C42 Engineering, a boutique Ruby and Rails services firm based out of Bangalore.<br /><br />
-
-              He is the co-author of several obscure opensource projects such as Wrest, PoxPaginate and Goldberg. You can find the full list of the projects he hacks on at <a href="http://github.com/achamian">here</a> and <a href="http://github.com/c42">here</a>.</div>
             </li>
           </ul>
           <p class="blrb2">
