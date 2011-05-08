@@ -97,9 +97,10 @@ background: transparent url(../images/devider.png) no-repeat 0 0;
 .talk {
   list-style: none;
   border-style:solid;
-  border-width:thin;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  border-color: rgb(135,76,80);
+  border-width:1px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   border-top-style:none;
   border-right-style:none;
   border-left-style:none;
