@@ -1,3 +1,4 @@
 RewriteEngine on
-RewriteRule ^([^/]*).html$ http://rubyconfindia.org/2010/$1.html
 RewriteRule ^$ 2011
+RewriteRule ^([^/]*).html$ http://rubyconfindia.org/2011/$1.html
+RewriteRule ^([^/]*)/2011/speakers.html$ http://rubyconfindia.org/2011/talks.html
