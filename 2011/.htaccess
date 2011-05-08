@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule speakers.html talks.html
