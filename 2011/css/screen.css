@@ -87,11 +87,23 @@ background: transparent url(../images/devider.png) no-repeat 0 0;
   color: #FEC6A2;
   margin-bottom: 10px;
 }
-
+.speaker_bio {
+  margin-bottom: 10px;
+  font-size: 0.8em;
+  margin-left: 1.5em;
+}
+.spkr_photo {
+  float: right;
+  text-align: right;
+  right: 19px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
 .talk_title {
   color: #FEC6A2;
-  font-size: 1.2em;
+  font-size: 1.3em;
   margin-bottom: 10px;
+  width: 80%;
 }
 
 .talk {
@@ -106,7 +118,7 @@ background: transparent url(../images/devider.png) no-repeat 0 0;
   border-left-style:none;
 }
 
-.speaker_bio, .talk_description {
+.talk_description {
   margin-bottom: 10px;
   font-size: 0.8em;
   margin-left: 1.5em;
@@ -453,18 +465,19 @@ ul.speakers li {
 	min-height: 200px;
 }
 ul.speakers li .spkr_photo {
-	position: absolute;
-	top: -15px;
-	left: -15px;
-	padding: 7px;
-	background: #faf9f5;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	box-shadow: 6px 6px #5d1c14;
-	-moz-box-shadow: 6px 6px #5d1c14;
-	-webkit-box-shadow: 6px 6px #5d1c14;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  padding: 7px;
+  background: #faf9f5;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: 6px 6px #5d1c14;
+  -moz-box-shadow: 6px 6px #5d1c14;
+  -webkit-box-shadow: 6px 6px #5d1c14;
 }
+
 ul.speakers li .spkr_photo img {
 	border: 1px solid #757575;
 	border-radius: 1px;
