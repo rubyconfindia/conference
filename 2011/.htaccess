@@ -1,5 +1,2 @@
 RewriteEngine on
 RewriteRule speakers.html talks.html
-
-Options +Includes
-AddOutputFilter INCLUDES .html
