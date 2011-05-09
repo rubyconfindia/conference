@@ -771,7 +771,6 @@ ul.speakers li .presentation_links li {
   position: absolute;
   top: 0px;
   left: 430px;
-  width: 100%;
   z-index: 1000;
 
 }
