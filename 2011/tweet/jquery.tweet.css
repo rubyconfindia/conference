@@ -1,0 +1,36 @@
+.tweet {
+	color: #C9827C;
+	margin: 10px 0;
+}
+.tweet .tweet_list {
+	font-size:1.05em;
+	font-style:italic;
+	line-height:1.4em;
+	list-style-type:none;
+}
+.tweet .tweet_list li {
+	overflow: auto;
+	padding: 0 0 10px;
+}
+.tweet .tweet_list li.tweet_first {
+	border-top:0;
+}
+.tweet .tweet_list li a {
+	color: #999;
+	display: block;
+	font-size: 0.8em;
+}
+.tweet .tweet_list li .tweet_text a {
+	color: #FEC6A2;
+	display: inline;
+	font-size: 1em;
+}
+.tweet .tweet_list .tweet_even {
+}
+.tweet .tweet_list .tweet_avatar {
+	padding-right: .5em;
+	float: left;
+}
+.tweet .tweet_list .tweet_avatar img {
+	vertical-align: middle;
+}
