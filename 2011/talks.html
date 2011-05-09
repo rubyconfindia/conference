@@ -185,6 +185,7 @@
                 :talk =&gt; "Test Load Balancer: Rocket Booster for your Build"
               </div>
               <div class="talk_description">
+              <br />
                 <a href="http://test-load-balancer.github.com/">Test Load Balancer (TLB)</a> is a tool that can automatically partition tests into multiple subsets, each one of which can be executed in parallel. The execution can happen on different physical/virtual machines or on the same machine as different processes or threads. The more the partitions, the less the number of tests executed on each one, and since all of the partitions start at the same time (and finish almost at the same time) overall test-execution time gets divided by the number of partitions you make. Test-running is by far the longest step in most (if not all) builds, and cutting down test-running time speeds up the build and hence the feedback loop. TLB can be used for any kind of test-suite - unit, integration or functional tests.<br />
                 <br />
                 In addition to balancing, TLB does other interesting things like re-order tests within a subset(set of tests that run on a partition) before they are executed. For instance, it re-arranges tests to execute failing ones(that failed in previous build) first, hence ensuring early feedback.<br />
