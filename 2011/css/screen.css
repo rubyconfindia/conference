@@ -690,7 +690,6 @@ ul.speakers li .presentation_links li {
      position: absolute;
      top: 10px;
      width: 20%;
-     /*  display: inline-block;*/
 }
 
 #left .actions ul li.contributor{
@@ -720,11 +719,9 @@ ul.speakers li .presentation_links li {
   position: absolute;
   left: 40%;
   top: 0px;
-/*  height: 400px;*/
   padding: 20px;
 }
 #right .header {
-/*  height: 120px;*/
   position: relative;
   border-bottom: 1px solid #000;
 }
@@ -752,6 +749,7 @@ ul.speakers li .presentation_links li {
   position: relative;
   background: url('/images/bgtex.jpg') repeat 0 0;
   text-align: left;
+  min-height: 540px;
 }
 
 
@@ -796,9 +794,25 @@ ul.speakers li .presentation_links li {
 }
 #contributorDetailsSlider .holder .open{
   width: 90%;
-  background-color: black;
+/*  background-color: #874C50;*/
   padding: 20px;
   min-height: 500px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+	-moz-border-top-rightradius: 15px;
+	-moz-border-bottom-rightradius: 15px;
+	-webkit-border-top-radius: 15px;
+	-webkit-border-bottom-radius: 15px;
+	
+	/* For WebKit (Safari, Google Chrome etc) */
+  background: -webkit-gradient(linear, left top, right top, from(#874C50), to(#000000), color-stop(0.7, #fff));
+  /* For Mozilla/Gecko (Firefox etc) */
+  background: -moz-linear-gradient(left top, #874C50, #000000 70%);
+  /* For Internet Explorer 5.5 - 7 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#874C50, endColorStr=#000000, GradientType=1);
+  /* For Internet Explorer 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF0000FF, endColorstr=#FFFFFFFF, GradientType=1)";
+  
 }
 
 #contributorDetailsSlider .holder{
@@ -816,7 +830,6 @@ ul.speakers li .presentation_links li {
 }
 
 .full_page_register {
-/*  float:right;*/
   position:relative;
   left:38%;
   top:-50px;
@@ -835,9 +848,7 @@ ul.speakers li .presentation_links li {
 }
 div.full_page_logo {
 	background:transparent url(../images/logo_ruby_conference_India.png) no-repeat 0 0;
-/*  float: right;*/
   width: 341px;
   margin: auto;
   height: 275px;
-/*  text-indent: -9999px;*/
 }
