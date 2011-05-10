@@ -659,7 +659,7 @@ ul.speakers li .presentation_links li {
 
 }
 
-#left ul{
+#left ul li{
   position: relative;
 }
 
@@ -669,6 +669,7 @@ ul.speakers li .presentation_links li {
      position: absolute;
      top: 10px;
      width: 20%;
+     /*  display: inline-block;*/
 }
 
 #left .actions ul li.contributor{
@@ -687,11 +688,6 @@ ul.speakers li .presentation_links li {
   min-height: 80px;
   padding: 10px;
   width: 80%;
-}
-
-#left ul li.contributor .toggleImage{
-  display: inline-block;
-  width: 20%;
 }
 
 
