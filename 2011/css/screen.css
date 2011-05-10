@@ -21,10 +21,7 @@ a:hover, a:focus, a:active {
   width: 940px;
   position: relative;
 }
-.full_width_wrapper {
-  text-align: center;
-  width: 100%;
-}
+
 .header {
 	overflow:hidden;
 	padding-bottom:5px;
@@ -202,9 +199,7 @@ ul.news li {
 .nav li a:hover {
 	text-decoration: underline;
 }
-.nav li#twitter {
-	border-right: 0px solid #4d2720;
-}
+
 /*
 .content,
 .sidebar .content{
@@ -687,6 +682,7 @@ ul.speakers li .presentation_links li {
 
 #left ul li{
   position: relative;
+  border-bottom: 1px solid #874C50;
 }
 
 #left ul li.contributor .toggleImage{
@@ -705,11 +701,10 @@ ul.speakers li .presentation_links li {
   border-bottom: 1px dotted #2e2e2e;
   -moz-border-radius: 15px;
   border-radius: 15px;
-
 }
 
 #left ul li.contributor .basicDetails{
-  border-bottom: 1px solid white;
+
   display: inline-block;
   min-height: 80px;
   padding: 10px;
