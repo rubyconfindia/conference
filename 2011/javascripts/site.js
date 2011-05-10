@@ -3,7 +3,7 @@
   $(document).ready(function() {
 
     var selectedContributor = undefined;
-    var contributorDetailsSlider = $('#contributorDetailsSlider .content');  
+    var contributorDetailsSlider = $('#contributorDetailsSlider .slider_content');  
     var contributorDetailsClose = $('#contributorDetailsSlider .holder .close');
 
     $('li.contributor').each(function(index,contributor){

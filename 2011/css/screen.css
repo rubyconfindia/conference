@@ -756,7 +756,7 @@ ul.speakers li .presentation_links li {
 }
 
 
-#contributorDetailsSlider .holder .close .content .details{
+#contributorDetailsSlider .holder .close .slider_content .details{
   position: absolute;
   top: 0px;
   left: 480px;
@@ -783,7 +783,7 @@ ul.speakers li .presentation_links li {
   
 }
 
-#contributorDetailsSlider .holder .close .content{
+#contributorDetailsSlider .holder .close .slider_content{
   position: relative;
   margin: auto;
 }
