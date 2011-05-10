@@ -591,7 +591,33 @@ ul.speakers li .presentation_links li {
 
 
 
+.base_content_blurb {
+/*  background: transparent url(../images/blurb_bg.png) no-repeat 0 0;*/
+/*  width: 520px;
+  height: 215px;
+*/	padding: 10px;
+}
 
+.base_content_blurb h2 {
+  background: transparent url(../images/ruby_conf.png) no-repeat 0 0;
+/*  font-color: white;*/
+  width: 367px;
+  height: 36px;
+  text-indent: -9999px;
+	padding-bottom: 0px;
+	border: 0;
+	margin-bottom: 8px;
+}
+.base_content_blurb blockquote {
+  color: white;
+	font-size:1.43em;
+	letter-spacing:-1px;
+	line-height:1.5em;
+	padding-bottom:0.9em;
+}
+.base_content_blurb blockquote span {
+/*  font-weight: bold;*/
+}
 
 .highlighted{
   background-color: #ededed;
@@ -695,7 +721,7 @@ ul.speakers li .presentation_links li {
 
 
 #right{
-  width: 40%;
+  width: 50%;
   margin: 0 0 0 20px;
   position: absolute;
   left: 40%;
@@ -770,12 +796,13 @@ ul.speakers li .presentation_links li {
 #contributorDetailsSlider .holder .close{
   position: absolute;
   top: -11px;
-  left: 435px;
+  left: 83%;
   z-index: 1001;
   cursor: pointer;
 }
 #contributorDetailsSlider .holder .open{
-  width: 410px;
+  width: 80%;
+  background-color: black;
 }
 
 #contributorDetailsSlider .holder{
@@ -790,5 +817,4 @@ ul.speakers li .presentation_links li {
   min-height: 500px;
   top: 0px;
   z-index: 1000;
-  width: 40%;
 }
