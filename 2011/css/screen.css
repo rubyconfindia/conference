@@ -606,11 +606,11 @@ ul.speakers li .presentation_links li {
 }
 
 .rightArrow{
-  background: transparent url('/images/fancy_nav_right.png') no-repeat 0 0;
+  background: transparent url('../images/fancy_nav_right.png') no-repeat 0 0;
 }
 
 .leftArrow{
-  background: transparent url('/images/fancy_nav_left.png') no-repeat 0 0;
+  background: transparent url('../images/fancy_nav_left.png') no-repeat 0 0;
 }
 
 
@@ -659,13 +659,16 @@ ul.speakers li .presentation_links li {
 
 }
 
+#left ul{
+  position: relative;
+}
 
-#left .actions ul li.contributor .toggleImage{
-  height: 30px;
-  width: 30px;
-  position: absolute;
-  top: 10px;
-  right: 12px;
+#left ul li.contributor .toggleImage{
+     height: 100px;
+     left: 90%;
+     position: absolute;
+     top: 10px;
+     width: 20%;
 }
 
 #left .actions ul li.contributor{
@@ -678,11 +681,17 @@ ul.speakers li .presentation_links li {
 
 }
 
-#left .actions ul li.contributor .basicDetails{
-  position: absolute;
-  top: 10px;
-  left: 150px;
+#left ul li.contributor .basicDetails{
+  border-bottom: 1px solid white;
   display: inline-block;
+  min-height: 80px;
+  padding: 10px;
+  width: 80%;
+}
+
+#left ul li.contributor .toggleImage{
+  display: inline-block;
+  width: 20%;
 }
 
 
