@@ -167,7 +167,7 @@
                 <br />
                 Chiku and Habib will be pair-presenting their learnings in a way that mirrors the eternal tussle that a developer faces daily - convenience versus quality. One of them will assume the role of a devil and persuasively present a code-fragment that mirrored one such anti-pattern. The other will then take over as an angel and explain the problem inherent in that code-fragment, and proceed to clean it up. They will then swap roles and proceed to the next point.<br />
                 <br />
-                At the end of this presentation the audience would have the knowledge of identifying and subsequently fixing, similar manifestations of these problems in their code.
+                At the end of this presentation the audience will have the knowledge of identifying and subsequently fixing similar manifestations of these problems in their code.
               </div>
             </li>
             <li class="talk">
@@ -187,7 +187,7 @@
               <div class="talk_description">
                 <a href="http://test-load-balancer.github.com/">Test Load Balancer (TLB)</a> is a tool that can automatically partition tests into multiple subsets, each one of which can be executed in parallel. The execution can happen on different physical/virtual machines or on the same machine as different processes or threads. The more the partitions, the less the number of tests executed on each one, and since all of the partitions start at the same time (and finish almost at the same time) overall test-execution time gets divided by the number of partitions you make. Test-running is by far the longest step in most (if not all) builds, and cutting down test-running time speeds up the build and hence the feedback loop. TLB can be used for any kind of test-suite - unit, integration or functional tests.<br />
                 <br />
-                In addition to balancing, TLB does other interesting things like re-order tests within a subset(set of tests that run on a partition) before they are executed. For instance, it re-arranges tests to execute failing ones(that failed in previous build) first, hence ensuring early feedback.<br />
+                In addition to balancing, TLB does other interesting things like re-order tests within a subset (set of tests that run on a partition) before they are executed. For instance, it re-arranges tests to execute failing ones (that failed in the previous build) first, hence ensuring early feedback.<br />
                 <br />
                 Most build servers (like Hudson, Go, TeamCity, Bamboo, etc.) and even tools like capistrano/cluster-ssh provide parallel execution capability (capability to execute command(s) on different machines at the same time). However, parallelization of tests needs a tool that can decide what tests need to be run in each such parallely running process across machines. This is where TLB comes in.<br />
                 <br />
@@ -311,17 +311,17 @@
               <div class="speaker_bio">
                 Niranjan has spent five years writing code for a living. He started out at Infosys, wised up to the game and moved on to ThoughtWorks where he spent two pleasant years first working on Java and then on Ruby. All told, he's spent about three years building Ruby and Rails projects thus far. He left ThoughtWorks early in 2010 to co-found C42 Engineering, a boutique Ruby and Rails services firm based out of Bangalore.<br />
                 <br />
-                He is the co-author of several obscure opensource projects such as Wrest, PoxPaginate and Goldberg. You can find the full list of the projects he hacks on at <a href="http://github.com/achamian">here</a> and <a href="http://github.com/c42">here</a>.<br />
+                He is the co-author of several obscure open source projects such as Wrest, PoxPaginate and Goldberg. You can find the full list of the projects he hacks on at <a href="http://github.com/achamian">here</a> and <a href="http://github.com/c42">here</a>.<br />
                 <br />
-                Aakash has spent five years working on software projects in a variety of companies; an Indian Services giant, a Fortune 500 company and a funded product startup before moving on to co-found <a href="http://c42.in">C42 Engineering</a>, a Ruby and Rails services firm based out of Bangalore. He has worked on Ruby for the last year and a half year; before that he'd spent four years on Java. He is a committer on the <a href="http://github.com/c42/goldberg">Goldberg</a> project and his open source contribution can be found <a href="http://github.com/aakashd">here</a>.
+                Aakash has spent five years working on software projects in a variety of companies; an Indian Services giant, a Fortune 500 company and a funded product startup before moving on to co-found <a href="http://c42.in">C42 Engineering</a>, a Ruby and Rails services firm based out of Bangalore. He has worked on Ruby for the last year and a half; before that, he'd spent four years on Java. He is a committer on the <a href="http://github.com/c42/goldberg">Goldberg</a> project and his open source contribution can be found <a href="http://github.com/aakashd">here</a>.
               </div>
               <div class="talk_title">
                 :talk =&gt; "But the language supports it"
               </div>
               <div class="talk_description">
-                Discussing language constructs with fellow developers in the context of solving a particular problem is something we do routinely. While most such conversations are productive and useful, a fair portion degenerate into angry brawls. A pattern we've observed in the latter situation is that a surprising number of times the argument is that "Why shouldn't I use language feature X to achieve objective Y- after all, the language supports X."<br />
+                Discussing language constructs with fellow developers in the context of solving a particular problem is something we do routinely. While most such conversations are productive and useful, a fair portion degenerate into angry brawls. A pattern we've observed in the latter situation is that a surprising number of times the argument is that, "Why shouldn't I use language feature X to achieve objective Y- after all, the language supports X."<br />
                 <br />
-                In this talk we will cover various features provided by Ruby that, while awesome, should be used with caution. We will cover:<br />
+                In this talk, we will cover various features provided by Ruby that, while awesome, should be used with caution. We will cover:<br />
                 <br />
                 <ol class="bullet_points_talk_description">
                   <li>The appropriate situation where a certain language construct should be used
@@ -365,7 +365,7 @@
                 :speaker =&gt; "Nicolás Sanguinetti"
               </div>
               <div class="speaker_bio">
-                Nicolás (probably more known as foca) has been working with Rails since 2006, and with ruby since 2004. He’s constantly looking for ways to improve the way we write and test web applications in a way that makes them easier to use and maintain.<br />
+                Nicolás (probably better known as foca) has been working with Rails since 2006, and with Ruby since 2004. He's constantly looking for ways to improve the way we write and test web applications in a way that makes them easier to use and maintain.<br />
                 <br />
                 He contributes to a few open source projects <a href="http://github.com/foca">here</a>. He lives in Montevideo, Uruguay, where he works as an engineer for <a href="http://cuboxsa.com">Cubox</a>.
               </div>
@@ -384,7 +384,7 @@
               <div class="speaker_bio">
                 Mark Madsen was appointed as the Chief Technology Officer of Castle Rock Research Corp. in January of 2010 but has been leading the technology group as a Director since shortly after his return to the company in 2007. Since that time Mark has grown the development team at Castle Rock from 10 developers to 100 developers spanning 2 continents and 3 cities. The expansion has provided Castle Rock with the capacity to deliver both web applications (primarily .NET and Ruby on Rails) and mobile applications (primarily iOS and Android) to their growing customer base.<br />
                 <br />
-                Mark has been involved in mobile application development since before the dawn of the iPhone (in 2007) and has built the technology group at Castle Rock with mobile in mind. This is most evident in Castle Rocks mobile educational platform, SOLARO which launched with the iPad App Store this spring. SOLARO gives students access to a variety of standards-aligned supplemental resources through their choice of iOS, Android or Web apps.<br />
+                Mark has been involved in mobile application development since before the dawn of the iPhone (in 2007) and has built the technology group at Castle Rock with mobile in mind. This is most evident in Castle Rock's mobile educational platform, SOLARO, which launched with the iPad App Store this spring. SOLARO gives students access to a variety of standards-aligned supplemental resources through their choice of iOS, Android or Web apps.<br />
                 <br />
                 From OSX Dashboard Widgets to Industrial Process Control apps on WinMo, Mark has written code that runs on just about everything. His 15 years of software development experience and passion for building usable software is apparent in everything he does.<br />
                 <br />
@@ -411,7 +411,7 @@
               <div class="talk_description">
                 Consuming web services is an inexorable practice nowadays. You could be eating your own dogfood(internal) or a third partys'(external). The consuming process can be modelled either as multi-threaded or event driven. Ruby accommodates either way with stable library support(eventmachine, threadpool) and implementations(JRuby, Ruby-1.8 or 1.9).<br />
                 <br />
-                This talk will cover,<br />
+                This talk will:<br />
                 <br />
                 <ol class="bullet_points_talk_description">
                   <li>Weigh the tradeoffs in choosing a model by detailing an implementation each in:<br />
@@ -437,7 +437,7 @@
               <div class="talk_description">
                 The Dragon Book by Aho and Ullman teaches many great things about writing compilers and parsers. But writing a compiler from scratch is often a daunting step for a fledgling programmer. Yet, compilers are useful little things that extend our craft in surprising ways. Ruby provides wonderfully accessible libraries to dive into compiler construction and the talk will focus on one of them: Treetop<br />
                 <br />
-                The talk will detail the construction of a simple filter language and using Treetop to parse grammar and interpret it, and then make it working. Treetop makes it very simple and intuitive to add new operators and new syntax, and the talk will walk through the addition of a new operator to the language. Towards the end, a simple cross-compiler will be discussed that translates our filter language into fast C.
+                The talk will detail the construction of a simple filter language and using Treetop to parse grammar and interpret it, and then make it work. Treetop makes it very simple and intuitive to add new operators and new syntax, and the talk will walk through the addition of a new operator to the language. Towards the end, a simple cross-compiler will be discussed that translates our filter language into fast C.
               </div>
             </li>
             <li class="talk">
@@ -446,7 +446,7 @@
                 :speaker =&gt; "Yashasree Barve"
               </div>
               <div class="speaker_bio">
-                Yashasree Barve is working at Tata Consultancy Services for last 13 years as a technologist. She has been working in the role of a developer, designer and architect across multiple domains such as Insurance, Retail, and Hi Tech using various front end technologies such as Java, Java 2 Platform, Enterprise Edition (J2EE), Ruby, Ruby on Rails and so on. She switched from Java to Ruby around 3.5 years back, and is now enjoying her work of ruby development. She has been a part of and in awe of the journey of her development group towards Ruby adoption. She has also been instrumental in bringing together the Rubyists in TCS through a community, and periodic Ruby Roundtables. Apart from Ruby, she is passionate about Agile methodology and Open Source. Other topics of her interest are Web 2.0, Enterprise 2.0, Emergent Design and Evolutionary Architecture.
+                Yashasree Barve has been working at Tata Consultancy Services for the last 13 years as a technologist. She has worked as a developer, designer and architect across multiple domains such as Insurance, Retail, and Hi Tech using various front-end technologies such as Java, Java 2 Platform, Enterprise Edition (J2EE), Ruby, Ruby on Rails, and so on. She switched from Java to Ruby around 3.5 years back, and is now enjoying her work in the field of Ruby development. She has been a part of and in awe of the journey of her development group towards Ruby adoption. She has also been instrumental in bringing together the Rubyists in TCS through a community, and periodic Ruby Roundtables. Apart from Ruby, she is passionate about Agile methodology and Open Source. Her other interests are Web 2.0, Enterprise 2.0, Emergent Design and Evolutionary Architecture.
               </div>
               <div class="talk_title">
                 :talk =&gt; "Rubyizing the Dev and Ops in an Enterprise"
