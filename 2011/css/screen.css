@@ -326,8 +326,7 @@ h4 {
 	width:900px;
 }
 .ultra_wide_content {
-  position: absolute;
-  
+/*  position: absolute;*/
 }
 .sidebar {
 	background-image:url(../images/bg_sb_cont.png);
@@ -722,7 +721,7 @@ ul.speakers li .presentation_links li {
   left: 40%;
   top: 0px;
 /*  height: 400px;*/
-  padding: 10px;
+  padding: 20px;
 }
 #right .header {
 /*  height: 120px;*/
@@ -796,8 +795,10 @@ ul.speakers li .presentation_links li {
   cursor: pointer;
 }
 #contributorDetailsSlider .holder .open{
-  width: 80%;
+  width: 90%;
   background-color: black;
+  padding: 20px;
+  min-height: 500px;
 }
 
 #contributorDetailsSlider .holder{
@@ -812,4 +813,31 @@ ul.speakers li .presentation_links li {
   min-height: 500px;
   top: 0px;
   z-index: 1000;
+}
+
+.full_page_register {
+/*  float:right;*/
+  position:relative;
+  left:38%;
+  top:-50px;
+  margin: auto;
+}
+.full_page_register a {
+	width: 145px;
+	height: 32px;
+	background: url('../images/register_sprite.png') no-repeat 0 0;
+	text-indent: -9999em;
+  display:block;
+	outline: none;
+}
+.full_page_register a:hover {
+  background-position: 0 -32px;
+}
+div.full_page_logo {
+	background:transparent url(../images/logo_ruby_conference_India.png) no-repeat 0 0;
+/*  float: right;*/
+  width: 341px;
+  margin: auto;
+  height: 275px;
+/*  text-indent: -9999px;*/
 }
