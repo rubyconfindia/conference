@@ -21,6 +21,10 @@ a:hover, a:focus, a:active {
   width: 940px;
   position: relative;
 }
+.full_width_wrapper {
+  text-align: center;
+  width: 100%;
+}
 .header {
 	overflow:hidden;
 	padding-bottom:5px;
@@ -326,6 +330,10 @@ h4 {
 .wide_content {
 	width:900px;
 }
+.ultra_wide_content {
+  position: absolute;
+  
+}
 .sidebar {
 	background-image:url(../images/bg_sb_cont.png);
 	float: right;
@@ -617,8 +625,9 @@ ul.speakers li .presentation_links li {
 
 
 #main{
-  margin: 40px 0 0 0;
+  margin: auto;
   position: relative;
+  width: 80%;
 }
 
 #left .actions{
@@ -631,8 +640,8 @@ ul.speakers li .presentation_links li {
 }
 
 #left{
-  width: 420px;
-  padding: 10px;
+  width: 38%;
+  padding: 2%;
   border-right: 1px solid #4d4d4d;
   display: inline-block;
 }
@@ -681,16 +690,16 @@ ul.speakers li .presentation_links li {
 
 
 #right{
-  width: 420px;
+  width: 40%;
   margin: 0 0 0 20px;
   position: absolute;
-  left: 480px;
+  left: 40%;
   top: 0px;
-  height: 400px;
+/*  height: 400px;*/
   padding: 10px;
 }
 #right .header {
-  height: 120px;
+/*  height: 120px;*/
   position: relative;
   border-bottom: 1px solid #000;
 }
@@ -703,18 +712,21 @@ ul.speakers li .presentation_links li {
 }
 
 
-
+#container #left ul{
+  list-style: none;
+}
 
 #container{
   -moz-box-shadow: 10px 10px 20px #000000;
   -webkit-box-shadow: 10px 10px 20px #000000;
   margin: auto;
-  width: 900px;
+  width: 100%;
   background-color: #e2e2e2;
   -moz-border-radius: 15px;
   border-radius: 15px;
   position: relative;
   background: url('/images/bgtex.jpg') repeat 0 0;
+  text-align: left;
 }
 
 
@@ -769,8 +781,9 @@ ul.speakers li .presentation_links li {
 
 #contributorDetailsSlider{
   position: absolute;
+  left: 42%;
+  min-height: 500px;
   top: 0px;
-  left: 430px;
   z-index: 1000;
-
+  width: 40%;
 }
