@@ -595,7 +595,7 @@ ul.speakers li .presentation_links li {
 .base_content_blurb h2 {
   background: transparent url(../images/ruby_conf.png) no-repeat 0 0;
 /*  font-color: white;*/
-  width: 367px;
+/*  width: 367px;*/
   height: 36px;
   text-indent: -9999px;
 	padding-bottom: 0px;
@@ -720,6 +720,7 @@ ul.speakers li .presentation_links li {
   left: 40%;
   top: 0px;
   padding: 20px;
+/*  border-left: 1px solid #4d4d4d;*/
 }
 #right .header {
   position: relative;
@@ -795,7 +796,7 @@ ul.speakers li .presentation_links li {
 #contributorDetailsSlider .holder .open{
   width: 90%;
 /*  background-color: #874C50;*/
-  padding: 20px;
+  padding: 30px;
   min-height: 500px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -803,6 +804,7 @@ ul.speakers li .presentation_links li {
 	-moz-border-bottom-rightradius: 15px;
 	-webkit-border-top-radius: 15px;
 	-webkit-border-bottom-radius: 15px;
+/*  right: 10px;*/
 	
 	/* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, right top, from(#874C50), to(#000000), color-stop(0.7, #fff));
