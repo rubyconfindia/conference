@@ -73,7 +73,7 @@
               <li class="contributor">
                 <dl>
                   <dt class="basicDetails">
-:talk => "Software Quality and Test Strategies for Ruby and Rails Applications"
+  :talk => "Software Quality and Test Strategies for Ruby and Rails Applications",
                   </dt>
                   <dt class="speaker_name">
 :speakers => ["Bhavin Javia"]
@@ -143,8 +143,6 @@ Brian Guthrie has been writing bad Ruby code for five years, every line of it wo
                   </dd>
                 </dl>
               </li>
-              
-              
               <li class="contributor">
                 <dl>
                   <dt class="basicDetails">
@@ -163,7 +161,6 @@ Brian Guthrie has been writing bad Ruby code for five years, every line of it wo
                       <br />
                       At the end of this presentation the audience will have the knowledge of identifying and subsequently fixing similar manifestations of these problems in their code.
                     </div>
-
                     <div class="spkr_container">
                       <div class="talks2_spkr_photo">
                         <img class="spkr_image" title="Chirantan Mitra" alt="Chirantan Mitra" src="images/speakers/speaker_avatar.jpg" />
@@ -172,10 +169,6 @@ Brian Guthrie has been writing bad Ruby code for five years, every line of it wo
                   Chirantan Mitra is better known as Chiku. He is a developer at ThoughtWorks with experience in working on complex domains mostly involving Ruby or C#. He has been programming since the age of nine - he loved it back then and still does so now. He conveniently forgets his Twitter handle from time to time, but remembers to <a href="https://github.com/chiku">share his code</a>.                           
                       </div>
                     </div>
-                    
-                    
-                    
-                    
                     <div class="spkr_container">
                       <div class="talks2_spkr_photo">
                         <img title="Habibullah Pagarkar" alt="Habibullah Pagarkar" src="images/speakers/habib.png" />
@@ -188,6 +181,47 @@ Brian Guthrie has been writing bad Ruby code for five years, every line of it wo
                   </dd>
                 </dl>
               </li>
+              <li class="contributor">
+                <dl>
+                  <dt class="basicDetails">
+                    :talk => "Test Load Balancer: Rocket Booster for your Build"
+                  </dt>
+                  <dt class="speaker_name">
+                    :speakers => ["Janmejay Singh", "Pavan K Sudarshan"]
+                  </dt>
+                  <span class="toggleImage">&nbsp;</span>
+                  <dd class="details" style="display:none;">
+                    <div class="desc">Talk description</div>
+                    <div class="talk_details">
+                      <a href="http://test-load-balancer.github.com/">Test Load Balancer (TLB)</a> is a tool that can automatically partition tests into multiple subsets, each one of which can be executed in parallel. The execution can happen on different physical/virtual machines or on the same machine as different processes or threads. The more the partitions, the less the number of tests executed on each one, and since all of the partitions start at the same time (and finish almost at the same time) overall test-execution time gets divided by the number of partitions you make. Test-running is by far the longest step in most (if not all) builds, and cutting down test-running time speeds up the build and hence the feedback loop. TLB can be used for any kind of test-suite - unit, integration or functional tests.<br />
+                      <br />
+                      In addition to balancing, TLB does other interesting things like re-order tests within a subset (set of tests that run on a partition) before they are executed. For instance, it re-arranges tests to execute failing ones (that failed in the previous build) first, hence ensuring early feedback.<br />
+                      <br />
+                      Most build servers (like Hudson, Go, TeamCity, Bamboo, etc.) and even tools like capistrano/cluster-ssh provide parallel execution capability (capability to execute command(s) on different machines at the same time). However, parallelization of tests needs a tool that can decide what tests need to be run in each such parallely running process across machines. This is where TLB comes in.<br />
+                      <br />
+                      This talk will introduce the audience to TLB concepts and include a demo of using TLB to partition RSpec and Test::Unit suites. It'll also include a case-study on how TLB helped cut build time from approximately 70 minutes to 11 minutes (which can of course be further reduced) just by throwing more hardware at it.
+
+                    </div>
+                    <div class="spkr_container">
+                      <div class="talks2_spkr_photo">
+                        <img title="Janmejay Singh" alt="Janmejay Singh" src="images/speakers/janmejay.jpg" />
+                      </div>
+                      <div class="speaker_details">
+                Janmejay (JJ) is a developer working at ThoughtWorks, Inc. in the Studios division. He has around 5 years of professional experience. He blogs <a href="http://codehunk.wordpress.com">here</a> and shares his code <a href="http://github.com/janmejay">here</a>.                      </div>
+                    </div>
+                    <div class="spkr_container">
+                      <div class="talks2_spkr_photo">
+                        <img title="Pavan Sudharshan" alt="Pavan Sudharshan" src="images/speakers/speaker_avatar.jpg" />
+                      </div>
+                      <div class="speaker_details">
+                        Pavan is a developer working at ThoughtWorks, Inc. in the Studios division. He has around 5 years of professional experience. He blogs <a href="http://pavanks.blogspot.com">here</a> and shares his code <a href="http://github.com/itspanzi">here</a>.
+                      </div>
+                    </div>
+
+                  </dd>
+                </dl>
+              </li>
+
               
               
               
@@ -200,9 +234,65 @@ Brian Guthrie has been writing bad Ruby code for five years, every line of it wo
               
               
               
-              
-              
-              
+              <li class="contributor">
+                <dl>
+                  <dt class="basicDetails">
+                    :talk => "Ruby Plus Rails Plus Your Application Minus Rails"
+                  </dt>
+                  <dt class="speaker_name">
+                    :speakers => ["Brian Guthrie"]
+                  </dt>
+                    <span class="toggleImage">&nbsp;</span>
+                  <dd class="details" style="display:none;">
+                    <div class="desc">Talk description</div>
+                    <div class="talk_details">
+Ruby on Rails is a famously opinionated framework that handles ninety percent of the problems a typical web application faces. But what about the last ten percent? Every app has to jump off the Rails eventually, whether that means integrating with an external web service, importing data from another database, or providing enhanced search functionality. In this talk I'll lead you through some patterns for handling those cases, and discuss certain features of Rails 3 that let you leverage the best pieces of the core framework without resorting to ugly hacks. Finally we'll discuss what a new, more modular core framework means for a post-Rails world.
+                    </div>
+                    <div class="talks2_spkr_photo">
+                      <img class="spkr_image" title="Brian Guthrie" alt="Brian Guthrie" src="images/speakers/speaker_avatar.jpg" />
+                    </div>
+                    <div class="speaker_details">
+Brian Guthrie has been writing bad Ruby code for five years, every line of it worse than the last. He started his Ruby career in Boston, and after joining ThoughtWorks went on to write increasingly bad Ruby code in Chicago, New York, Texas, California, and India. He is currently writing the worst Ruby code of his career in Melbourne, Australia. He is thrilled to return once more to India to share his mistakes with the vibrant Ruby community there, in the sincere and humble spirit of collective mistake-repetition avoidance.
+                    </div>
+                  </dd>
+                </dl>
+              </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <li class="contributor">
+                <dl>
+                  <dt class="basicDetails">
+                    :talk => "Ruby Plus Rails Plus Your Application Minus Rails"
+                  </dt>
+                  <dt class="speaker_name">
+                    :speakers => ["Brian Guthrie"]
+                  </dt>
+                    <span class="toggleImage">&nbsp;</span>
+                  <dd class="details" style="display:none;">
+                    <div class="desc">Talk description</div>
+                    <div class="talk_details">
+Ruby on Rails is a famously opinionated framework that handles ninety percent of the problems a typical web application faces. But what about the last ten percent? Every app has to jump off the Rails eventually, whether that means integrating with an external web service, importing data from another database, or providing enhanced search functionality. In this talk I'll lead you through some patterns for handling those cases, and discuss certain features of Rails 3 that let you leverage the best pieces of the core framework without resorting to ugly hacks. Finally we'll discuss what a new, more modular core framework means for a post-Rails world.
+                    </div>
+                    <div class="talks2_spkr_photo">
+                      <img class="spkr_image" title="Brian Guthrie" alt="Brian Guthrie" src="images/speakers/speaker_avatar.jpg" />
+                    </div>
+                    <div class="speaker_details">
+Brian Guthrie has been writing bad Ruby code for five years, every line of it worse than the last. He started his Ruby career in Boston, and after joining ThoughtWorks went on to write increasingly bad Ruby code in Chicago, New York, Texas, California, and India. He is currently writing the worst Ruby code of his career in Melbourne, Australia. He is thrilled to return once more to India to share his mistakes with the vibrant Ruby community there, in the sincere and humble spirit of collective mistake-repetition avoidance.
+                    </div>
+                  </dd>
+                </dl>
+              </li>
               
               
             </ul>

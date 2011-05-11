@@ -712,8 +712,7 @@ ul.speakers li .presentation_links li {
   border-bottom: 1px solid #874C50;
   cursor: pointer;
   -moz-border-radius: 10px 10px 10px 10px;
-  border-radius: 10px 10px 10px 10px;
-  
+  border-radius: 10px 10px 10px 10px; 
 }
 
 #left ul li.contributor .toggleImage{
@@ -734,9 +733,10 @@ ul.speakers li .presentation_links li {
 }
 
 #left ul li.contributor .basicDetails{
-  color: #ED952A;
+/*  color: #ED952A;*/
+  color: gold;
   display: inline-block;
-  font-weight: bold;
+/*  font-weight: bold;*/
   min-height: 50px;
   padding: 10px 0 10px 10px;
   width: 80%;
