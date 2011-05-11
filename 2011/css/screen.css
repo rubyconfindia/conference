@@ -662,8 +662,11 @@ ul.speakers li .presentation_links li {
 #left{
   width: 38%;
   padding: 2%;
-  border-right: 1px solid #4d4d4d;
+/*  border-right: 1px solid #4d4d4d;*/
   display: inline-block;
+  -moz-box-shadow: 5px 5px 5px rgb(85,44,47);
+  -webkit-box-shadow: 5px 5px 5px rgb(85,44,47);
+  box-shadow: 5px 5px 5px rgb(85,44,47);
 }
 
 #left .actions ul{
@@ -789,25 +792,28 @@ ul.speakers li .presentation_links li {
 #contributorDetailsSlider .holder .close{
   position: absolute;
   top: -11px;
-  left: 83%;
+  left: 96.5%;
   z-index: 1001;
   cursor: pointer;
 }
 #contributorDetailsSlider .holder .open{
   width: 90%;
 /*  background-color: #874C50;*/
+  -moz-box-shadow: 3px 3px 3px rgb(85,44,47);
+  -webkit-box-shadow: 3px 3px 3px rgb(85,44,47);
+  box-shadow: 3px 3px 3px rgb(85,44,47);
   padding: 30px;
-  min-height: 500px;
+  min-height: 600px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 	-moz-border-top-rightradius: 15px;
 	-moz-border-bottom-rightradius: 15px;
 	-webkit-border-top-radius: 15px;
 	-webkit-border-bottom-radius: 15px;
-/*  right: 10px;*/
+  right: 10px;
 	
 	/* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, right top, from(#874C50), to(#000000), color-stop(0.7, #fff));
+  background: -webkit-gradient(linear, left top, right top, from(#874C50), to(#000000), color-stop(0.7, #000000));
   /* For Mozilla/Gecko (Firefox etc) */
   background: -moz-linear-gradient(left top, #874C50, #000000 70%);
   /* For Internet Explorer 5.5 - 7 */
@@ -825,7 +831,7 @@ ul.speakers li .presentation_links li {
 
 #contributorDetailsSlider{
   position: absolute;
-  left: 42%;
+  left: 42.3%;
   min-height: 500px;
   top: 0px;
   z-index: 1000;
