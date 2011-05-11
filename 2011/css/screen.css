@@ -105,6 +105,7 @@ background: transparent url(../images/devider.png) no-repeat 0 0;
   float: left;
   padding-right: 20px;
   padding-top: 20px;
+  padding-bottom: 10px;
 }
 .spkr_image {
   -moz-box-shadow: 3px 3px 4px #874C50; /* Firefox */
@@ -900,10 +901,27 @@ div.full_page_logo {
   padding-bottom: 20px;
     font-size: 0.9em;
   border-bottom: 1px solid #874C50;
+  border-bottom-right-radius: 25px;
+	-moz-border-radius-bottomright: 25px;
+	-webkit-border-bottom-right-radius: 25px;
+	
+/*  -moz-box-shadow: 2px 2px 3px #874C50; /* Firefox */
+/*  -webkit-box-shadow: 3px 3px 3px #874C50; /* Safari/Chrome */
+/*  box-shadow: 3px 3px 3px #874C50; /* Opera and other CSS3 supporting browsers */
+/*  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#874C50')";/* IE 8 */
+  /*: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#874C50');/* IE 5.5 - 7 */
 }
 .speaker_details {
   padding-top: 20px;
   padding-bottom: 10px;
     font-size: 0.8em;
 /*    border-bottom: 1px solid #874C50;  */
+}
+.desc {
+  color: #FEC6A2;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+.spkr_container {
+  display:inline-block;
 }
