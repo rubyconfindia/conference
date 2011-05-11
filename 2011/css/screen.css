@@ -97,8 +97,8 @@ background: transparent url(../images/devider.png) no-repeat 0 0;
   float: right;
   text-align: right;
   right: 19px;
-  padding-left: 5px;
-  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 .talk_title {
   color: #FEC6A2;
@@ -880,4 +880,17 @@ div.full_page_logo {
   width: 341px;
   height: 275px;
   margin: 20px 0 10px 40px;
+}
+
+.talk_details {
+/*  padding-top: 10px;*/
+  padding-bottom: 20px;
+    font-size: 0.9em;
+  border-bottom: 1px solid #874C50;
+}
+.speaker_details {
+  padding-top: 20px;
+  padding-bottom: 10px;
+    font-size: 0.8em;
+/*    border-bottom: 1px solid #874C50;  */
 }
