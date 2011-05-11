@@ -614,15 +614,25 @@ ul.speakers li .presentation_links li {
 }
 
 .highlighted{
-  background-color: #ededed;
+  background-color: #441818;
+/*  opacity: 0.4;*/
   -webkit-background-size: 10px 10px;
   -moz-background-size: 2px 2px;
-  background-size: 10px 10px;  
+  background-size: 10px 10px;
+  
+  /* For WebKit (Safari, Google Chrome etc) */
+  background: -webkit-gradient(linear, left bottom, right top, from(#A03700), to(#441818), color-stop(0.7, #000000));
+  /* For Mozilla/Gecko (Firefox etc) */
+  background: -moz-linear-gradient(left top, #A03700, #441818 70%);
+  /* For Internet Explorer 5.5 - 7 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#874C50, endColorStr=#000000, GradientType=1);
+  /* For Internet Explorer 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF0000FF, endColorstr=#FFFFFFFF, GradientType=1)";
   
 }
 
 .selected{
-  background-color: #e4c4c4;
+  background-color: #B7090C;
 }
 
 .rightArrow{
@@ -685,6 +695,10 @@ ul.speakers li .presentation_links li {
 #left ul li{
   position: relative;
   border-bottom: 1px solid #874C50;
+  cursor: pointer;
+  -moz-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  
 }
 
 #left ul li.contributor .toggleImage{
@@ -705,11 +719,17 @@ ul.speakers li .presentation_links li {
 }
 
 #left ul li.contributor .basicDetails{
-
+  color: #ED952A;
   display: inline-block;
-  min-height: 80px;
-  padding: 10px;
+  font-weight: bold;
+  min-height: 50px;
+  padding: 10px 0 10px 10px;
   width: 80%;
+}
+
+#left ul li.contributor .speaker_name{
+  color: wheat;
+  padding: 5px 0 5px 10px;
 }
 
 
