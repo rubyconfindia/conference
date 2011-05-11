@@ -621,7 +621,7 @@ ul.speakers li .presentation_links li {
   background-size: 10px 10px;
   
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left bottom, right top, from(#A03700), to(#441818), color-stop(0.7, #000000));
+  background: -webkit-gradient(linear, left 200, right top, color-stop(0.25, rgb(160,56,0)), color-stop(0.63, rgb(68,24,24)));
   /* For Mozilla/Gecko (Firefox etc) */
   background: -moz-linear-gradient(left top, #A03700, #441818 70%);
   /* For Internet Explorer 5.5 - 7 */
@@ -677,6 +677,7 @@ ul.speakers li .presentation_links li {
   -moz-box-shadow: 5px 5px 5px rgb(85,44,47);
   -webkit-box-shadow: 5px 5px 5px rgb(85,44,47);
   box-shadow: 5px 5px 5px rgb(85,44,47);
+  z-index: 9999;
 }
 
 #left .actions ul{
@@ -833,11 +834,11 @@ ul.speakers li .presentation_links li {
   right: 10px;
 	
 	/* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, right top, from(#874C50), to(#000000), color-stop(0.7, #000000));
+  background: -webkit-gradient(linear, left top, right top, from(#3C0609), to(#1B0208), color-stop(0.7, #000000));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(left top, #874C50, #000000 70%);
+  background: -moz-linear-gradient(left top, #3C0609, #1B0208 70%);
   /* For Internet Explorer 5.5 - 7 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#874C50, endColorStr=#000000, GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#3C0609, endColorStr=#1B0208, GradientType=1);
   /* For Internet Explorer 8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF0000FF, endColorstr=#FFFFFFFF, GradientType=1)";
   
