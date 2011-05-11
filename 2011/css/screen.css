@@ -98,7 +98,20 @@ background: transparent url(../images/devider.png) no-repeat 0 0;
   text-align: right;
   right: 19px;
   padding-left: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 10px;  
+}
+
+.talks2_spkr_photo {
+  float: left;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.spkr_image {
+  -moz-box-shadow: 3px 3px 4px #874C50; /* Firefox */
+  -webkit-box-shadow: 3px 3px 4px #874C50; /* Safari/Chrome */
+  box-shadow: 3px 3px 4px #874C50; /* Opera and other CSS3 supporting browsers */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#874C50')";/* IE 8 */
+  : progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#874C50');/* IE 5.5 - 7 */
 }
 .talk_title {
   color: #FEC6A2;
