@@ -26,4 +26,9 @@ $(document).ready(function() {
     if($(event.target).hasClass("blackout"))
       hideAllConferenceElements();
   });
+
+  $(document).keyup(function(e) {
+    if(e.keyCode == 27)
+      hideAllConferenceElements();
+  });
 });
