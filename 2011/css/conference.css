@@ -4,14 +4,27 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.6);
 }
 
 .talksContent {
-  position: fixed;
-  top:20%;
-  left: 20%;
-  height: 40%;
-  width: 40%;
-  background-color: white;
+  position: relative;
+  height: 60%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.7);
+  border-bottom-right-radius: -15px;
+  border-bottom-left-radius: 15px;
+}
+
+.closingVim {
+  position: absolute;
+  width: 100%;
+  color: white;
+  bottom: 0;
+  padding-bottom: 5px;
+}
+
+.closingVim .vimBar {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
 }

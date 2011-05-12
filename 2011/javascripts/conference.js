@@ -1,6 +1,6 @@
-function displayTalk(id)
+function displayTalk(e, link)
 {
-  var talk = $(".talkAbstract#" + id);
+  var talk = $(".talkAbstract#" + link.id);
   talk.show();
 
   var time = 200;
@@ -18,8 +18,8 @@ function hideAllConferenceElements()
 $(document).ready(function() {
   hideAllConferenceElements();
 
-  $(".talkLink").click(function() {
-    displayTalk(this.id);
+  $(".talkLink").click(function(event) {
+    displayTalk(event, this);
   });
 
   $(".blackout").click(function(event) {
