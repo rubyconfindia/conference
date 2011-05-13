@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="css/conference.css" type="text/css" media="screen" />
     <script language="javascript" src="javascripts/jquery-1.4.2.min.js" type="text/javascript"></script>
     <script language="javascript" src="javascripts/conference.js" type="text/javascript"></script>
+    <script type="text/javascript" src="javascripts/shCore.js"></script>
+    <script type="text/javascript" src="javascripts/shBrushRuby.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/shCore.css"/>
+    <link type="text/css" rel="stylesheet" href="css/shThemeEmacs.css"/>
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
   </head>
   <body>
     <div class="wrapper">
@@ -106,13 +111,53 @@
     <div class="blackout"/>
     <div class="talksContent">
       <div class="talkAbstract" id="t15">
+        <div class="spkr_photo">
+          <img title="Bhavin Javia" alt="Bhavin Javia" src="images/speakers/bhavin.jpg" />
+        </div>
         <pre>
-class TheFirstTalk &lt; RubyConfIndia::2011
-  speaker "Someone We know"
-
-  abstract "something about the talk here"
+talk = RubyConfIndia::2011::Talk.new do |talk|
+  <div class="speaker">talk.speaker = "Bhavin Javia"</div>
+              <div class="speaker_bio">
+                Bhavin is an Agile Rubyist with several years of experience in designing, developing, testing and deployment of business critical applications in a wide variety of domains. He spent many years at ThoughtWorks, working and leading adoption of Ruby as a viable platform for enterprise class applications in India and abroad. A passionate proponent of Agile methodologies, he was a founding member of <a href="http://agileindia.org">ASCI</a> (Agile Software Community of India).<br />
+                <br />
+                Bhavin is the founder of <a href="http://ennova.in">Ennova India</a>, a Bangalore based startup with an aim to offer cutting-edge consulting and development services to small businesses and startups. He is also a part of the core team at <a href="http://ennova.com.au">Ennova</a> - an Australia-based startup company that is focused on providing the construction and engineering industries with great software products like <a href="http://envisionapp.com">Envision</a> and development services through <a href="http://getencode.com">Encode</a>.
+              </div>
+              <div class="talk_title">
+                :talk =&gt; "Software Quality and Test Strategies for Ruby and Rails Applications"
+              </div>
+              <div class="talk_description">
+                Quality is one of the most important factors in deriving business value from software. However, many teams find it difficult to incorporate the appropriate quality and testing practices into their development processes. A test strategy helps create a shared understanding of what testing will be required, and how and when it will be executed.<br />
+                <br />
+                The Ruby and Rails communities have embraced testing and code quality as core values, and a rich ecosystem of tools has developed. Despite this support, many developers and teams overlook the creation of a test strategy as it is thought to be an unnecessary overhead that is traditionally associated with formal/waterfall style development methodologies. However, a well developed Test Strategy can be the difference between great software and a maintenance nightmare.<br />
+                <br />
+                This presentation will explain the process of defining quality (internal and external) for Ruby and Rails applications including metrics and targets. It will then explain the process for creating and executing a Test Strategy that ensures the intended quality objectives are achieved. Additionally, it will explain how to align a Test Strategy with the typical practices of a team using Agile or Lean methods.<br />
+                <br />
+                Learning Outcomes:<br />
+                <br />
+                <ol class="bullet_points_talk_description">
+                  <li>Definition of Software Quality and appropriate metrics and targets
+                  </li>
+                  <li>Purpose and role of Test Strategy within an Agile development environment
+                  </li>
+                  <li>Creation of a Test Strategy tailored to suit Ruby and Rails applications
+                  </li>
+                  <li>Testing tool selection within Ruby ecosystem
+                  </li>
+                  <li>Approach and benefits to Ruby developers focusing on code quality
+                  </li>
+                </ol>
+              </div>
 end
         </pre>
+      </div>
+      <div class="talkAbstract" id="t16">
+<pre class="brush: ruby">
+class First &lt; MyClass
+  def foo
+    4
+  end
+end
+</pre>
       </div>
       <div class="closingVim">
         <div class="vimBar">~/workspace/conferences/RubyConfIndia/2011/talks</div>
