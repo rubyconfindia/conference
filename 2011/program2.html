@@ -18,7 +18,10 @@
     <script type="text/javascript" src="javascripts/shBrushRuby.js"></script>
     <link type="text/css" rel="stylesheet" href="css/shCore.css"/>
     <link type="text/css" rel="stylesheet" href="css/shThemeEmacs.css"/>
-    <script type="text/javascript">SyntaxHighlighter.all();</script>
+    <script type="text/javascript">
+      SyntaxHighlighter.all();
+      SyntaxHighlighter.defaults['toolbar'] = false;
+    </script>
   </head>
   <body>
     <div class="wrapper">
@@ -89,7 +92,6 @@
         <p>
           RubyConf India 2011's schedule will be uploaded here as soon as it is ready.
         </p><br />
-        <div class="talkLink" id="t15">click</div>
         <div class="talkLink" id="t16">click</div>
       </div>
     </div>
@@ -111,9 +113,7 @@
     <div class="blackout"/>
     <div class="talksContent">
       <div class="talkAbstract" id="t15">
-        <div class="spkr_photo">
-          <img title="Bhavin Javia" alt="Bhavin Javia" src="images/speakers/bhavin.jpg" />
-        </div>
+        <div class="spkr_photo"> <img title="Bhavin Javia" alt="Bhavin Javia" src="images/speakers/bhavin.jpg" /></div>
         <pre>
 talk = RubyConfIndia::2011::Talk.new do |talk|
   <div class="speaker">talk.speaker = "Bhavin Javia"</div>
@@ -151,11 +151,10 @@ end
         </pre>
       </div>
       <div class="talkAbstract" id="t16">
-<pre class="brush: ruby">
-class First &lt; MyClass
-  def foo
-    4
-  end
+        <div class="photo"> <img title="Bhavin Javia" alt="Bhavin Javia" src="images/speakers/bhavin.jpg" /></div>
+        <pre class="brush: ruby">RubyConfIndia::2011::Talks.new do |talk|
+  talk.title "Software Quality and Test Strategies for Ruby and Rails Applications"
+  talk.speaker :bhavin_javia
 end
 </pre>
       </div>

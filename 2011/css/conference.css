@@ -16,12 +16,18 @@
   border-bottom-left-radius: 15px;
 }
 
+.talksContent .photo {
+  position: absolute;
+  right: 0;
+}
+
 .closingVim {
   position: absolute;
   width: 100%;
   color: white;
   bottom: 0;
   padding-bottom: 5px;
+  clear: both;
 }
 
 .closingVim .vimBar {
