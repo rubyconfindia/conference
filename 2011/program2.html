@@ -235,8 +235,8 @@
         <pre class="brush: ruby">RubyConfIndia::2011::Talks.new do |talk|
   talk.title "Software Quality and Test Strategies for Ruby and Rails Applications"
   talk.speaker :bhavin_javia
-  talk.at :track1 =&gt; 1400
-  end</pre>
+  talk.on :track2 =&gt; Day1.at(15:00)
+end</pre>
         <div class="talk_description">
           Quality is one of the most important factors in deriving business value from software. However, many teams find it difficult to incorporate the appropriate quality and testing practices into their development processes. A test strategy helps create a shared understanding of what testing will be required, and how and when it will be executed.<br />
           <br />
@@ -267,8 +267,8 @@
         <pre class="brush: ruby">RubyConfIndia::2011::Talks.new do |talk|
   talk.title "Ruby Plus Rails Plus Your Application Minus Rails"
   talk.speaker :brian_guthrie
-  talk.at :track1 =&gt; 1400
-  end</pre>
+  talk.on :track1 =&gt; Day1.at(11:30)
+end</pre>
         <div class="talk_description">
           Ruby on Rails is a famously opinionated framework that handles ninety percent of the problems a typical web application faces. But what about the last ten percent? Every app has to jump off the Rails eventually, whether that means integrating with an external web service, importing data from another database, or providing enhanced search functionality. In this talk I'll lead you through some patterns for handling those cases, and discuss certain features of Rails 3 that let you leverage the best pieces of the core framework without resorting to ugly hacks. Finally we'll discuss what a new, more modular core framework means for a post-Rails world.
         </div>
@@ -280,8 +280,8 @@
         <pre class="brush: ruby">RubyConfIndia::2011::Talks.new do |talk|
   talk.title "Anti-Patterns and Patterns in Rails"
   talk.speakers :chirantan_mitra, :habibullah_pagarkar
-  talk.at :track1 =&gt; 1400
-  end</pre>
+  talk.on :track2 =&gt; Day2.at(11:00)
+end</pre>
         <div class="talk_description">
           The presenters, Chiku and Habib, were team members on a distributed Agile Software project. Their job was to quickly write mission critical Rails applications, and they practiced various aspects of Continuous Delivery. Over the duration of this project, they noticed the evolution of interesting patterns that were thought to be great ideas. Many were, some weren't.<br />
           <br />
@@ -297,8 +297,8 @@
         <pre class="brush: ruby">RubyConfIndia::2011::Talks.new do |talk|
   talk.title "Test Load Balancer: Rocket Booster for your Build"
   talk.speaker :janmejay_singh, :pavan_k_sudarshan
-  talk.at :track1 =&gt; 1400
-  end</pre>
+  talk.on :track2 =&gt; Day2.at(14:00)
+end</pre>
         <div class="talk_description">
           <a href="http://test-load-balancer.github.com/">Test Load Balancer (TLB)</a> is a tool that can automatically partition tests into multiple subsets, each one of which can be executed in parallel. The execution can happen on different physical/virtual machines or on the same machine as different processes or threads. The more the partitions, the less the number of tests executed on each one, and since all of the partitions start at the same time (and finish almost at the same time) overall test-execution time gets divided by the number of partitions you make. Test-running is by far the longest step in most (if not all) builds, and cutting down test-running time speeds up the build and hence the feedback loop. TLB can be used for any kind of test-suite - unit, integration or functional tests.<br />
           <br />
@@ -316,8 +316,8 @@
         <pre class="brush: ruby">RubyConfIndia::2011::Talks.new do |talk|
   talk.title "Deciphering The Ruby Object Model"
   talk.speaker :karthik_sirasanagandla
-  talk.at :track1 =&gt; 1400
-  end</pre>
+  talk.on :track2 =&gt; Day1.at(13:30)
+end</pre>
         <div class="talk_description">
           By personal experience, while transitioning from the world of Java to the world of Ruby, I felt great pain and agony, whenever I read statements like "Everything in Ruby is an object; classes themselves are objects". It took me more than a while to get it all right. I am of the belief that the experience is the same for many who transitioned to the Ruby platform. If you didn't experience this...lucky you! My reason for this experience is that during the early days of learning Ruby, I felt that the Ruby Object Model is some advanced topic as it is comes under Ruby Meta-programming, and that I can do away with it until I'm more than an intermediate level Ruby developer. In reality, though, any decent programming in Ruby meant understanding rightly - the Ruby Object Model. Understanding the Ruby Object Model helps not just in learning Meta-programming, but also improves code design with enriched knowledge and appreciations of the object model.<br />
           <br />
@@ -331,8 +331,8 @@
         <pre class="brush: ruby">RubyConfIndia::2011::Talks.new do |talk|
   talk.title "Refactoring a Legacy Java Application to Rails"
   talk.speaker :nick_sieger
-  talk.at :track1 =&gt; 1400
-  end</pre>
+  talk.on :track1 =&gt; Day1.at(13:30)
+end</pre>
         <div class="talk_description">
           The JRuby team has been proclaiming JRuby on Rails as the cure to legacy Java blues for years, but we've been lacking a compelling example that developers can use as a guideline for how to achieve this. We'll discuss and demonstrate three possible approaches, allowing for a minimal, medium, and large amount of reorganisation to an existing project. Each approach will build upon the previous one, showing developers how they can take an incremental approach to introducing Ruby into an existing Java environment to increase development productivity.
         </div>
@@ -344,8 +344,8 @@
         <pre class="brush: ruby">RubyConfIndia::2011::Talks.new do |talk|
   talk.title "How Ruby helps Rackspace challenge Amazon"
   talk.speaker :munjal_budhabhatti
-  talk.at :track1 =&gt; 1400
-  end</pre>
+  talk.on :track2 =&gt; Day1.at(15:30)
+end</pre>
         <div class="talk_description">
           ThoughtWorks has been working with Rackspace, one of the leading hosting companies in the world, on a large scale data center automation project using Ruby. We want to share some insights on how Ruby enabled Rackspace, with a small development force, to challenge Amazon.<br />
           <br />
@@ -374,8 +374,8 @@
         <pre class="brush: ruby">RubyConfIndia::2011::Talks.new do |talk|
   talk.title "Single page Web apps with Backbone.js and Ruby on Rails"
   talk.speaker :prateek_mohan_dayal
-  talk.at :track1 =&gt; 1400
-  end</pre>
+  talk.on :track2 =&gt; Day1.at(11:30)
+end</pre>
         <div class="talk_description">
           jQuery is great for websites that need simple AJAX interactions and some effects (example Youtube/Flickr). However, if you want to build complex single page web applications like Gmail or Mobile Me, you need something more than jQuery. Keeping track of DOM elements to be updated in response to a particular action or result of an ajax query can become overwhelming very fast.<br />
           <br />
@@ -414,8 +414,8 @@
         <pre class="brush: ruby">RubyConfIndia::2011::Talks.new do |talk|
   talk.title "But the language supports it"
   talk.speakers :niranjan_paranjape, :aakash_dharmadhikari
-  talk.at :track1 =&gt; 1400
-  end</pre>
+  talk.on :track1 =&gt; Day2.at(14:00)
+end</pre>
         <div class="talk_description">
           Discussing language constructs with fellow developers in the context of solving a particular problem is something we do routinely. While most such conversations are productive and useful, a fair portion degenerate into angry brawls. A pattern we've observed in the latter situation is that a surprising number of times the argument is that, "Why shouldn't I use language feature X to achieve objective Y- after all, the language supports X."<br />
           <br />
@@ -464,8 +464,8 @@
         <pre class="brush: ruby">RubyConfIndia::2011::Talks.new do |talk|
   talk.title "Let's have a cup of CoffeeScript"
   talk.speaker :nicolas_sanguinetti
-  talk.at :track1 =&gt; 1400
-  end</pre>
+  talk.on :track1 =&gt; Day1.at(11:00)
+end</pre>
         <div class="talk_description">
           CoffeeScript is a great way to write javascript. It provides many abstractions that simplify the language, and a few syntax niceties that make it much less noisy than pure javascript. We'll cover the basic syntax and how it differs from regular javascript, and see some examples. Moreover, Rails 3.1 will ship with CoffeeScript by default, so this is a great time to get up to speed with it!
         </div>
@@ -477,8 +477,8 @@
         <pre class="brush: ruby">RubyConfIndia::2011::Talks.new do |talk|
   talk.title "MacRuby"
   talk.speaker :mark_madsen
-  talk.at :track1 =&gt; 1400
-  end</pre>
+  talk.on :track2 =&gt; Day2.at(13:30)
+end</pre>
         <div class="talk_description">
           My intent is to deliver a functional talk on MacRuby that not only introduces features and capabilities, but gives attendees a quick path to practically using MacRuby in their everyday development. I intend to go through important MacRuby specifics like working with Apple frameworks including (but not limited to) threading with GCD, data management with Core Data and Scripting Applications. During the talk, I intend to code two quick examples of everyday MacRuby while delivering tips and hints needed to quickly get running code. Attendees are encouraged to bring their laptops and code along.
         </div>
@@ -490,8 +490,8 @@
         <pre class="brush: ruby">RubyConfIndia::2011::Talks.new do |talk|
   talk.title "Designing High Throughput Web Service Clients"
   talk.speaker :sherin_c
-  talk.at :track1 =&gt; 1400
-  end</pre>
+  talk.on :track2 =&gt; Day2.at(15:00)
+end</pre>
         <div class="talk_description">
           Consuming web services is an inexorable practice nowadays. You could be eating your own dogfood(internal) or a third partys'(external). The consuming process can be modelled either as multi-threaded or event driven. Ruby accommodates either way with stable library support(eventmachine, threadpool) and implementations(JRuby, Ruby-1.8 or 1.9).<br />
           <br />
@@ -514,8 +514,8 @@
         <pre class="brush: ruby">RubyConfIndia::2011::Talks.new do |talk|
   talk.title "Writing Compilers the Easy Way"
   talk.speaker :vishnu_gopal
-  talk.at :track1 =&gt; 1400
-  end</pre>
+  talk.on :track1 =&gt; Day1.at(15:30)
+end</pre>
         <div class="talk_description">
           The Dragon Book by Aho and Ullman teaches many great things about writing compilers and parsers. But writing a compiler from scratch is often a daunting step for a fledgling programmer. Yet, compilers are useful little things that extend our craft in surprising ways. Ruby provides wonderfully accessible libraries to dive into compiler construction and the talk will focus on one of them: Treetop<br />
           <br />
@@ -529,8 +529,8 @@
         <pre class="brush: ruby">RubyConfIndia::2011::Talks.new do |talk|
   talk.title "Rubyizing the Dev and Ops in an Enterprise"
   talk.speaker :yashasree_barve
-  talk.at :track1 =&gt; 1400
-  end</pre>
+  talk.on :track1 =&gt; Day2.at(16:00)
+end</pre>
         <div class="talk_description">
           This talk will highlight the story of an Enterprise that adopted Ruby and Rails as its preferred technology for development in its quest of being Agile over the last four years. This step brought in a makeover in the way the development team functioned as well as the way the operations performed their job.<br />
           <br />
@@ -546,8 +546,8 @@
         <pre class="brush: ruby">RubyConfIndia::2011::Talks.new do |talk|
   talk.title "Continuous Delivery in Ruby"
   talk.speaker :srushti_ambekallu, :brian_guthrie
-  talk.at :track1 =&gt; 1400
-  end</pre>
+  talk.on :track1 =&gt; Day1.at(13:00)
+end</pre>
         <div class="talk_description">
           The Ruby community has driven a lot of technical innovation in deployment and configuration management over the last few years, and so the idea of delivering high-quality software rapidly should be familiar to most of us. But although our tools are state-of-the-art, getting them to work together properly can be surprisingly frustrating. In this talk, I'll explain how to implement a high-quality rapid build and deploy process using standard CI tools, Bundler, RVM, and Capistrano. I'll also discuss how to coach your developers, QAs, and client to be "production-ready, any time."
         </div>
@@ -559,8 +559,8 @@
         <pre class="brush: ruby">RubyConfIndia::2011::Talks.new do |talk|
   talk.title "Memory Is The New Disk, Say Hello To Redis"
   talk.speaker :bratish_goswami
-  talk.at :track1 =&gt; 1400
-  end</pre>
+  talk.on :track2 =&gt; Day2.at(16:0)
+end</pre>
         <div class="talk_description">
           Redis is a fast, in memory, persistent key/value store. It is often referred to as a remote data structure server, since keys can contain strings, hashes, lists, sets and sorted sets.<br />
           <br />
@@ -578,8 +578,8 @@
         <pre class="brush: ruby">RubyConfIndia::2011::Talks.new do |talk|
   talk.title "I can haz HTTP: Consuming and producing HTTP APIs in the Ruby ecosystem"
   talk.speaker :sidu_ponnappa, :niranjan_paranjape
-  talk.at :track1 =&gt; 1400
-  end</pre>
+  talk.on :track2 =&gt; Day1.at(14:30)
+end</pre>
         <div class="talk_description">
           The Ruby ecosystem is pretty awesome when it comes to developing or consuming HTTP APIs. On the publishing front, the Rails framework is an attractive option because it supports publishing what are popularly (but inaccurately) referred to as 'RESTful' APIs quickly and effortlessly. On the consumer side, the Ruby ecosystem provides several very fluent and powerful libraries that make it easy to consume HTTP based APIs.<br />
           <br />
