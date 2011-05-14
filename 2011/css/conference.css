@@ -17,8 +17,7 @@
 }
 
 .talksContent .photo {
-  position: absolute;
-  right: 0;
+  float: right;
 }
 
 .closingVim {
