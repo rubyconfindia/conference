@@ -8,7 +8,7 @@
 }
 
 .talksContent {
-  position: relative;
+  position: fixed;
   height: 60%;
   width: 100%;
   background-color: rgba(0,0,0,0.7);
