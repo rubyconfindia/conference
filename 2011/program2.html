@@ -133,7 +133,7 @@
         <tr class="odd">
           <td valign="middle"><p align="right">2:30</p></td>
           <td valign="middle"><p align="right">3:15</p></td>
-          <td valign="middle"><p><a class="talkLink" id="t18">TBA</a> - <span class="lighter">TBA</span></p></td>
+          <td valign="middle"><p><a class="talkLink" id="t18">Make your own Rails Framework</a> - <span class="lighter">Pankaj Bhageria</span></p></td>
           <td valign="middle"><p><a class="talkLink" id="t17">I can haz HTTP: Consuming and producing HTTP APIs in the Ruby ecosystem</a> - <span class="lighter">Sidu Ponnappa and Niranjan Paranjape</span></p></td>
         </tr>
         <tr>
@@ -621,6 +621,30 @@ end</pre>
             </li>
           </ol><br />
           At the end of this, our audience will understand how you can both consume and produce HTTP APIs in the Ruby ecosystem. They will also have a clear idea of what the limitations of such systems are and what the can do to work around the limitations.
+        </div>
+      </div>
+      <div class="talkAbstract" id="t18">
+        <div class="photo">
+          <img title="pankaj" alt="pankaj" src="images/speakers/pankaj.jpg" />
+        </div>
+        <pre class="brush: ruby">RubyConfIndia::2011::Talks.new do |talk|
+  talk.title "Make your own Rails Framework"
+  talk.speaker :pankaj_bhageria
+  talk.on :track1 =&gt; Day1.at(14:30)
+end</pre>
+        <div class="talk_description">
+          The talk would take one through how to build a basic version of web framework like Rails. For most of us Rails has been like a magic box. We do not know, or we have never tried to understand what is happening behind the scenes. Starting from a very basic rack server we would build up a Rails framework with features like routing, controller, action, default views, filters, model etc. It may not be exactly same as what happens in the actual rails framework, but it would  help clear the concepts.<br />
+          <br/>
+          Some basic knowledge of Ruby is expected to be known. I would teach some dynamic Ruby which would be required for this. And then
+          finally we will start coding a web framework which turns out very similar to Rails. As we would be just developing very basic features, the number of lines would be very less.<br />
+          People would be astonished that we actully built a Rails framework in such less number of lines.
+          <br/><br/>
+          Why would we build our own Rails framework when there already exists one?
+          <ol class="bullet_points_talk_description">
+            <li> Make the Rails magic box more transparent, ie  they will understand whats happening behind the scenes. </li>
+            <li> This will encourage people to go and hack the framework. </li>
+            <li> It will increase the confidence in people which will encourage them to contribute to Rails.</li>
+          </ol>
         </div>
       </div>
       <div class="closingVim">
