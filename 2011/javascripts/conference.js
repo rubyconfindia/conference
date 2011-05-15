@@ -1,5 +1,6 @@
 function displayTalk(e, link)
 {
+  $(".talkAbstract").hide();
   var talk = $(".talkAbstract#" + link.id);
   talk.show();
 
