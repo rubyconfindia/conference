@@ -228,6 +228,24 @@ share our stories, the answer to that question becomes more positive.</p><br />
             </li>
             <li class="talk">
               <div class="spkr_photo">
+                <img title="Nick Sieger" alt="Nick Sieger" src="images/speakers/NickS.jpg" />
+              </div>
+              <div class="speaker">
+                :speaker =&gt; "Nick Sieger"
+              </div>
+              <div class="speaker_bio">
+                Nick Sieger is an engineer at Engine Yard, working on JRuby and leading the effort to make the Java Virtual Machine a robust yet easy-to-use deployment platform for Rails and Ruby web applications. He created and co-maintains the JDBC adapter for ActiveRecord that JRuby on Rails uses for database connectivity, as well as the Warbler tool and JRuby-Rack library for dealing with Java application server deployment. He maintains a blog on Ruby and JRuby-related topics <a href="http://blog.nicksieger.com/">here</a>.
+              </div>
+              <div class="talk_title">
+                :talk =&gt; "Refactoring a Legacy Java Application to Rails"
+              </div>
+              <div class="talk_description">
+                The JRuby team has been proclaiming JRuby on Rails as the cure to legacy Java blues for years, but we've been lacking a compelling example that developers can use as a guideline for how to achieve this. We'll discuss and demonstrate three possible approaches, allowing for a minimal, medium, and large amount of reorganisation to an existing project. Each approach will build upon the previous one, showing developers how they can take an incremental approach to introducing Ruby into an existing Java environment to increase development productivity.
+              </div>
+            </li>
+            
+            <li class="talk">
+              <div class="spkr_photo">
                 <img title="Habibullah Pagarkar" alt="Habibullah Pagarkar" src="images/speakers/habib.png" />
               </div>
               <div class="spkr_photo">
@@ -250,104 +268,6 @@ share our stories, the answer to that question becomes more positive.</p><br />
                 Chiku and Habib will be pair-presenting their learnings in a way that mirrors the eternal tussle that a developer faces daily - convenience versus quality. One of them will assume the role of a devil and persuasively present a code-fragment that mirrored one such anti-pattern. The other will then take over as an angel and explain the problem inherent in that code-fragment, and proceed to clean it up. They will then swap roles and proceed to the next point.<br />
                 <br />
                 At the end of this presentation the audience will have the knowledge of identifying and subsequently fixing similar manifestations of these problems in their code.
-              </div>
-            </li>
-            <li class="talk">
-              <div class="spkr_photo">
-                <img title="Pavan Sudharshan" alt="Pavan Sudharshan" src="images/speakers/speaker_avatar.jpg" />
-              </div>
-              <div class="spkr_photo">
-                <img title="Janmejay Singh" alt="Janmejay Singh" src="images/speakers/janmejay.jpg" />
-              </div>
-              <div class="speaker">
-                :speakers =&gt; ["Janmejay Singh", "Pavan K Sudarshan"]
-              </div>
-              <div class="speaker_bio">
-                Janmejay (JJ) is a developer working at ThoughtWorks, Inc. in the Studios division. He has around 5 years of professional experience. He blogs <a href="http://codehunk.wordpress.com">here</a> and shares his code <a href="http://github.com/janmejay">here</a>.<br />
-                <br />
-                Pavan is a developer working at ThoughtWorks, Inc. in the Studios division. He has around 5 years of professional experience. He blogs <a href="http://pavanks.blogspot.com">here</a> and shares his code <a href="http://github.com/itspanzi">here</a>.
-              </div>
-              <div class="talk_title">
-                :talk =&gt; "Test Load Balancer: Rocket Booster for your Build"
-              </div>
-              <div class="talk_description">
-                <a href="http://test-load-balancer.github.com/">Test Load Balancer (TLB)</a> is a tool that can automatically partition tests into multiple subsets, each one of which can be executed in parallel. The execution can happen on different physical/virtual machines or on the same machine as different processes or threads. The more the partitions, the less the number of tests executed on each one, and since all of the partitions start at the same time (and finish almost at the same time) overall test-execution time gets divided by the number of partitions you make. Test-running is by far the longest step in most (if not all) builds, and cutting down test-running time speeds up the build and hence the feedback loop. TLB can be used for any kind of test-suite - unit, integration or functional tests.<br />
-                <br />
-                In addition to balancing, TLB does other interesting things like re-order tests within a subset (set of tests that run on a partition) before they are executed. For instance, it re-arranges tests to execute failing ones (that failed in the previous build) first, hence ensuring early feedback.<br />
-                <br />
-                Most build servers (like Hudson, Go, TeamCity, Bamboo, etc.) and even tools like capistrano/cluster-ssh provide parallel execution capability (capability to execute command(s) on different machines at the same time). However, parallelization of tests needs a tool that can decide what tests need to be run in each such parallely running process across machines. This is where TLB comes in.<br />
-                <br />
-                This talk will introduce the audience to TLB concepts and include a demo of using TLB to partition RSpec and Test::Unit suites. It'll also include a case-study on how TLB helped cut build time from approximately 70 minutes to 11 minutes (which can of course be further reduced) just by throwing more hardware at it.
-              </div>
-            </li>
-            <li class="talk">
-              <div class="spkr_photo">
-                <img title="Karthik Sirasanagandla" alt="Karthik Sirasanagandla" src="images/speakers/karthikp.png" />
-              </div>
-              <div class="speaker">
-                :speaker =&gt; "Karthik Sirasanagandla"
-              </div>
-              <div class="speaker_bio">
-                Karthik Sirasanagandla is an application developer at ThoughtWorks India. Karthik has over 5.5 years of experience, primarily in Java/JEE Platform. In his current capacity, he works on both development and deployment of a JRuby on Rails application; this experience has transitioned him from being a hard-core Java techie to a passionate Ruby programmer. An avid reader of both technical and non-technical books, he also occasionally blogs <a href="http://kartzontech.blogspot.com">here</a>.
-              </div>
-              <div class="talk_title">
-                :talk =&gt; "Deciphering The Ruby Object Model"
-              </div>
-              <div class="talk_description">
-                By personal experience, while transitioning from the world of Java to the world of Ruby, I felt great pain and agony, whenever I read statements like "Everything in Ruby is an object; classes themselves are objects". It took me more than a while to get it all right. I am of the belief that the experience is the same for many who transitioned to the Ruby platform. If you didn't experience this...lucky you! My reason for this experience is that during the early days of learning Ruby, I felt that the Ruby Object Model is some advanced topic as it is comes under Ruby Meta-programming, and that I can do away with it until I'm more than an intermediate level Ruby developer. In reality, though, any decent programming in Ruby meant understanding rightly - the Ruby Object Model. Understanding the Ruby Object Model helps not just in learning Meta-programming, but also improves code design with enriched knowledge and appreciations of the object model.<br />
-                <br />
-                In my presentation, I intend to talk about the Ruby Object Model, elaborating on the concepts of visualizing classes and objects in Ruby, how they are different from Java, method look-ups in Ruby, class/static methods in Java/C# vs. the ones in Ruby, mixins over inheritence and composition etc. All these concepts will be communicated by means of code snippets and no-nonsense visuals (object-like diagrams).
-              </div>
-            </li>
-            <li class="talk">
-              <div class="spkr_photo">
-                <img title="Nick Sieger" alt="Nick Sieger" src="images/speakers/NickS.jpg" />
-              </div>
-              <div class="speaker">
-                :speaker =&gt; "Nick Sieger"
-              </div>
-              <div class="speaker_bio">
-                Nick Sieger is an engineer at Engine Yard, working on JRuby and leading the effort to make the Java Virtual Machine a robust yet easy-to-use deployment platform for Rails and Ruby web applications. He created and co-maintains the JDBC adapter for ActiveRecord that JRuby on Rails uses for database connectivity, as well as the Warbler tool and JRuby-Rack library for dealing with Java application server deployment. He maintains a blog on Ruby and JRuby-related topics <a href="http://blog.nicksieger.com/">here</a>.
-              </div>
-              <div class="talk_title">
-                :talk =&gt; "Refactoring a Legacy Java Application to Rails"
-              </div>
-              <div class="talk_description">
-                The JRuby team has been proclaiming JRuby on Rails as the cure to legacy Java blues for years, but we've been lacking a compelling example that developers can use as a guideline for how to achieve this. We'll discuss and demonstrate three possible approaches, allowing for a minimal, medium, and large amount of reorganisation to an existing project. Each approach will build upon the previous one, showing developers how they can take an incremental approach to introducing Ruby into an existing Java environment to increase development productivity.
-              </div>
-            </li>
-            <li class="talk">
-              <div class="spkr_photo">
-                <img title="Munjal Budhabhatti" alt="Munjal Budhabhatti" src="images/speakers/munjal1.jpg" />
-              </div>
-              <div class="speaker">
-                :speaker =&gt; "Munjal Budhabhatti"
-              </div>
-              <div class="speaker_bio">
-                Munjal Budhabhatti is a lead consultant at ThoughtWorks. He has over 13 years of experience in designing large-scale enterprise applications, and has implemented innovative solutions for some of the leading data centers, microfinance, and financial organisations in Africa, Asia, Europe, and North America. He spends most of his time creating well-designed applications using agile processes.
-              </div>
-              <div class="talk_title">
-                :talk =&gt; "How Ruby helps Rackspace challenge Amazon"
-              </div>
-              <div class="talk_description">
-                ThoughtWorks has been working with Rackspace, one of the leading hosting companies in the world, on a large scale data center automation project using Ruby. We want to share some insights on how Ruby enabled Rackspace, with a small development force, to challenge Amazon.<br />
-                <br />
-                <ol class="bullet_points_talk_description">
-                  <li>Developers investing time learning and programming the domain and not the framework
-                  </li>
-                  <li>Ease of refactoring for major domain changes such as ipv6, architecture
-                  </li>
-                  <li>DSLs allowed SMEs, instead of developers, to easily tailor business logic while reducing everyone's work load
-                  </li>
-                  <li>Powerful Enterprise integration with disparate system via Atom, REST, custom message queue, and even SOAP
-                  </li>
-                  <li>Realtime manipulation of interdependent systems for integration testing
-                  </li>
-                  <li>Ruby philosophies and communities
-                  </li>
-                  <li>Q&amp;A
-                  </li>
-                </ol>
               </div>
             </li>
             <li class="talk">
@@ -392,6 +312,76 @@ share our stories, the answer to that question becomes more positive.</p><br />
                   <li>Thoughts on testing a full page app. Also some thoughts on creating a restful API using restfulie
                   </li>
                 </ol>
+              </div>
+            </li>
+            <li class="talk">
+              <div class="spkr_photo">
+                <img title="Pavan Sudharshan" alt="Pavan Sudharshan" src="images/speakers/speaker_avatar.jpg" />
+              </div>
+              <div class="spkr_photo">
+                <img title="Janmejay Singh" alt="Janmejay Singh" src="images/speakers/janmejay.jpg" />
+              </div>
+              <div class="speaker">
+                :speakers =&gt; ["Janmejay Singh", "Pavan K Sudarshan"]
+              </div>
+              <div class="speaker_bio">
+                Janmejay (JJ) is a developer working at ThoughtWorks, Inc. in the Studios division. He has around 5 years of professional experience. He blogs <a href="http://codehunk.wordpress.com">here</a> and shares his code <a href="http://github.com/janmejay">here</a>.<br />
+                <br />
+                Pavan is a developer working at ThoughtWorks, Inc. in the Studios division. He has around 5 years of professional experience. He blogs <a href="http://pavanks.blogspot.com">here</a> and shares his code <a href="http://github.com/itspanzi">here</a>.
+              </div>
+              <div class="talk_title">
+                :talk =&gt; "Test Load Balancer: Rocket Booster for your Build"
+              </div>
+              <div class="talk_description">
+                <a href="http://test-load-balancer.github.com/">Test Load Balancer (TLB)</a> is a tool that can automatically partition tests into multiple subsets, each one of which can be executed in parallel. The execution can happen on different physical/virtual machines or on the same machine as different processes or threads. The more the partitions, the less the number of tests executed on each one, and since all of the partitions start at the same time (and finish almost at the same time) overall test-execution time gets divided by the number of partitions you make. Test-running is by far the longest step in most (if not all) builds, and cutting down test-running time speeds up the build and hence the feedback loop. TLB can be used for any kind of test-suite - unit, integration or functional tests.<br />
+                <br />
+                In addition to balancing, TLB does other interesting things like re-order tests within a subset (set of tests that run on a partition) before they are executed. For instance, it re-arranges tests to execute failing ones (that failed in the previous build) first, hence ensuring early feedback.<br />
+                <br />
+                Most build servers (like Hudson, Go, TeamCity, Bamboo, etc.) and even tools like capistrano/cluster-ssh provide parallel execution capability (capability to execute command(s) on different machines at the same time). However, parallelization of tests needs a tool that can decide what tests need to be run in each such parallely running process across machines. This is where TLB comes in.<br />
+                <br />
+                This talk will introduce the audience to TLB concepts and include a demo of using TLB to partition RSpec and Test::Unit suites. It'll also include a case-study on how TLB helped cut build time from approximately 70 minutes to 11 minutes (which can of course be further reduced) just by throwing more hardware at it.
+              </div>
+            </li>
+            <li class="talk">
+              <div class="spkr_photo">
+                <img title="Nicolás Sanguinetti" alt="Nicolás Sanguinetti" src="images/speakers/nicolas.jpg" />
+              </div>
+              <div class="speaker">
+                :speaker =&gt; "Nicolás Sanguinetti"
+              </div>
+              <div class="speaker_bio">
+                Nicolás (probably better known as foca) has been working with Rails since 2006, and with Ruby since 2004. He's constantly looking for ways to improve the way we write and test web applications in a way that makes them easier to use and maintain.<br />
+                <br />
+                He contributes to a few open source projects <a href="http://github.com/foca">here</a>. He lives in Montevideo, Uruguay, where he works as an engineer for <a href="http://cuboxsa.com">Cubox</a>.
+              </div>
+              <div class="talk_title">
+                :talk =&gt; "Let's have a cup of CoffeeScript"
+              </div>
+              <div class="talk_description">
+                CoffeeScript is a great way to write javascript. It provides many abstractions that simplify the language, and a few syntax niceties that make it much less noisy than pure javascript. We'll cover the basic syntax and how it differs from regular javascript, and see some examples. Moreover, Rails 3.1 will ship with CoffeeScript by default, so this is a great time to get up to speed with it!
+              </div>
+            </li>
+            <li class="talk">
+              <div class="spkr_photo">
+                <img title="Mark Madsen" alt="Mark Madsen" src="images/speakers/mark.jpg" />
+              </div>
+              <div class="speaker">
+                :speaker =&gt; "Mark Madsen"
+              </div>
+              <div class="speaker_bio">
+                Mark Madsen was appointed as the Chief Technology Officer of Castle Rock Research Corp. in January of 2010 but has been leading the technology group as a Director since shortly after his return to the company in 2007. Since that time Mark has grown the development team at Castle Rock from 10 developers to 100 developers spanning 2 continents and 3 cities. The expansion has provided Castle Rock with the capacity to deliver both web applications (primarily .NET and Ruby on Rails) and mobile applications (primarily iOS and Android) to their growing customer base.<br />
+                <br />
+                Mark has been involved in mobile application development since before the dawn of the iPhone (in 2007) and has built the technology group at Castle Rock with mobile in mind. This is most evident in Castle Rock's mobile educational platform, SOLARO, which launched with the iPad App Store this spring. SOLARO gives students access to a variety of standards-aligned supplemental resources through their choice of iOS, Android or Web apps.<br />
+                <br />
+                From OSX Dashboard Widgets to Industrial Process Control apps on WinMo, Mark has written code that runs on just about everything. His 15 years of software development experience and passion for building usable software is apparent in everything he does.<br />
+                <br />
+                Mark holds a degrees in Physics, then Computing Science, from the University of Alberta (after pursuing a career in computational physics and then deciding it was the "computational" part he enjoyed).
+              </div>
+              <div class="talk_title">
+                :talk =&gt; "MacRuby"
+              </div>
+              <div class="talk_description">
+                My intent is to deliver a functional talk on MacRuby that not only introduces features and capabilities, but gives attendees a quick path to practically using MacRuby in their everyday development. I intend to go through important MacRuby specifics like working with Apple frameworks including (but not limited to) threading with GCD, data management with Core Data and Scripting Applications. During the talk, I intend to code two quick examples of everyday MacRuby while delivering tips and hints needed to quickly get running code. Attendees are encouraged to bring their laptops and code along.
               </div>
             </li>
             <li id="but-the-language-supports-it" class="talk">
@@ -453,48 +443,6 @@ share our stories, the answer to that question becomes more positive.</p><br />
                   <li>eval
                   </li>
                 </ol>
-              </div>
-            </li>
-            <li class="talk">
-              <div class="spkr_photo">
-                <img title="Nicolás Sanguinetti" alt="Nicolás Sanguinetti" src="images/speakers/nicolas.jpg" />
-              </div>
-              <div class="speaker">
-                :speaker =&gt; "Nicolás Sanguinetti"
-              </div>
-              <div class="speaker_bio">
-                Nicolás (probably better known as foca) has been working with Rails since 2006, and with Ruby since 2004. He's constantly looking for ways to improve the way we write and test web applications in a way that makes them easier to use and maintain.<br />
-                <br />
-                He contributes to a few open source projects <a href="http://github.com/foca">here</a>. He lives in Montevideo, Uruguay, where he works as an engineer for <a href="http://cuboxsa.com">Cubox</a>.
-              </div>
-              <div class="talk_title">
-                :talk =&gt; "Let's have a cup of CoffeeScript"
-              </div>
-              <div class="talk_description">
-                CoffeeScript is a great way to write javascript. It provides many abstractions that simplify the language, and a few syntax niceties that make it much less noisy than pure javascript. We'll cover the basic syntax and how it differs from regular javascript, and see some examples. Moreover, Rails 3.1 will ship with CoffeeScript by default, so this is a great time to get up to speed with it!
-              </div>
-            </li>
-            <li class="talk">
-              <div class="spkr_photo">
-                <img title="Mark Madsen" alt="Mark Madsen" src="images/speakers/mark.jpg" />
-              </div>
-              <div class="speaker">
-                :speaker =&gt; "Mark Madsen"
-              </div>
-              <div class="speaker_bio">
-                Mark Madsen was appointed as the Chief Technology Officer of Castle Rock Research Corp. in January of 2010 but has been leading the technology group as a Director since shortly after his return to the company in 2007. Since that time Mark has grown the development team at Castle Rock from 10 developers to 100 developers spanning 2 continents and 3 cities. The expansion has provided Castle Rock with the capacity to deliver both web applications (primarily .NET and Ruby on Rails) and mobile applications (primarily iOS and Android) to their growing customer base.<br />
-                <br />
-                Mark has been involved in mobile application development since before the dawn of the iPhone (in 2007) and has built the technology group at Castle Rock with mobile in mind. This is most evident in Castle Rock's mobile educational platform, SOLARO, which launched with the iPad App Store this spring. SOLARO gives students access to a variety of standards-aligned supplemental resources through their choice of iOS, Android or Web apps.<br />
-                <br />
-                From OSX Dashboard Widgets to Industrial Process Control apps on WinMo, Mark has written code that runs on just about everything. His 15 years of software development experience and passion for building usable software is apparent in everything he does.<br />
-                <br />
-                Mark holds a degrees in Physics, then Computing Science, from the University of Alberta (after pursuing a career in computational physics and then deciding it was the "computational" part he enjoyed).
-              </div>
-              <div class="talk_title">
-                :talk =&gt; "MacRuby"
-              </div>
-              <div class="talk_description">
-                My intent is to deliver a functional talk on MacRuby that not only introduces features and capabilities, but gives attendees a quick path to practically using MacRuby in their everyday development. I intend to go through important MacRuby specifics like working with Apple frameworks including (but not limited to) threading with GCD, data management with Core Data and Scripting Applications. During the talk, I intend to code two quick examples of everyday MacRuby while delivering tips and hints needed to quickly get running code. Attendees are encouraged to bring their laptops and code along.
               </div>
             </li>
             <li class="talk">
@@ -565,6 +513,26 @@ share our stories, the answer to that question becomes more positive.</p><br />
                 I would also like to talk about how the operations teams opened their world to open source, specifically Ruby. After the initial resistance to open source, the Ops teams now love the Ruby and Rails infrastructure. Ruby gives them immense opportunity to maximise automation, monitoring and management of applications. The Ops team is now inching towards one click deployment of applications across environments, surely a dream come true in any enterprise.
               </div>
             </li>
+            <li class="talk">
+              <div class="spkr_photo">
+                <img title="Karthik Sirasanagandla" alt="Karthik Sirasanagandla" src="images/speakers/karthikp.png" />
+              </div>
+              <div class="speaker">
+                :speaker =&gt; "Karthik Sirasanagandla"
+              </div>
+              <div class="speaker_bio">
+                Karthik Sirasanagandla is an application developer at ThoughtWorks India. Karthik has over 5.5 years of experience, primarily in Java/JEE Platform. In his current capacity, he works on both development and deployment of a JRuby on Rails application; this experience has transitioned him from being a hard-core Java techie to a passionate Ruby programmer. An avid reader of both technical and non-technical books, he also occasionally blogs <a href="http://kartzontech.blogspot.com">here</a>.
+              </div>
+              <div class="talk_title">
+                :talk =&gt; "Deciphering The Ruby Object Model"
+              </div>
+              <div class="talk_description">
+                By personal experience, while transitioning from the world of Java to the world of Ruby, I felt great pain and agony, whenever I read statements like "Everything in Ruby is an object; classes themselves are objects". It took me more than a while to get it all right. I am of the belief that the experience is the same for many who transitioned to the Ruby platform. If you didn't experience this...lucky you! My reason for this experience is that during the early days of learning Ruby, I felt that the Ruby Object Model is some advanced topic as it is comes under Ruby Meta-programming, and that I can do away with it until I'm more than an intermediate level Ruby developer. In reality, though, any decent programming in Ruby meant understanding rightly - the Ruby Object Model. Understanding the Ruby Object Model helps not just in learning Meta-programming, but also improves code design with enriched knowledge and appreciations of the object model.<br />
+                <br />
+                In my presentation, I intend to talk about the Ruby Object Model, elaborating on the concepts of visualizing classes and objects in Ruby, how they are different from Java, method look-ups in Ruby, class/static methods in Java/C# vs. the ones in Ruby, mixins over inheritence and composition etc. All these concepts will be communicated by means of code snippets and no-nonsense visuals (object-like diagrams).
+              </div>
+            </li>
+            
             <li id="continuous-delivery-in-ruby" class="talk">
               <div class="spkr_photo">
                 <img title="Brian Guthrie" alt="Brian Guthrie" src="images/speakers/speaker_avatar.jpg" />
@@ -672,7 +640,40 @@ share our stories, the answer to that question becomes more positive.</p><br />
                 At the end of this, our audience will understand how you can both consume and produce HTTP APIs in the Ruby ecosystem. They will also have a clear idea of what the limitations of such systems are and what the can do to work around the limitations.
               </div>
             </li>
-
+            <li class="talk">
+              <div class="spkr_photo">
+                <img title="Munjal Budhabhatti" alt="Munjal Budhabhatti" src="images/speakers/munjal1.jpg" />
+              </div>
+              <div class="speaker">
+                :speaker =&gt; "Munjal Budhabhatti"
+              </div>
+              <div class="speaker_bio">
+                Munjal Budhabhatti is a lead consultant at ThoughtWorks. He has over 13 years of experience in designing large-scale enterprise applications, and has implemented innovative solutions for some of the leading data centers, microfinance, and financial organisations in Africa, Asia, Europe, and North America. He spends most of his time creating well-designed applications using agile processes.
+              </div>
+              <div class="talk_title">
+                :talk =&gt; "How Ruby helps Rackspace challenge Amazon"
+              </div>
+              <div class="talk_description">
+                ThoughtWorks has been working with Rackspace, one of the leading hosting companies in the world, on a large scale data center automation project using Ruby. We want to share some insights on how Ruby enabled Rackspace, with a small development force, to challenge Amazon.<br />
+                <br />
+                <ol class="bullet_points_talk_description">
+                  <li>Developers investing time learning and programming the domain and not the framework
+                  </li>
+                  <li>Ease of refactoring for major domain changes such as ipv6, architecture
+                  </li>
+                  <li>DSLs allowed SMEs, instead of developers, to easily tailor business logic while reducing everyone's work load
+                  </li>
+                  <li>Powerful Enterprise integration with disparate system via Atom, REST, custom message queue, and even SOAP
+                  </li>
+                  <li>Realtime manipulation of interdependent systems for integration testing
+                  </li>
+                  <li>Ruby philosophies and communities
+                  </li>
+                  <li>Q&amp;A
+                  </li>
+                </ol>
+              </div>
+            </li>
             <li	id="make-your-own-rails-framework" class="talk" >
               <div class="spkr_photo">
                 <img title="Pankaj Bhageria" alt="Pankaj Bhageria" src="images/speakers/pankaj.jpg" />
