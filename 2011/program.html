@@ -106,7 +106,7 @@
         <tr >
           <td valign="middle"><p align="right">10:15</p></td>
           <td valign="middle"><p align="right">11:00</p></td>
-          <td colspan="2" valign="middle" style="text-align: center;"><p>Keynote - Building Rails Apps for the Rich Client<br /><span class="lighter">Yehuda Katz</span></p></td>
+          <td colspan="2" valign="middle" style="text-align: center;"><p><a class="talkLink" id="t19">Keynote - Building Rails Apps for the Rich Client<br /><span class="lighter">Yehuda Katz</span></p></td>
         </tr>
         <tr  class="odd">
           <td valign="middle"><p align="right">11:00</p></td>
@@ -150,7 +150,7 @@
         <tr>
           <td valign="middle"><p align="right">5:00</p></td>
           <td valign="middle"><p align="right">5:45</p></td>
-          <td colspan="2" valign="middle" style="text-align: center;"><p>Service (Keynote over Video Conference)<br /><span class="lighter">Chad Fowler<span></p></td>
+          <td colspan="2" valign="middle" style="text-align: center;"><p><a class="talkLink" id="t20">Service (Keynote over Video Conference)<br /><span class="lighter">Chad Fowler</span></p></td>
         </tr>
       </tbody>
     </table>
@@ -164,7 +164,7 @@
         <tr  class="odd">
           <td valign="middle"><p align="right">10:00</p></td>
           <td valign="middle"><p align="right">10:45</p></td>
-          <td colspan="2" valign="middle" style="text-align: center;"><p>Keynote - The Good, the Bad, and the Ugly<br/ ><span class="lighter">Ola Bini<span></p></td>
+          <td colspan="2" valign="middle" style="text-align: center;"><p><a class="talkLink" id="t21">Keynote - The Good, the Bad, and the Ugly<br/ ><span class="lighter">Ola Bini</span></p></td>
         </tr>
         <tr >
           <td valign="middle"><p align="right">11:00</p></td>
@@ -205,7 +205,7 @@
         <tr>
           <td valign="middle"><p align="right">5:00</p></td>
           <td valign="middle"><p align="right">5:45</p></td>
-          <td colspan="2" valign="middle" style="text-align: center;"><p>Keynote - Happiness : Ruby :: Freedom : JRuby<br /><span class="lighter">Nick Sieger</span></p></td>
+          <td colspan="2" valign="middle" style="text-align: center;"><p><a class="talkLink" id="t22">Keynote - Happiness : Ruby :: Freedom : JRuby<br /><span class="lighter">Nick Sieger</span></p></td>
         </tr>
       </tbody>
     </table>
@@ -289,7 +289,7 @@ end</pre>
           <br />
           Chiku and Habib will be pair-presenting their learnings in a way that mirrors the eternal tussle that a developer faces daily - convenience versus quality. One of them will assume the role of a devil and persuasively present a code-fragment that mirrored one such anti-pattern. The other will then take over as an angel and explain the problem inherent in that code-fragment, and proceed to clean it up. They will then swap roles and proceed to the next point.<br />
           <br />
-          At the end of this presentation the audience will have the knowledge of identifying and subsequently fixing similar manifestations of these problems in their code.
+          At the end of this presentation, the audience will have the knowledge of identifying and subsequently fixing similar manifestations of these problems in their code.
         </div>
       </div>
       <div class="talkAbstract" id="t4">
@@ -393,7 +393,7 @@ end</pre>
             </li>
             <li>Setting up a controller to route requests (and preserve the back button behaviour)
             </li>
-            <li>Setting up backbone.js to play nicely with Rails’ ActiveRecord::Base.include_root_in_json
+            <li>Setting up backbone.js to play nicely with Rails' ActiveRecord::Base.include_root_in_json
             </li>
             <li>Handlebars for templating
             </li>
@@ -634,21 +634,81 @@ end</pre>
   talk.on :track1 =&gt; Day1.at(14:30)
 end</pre>
         <div class="talk_description">
-          The talk would take one through how to build a basic version of web framework like Rails. For most of us Rails has been like a magic box. We do not know, or we have never tried to understand what is happening behind the scenes. Starting from a very basic rack server we would build up a Rails framework with features like routing, controller, action, default views, filters, model etc. It may not be exactly same as what happens in the actual rails framework, but it would  help clear the concepts.<br />
+          This talk will take the audience on the path of building a basic version of a web framework like Rails. Most of us think of Rails as a black box. We do not know, or we haven't tried understanding what is happening behind the scenes. Starting from a very basic Rack server, we will build up a Rails framework with features like routing, controller, action, default views, filters, model, etc. It may not be exactly the same as what happens in the actual Rails framework, but it will help explain the concepts.<br />
           <br/>
-          Some basic knowledge of Ruby is expected to be known. I would teach some dynamic Ruby which would be required for this. And then
-          finally we will start coding a web framework which turns out very similar to Rails. As we would be just developing very basic features, the number of lines would be very less.<br />
-          People would be astonished that we actully built a Rails framework in such less number of lines.
-          <br/><br/>
-          Why would we build our own Rails framework when there already exists one?
-          <ol class="bullet_points_talk_description">
-            <li> Make the Rails magic box more transparent, ie  they will understand whats happening behind the scenes. </li>
-            <li> This will encourage people to go and hack the framework. </li>
-            <li> It will increase the confidence in people which will encourage them to contribute to Rails.</li>
-          </ol>
-        </div>
+          SSome basic knowledge of Ruby is expected. I will teach some dynamic Ruby that is required for to follow this talk. Finally, we will develop a web framework that will be similar to Rails. Since we will be developing only the basic features, the number of lines in this solution will be very less.
+People would be astonished that we actually built a Rails framework in very few lines of code.
+          <br /><br />
+          Why should we build our own framework when Rails already exists?
+		  <ol class="bullet_points_talk_description">
+		     <li> Make the Rails black box more transparent, i.e. help us understand what's happening behind the scenes </li>
+		     <li> This will encourage people to go and hack the framework </li>
+		     <li> It will increase people's confidence which will encourage them to contribute to Rails</li>
+		     </ol>
+		     </li>
+		     </div>
       </div>
-      <div class="closingVim">
+      <div class="talkAbstract" id="t19">
+	          <div class="photo">
+	            <img title="Yehuda Katz" alt="Yehuda Katz" src="images/speakers/yehuda.jpg" />
+	            </div>
+	          <pre class="brush: ruby">RubyConfIndia::2011::Talks.new do |talk|
+	    talk.title "Building Rails Apps for the Rich Client"
+	    talk.speaker :yehuda_katz
+	    talk.on :combined track =&gt; Day1.at(11:00)
+	  end</pre>
+	          <div class="talk_description">
+	            We all know that Rails is great for building traditional web applications that serve dynamic HTML pages. But more and more, people are reaching to other tools, like Node.js, when they build web applications with a lot of logic in the client. People often use the argument that when you remove the view helpers, there isn’t much of value left in Rails.<br />
+	            <br />
+	            In fact, because the Rails framework made an early bet on the REST architecture, it is extremely productive for building applications that mostly communicate over HTTP using JSON payloads. In this talk, Yehuda will talk about what makes Rails so good as the server for rich clients, and how to structure your application to take the most advantage of these properties.<br />
+	          </div>
+      </div>
+      <div class="talkAbstract" id="t20">
+	  	          <div class="photo">
+	  	            <img title="Chad Fowler" alt="Chad Fowler" src="images/speakers/chad.jpg" />
+	  	            </div>
+	  	          <pre class="brush: ruby">RubyConfIndia::2011::Talks.new do |talk|
+	  	    talk.title "Service"
+	  	    talk.speaker :chad_fowler
+	  	    talk.on :combined track =&gt; Day1.at(17:00)
+	  	  end</pre>
+	  	        <div class="talk_description">
+	  	         As software developers, testers, and project managers, we all make the same thing: experiences. No matter what your profession, the service you provide to your customers is what they'll remember the most. This presentation will put "service" in perspective and give you techniques to provide remarkable customer service.<br />
+	  	       </div>
+             </div>
+      <div class="talkAbstract" id="t21">
+	  	  	        <div class="photo">
+	  	  	          <img title="Ola Bini" alt="Ola Bini" src="images/speakers/ola1.jpg" />
+	  	  	        </div>
+	  	  	       <pre class="brush: ruby">RubyConfIndia::2011::Talks.new do |talk|
+	  	  	talk.title "The Good, the Bad, and the Ugly"
+	  	  	talk.speaker :ola_bini
+	  	  	talk.on :combined track =&gt; Day2.at(10:00)
+	  	 end</pre>
+	  	  	      <div class="talk_description">
+	  	  	      Ruby turned 18 in 2011. In many countries around the world, that means Ruby is now an adult. During the evolution of the language, there have been many, many improvements. What started out as a small language has grown larger. However, the more code we write in Ruby, the more we realise that there are things that could be better. And we are also realising that there are things that just plainly shouldn't be there.<br />
+	  	  	      <br />
+	  	  	      In this talk, I would like to explore some of these aspects, with an eye towards what Ruby 2.0 will be, and what the language could look like if you started from scratch. The Ruby language and the Ruby ecosystem is a fantastic place to be, but the best feature of it is that we are not afraid of evolution.<br />
+	  	  	      </div>
+             </div>
+     <div class="talkAbstract" id="t22">
+	  	  	        <div class="photo">
+	  	  	          <img title="Nick Sieger" alt="Nick Sieger" src="images/speakers/NickS.jpg" />
+	  	  	        </div>
+	  	  	       <pre class="brush: ruby">RubyConfIndia::2011::Talks.new do |talk|
+	  	  	talk.title "Happiness : Ruby :: Freedom : JRuby"
+	  	  	talk.speaker :nick_sieger
+	  	  	talk.on :combined track =&gt; Day2.at(17:00)
+	  	 end</pre>
+	  	  	      <div class="talk_description">
+	  	  	      Happiness is an infectious feeling. When Matz set out to make himself happy by creating Ruby, did he have any idea what he had set in motion? And yet, here we are, a worldwide community of computer programmers collectively discussing how to improve our own lives and the lives of others. Inspired by Matz, we sense an opportunity to leave the world a better place than the way we found it.<br />
+	  	  	      <br />
+	  	  	      Closely intertwined with happiness, freedom is also infectious. The freedom to use the best tool to solve a problem. The feeling of being liberated from legacy code. The freedom to deploy your code anywhere. Using JRuby enables these situations with an extremely low friction and barrier to entry.<br />
+	  	  	      <br />
+	  	  	      Ruby and JRuby are just programming tools. Can they really engender and promote happiness and freedom? As inanimate bits residing on spinning rust, perhaps not. But as the intellectual property of our community that connects us, empowers us to solve real problems and share our stories, the answer to that question becomes more positive.<br />
+	  	  	      </div>
+             </div>
+            <div class="closingVim">
         <div class="vimBar">~/workspace/conferences/RubyConfIndia/2011/talks</div>
         --ABSTRACT--
       </div>
