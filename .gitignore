@@ -5,6 +5,7 @@
 *~
 .hg
 .hgtags
+.DS_Store
 /*.sql
 /README.html
 /config/*.bak
