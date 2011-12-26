@@ -1,0 +1,739 @@
+/* normalize.css 2011-11-04T15:38 UTC - http://github.com/necolas/normalize.css */
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects block display not defined in IE6/7/8/9 & FF3
+ */
+/* line 20, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+/*
+ * Corrects inline-block display not defined in IE6/7/8/9 & FF3
+ */
+/* line 30, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying 'audio' without controls
+ */
+/* line 40, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+audio:not([controls]) {
+  display: none;
+}
+
+/*
+ * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+ * Known issue: no IE6 support
+ */
+/* line 49, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+[hidden] {
+  display: none;
+}
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Keeps page centred in all browsers regardless of content height
+ * 3. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+/* line 66, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+html {
+  font-size: 100%;
+  /* 1 */
+  overflow-y: scroll;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+}
+
+/*
+ * Addresses margins handled incorrectly in IE6/7
+ */
+/* line 77, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+body {
+  margin: 0;
+}
+
+/* 
+ * Addresses font-family inconsistency between 'textarea' and other form elements.
+ */
+/* line 89, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+body,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses outline displayed oddly in Chrome
+ */
+/* line 102, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers
+ * people.opera.com/patrickl/experiments/keyboard/test
+ */
+/* line 112, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+a:hover,
+a:active {
+  outline: 0;
+}
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Neutralise smaller font-size in 'section' and 'article' in FF4+, Chrome, S5
+ */
+/* line 125, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+h1 {
+  font-size: 2em;
+}
+
+/*
+ * Addresses styling not present in IE7/8/9, S5, Chrome
+ */
+/* line 133, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
+*/
+/* line 142, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 146, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in S5, Chrome
+ */
+/* line 154, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+dfn {
+  font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE6/7/8/9
+ */
+/* line 162, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/*
+ * Corrects font family set oddly in IE6, S4/5, Chrome
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ */
+/* line 175, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers
+ */
+/* line 185, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/*
+ * 1. Addresses CSS quotes not supported in IE6/7
+ * 2. Addresses quote property not supported in S4
+ */
+/* 1 */
+/* line 198, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+q {
+  quotes: none;
+}
+
+/* 2 */
+/* line 205, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 210, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+small {
+  font-size: 75%;
+}
+
+/*
+ * Prevents sub and sup affecting line-height in all browsers
+ * gist.github.com/413930
+ */
+/* line 220, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 227, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 231, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+/* line 241, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+ul,
+ol {
+  margin-left: 0;
+  padding: 0 0 0 40px;
+}
+
+/* line 246, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* line 251, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
+ * 2. Improves image quality when scaled in IE7
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+/* line 267, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE9 
+ */
+/* line 276, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE6/7/8/9, S5, O11
+ */
+/* line 289, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+figure {
+  margin: 0;
+}
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Corrects margin displayed oddly in IE6/7
+ */
+/* line 302, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+form {
+  margin: 0;
+}
+
+/*
+ * Define consistent border, margin, and padding
+ */
+/* line 310, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE6/7/8/9
+ * 2. Corrects alignment displayed oddly in IE6/7
+ */
+/* line 321, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+legend {
+  border: 0;
+  /* 1 */
+  *margin-left: -7px;
+  /* 2 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers
+ * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
+ * 3. Improves appearance and consistency in all browsers
+ */
+/* line 335, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/*
+ * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
+ */
+/* line 347, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+button,
+input {
+  line-height: normal;
+  /* 1 */
+}
+
+/*
+ * 1. Improves usability and consistency of cursor style between image-type 'input' and others
+ * 2. Corrects inability to style clickable 'input' types in iOS
+ * 3. Removes inner spacing in IE7 without affecting normal text inputs
+ *    Known issue: inner spacing remains in IE6
+ */
+/* line 361, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  /* 1 */
+  -webkit-appearance: button;
+  /* 2 */
+  *overflow: visible;
+  /* 3 */
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE8/9
+ * 2. Removes excess padding in IE8/9
+ */
+/* line 373, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/*
+ * 1. Addresses appearance set to searchfield in S5, Chrome
+ * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
+ */
+/* line 383, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding that is displayed in S5, Chrome on OS X
+ */
+/* line 394, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in FF3+
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ */
+/* line 404, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE6/7/8/9
+ * 2. Improves readability and alignment in all browsers
+ */
+/* line 414, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+/* 
+ * Remove most spacing between table cells
+ */
+/* line 428, /Users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'Vegur';
+  src: url("fonts/Vegur Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vegur';
+  src: url("fonts/Vegur Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* line 44, /Users/arpan/dev/rci/app/assets/stylesheets/base.css.erb.scss */
+html, header, nav, section#page {
+  font-family: Vegur, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+/* line 5, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+html {
+  background: #aa0000 url("bg.png") repeat center center;
+  color: #fff;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/* line 12, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+section#page {
+  *zoom: 1;
+  margin: auto;
+  width: 1090px;
+  max-width: 100%;
+  position: relative;
+}
+/* line 38, /Users/arpan/.rvm/gems/ruby-1.9.2-p290@rci/bundler/gems/compass-57dcbad3aea2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+section#page:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 17, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+header {
+  clear: both;
+  margin-left: 0.917%;
+  margin-right: 0.917%;
+  position: relative;
+  height: 300px;
+  background: transparent url("logo.png") no-repeat center top;
+  text-indent: -1000em;
+  overflow: hidden;
+  z-index: 10;
+}
+
+/* line 28, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+nav {
+  clear: both;
+  margin-left: 0.917%;
+  margin-right: 0.917%;
+  overflow: hidden;
+  *zoom: 1;
+  position: relative;
+  background: white;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+/* line 37, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 40, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+nav ul li {
+  display: inline;
+}
+/* line 42, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+nav ul a {
+  display: block;
+  display: inline;
+  float: left;
+  width: 15.596%;
+  margin-right: 0.917%;
+  text-align: center;
+  text-decoration: none;
+  color: #aa0000;
+  padding: 80px 0 16px 0;
+  background: transparent url("icons.png") no-repeat top center;
+}
+/* line 54, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+nav ul a.register {
+  background-position: center 0px;
+}
+/* line 55, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+nav ul a.speakers {
+  background-position: center -100px;
+}
+/* line 56, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+nav ul a.schedule {
+  background-position: center -200px;
+}
+/* line 57, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+nav ul a.directions {
+  background-position: center -300px;
+}
+/* line 58, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+nav ul a.hotels {
+  background-position: center -400px;
+}
+/* line 59, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+nav ul a.videos {
+  background-position: center -500px;
+}
+/* line 61, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+nav ul a:hover {
+  background-color: #ffffaa;
+}
+/* line 63, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+nav ul a.register {
+  margin-left: 0.917%;
+}
+/* line 64, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+nav ul a.videos {
+  display: inline;
+  float: right;
+  margin-right: 0.917%;
+  #margin-left: -10px;
+}
+
+/* line 71, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+section#content {
+  clear: both;
+  margin-left: 0.917%;
+  margin-right: 0.917%;
+  overflow: hidden;
+  *zoom: 1;
+  position: relative;
+  margin-top: 10px;
+}
+/* line 77, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+section#content a {
+  color: #ffffaa;
+  text-decoration: none;
+  border-bottom: dotted 1px;
+}
+/* line 79, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+section#content section#news {
+  display: inline;
+  float: left;
+  width: 65.138%;
+  margin-right: 0.917%;
+  margin-left: 0.917%;
+  position: relative;
+  font-size: 14px;
+}
+/* line 85, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+section#content section#news h2 {
+  font-size: 14px;
+  margin: 10px 10px 0 10px;
+}
+/* line 90, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+section#content section#news p {
+  margin: 0 10px 10px 20px;
+}
+/* line 95, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+section#content section#sponsors {
+  display: inline;
+  float: left;
+  width: 32.11%;
+  margin-right: 0.917%;
+  display: inline;
+  float: right;
+  margin-right: 0.917%;
+  #margin-left: -10px;
+  position: relative;
+}
+/* line 100, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+section#content section#sponsors ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 103, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+section#content section#sponsors ul li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+/* line 105, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+section#content section#sponsors ul a {
+  clear: both;
+  margin-left: 0.917%;
+  margin-right: 0.917%;
+  position: relative;
+  display: block;
+  margin: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  color: #aa0000;
+  border: none;
+}
+/* line 116, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+section#content section#sponsors ul a:hover {
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 170, 0.9);
+  -moz-box-shadow: 0 0 10px rgba(255, 255, 170, 0.9);
+  box-shadow: 0 0 10px rgba(255, 255, 170, 0.9);
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+}
+/* line 121, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+section#content section#sponsors ul a span {
+  display: block;
+  height: 0;
+  width: 0;
+  text-indent: -1000em;
+  overflow: hidden;
+}
+/* line 122, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+section#content section#sponsors ul a img {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 0;
+  max-width: 95%;
+}
+
+/* line 133, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+footer {
+  clear: both;
+  margin-left: 0.917%;
+  margin-right: 0.917%;
+  padding-top: 100px;
+  position: relative;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 11px;
+}
+/* line 141, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+footer a {
+  color: rgba(255, 255, 170, 0.7);
+  text-decoration: none;
+  border-bottom: dotted 1px;
+}
+
+@media screen and (max-width: 640px) {
+  /* line 149, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+  nav ul a {
+    display: inline;
+    float: left;
+    width: 32.11%;
+    margin-right: 0.917%;
+  }
+  /* line 151, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+  nav ul a.schedule {
+    display: inline;
+    float: right;
+    margin-right: 0.917%;
+    #margin-left: -10px;
+  }
+  /* line 152, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+  nav ul a.directions {
+    margin-left: 0.917%;
+  }
+
+  /* line 156, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+  section#content section#news {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin-right: 0.935%;
+  }
+  /* line 157, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+  section#content section#sponsors {
+    display: inline;
+    float: left;
+    width: 66.355%;
+    margin-right: 0.935%;
+    padding-left: 16.822%;
+    padding-right: 16.822%;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 166, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+  header {
+    background-image: url("logo-small.png");
+    height: 200px;
+  }
+
+  /* line 167, /Users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+  nav ul a {
+    background-image: url("icons-small.png");
+    padding: 60px 0 8px 0;
+  }
+}
