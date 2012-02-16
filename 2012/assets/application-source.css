@@ -459,6 +459,11 @@ html, header, nav, section#page {
   font-family: Vegur, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
+/* line 1, /Users/arpanchinta/dev/rci/app/assets/stylesheets/fonts.css.erb.scss */
+h1, h2, h3 {
+  font-weight: normal;
+}
+
 /* line 1, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 html {
   background: #aa0000 url("bg.png") repeat center center;
@@ -848,6 +853,109 @@ footer a {
     padding-right: 16.701%;
   }
 }
+/* line 1, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+section#talks {
+  margin-top: 20px;
+}
+/* line 3, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+section#talks article {
+  float: left;
+  width: 44%;
+  height: 500px;
+  margin: 4% 4% 4% 1.5%;
+  padding: 0;
+  background: white;
+  position: relative;
+  color: #666666;
+}
+/* line 13, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+section#talks article div.wrap {
+  display: block;
+  float: right;
+  width: 170px;
+  height: 180px;
+}
+/* line 20, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+section#talks article div.photo {
+  display: block;
+  position: absolute;
+  background: white;
+  padding: 10px;
+  width: 178px;
+  height: 198px;
+  top: -40px;
+  right: -35px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+/* line 34, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+section#talks article div.photo h3 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #666666;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background: transparent;
+}
+/* line 45, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+section#talks article div.photo span.links {
+  display: block;
+  position: absolute;
+  height: 20px;
+  background: white;
+  top: 170px;
+  left: 10px;
+}
+/* line 54, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+section#talks article div.photo span.links a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: transparent url("mini-icons.png") -20px -20px no-repeat;
+  float: left;
+  text-indent: -1000em;
+  overflow: hidden;
+}
+/* line 64, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+section#talks article div.photo span.links a.website {
+  background-position: -20px -20px;
+}
+/* line 65, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+section#talks article div.photo span.links a.website:hover {
+  background-position: -60px -20px;
+}
+/* line 66, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+section#talks article div.photo span.links a.twitter {
+  background-position: -20px -60px;
+}
+/* line 67, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+section#talks article div.photo span.links a.twitter:hover {
+  background-position: -60px -60px;
+}
+/* line 68, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+section#talks article div.photo span.links a:hover {
+  background-color: black;
+}
+/* line 73, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+section#talks article h3 {
+  background: #ffffaa;
+  margin: 0;
+  padding: 20px 20px 10px 20px;
+}
+/* line 79, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+section#talks article p {
+  margin: 10px 20px;
+}
+
 /* line 1, /Users/arpanchinta/dev/rci/app/assets/stylesheets/badges.css.erb.scss */
 section#badges {
   clear: both;
