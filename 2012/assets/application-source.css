@@ -5,7 +5,7 @@
 /*
  * Corrects block display not defined in IE6/7/8/9 & FF3
  */
-/* line 20, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 20, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 article,
 aside,
 details,
@@ -22,7 +22,7 @@ section {
 /*
  * Corrects inline-block display not defined in IE6/7/8/9 & FF3
  */
-/* line 30, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 30, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 audio,
 canvas,
 video {
@@ -34,7 +34,7 @@ video {
 /*
  * Prevents modern browsers from displaying 'audio' without controls
  */
-/* line 40, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 40, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 audio:not([controls]) {
   display: none;
 }
@@ -43,7 +43,7 @@ audio:not([controls]) {
  * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
  * Known issue: no IE6 support
  */
-/* line 49, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 49, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 [hidden] {
   display: none;
 }
@@ -58,7 +58,7 @@ audio:not([controls]) {
  * 3. Prevents iOS text size adjust after orientation change, without disabling user zoom
  *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
  */
-/* line 66, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 66, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 html {
   font-size: 100%;
   /* 1 */
@@ -73,7 +73,7 @@ html {
 /*
  * Addresses margins handled incorrectly in IE6/7
  */
-/* line 77, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 77, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 body {
   margin: 0;
 }
@@ -81,7 +81,7 @@ body {
 /* 
  * Addresses font-family inconsistency between 'textarea' and other form elements.
  */
-/* line 89, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 89, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 body,
 button,
 input,
@@ -96,7 +96,7 @@ textarea {
 /*
  * Addresses outline displayed oddly in Chrome
  */
-/* line 102, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 102, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 a:focus {
   outline: thin dotted;
 }
@@ -105,7 +105,7 @@ a:focus {
  * Improves readability when focused and also mouse hovered in all browsers
  * people.opera.com/patrickl/experiments/keyboard/test
  */
-/* line 112, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 112, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 a:hover,
 a:active {
   outline: 0;
@@ -117,7 +117,7 @@ a:active {
 /*
  * Neutralise smaller font-size in 'section' and 'article' in FF4+, Chrome, S5
  */
-/* line 125, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 125, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 h1 {
   font-size: 2em;
 }
@@ -125,7 +125,7 @@ h1 {
 /*
  * Addresses styling not present in IE7/8/9, S5, Chrome
  */
-/* line 133, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 133, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -133,13 +133,13 @@ abbr[title] {
 /*
  * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
 */
-/* line 142, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 142, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 146, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 146, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 blockquote {
   margin: 1em 40px;
 }
@@ -147,7 +147,7 @@ blockquote {
 /*
  * Addresses styling not present in S5, Chrome
  */
-/* line 154, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 154, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 dfn {
   font-style: italic;
 }
@@ -155,7 +155,7 @@ dfn {
 /*
  * Addresses styling not present in IE6/7/8/9
  */
-/* line 162, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 162, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -165,7 +165,7 @@ mark {
  * Corrects font family set oddly in IE6, S4/5, Chrome
  * en.wikipedia.org/wiki/User:Davidgothberg/Test59
  */
-/* line 175, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 175, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 pre,
 code,
 kbd,
@@ -178,7 +178,7 @@ samp {
 /*
  * Improves readability of pre-formatted text in all browsers
  */
-/* line 185, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 185, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -190,20 +190,20 @@ pre {
  * 2. Addresses quote property not supported in S4
  */
 /* 1 */
-/* line 198, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 198, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 q {
   quotes: none;
 }
 
 /* 2 */
-/* line 205, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 205, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 q:before,
 q:after {
   content: '';
   content: none;
 }
 
-/* line 210, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 210, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 small {
   font-size: 75%;
 }
@@ -212,7 +212,7 @@ small {
  * Prevents sub and sup affecting line-height in all browsers
  * gist.github.com/413930
  */
-/* line 220, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 220, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 sub,
 sup {
   font-size: 75%;
@@ -221,12 +221,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 227, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 227, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 231, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 231, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 sub {
   bottom: -0.25em;
 }
@@ -234,19 +234,19 @@ sub {
 /* =============================================================================
    Lists
    ========================================================================== */
-/* line 241, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 241, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 ul,
 ol {
   margin-left: 0;
   padding: 0 0 0 40px;
 }
 
-/* line 246, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 246, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 dd {
   margin: 0 0 0 40px;
 }
 
-/* line 251, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 251, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 nav ul,
 nav ol {
   list-style: none;
@@ -261,7 +261,7 @@ nav ol {
  * 2. Improves image quality when scaled in IE7
  *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
  */
-/* line 267, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 267, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 img {
   border: 0;
   /* 1 */
@@ -272,7 +272,7 @@ img {
 /*
  * Corrects overflow displayed oddly in IE9 
  */
-/* line 276, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 276, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -283,7 +283,7 @@ svg:not(:root) {
 /*
  * Addresses margin not present in IE6/7/8/9, S5, O11
  */
-/* line 289, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 289, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 figure {
   margin: 0;
 }
@@ -294,7 +294,7 @@ figure {
 /*
  * Corrects margin displayed oddly in IE6/7
  */
-/* line 302, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 302, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 form {
   margin: 0;
 }
@@ -302,7 +302,7 @@ form {
 /*
  * Define consistent border, margin, and padding
  */
-/* line 310, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 310, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -313,7 +313,7 @@ fieldset {
  * 1. Corrects color not being inherited in IE6/7/8/9
  * 2. Corrects alignment displayed oddly in IE6/7
  */
-/* line 321, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 321, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 legend {
   border: 0;
   /* 1 */
@@ -326,7 +326,7 @@ legend {
  * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
  * 3. Improves appearance and consistency in all browsers
  */
-/* line 335, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 335, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 button,
 input,
 select,
@@ -344,7 +344,7 @@ textarea {
 /*
  * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
  */
-/* line 347, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 347, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 button,
 input {
   line-height: normal;
@@ -357,7 +357,7 @@ input {
  * 3. Removes inner spacing in IE7 without affecting normal text inputs
  *    Known issue: inner spacing remains in IE6
  */
-/* line 361, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 361, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 button,
 input[type="button"],
 input[type="reset"],
@@ -374,7 +374,7 @@ input[type="submit"] {
  * 1. Addresses box sizing set to content-box in IE8/9
  * 2. Removes excess padding in IE8/9
  */
-/* line 373, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 373, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -387,7 +387,7 @@ input[type="radio"] {
  * 1. Addresses appearance set to searchfield in S5, Chrome
  * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
  */
-/* line 383, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 383, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -400,7 +400,7 @@ input[type="search"] {
 /*
  * Removes inner padding that is displayed in S5, Chrome on OS X
  */
-/* line 394, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 394, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -409,7 +409,7 @@ input[type="search"]::-webkit-search-decoration {
  * Removes inner padding and border in FF3+
  * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
  */
-/* line 404, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 404, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -420,7 +420,7 @@ input::-moz-focus-inner {
  * 1. Removes default vertical scrollbar in IE6/7/8/9
  * 2. Improves readability and alignment in all browsers
  */
-/* line 414, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 414, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -434,7 +434,7 @@ textarea {
 /* 
  * Remove most spacing between table cells
  */
-/* line 428, /users/arpan/dev/rci/app/assets/stylesheets/normalize.css.scss */
+/* line 428, /Users/arpanchinta/dev/rci/app/assets/stylesheets/normalize.css.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -454,12 +454,12 @@ table {
   font-style: normal;
 }
 
-/* line 44, /users/arpan/dev/rci/app/assets/stylesheets/base.css.erb.scss */
+/* line 44, /Users/arpanchinta/dev/rci/app/assets/stylesheets/base.css.erb.scss */
 html, header, nav, section#page {
   font-family: Vegur, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
-/* line 5, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+/* line 1, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 html {
   background: #aa0000 url("bg.png") repeat center center;
   color: #fff;
@@ -467,38 +467,38 @@ html {
   line-height: 19px;
 }
 
-/* line 12, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+/* line 8, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 section#page {
   *zoom: 1;
   margin: auto;
-  width: 1070px;
+  width: 982px;
   max-width: 100%;
   position: relative;
 }
-/* line 38, /Users/arpan/.rvm/gems/ruby-1.9.2-p290@rci/bundler/gems/compass-57dcbad3aea2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, /Users/arpanchinta/.rvm/gems/ruby-1.9.2-p290@rci/bundler/gems/compass-57dcbad3aea2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 section#page:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 17, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+/* line 13, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 header {
   clear: both;
   margin-left: 0%;
   margin-right: 0%;
   position: relative;
   padding-top: 30px;
-  height: 300px;
-  background: transparent url("logo.png") no-repeat center 30px;
+  height: 200px;
+  background: transparent url("logo-small.png") no-repeat center 30px;
   overflow: hidden;
   z-index: 10;
 }
-/* line 27, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+/* line 23, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 header h1, header h2 {
   text-indent: -1000em;
 }
-/* line 29, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+/* line 25, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 header p#twitter {
   display: block;
   position: absolute;
@@ -514,13 +514,13 @@ header p#twitter {
   line-height: 18px;
   text-align: center;
 }
-/* line 46, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+/* line 42, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 header p#twitter a {
   color: #aa0000;
   text-decoration: none;
 }
 
-/* line 50, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+/* line 46, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav {
   clear: both;
   margin-left: 0%;
@@ -534,69 +534,77 @@ nav {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
-/* line 59, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+/* line 55, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul {
   margin: 0;
   padding: 0;
 }
-/* line 62, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+/* line 58, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul li {
   display: inline;
 }
-/* line 64, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+/* line 60, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul a {
   display: block;
   display: inline;
   float: left;
-  width: 19%;
-  margin-right: 0.935%;
+  width: 16.497%;
+  margin-right: 0.204%;
   text-align: center;
   text-decoration: none;
   color: #aa0000;
   padding: 80px 0 16px 0;
   background: transparent url("icons.png") no-repeat top center;
 }
-/* line 76, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+/* line 72, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul a.register {
   background-position: center 0px;
 }
-/* line 77, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
-nav ul a.speakers {
+/* line 73, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+nav ul a.talks {
   background-position: center -100px;
 }
-/* line 78, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+/* line 74, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul a.schedule {
   background-position: center -200px;
 }
-/* line 79, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+/* line 75, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul a.directions {
   background-position: center -300px;
 }
-/* line 80, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+/* line 76, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul a.hotels {
   background-position: center -400px;
 }
-/* line 81, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+/* line 77, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul a.videos {
   background-position: center -500px;
 }
-/* line 83, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
-nav ul a:hover {
-  background-color: #ffffaa;
+/* line 78, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+nav ul a.badges {
+  background-position: center -600px;
 }
-/* line 85, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
-nav ul a.register {
+/* line 79, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+nav ul a.index {
+  background-position: center -700px;
+}
+/* line 81, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+nav ul a.index {
   margin-left: 0%;
 }
-/* line 86, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
-nav ul a.videos {
+/* line 82, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+nav ul a.directions {
   display: inline;
   float: right;
   margin-right: 0%;
-  #margin-left: -10px;
+  #margin-left: -2px;
+}
+/* line 89, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+body#page_index nav ul a.index, body#page_talks nav ul a.talks, body#page_schedule nav ul a.schedule, body#page_directions nav ul a.directions, body#page_badges nav ul a.badges, nav ul a:hover {
+  background-color: #ffffaa;
 }
 
-/* line 93, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+/* line 98, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav#secondary {
   clear: both;
   margin-left: 0%;
@@ -605,23 +613,90 @@ nav#secondary {
   *zoom: 1;
   position: relative;
 }
-/* line 98, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+/* line 103, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav#secondary ul {
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 102, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+/* line 107, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav#secondary ul li {
   display: inline;
 }
-/* line 104, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+/* line 109, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav#secondary ul a {
   color: white;
 }
 
-/* line 113, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
-section#content {
+/* line 118, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+footer {
+  clear: both;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding-top: 100px;
+  position: relative;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 11px;
+}
+/* line 126, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+footer a {
+  color: rgba(255, 255, 170, 0.7);
+  text-decoration: none;
+  border-bottom: dotted 1px;
+}
+
+@media screen and (max-width: 640px) {
+  /* line 134, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+  header {
+    padding-top: 40px;
+    background-position: center 40px;
+  }
+  /* line 138, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+  header p#twitter {
+    background: black;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 4px;
+    width: auto;
+    height: auto;
+  }
+
+  /* line 146, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+  nav ul a {
+    display: inline;
+    float: left;
+    width: 33.198%;
+    margin-right: 0.204%;
+  }
+  /* line 148, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+  nav ul a.schedule {
+    display: inline;
+    float: right;
+    margin-right: 0%;
+    #margin-left: -2px;
+  }
+  /* line 149, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+  nav ul a.directions {
+    margin-left: 0%;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 154, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+  header {
+    background-image: url("logo-small.png");
+    height: 200px;
+  }
+
+  /* line 155, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+  nav ul a {
+    background-image: url("icons-small.png");
+    padding: 60px 0 8px 0;
+  }
+}
+/* line 1, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+section#index {
   clear: both;
   margin-left: 0%;
   margin-right: 0%;
@@ -630,61 +705,61 @@ section#content {
   position: relative;
   margin-top: 10px;
 }
-/* line 119, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
-section#content a {
+/* line 7, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+section#index a {
   color: #ffffaa;
   text-decoration: none;
   border-bottom: dotted 1px;
 }
-/* line 121, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
-section#content section#news {
+/* line 9, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+section#index section#news {
   display: inline;
   float: left;
-  width: 66.355%;
-  margin-right: 0.935%;
+  width: 66.599%;
+  margin-right: 0.204%;
   margin-left: 0%;
   position: relative;
   font-size: 14px;
 }
-/* line 127, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
-section#content section#news h2 {
+/* line 15, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+section#index section#news h2 {
   font-size: 14px;
   margin: 10px 10px 0 10px;
 }
-/* line 132, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
-section#content section#news p {
+/* line 20, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+section#index section#news p {
   margin: 0 10px 10px 20px;
 }
-/* line 137, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
-section#content section#sponsors {
+/* line 25, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+section#index section#sponsors {
   display: inline;
   float: left;
-  width: 32.71%;
-  margin-right: 0.935%;
+  width: 33.198%;
+  margin-right: 0.204%;
   display: inline;
   float: right;
   margin-right: 0%;
-  #margin-left: -10px;
+  #margin-left: -2px;
   position: relative;
 }
-/* line 142, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
-section#content section#sponsors h3 {
+/* line 30, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+section#index section#sponsors h3 {
   text-align: center;
 }
-/* line 144, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
-section#content section#sponsors ul {
+/* line 32, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+section#index section#sponsors ul {
   margin: 0;
   padding: 0;
   border-bottom: dotted 1px rgba(255, 255, 255, 0.4);
 }
-/* line 148, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
-section#content section#sponsors ul li {
+/* line 36, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+section#index section#sponsors ul li {
   display: inline;
   margin: 0;
   padding: 0;
 }
-/* line 150, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
-section#content section#sponsors ul a {
+/* line 38, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+section#index section#sponsors ul a {
   clear: both;
   margin-left: 0%;
   margin-right: 0%;
@@ -696,8 +771,8 @@ section#content section#sponsors ul a {
   color: white;
   border: none;
 }
-/* line 161, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
-section#content section#sponsors ul a:hover {
+/* line 49, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+section#index section#sponsors ul a:hover {
   -webkit-box-shadow: 0 0 10px rgba(255, 255, 170, 0.9);
   -moz-box-shadow: 0 0 10px rgba(255, 255, 170, 0.9);
   box-shadow: 0 0 10px rgba(255, 255, 170, 0.9);
@@ -707,28 +782,37 @@ section#content section#sponsors ul a:hover {
   -o-border-radius: 12px;
   border-radius: 12px;
 }
-/* line 166, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
-section#content section#sponsors ul a span {
+/* line 54, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+section#index section#sponsors ul a span {
   display: block;
   height: 0;
   width: 0;
   text-indent: -1000em;
   overflow: hidden;
 }
-/* line 167, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
-section#content section#sponsors ul a img {
+/* line 55, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+section#index section#sponsors ul a img {
   display: block;
   margin: 0 auto;
   padding: 10px 0;
   max-width: 95%;
 }
-/* line 175, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
-section#content section#sponsors ul.years {
+/* line 63, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+section#index section#sponsors ul.years {
   font-size: 20px;
   line-height: 50px;
 }
+/* line 66, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+section#index section#sponsors ul.years {
+  font-size: 20px;
+  line-height: 50px;
+}
+/* line 69, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+section#index section#sponsors ul.years a {
+  color: #fff;
+}
 
-/* line 180, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+/* line 74, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
 footer {
   clear: both;
   margin-left: 0%;
@@ -739,7 +823,7 @@ footer {
   color: rgba(255, 255, 255, 0.6);
   font-size: 11px;
 }
-/* line 188, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
+/* line 82, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
 footer a {
   color: rgba(255, 255, 170, 0.7);
   text-decoration: none;
@@ -747,68 +831,98 @@ footer a {
 }
 
 @media screen and (max-width: 640px) {
-  /* line 196, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
-  header {
-    padding-top: 40px;
-    background-position: center 40px;
-  }
-  /* line 200, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
-  header p#twitter {
-    background: black;
-    top: 0;
-    right: 0;
-    left: 0;
-    padding: 4px;
-    width: auto;
-    height: auto;
-  }
-
-  /* line 208, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
-  nav ul a {
-    display: inline;
-    float: left;
-    width: 32.71%;
-    margin-right: 0.935%;
-  }
-  /* line 210, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
-  nav ul a.schedule {
-    display: inline;
-    float: right;
-    margin-right: 0%;
-    #margin-left: -10px;
-  }
-  /* line 211, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
-  nav ul a.directions {
-    margin-left: 0%;
-  }
-
-  /* line 215, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
-  section#content section#news {
+  /* line 91, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+  section#index section#news {
     display: inline;
     float: left;
     width: 100%;
-    margin-right: 0.935%;
+    margin-right: 0.204%;
   }
-  /* line 216, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
-  section#content section#sponsors {
+  /* line 92, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+  section#index section#sponsors {
     display: inline;
     float: left;
-    width: 66.355%;
-    margin-right: 0.935%;
-    padding-left: 16.822%;
-    padding-right: 16.822%;
+    width: 66.599%;
+    margin-right: 0.204%;
+    padding-left: 16.701%;
+    padding-right: 16.701%;
   }
 }
-@media screen and (max-width: 480px) {
-  /* line 225, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
-  header {
-    background-image: url("logo-small.png");
-    height: 200px;
-  }
+/* line 1, /Users/arpanchinta/dev/rci/app/assets/stylesheets/badges.css.erb.scss */
+section#badges {
+  clear: both;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin: 0;
+  padding: 0;
+  color: #666666;
+}
+/* line 8, /Users/arpanchinta/dev/rci/app/assets/stylesheets/badges.css.erb.scss */
+section#badges h2 {
+  display: none;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+/* line 15, /Users/arpanchinta/dev/rci/app/assets/stylesheets/badges.css.erb.scss */
+section#badges ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+/* line 18, /Users/arpanchinta/dev/rci/app/assets/stylesheets/badges.css.erb.scss */
+section#badges ul li {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin-right: 0.204%;
+  padding: 20px 0;
+  background: white;
+  list-style: none;
+  display: block;
+  margin-top: 2px;
+}
+/* line 26, /Users/arpanchinta/dev/rci/app/assets/stylesheets/badges.css.erb.scss */
+section#badges ul li img {
+  margin-left: 0%;
+  float: left;
+  margin: 0 20px;
+}
+/* line 28, /Users/arpanchinta/dev/rci/app/assets/stylesheets/badges.css.erb.scss */
+section#badges ul li textarea {
+  display: inline;
+  float: left;
+  width: 66.599%;
+  margin-right: 0.204%;
+  background: transparent;
+  padding: 0;
+  margin-top: 60px;
+  height: 80px;
+  display: block;
+  border: none;
+  font-size: 13px;
+  font-family: monospace;
+  font-color: #999999;
+}
+/* line 41, /Users/arpanchinta/dev/rci/app/assets/stylesheets/badges.css.erb.scss */
+section#badges ul li.transparent {
+  background: #666666;
+  margin-top: 2px;
+}
+/* line 42, /Users/arpanchinta/dev/rci/app/assets/stylesheets/badges.css.erb.scss */
+section#badges ul li.transparent textarea {
+  color: white;
+}
+/* line 46, /Users/arpanchinta/dev/rci/app/assets/stylesheets/badges.css.erb.scss */
+section#badges ul li pre {
+  text-align: left;
+  font-size: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
 
-  /* line 226, /users/arpan/dev/rci/app/assets/stylesheets/application.css.erb.scss */
-  nav ul a {
-    background-image: url("icons-small.png");
-    padding: 60px 0 8px 0;
-  }
+/* line 3, /Users/arpanchinta/dev/rci/app/assets/stylesheets/directions.css.erb.scss */
+section#directions div#venue address {
+  font-weight: normal;
+  font-style: normal;
 }
