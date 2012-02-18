@@ -853,15 +853,15 @@ footer a {
     padding-right: 16.701%;
   }
 }
-/* line 1, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+/* line 1, /Users/arpanchinta/dev/rci/app/assets/stylesheets/*.css.erb.scss */
 section#talks {
   margin-top: 20px;
 }
 /* line 3, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
 section#talks article {
   float: left;
-  width: 44%;
-  height: 500px;
+  width: 95%;
+  min-height: 200px;
   margin: 4% 4% 4% 1.5%;
   padding: 0;
   background: white;
@@ -898,7 +898,6 @@ section#talks article div.photo {
 /* line 34, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
 section#talks article div.photo h3 {
   font-size: 16px;
-  line-height: 20px;
   font-weight: bold;
   color: #666666;
   padding: 0;
@@ -906,6 +905,11 @@ section#talks article div.photo h3 {
   text-align: center;
   background: transparent;
 }
+
+section#talks article div.photo img {
+	height:178px;
+}
+
 /* line 45, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
 section#talks article div.photo span.links {
   display: block;
