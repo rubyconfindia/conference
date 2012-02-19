@@ -875,6 +875,11 @@ section#talks article div.wrap {
   width: 170px;
   height: 180px;
 }
+
+section#talks article div.wrap.copresenter {
+  width: 390px;
+}
+
 /* line 20, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
 section#talks article div.photo {
   display: block;
@@ -895,6 +900,11 @@ section#talks article div.photo {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   z-index: 100;
 }
+
+section#talks article div.photo.copresenter {
+  right: 175px;
+}
+
 /* line 34, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
 section#talks article div.photo h3 {
   font-size: 16px;
