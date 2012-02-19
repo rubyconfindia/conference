@@ -918,6 +918,7 @@ section#talks article div.photo h3 {
 
 section#talks article div.photo img {
 	height:178px;
+	width:178px;
 }
 
 /* line 45, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
