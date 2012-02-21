@@ -88,17 +88,13 @@
     <div class="wrap copresenter">&nbsp;</div>
     <h3>Sandboxing Ruby Code - Lessons from the battlefield</h3>
 	<p>
-		Sometime you want to run untrusted code on your server. Our expirements with sandboxing started with the creation of a hosted continuous integration service called Goldberg Pro, and then continued on with RubyMonk [1], which needed to prevent users from performing potentially dangerous operations in code they submitted via the website.
+		Sometime you want to run untrusted code on your server. Our expirements with sandboxing started with the creation of a hosted continuous integration service called Goldberg Pro, and then continued on with <a href="http://RubyMonk.com" title="RubyMonk - Interactive ruby tutorials to learn Ruby">RubyMonk</a>, which needed to prevent users from performing potentially dangerous operations in code they submitted via the website.
 	</p>
 	<p>
 		Here we discuss various system level, language level, and application level techniques that we tried (and we plan to try in the future) to ensure that the user does not bring down the entire system. Some techniques we plan to speak about include LXC (Linux Containers), Chroots, Ruby's SAFE levels, Kernel level limits, SELinux and PTrace.
 	</p>
 	<p>	
-		Some of our learnings are published in the form of the Open Source ruby gem - secure [2]
-	</p>
-	<p>
-		[1] http://RubyMonk.com<br/>
-		[2] https://github.com/c42/secure
+		Some of our learnings are published in the form of the Open Source ruby gem - <a href="https://github.com/c42/secure">secure</a>.
 	</p>
   </article>
   <article>
@@ -203,7 +199,7 @@
 		The reason I have title ""Everything Ruby"" - because we choose to use Ruby every where for Ops world and as well as Dev world. We used puppet to manage our system, mcollective to create work flows, how did we use open source technologies to create our own enterprise private cloud based on OpenStack and OpenVZ/LXC containers - how did we create build system which scales on demand. In this talk I will be showcasing that how did we manage our infrastructure using Puppet and mcollective, how did we create self serving and self sign up environment. What are the challenges for adminsitrators for moving to Ruby and how developers can take advantage of existing OpenSource toolset built around Ruby to explore deployment patterns, scaling on demand, fireup more containers if required - In summary - how can you create a private cloud for your end users which provides end to end development ecosystem on demand.
 	</p>
 	<p>
-		I will be showcasing live demo, puppet recipes, mcollective agents and workflows, different virtualization technologies and containers and how everything works when knit together with Ruby, creates a fine example for well managed IT infrastructure. I have been blogging about this in my four part series at http://ajeygore.in
+		I will be showcasing live demo, puppet recipes, mcollective agents and workflows, different virtualization technologies and containers and how everything works when knit together with Ruby, creates a fine example for well managed IT infrastructure. I have been blogging about this in my four part series at <a href="http://ajeygore.in" title="Code, Deploy, Automate! - Ajey Gore's thoughts on continuous delivery">ajeygore.in</a>
 	</p>
   </article>
   <article>
@@ -411,19 +407,19 @@
 	</p>
 	<p>
 		I cover some of the below topics,
-		<ol>
+		<ul>
 			<li>How to maintain the code quality between the developers on large scale projects</li>
 			<li>Paring environments</li>
 			<li>Code reviews</li>
 			<li>Maintaining the test suite , etc</li>
-		</ol>
+		</ul>
 	</p>
 	<p>	
 		We also cover below libraries
-		<ol>
-			<li>Borg  A distributed Test Suite runner for Rails, using Eventmachine and Redis) which is developed by me</li>
-			<li>New Relic is a performance management system</li>
-		</ol>
+		<ul>
+			<li><strong>Borg:</strong> distributed Test Suite runner for Rails, using Eventmachine and Redis) which is developed by me</li>
+			<li><strong>New Relic:</strong> a performance management system</li>
+		</ul>
 	</p>
   </article>
   <article>
