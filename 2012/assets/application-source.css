@@ -1,7 +1,7 @@
 /* =============================================================================
   Generated from SCSS files located at:
   https://github.com/arpancj/RubyConfIndia-website
-   ========================================================================== */
+============================================================================= */
 
 /* normalize.css 2011-11-04T15:38 UTC - http://github.com/necolas/normalize.css */
 /* =============================================================================
@@ -471,7 +471,7 @@ h1, h2, h3 {
 
 /* line 1, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 html {
-  background: #aa0000 url("bg_pixels.png") repeat fixed center center;
+  background: #aa0000 url("bg_waves.png") repeat fixed center center;
   color: #fff;
   font-size: 16px;
   line-height: 19px;
@@ -996,6 +996,83 @@ section#talks article h3 {
 /* line 88, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
 section#talks article p {
   margin: 10px 20px;
+}
+
+/* line 3, /Users/arpanchinta/dev/rci/app/assets/stylesheets/schedule.css.erb.scss */
+section#schedule h2, section#schedule h3 {
+  text-align: center;
+  margin-top: 80px;
+}
+/* line 5, /Users/arpanchinta/dev/rci/app/assets/stylesheets/schedule.css.erb.scss */
+section#schedule ul {
+  display: block;
+  width: 100px;
+  margin: 10px auto;
+  padding: 10px 0;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  color: #aa0000;
+  background: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+}
+/* line 15, /Users/arpanchinta/dev/rci/app/assets/stylesheets/schedule.css.erb.scss */
+section#schedule ul li {
+  list-style: none;
+  margin: 0;
+  padding: 30px 0;
+  position: relative;
+  height: 20px;
+  line-height: 20px;
+  border-bottom: solid 1px #333333;
+}
+/* line 24, /Users/arpanchinta/dev/rci/app/assets/stylesheets/schedule.css.erb.scss */
+section#schedule ul li span.time {
+  display: block;
+  text-align: center;
+}
+/* line 25, /Users/arpanchinta/dev/rci/app/assets/stylesheets/schedule.css.erb.scss */
+section#schedule ul li.break {
+  background: white;
+  padding: 10px 0;
+  height: 40px;
+}
+/* line 30, /Users/arpanchinta/dev/rci/app/assets/stylesheets/schedule.css.erb.scss */
+section#schedule ul li:last-child {
+  border: none;
+}
+/* line 32, /Users/arpanchinta/dev/rci/app/assets/stylesheets/schedule.css.erb.scss */
+section#schedule ul li span.track1, section#schedule ul li span.track2 {
+  padding: 0 10px;
+  display: block;
+  position: absolute;
+  width: 400px;
+  left: -420px;
+  top: 20px;
+  text-align: right;
+  color: white;
+}
+/* line 43, /Users/arpanchinta/dev/rci/app/assets/stylesheets/schedule.css.erb.scss */
+section#schedule ul li span.track2 {
+  left: auto;
+  right: -420px;
+  text-align: left;
+}
+/* line 45, /Users/arpanchinta/dev/rci/app/assets/stylesheets/schedule.css.erb.scss */
+section#schedule ul li strong, section#schedule ul li em {
+  display: block;
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 46, /Users/arpanchinta/dev/rci/app/assets/stylesheets/schedule.css.erb.scss */
+section#schedule ul li strong {
+  color: #ffffaa;
+}
+/* line 47, /Users/arpanchinta/dev/rci/app/assets/stylesheets/schedule.css.erb.scss */
+section#schedule ul li em {
+  color: black;
 }
 
 /* line 1, /Users/arpanchinta/dev/rci/app/assets/stylesheets/badges.css.erb.scss */
