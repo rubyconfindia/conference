@@ -711,7 +711,7 @@ section#index {
   margin-top: 10px;
 }
 /* line 7, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
-section#index a {
+section#index a, section#directions a {
   color: #ffffaa;
   text-decoration: none;
   border-bottom: dotted 1px;
