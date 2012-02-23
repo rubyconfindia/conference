@@ -1,3 +1,8 @@
+/* =============================================================================
+  Generated from SCSS files located at:
+  https://github.com/arpancj/RubyConfIndia-website
+============================================================================= */
+
 /* normalize.css 2011-11-04T15:38 UTC - http://github.com/necolas/normalize.css */
 /* =============================================================================
    HTML5 display definitions
@@ -466,7 +471,7 @@ h1, h2, h3 {
 
 /* line 1, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 html {
-  background: #aa0000 url("bg.png") repeat center center;
+  background: #aa0000 url("bg_waves.png") repeat fixed center center;
   color: #fff;
   font-size: 16px;
   line-height: 19px;
@@ -488,22 +493,30 @@ section#page:after {
 }
 
 /* line 13, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+a {
+  color: #ffffaa;
+  text-decoration: none;
+  border-bottom: dotted 1px;
+}
+
+/* line 15, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 header {
   clear: both;
   margin-left: 0%;
   margin-right: 0%;
   position: relative;
+  opacity: 1;
   padding-top: 30px;
   height: 200px;
   background: transparent url("logo-small.png") no-repeat center 30px;
   overflow: hidden;
   z-index: 10;
 }
-/* line 23, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 26, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 header h1, header h2 {
   text-indent: -1000em;
 }
-/* line 25, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 28, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 header p#twitter {
   display: block;
   position: absolute;
@@ -519,13 +532,13 @@ header p#twitter {
   line-height: 18px;
   text-align: center;
 }
-/* line 42, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 45, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 header p#twitter a {
   color: #aa0000;
   text-decoration: none;
 }
 
-/* line 46, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 49, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav {
   clear: both;
   margin-left: 0%;
@@ -533,22 +546,28 @@ nav {
   overflow: hidden;
   *zoom: 1;
   position: relative;
+  opacity: 1;
   background: white;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
   z-index: 1;
 }
-/* line 55, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 60, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul {
   margin: 0;
   padding: 0;
 }
-/* line 58, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 63, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul li {
   display: inline;
 }
-/* line 60, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 65, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul a {
   display: block;
   display: inline;
@@ -558,58 +577,69 @@ nav ul a {
   text-align: center;
   text-decoration: none;
   color: #aa0000;
+  border: none;
   padding: 80px 0 16px 0;
   background: transparent url("icons.png") no-repeat top center;
 }
-/* line 72, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 78, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul a.register {
   background-position: center 0px;
 }
-/* line 73, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 79, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul a.talks {
   background-position: center -100px;
 }
-/* line 74, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 80, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul a.schedule {
   background-position: center -200px;
 }
-/* line 75, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 81, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul a.directions {
   background-position: center -300px;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  -ms-border-radius: 0 10px 10px 0;
+  -o-border-radius: 0 10px 10px 0;
+  border-radius: 0 10px 10px 0;
 }
-/* line 76, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 82, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul a.hotels {
   background-position: center -400px;
 }
-/* line 77, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 83, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul a.videos {
   background-position: center -500px;
 }
-/* line 78, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 84, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul a.badges {
   background-position: center -600px;
 }
-/* line 79, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 85, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul a.index {
   background-position: center -700px;
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  -ms-border-radius: 10px 0 0 10px;
+  -o-border-radius: 10px 0 0 10px;
+  border-radius: 10px 0 0 10px;
 }
-/* line 81, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 87, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul a.index {
   margin-left: 0%;
 }
-/* line 82, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 88, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul a.directions {
   display: inline;
   float: right;
   margin-right: 0%;
   #margin-left: -2px;
 }
-/* line 89, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 95, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 body#page_index nav ul a.index, body#page_talks nav ul a.talks, body#page_schedule nav ul a.schedule, body#page_directions nav ul a.directions, body#page_badges nav ul a.badges, nav ul a:hover {
   background-color: #ffffaa;
 }
 
-/* line 98, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 104, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav#secondary {
   clear: both;
   margin-left: 0%;
@@ -618,22 +648,22 @@ nav#secondary {
   *zoom: 1;
   position: relative;
 }
-/* line 103, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 109, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav#secondary ul {
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 107, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 113, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav#secondary ul li {
   display: inline;
 }
-/* line 109, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 115, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav#secondary ul a {
   color: white;
 }
 
-/* line 118, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 124, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 footer {
   clear: both;
   margin-left: 0%;
@@ -644,7 +674,7 @@ footer {
   color: rgba(255, 255, 255, 0.6);
   font-size: 11px;
 }
-/* line 126, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 132, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 footer a {
   color: rgba(255, 255, 170, 0.7);
   text-decoration: none;
@@ -652,12 +682,12 @@ footer a {
 }
 
 @media screen and (max-width: 640px) {
-  /* line 134, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+  /* line 140, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
   header {
     padding-top: 40px;
     background-position: center 40px;
   }
-  /* line 138, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+  /* line 144, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
   header p#twitter {
     background: black;
     top: 0;
@@ -668,33 +698,33 @@ footer a {
     height: auto;
   }
 
-  /* line 146, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+  /* line 152, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
   nav ul a {
     display: inline;
     float: left;
     width: 33.198%;
     margin-right: 0.204%;
   }
-  /* line 148, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+  /* line 154, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
   nav ul a.schedule {
     display: inline;
     float: right;
     margin-right: 0%;
     #margin-left: -2px;
   }
-  /* line 149, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+  /* line 155, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
   nav ul a.directions {
     margin-left: 0%;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 154, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+  /* line 160, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
   header {
     background-image: url("logo-small.png");
     height: 200px;
   }
 
-  /* line 155, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+  /* line 161, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
   nav ul a {
     background-image: url("icons-small.png");
     padding: 60px 0 8px 0;
@@ -711,12 +741,6 @@ section#index {
   margin-top: 10px;
 }
 /* line 7, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
-section#index a {
-  color: #ffffaa;
-  text-decoration: none;
-  border-bottom: dotted 1px;
-}
-/* line 9, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
 section#index section#news {
   display: inline;
   float: left;
@@ -726,16 +750,16 @@ section#index section#news {
   position: relative;
   font-size: 14px;
 }
-/* line 15, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+/* line 13, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
 section#index section#news h2 {
   font-size: 14px;
   margin: 10px 10px 0 10px;
 }
-/* line 20, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+/* line 18, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
 section#index section#news p {
   margin: 0 10px 10px 20px;
 }
-/* line 25, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+/* line 23, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
 section#index section#sponsors {
   display: inline;
   float: left;
@@ -747,36 +771,36 @@ section#index section#sponsors {
   #margin-left: -2px;
   position: relative;
 }
-/* line 30, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+/* line 28, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
 section#index section#sponsors h3 {
   text-align: center;
 }
-/* line 32, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+/* line 30, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
 section#index section#sponsors ul {
   margin: 0;
   padding: 0;
   border-bottom: dotted 1px rgba(255, 255, 255, 0.4);
 }
-/* line 36, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+/* line 34, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
 section#index section#sponsors ul li {
   display: inline;
   margin: 0;
   padding: 0;
 }
-/* line 38, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+/* line 36, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
 section#index section#sponsors ul a {
   clear: both;
   margin-left: 0%;
   margin-right: 0%;
   position: relative;
   display: block;
-  margin: 10px 0;
+  margin: 10px;
   text-align: center;
   text-decoration: none;
   color: white;
   border: none;
 }
-/* line 49, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+/* line 47, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
 section#index section#sponsors ul a:hover {
   -webkit-box-shadow: 0 0 10px rgba(255, 255, 170, 0.9);
   -moz-box-shadow: 0 0 10px rgba(255, 255, 170, 0.9);
@@ -787,7 +811,7 @@ section#index section#sponsors ul a:hover {
   -o-border-radius: 12px;
   border-radius: 12px;
 }
-/* line 54, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+/* line 52, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
 section#index section#sponsors ul a span {
   display: block;
   height: 0;
@@ -795,29 +819,29 @@ section#index section#sponsors ul a span {
   text-indent: -1000em;
   overflow: hidden;
 }
-/* line 55, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+/* line 53, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
 section#index section#sponsors ul a img {
   display: block;
   margin: 0 auto;
   padding: 10px 0;
   max-width: 95%;
 }
-/* line 63, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+/* line 61, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
 section#index section#sponsors ul.years {
   font-size: 20px;
   line-height: 50px;
 }
-/* line 66, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+/* line 64, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
 section#index section#sponsors ul.years {
   font-size: 20px;
   line-height: 50px;
 }
-/* line 69, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+/* line 67, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
 section#index section#sponsors ul.years a {
   color: #fff;
 }
 
-/* line 74, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+/* line 72, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
 footer {
   clear: both;
   margin-left: 0%;
@@ -828,7 +852,7 @@ footer {
   color: rgba(255, 255, 255, 0.6);
   font-size: 11px;
 }
-/* line 82, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+/* line 80, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
 footer a {
   color: rgba(255, 255, 170, 0.7);
   text-decoration: none;
@@ -836,14 +860,14 @@ footer a {
 }
 
 @media screen and (max-width: 640px) {
-  /* line 91, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+  /* line 89, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
   section#index section#news {
     display: inline;
     float: left;
     width: 100%;
     margin-right: 0.204%;
   }
-  /* line 92, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
+  /* line 90, /Users/arpanchinta/dev/rci/app/assets/stylesheets/index.css.erb.scss */
   section#index section#sponsors {
     display: inline;
     float: left;
@@ -853,34 +877,37 @@ footer a {
     padding-right: 16.701%;
   }
 }
-/* line 1, /Users/arpanchinta/dev/rci/app/assets/stylesheets/*.css.erb.scss */
+/* line 1, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
 section#talks {
   margin-top: 20px;
 }
 /* line 3, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
 section#talks article {
+  display: block;
   float: left;
+  margin: 3% 4% 3% 1%;
   width: 95%;
-  min-height: 200px;
-  margin: 4% 4% 4% 1.5%;
   padding: 0;
   background: white;
   position: relative;
   color: #666666;
 }
 /* line 13, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+section#talks article a {
+  color: #aa0000;
+}
+/* line 15, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
 section#talks article div.wrap {
   display: block;
   float: right;
   width: 170px;
   height: 180px;
 }
-
+/* line 21, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
 section#talks article div.wrap.copresenter {
   width: 390px;
 }
-
-/* line 20, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+/* line 24, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
 section#talks article div.photo {
   display: block;
   position: absolute;
@@ -900,14 +927,19 @@ section#talks article div.photo {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   z-index: 100;
 }
-
+/* line 38, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
 section#talks article div.photo.copresenter {
   right: 175px;
 }
-
-/* line 34, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+/* line 40, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+section#talks article div.photo img {
+  width: 178px;
+  height: 178px;
+}
+/* line 42, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
 section#talks article div.photo h3 {
   font-size: 16px;
+  line-height: 20px;
   font-weight: bold;
   color: #666666;
   padding: 0;
@@ -915,13 +947,7 @@ section#talks article div.photo h3 {
   text-align: center;
   background: transparent;
 }
-
-section#talks article div.photo img {
-	height:178px;
-	width:178px;
-}
-
-/* line 45, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+/* line 53, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
 section#talks article div.photo span.links {
   display: block;
   position: absolute;
@@ -930,45 +956,123 @@ section#talks article div.photo span.links {
   top: 170px;
   left: 10px;
 }
-/* line 54, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+/* line 62, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
 section#talks article div.photo span.links a {
   display: block;
   width: 20px;
   height: 20px;
   background: transparent url("mini-icons.png") -20px -20px no-repeat;
   float: left;
+  border: none;
   text-indent: -1000em;
   overflow: hidden;
 }
-/* line 64, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+/* line 73, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
 section#talks article div.photo span.links a.website {
   background-position: -20px -20px;
 }
-/* line 65, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+/* line 74, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
 section#talks article div.photo span.links a.website:hover {
   background-position: -60px -20px;
 }
-/* line 66, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+/* line 75, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
 section#talks article div.photo span.links a.twitter {
   background-position: -20px -60px;
 }
-/* line 67, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+/* line 76, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
 section#talks article div.photo span.links a.twitter:hover {
   background-position: -60px -60px;
 }
-/* line 68, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+/* line 77, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
 section#talks article div.photo span.links a:hover {
   background-color: black;
 }
-/* line 73, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+/* line 82, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
 section#talks article h3 {
   background: #ffffaa;
   margin: 0;
   padding: 20px 20px 10px 20px;
 }
-/* line 79, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+/* line 88, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
 section#talks article p {
   margin: 10px 20px;
+}
+
+/* line 3, /Users/arpanchinta/dev/rci/app/assets/stylesheets/schedule.css.erb.scss */
+section#schedule h2, section#schedule h3 {
+  text-align: center;
+  margin-top: 80px;
+}
+/* line 5, /Users/arpanchinta/dev/rci/app/assets/stylesheets/schedule.css.erb.scss */
+section#schedule ul {
+  display: block;
+  width: 100px;
+  margin: 10px auto;
+  padding: 10px 0;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  color: #aa0000;
+  background: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+}
+/* line 15, /Users/arpanchinta/dev/rci/app/assets/stylesheets/schedule.css.erb.scss */
+section#schedule ul li {
+  list-style: none;
+  margin: 0;
+  padding: 30px 0;
+  position: relative;
+  height: 20px;
+  line-height: 20px;
+  border-bottom: solid 1px #333333;
+}
+/* line 24, /Users/arpanchinta/dev/rci/app/assets/stylesheets/schedule.css.erb.scss */
+section#schedule ul li span.time {
+  display: block;
+  text-align: center;
+}
+/* line 25, /Users/arpanchinta/dev/rci/app/assets/stylesheets/schedule.css.erb.scss */
+section#schedule ul li.break {
+  background: white;
+  padding: 10px 0;
+  height: 40px;
+}
+/* line 30, /Users/arpanchinta/dev/rci/app/assets/stylesheets/schedule.css.erb.scss */
+section#schedule ul li:last-child {
+  border: none;
+}
+/* line 32, /Users/arpanchinta/dev/rci/app/assets/stylesheets/schedule.css.erb.scss */
+section#schedule ul li span.track1, section#schedule ul li span.track2 {
+  padding: 0 10px;
+  display: block;
+  position: absolute;
+  width: 400px;
+  left: -420px;
+  top: 20px;
+  text-align: right;
+  color: white;
+}
+/* line 43, /Users/arpanchinta/dev/rci/app/assets/stylesheets/schedule.css.erb.scss */
+section#schedule ul li span.track2 {
+  left: auto;
+  right: -420px;
+  text-align: left;
+}
+/* line 45, /Users/arpanchinta/dev/rci/app/assets/stylesheets/schedule.css.erb.scss */
+section#schedule ul li strong, section#schedule ul li em {
+  display: block;
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 46, /Users/arpanchinta/dev/rci/app/assets/stylesheets/schedule.css.erb.scss */
+section#schedule ul li strong {
+  color: #ffffaa;
+}
+/* line 47, /Users/arpanchinta/dev/rci/app/assets/stylesheets/schedule.css.erb.scss */
+section#schedule ul li em {
+  color: black;
 }
 
 /* line 1, /Users/arpanchinta/dev/rci/app/assets/stylesheets/badges.css.erb.scss */
@@ -1000,43 +1104,44 @@ section#badges ul li {
   width: 100%;
   margin-right: 0.204%;
   padding: 20px 0;
-  background: white;
   list-style: none;
   display: block;
   margin-top: 2px;
 }
-/* line 26, /Users/arpanchinta/dev/rci/app/assets/stylesheets/badges.css.erb.scss */
+/* line 25, /Users/arpanchinta/dev/rci/app/assets/stylesheets/badges.css.erb.scss */
 section#badges ul li img {
   margin-left: 0%;
   float: left;
   margin: 0 20px;
 }
-/* line 28, /Users/arpanchinta/dev/rci/app/assets/stylesheets/badges.css.erb.scss */
+/* line 27, /Users/arpanchinta/dev/rci/app/assets/stylesheets/badges.css.erb.scss */
 section#badges ul li textarea {
   display: inline;
   float: left;
   width: 66.599%;
   margin-right: 0.204%;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
   background: transparent;
-  padding: 0;
-  margin-top: 60px;
-  height: 80px;
+  color: white;
+  padding: 20px 20px 20px 20px;
+  margin-top: 76px;
+  height: 60px;
+  line-height: 15px;
   display: block;
   border: none;
   font-size: 13px;
   font-family: monospace;
   font-color: #999999;
 }
-/* line 41, /Users/arpanchinta/dev/rci/app/assets/stylesheets/badges.css.erb.scss */
+/* line 43, /Users/arpanchinta/dev/rci/app/assets/stylesheets/badges.css.erb.scss */
 section#badges ul li.transparent {
-  background: #666666;
   margin-top: 2px;
 }
-/* line 42, /Users/arpanchinta/dev/rci/app/assets/stylesheets/badges.css.erb.scss */
-section#badges ul li.transparent textarea {
-  color: white;
-}
-/* line 46, /Users/arpanchinta/dev/rci/app/assets/stylesheets/badges.css.erb.scss */
+/* line 48, /Users/arpanchinta/dev/rci/app/assets/stylesheets/badges.css.erb.scss */
 section#badges ul li pre {
   text-align: left;
   font-size: 10px;
@@ -1044,8 +1149,57 @@ section#badges ul li pre {
   overflow: hidden;
 }
 
-/* line 3, /Users/arpanchinta/dev/rci/app/assets/stylesheets/directions.css.erb.scss */
-section#directions div#venue address {
-  font-weight: normal;
-  font-style: normal;
+/* line 1, /Users/arpanchinta/dev/rci/app/assets/stylesheets/directions.css.erb.scss */
+section#directions {
+  clear: both;
+  margin-left: 0%;
+  margin-right: 0%;
+  overflow: hidden;
+  *zoom: 1;
+  position: relative;
+}
+/* line 6, /Users/arpanchinta/dev/rci/app/assets/stylesheets/directions.css.erb.scss */
+section#directions div#venue {
+  display: inline;
+  float: left;
+  width: 33.198%;
+  margin-right: 0.204%;
+  margin-left: 0%;
+  position: relative;
+}
+/* line 11, /Users/arpanchinta/dev/rci/app/assets/stylesheets/directions.css.erb.scss */
+section#directions div#venue h2, section#directions div#venue p, section#directions div#venue ul {
+  margin-left: 20px;
+}
+/* line 14, /Users/arpanchinta/dev/rci/app/assets/stylesheets/directions.css.erb.scss */
+section#directions div#map {
+  display: inline;
+  float: left;
+  width: 66.599%;
+  margin-right: 0.204%;
+  display: inline;
+  float: right;
+  margin-right: 0%;
+  #margin-left: -2px;
+  position: relative;
+}
+/* line 19, /Users/arpanchinta/dev/rci/app/assets/stylesheets/directions.css.erb.scss */
+section#directions div#map iframe {
+  display: block;
+  height: 500px;
+  width: 100%;
+  margin: 20px auto;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 28, /Users/arpanchinta/dev/rci/app/assets/stylesheets/directions.css.erb.scss */
+section#directions div#map a.view {
+  font-size: 12px;
+  margin-left: 5%;
 }

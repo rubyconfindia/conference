@@ -14,7 +14,7 @@
 <section id="page">
   <header>
     <h1>RubyConf India 2012</h1>
-    <h2>March 17-18</h2>
+    <h2>March 24-25</h2>
     <h2>Pune, Maharashtra</h2>
     
     <p id="twitter">
@@ -27,7 +27,7 @@
   <nav id="primary">
     <ul>
       <li><a class="index"      href="index.html"   >Home</a></li>
-      <li><a class="register"   href="http://rubyconfindia.doattend.com/">Register</a></li>
+      <li><a class="register"   href="http://rubyconfindia.doattend.com/" target="_blank">Register</a></li>
       <li><a class="talks"      href="talks.html"   >Talks</a></li>
       <li><a class="schedule"   href="schedule.html">Schedule</a></li>
       <li><a class="badges"     href="badges.html"  >Badges</a></li>
@@ -88,17 +88,13 @@
     <div class="wrap copresenter">&nbsp;</div>
     <h3>Sandboxing Ruby Code - Lessons from the battlefield</h3>
 	<p>
-		Sometime you want to run untrusted code on your server. Our expirements with sandboxing started with the creation of a hosted continuous integration service called Goldberg Pro, and then continued on with RubyMonk [1], which needed to prevent users from performing potentially dangerous operations in code they submitted via the website.
+		Sometime you want to run untrusted code on your server. Our expirements with sandboxing started with the creation of a hosted continuous integration service called Goldberg Pro, and then continued on with <a href="http://RubyMonk.com" title="RubyMonk - Interactive ruby tutorials to learn Ruby">RubyMonk</a>, which needed to prevent users from performing potentially dangerous operations in code they submitted via the website.
 	</p>
 	<p>
 		Here we discuss various system level, language level, and application level techniques that we tried (and we plan to try in the future) to ensure that the user does not bring down the entire system. Some techniques we plan to speak about include LXC (Linux Containers), Chroots, Ruby's SAFE levels, Kernel level limits, SELinux and PTrace.
 	</p>
 	<p>	
-		Some of our learnings are published in the form of the Open Source ruby gem - secure [2]
-	</p>
-	<p>
-		[1] http://RubyMonk.com<br/>
-		[2] https://github.com/c42/secure
+		Some of our learnings are published in the form of the Open Source ruby gem - <a href="https://github.com/c42/secure">secure</a>.
 	</p>
   </article>
   <article>
@@ -203,7 +199,7 @@
 		The reason I have title ""Everything Ruby"" - because we choose to use Ruby every where for Ops world and as well as Dev world. We used puppet to manage our system, mcollective to create work flows, how did we use open source technologies to create our own enterprise private cloud based on OpenStack and OpenVZ/LXC containers - how did we create build system which scales on demand. In this talk I will be showcasing that how did we manage our infrastructure using Puppet and mcollective, how did we create self serving and self sign up environment. What are the challenges for adminsitrators for moving to Ruby and how developers can take advantage of existing OpenSource toolset built around Ruby to explore deployment patterns, scaling on demand, fireup more containers if required - In summary - how can you create a private cloud for your end users which provides end to end development ecosystem on demand.
 	</p>
 	<p>
-		I will be showcasing live demo, puppet recipes, mcollective agents and workflows, different virtualization technologies and containers and how everything works when knit together with Ruby, creates a fine example for well managed IT infrastructure. I have been blogging about this in my four part series at http://ajeygore.in
+		I will be showcasing live demo, puppet recipes, mcollective agents and workflows, different virtualization technologies and containers and how everything works when knit together with Ruby, creates a fine example for well managed IT infrastructure. I have been blogging about this in my four part series at <a href="http://ajeygore.in" title="Code, Deploy, Automate! - Ajey Gore's thoughts on continuous delivery">ajeygore.in</a>
 	</p>
   </article>
   <article>
@@ -212,12 +208,15 @@
       <h3>Habibullah Pagarkar</h3>
       <span class="links">
         <a class="twitter" href="https://twitter.com/#!/mhabibp"></a>
+        <a class="website" href="http://habib.posterous.com/">website</a>
       </span>
     </div>
     <div class="photo copresenter">
-      <img src="assets/speakers/user_blank.png">
+      <img src="assets/speakers/chandan.png">
       <h3>Chandan Jog</h3>
       <span class="links">
+		<a class="twitter" href="https://twitter.com/#!/jog_chandan">twitter</a>
+        <a class="website" href="http://chandanjog.blogspot.com/">website</a>
       </span>
     </div>
     <div class="wrap copresenter">&nbsp;</div>
@@ -229,8 +228,9 @@
 		EzSMS is our attempt at providing a SMS gateway that can be setup in minutes. Of course it runs on Ruby! All you need is an Android powered phone, a sim-card and data access. Thus it is very easy to prototype your apps. Gone are the days when we, Android owners, would feel alone. With Android activations outpacing births it seems that a hundred billion phones have found homes.
 	</p>
 	<p>
-		In this talk we'll explore Ruboto and JRuby and quickly explain how to create a simple Android application. We'll explore the internals of our application and then compare Ruboto and other Ruby flavoured mobile app development frameworks. We'll also apologize to Sting for mishearing his song "Message in a bottle".
+		In this talk we'll explore Ruboto and JRuby and quickly explain how to create a simple Android application. We'll explore the internals of our application and then compare Ruboto and other Ruby flavoured mobile app development frameworks. We'll also apologize to Sting for mishearing his song <a href="http://www.youtube.com/watch?v=ObL3L6MRvN4">"Message in a bottle"</a> .
 	</p>
+	
   </article>
   <article>
     <div class="photo">
@@ -255,9 +255,11 @@
   </article>
   <article>
     <div class="photo">
-      <img src="assets/speakers/user_blank.png">
+      <img src="assets/speakers/darshan.jpg">
       <h3>Darshan Karandikar</h3>
       <span class="links">
+        <a class="twitter" href="https://twitter.com/#!/dkarandikar">twitter</a>
+        <a class="website" href="http://in.linkedin.com/in/darshankarandikar">website</a>
       </span>
     </div>
     <div class="wrap">&nbsp;</div>
@@ -405,23 +407,31 @@
 	</p>
 	<p>
 		I cover some of the below topics,
-		<ol>
+		<ul>
 			<li>How to maintain the code quality between the developers on large scale projects</li>
 			<li>Paring environments</li>
 			<li>Code reviews</li>
 			<li>Maintaining the test suite , etc</li>
-		</ol>
+		</ul>
 	</p>
 	<p>	
 		We also cover below libraries
-		<ol>
-			<li>Borg  A distributed Test Suite runner for Rails, using Eventmachine and Redis) which is developed by me</li>
-			<li>New Relic is a performance management system</li>
-		</ol>
+		<ul>
+			<li><strong>Borg:</strong> distributed Test Suite runner for Rails, using Eventmachine and Redis) which is developed by me</li>
+			<li><strong>New Relic:</strong> a performance management system</li>
+		</ul>
 	</p>
   </article>
   <article>
     <div class="photo">
+      <img src="http://m3.licdn.com/media/p/4/000/13c/3c3/22c2961.jpg">
+      <h3>Shailesh Patil</h3>
+      <span class="links">
+        <a class="twitter" href="https://twitter.com/#!/patilshailesh">twitter</a>
+        <a class="website" href="http://www.linkedin.com/in/shaileshspatil">website</a>
+      </span>
+    </div>
+    <div class="photo copresenter">
       <img src="http://m3.licdn.com/media/p/1/000/00f/2ae/194e10f.jpg">
       <h3>Sandip Ransing</h3>
       <span class="links">
@@ -429,7 +439,7 @@
         <a href="http://www.funonrails.com/" class="website">website</a>
       </span>
     </div>
-    <div class="wrap">&nbsp;</div>
+    <div class="wrap copresenter">&nbsp;</div>
     <h3>VoIP on Rails in India</h3>
 	<p>
 		In India, VoIP is not commercially legalized. You cannot terminate a VoIP call to a PSTN or mobile! What does that mean for Indian clients? This talk is very relevant for most companies having a support center, a call center or a helpline in India, since infrastructure costs for the traditional way are sky high! This talk is about how we built a hosted Rails solution for SMEs in India to serve out-bound and in-bound calls (including IVR) in India.
