@@ -513,10 +513,17 @@ header {
   z-index: 10;
 }
 /* line 26, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+header a.home {
+  display: block;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+/* line 33, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 header h1, header h2 {
   text-indent: -1000em;
 }
-/* line 28, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 35, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 header p#twitter {
   display: block;
   position: absolute;
@@ -532,13 +539,13 @@ header p#twitter {
   line-height: 18px;
   text-align: center;
 }
-/* line 45, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 52, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 header p#twitter a {
   color: #aa0000;
   text-decoration: none;
 }
 
-/* line 49, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 56, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav {
   clear: both;
   margin-left: 0%;
@@ -558,16 +565,32 @@ nav {
   border-radius: 10px;
   z-index: 1;
 }
-/* line 60, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 67, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul {
   margin: 0;
   padding: 0;
 }
-/* line 63, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 70, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul li {
   display: inline;
 }
-/* line 65, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 72, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+nav ul li:first-child a {
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  -ms-border-radius: 10px 0 0 10px;
+  -o-border-radius: 10px 0 0 10px;
+  border-radius: 10px 0 0 10px;
+}
+/* line 73, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+nav ul li:last-child a {
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  -ms-border-radius: 0 10px 10px 0;
+  -o-border-radius: 0 10px 10px 0;
+  border-radius: 0 10px 10px 0;
+}
+/* line 75, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul a {
   display: block;
   display: inline;
@@ -581,65 +604,59 @@ nav ul a {
   padding: 80px 0 16px 0;
   background: transparent url("icons.png") no-repeat top center;
 }
-/* line 78, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 88, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul a.register {
   background-position: center 0px;
 }
-/* line 79, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 89, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul a.talks {
   background-position: center -100px;
 }
-/* line 80, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 90, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul a.schedule {
   background-position: center -200px;
 }
-/* line 81, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 91, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul a.directions {
   background-position: center -300px;
-  -webkit-border-radius: 0 10px 10px 0;
-  -moz-border-radius: 0 10px 10px 0;
-  -ms-border-radius: 0 10px 10px 0;
-  -o-border-radius: 0 10px 10px 0;
-  border-radius: 0 10px 10px 0;
 }
-/* line 82, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 92, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul a.hotels {
   background-position: center -400px;
 }
-/* line 83, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 93, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul a.videos {
   background-position: center -500px;
 }
-/* line 84, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 94, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul a.badges {
   background-position: center -600px;
 }
-/* line 85, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 95, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul a.index {
   background-position: center -700px;
-  -webkit-border-radius: 10px 0 0 10px;
-  -moz-border-radius: 10px 0 0 10px;
-  -ms-border-radius: 10px 0 0 10px;
-  -o-border-radius: 10px 0 0 10px;
-  border-radius: 10px 0 0 10px;
 }
-/* line 87, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 96, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+nav ul a.sponsors {
+  background-position: center -800px;
+}
+/* line 98, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul a.index {
   margin-left: 0%;
 }
-/* line 88, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 99, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav ul a.directions {
   display: inline;
   float: right;
   margin-right: 0%;
   #margin-left: -2px;
 }
-/* line 95, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 106, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 body#page_index nav ul a.index, body#page_talks nav ul a.talks, body#page_schedule nav ul a.schedule, body#page_directions nav ul a.directions, body#page_badges nav ul a.badges, nav ul a:hover {
   background-color: #ffffaa;
 }
 
-/* line 104, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 115, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav#secondary {
   clear: both;
   margin-left: 0%;
@@ -648,22 +665,22 @@ nav#secondary {
   *zoom: 1;
   position: relative;
 }
-/* line 109, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 120, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav#secondary ul {
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 113, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 124, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav#secondary ul li {
   display: inline;
 }
-/* line 115, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 126, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 nav#secondary ul a {
   color: white;
 }
 
-/* line 124, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 135, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 footer {
   clear: both;
   margin-left: 0%;
@@ -674,7 +691,7 @@ footer {
   color: rgba(255, 255, 255, 0.6);
   font-size: 11px;
 }
-/* line 132, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+/* line 143, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
 footer a {
   color: rgba(255, 255, 170, 0.7);
   text-decoration: none;
@@ -682,12 +699,12 @@ footer a {
 }
 
 @media screen and (max-width: 640px) {
-  /* line 140, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+  /* line 151, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
   header {
     padding-top: 40px;
     background-position: center 40px;
   }
-  /* line 144, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+  /* line 155, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
   header p#twitter {
     background: black;
     top: 0;
@@ -698,33 +715,33 @@ footer a {
     height: auto;
   }
 
-  /* line 152, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+  /* line 163, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
   nav ul a {
     display: inline;
     float: left;
     width: 33.198%;
     margin-right: 0.204%;
   }
-  /* line 154, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+  /* line 165, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
   nav ul a.schedule {
     display: inline;
     float: right;
     margin-right: 0%;
     #margin-left: -2px;
   }
-  /* line 155, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+  /* line 166, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
   nav ul a.directions {
     margin-left: 0%;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 160, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+  /* line 171, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
   header {
     background-image: url("logo-small.png");
     height: 200px;
   }
 
-  /* line 161, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
+  /* line 172, /Users/arpanchinta/dev/rci/app/assets/stylesheets/public.css.erb.scss */
   nav ul a {
     background-image: url("icons-small.png");
     padding: 60px 0 8px 0;
