@@ -886,37 +886,38 @@ section#talks article {
   display: block;
   float: left;
   margin: 3% 4% 3% 1%;
-  width: 95%;
+  width: 55%;
+  min-height: 240px;
   padding: 0;
   background: white;
   position: relative;
   color: #666666;
 }
-/* line 13, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+/* line 14, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
 section#talks article a {
   color: #aa0000;
 }
-/* line 15, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
-section#talks article div.wrap {
-  display: block;
-  float: right;
-  width: 170px;
-  height: 180px;
-}
-/* line 21, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
-section#talks article div.wrap.copresenter {
-  width: 390px;
-}
-/* line 24, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
-section#talks article div.photo {
+/* line 16, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+section#talks article div.speaker {
   display: block;
   position: absolute;
-  background: white;
-  padding: 10px;
-  width: 178px;
-  height: 198px;
-  top: -40px;
-  right: -35px;
+  top: -10px;
+  right: -78%;
+  width: 77%;
+  color: white;
+  font-size: 13px;
+  line-height: 16px;
+}
+/* line 26, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+section#talks article div.speaker div.photo {
+  display: block;
+  position: relative;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 4px;
+  width: 128px;
+  height: 148px;
+  float: left;
+  margin: 10px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -927,37 +928,33 @@ section#talks article div.photo {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   z-index: 100;
 }
-/* line 38, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
-section#talks article div.photo.copresenter {
-  right: 175px;
-}
 /* line 40, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
-section#talks article div.photo img {
-  width: 178px;
-  height: 178px;
+section#talks article div.speaker div.photo img {
+  width: 128px;
+  height: 128px;
 }
 /* line 42, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
-section#talks article div.photo h3 {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: bold;
-  color: #666666;
+section#talks article div.speaker div.photo h3 {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: normal;
+  color: white;
   padding: 0;
   margin: 0;
   text-align: center;
   background: transparent;
 }
 /* line 53, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
-section#talks article div.photo span.links {
+section#talks article div.speaker div.photo span.links {
   display: block;
   position: absolute;
   height: 20px;
   background: white;
-  top: 170px;
-  left: 10px;
+  top: 112px;
+  left: 4px;
 }
 /* line 62, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
-section#talks article div.photo span.links a {
+section#talks article div.speaker div.photo span.links a {
   display: block;
   width: 20px;
   height: 20px;
@@ -968,32 +965,32 @@ section#talks article div.photo span.links a {
   overflow: hidden;
 }
 /* line 73, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
-section#talks article div.photo span.links a.website {
+section#talks article div.speaker div.photo span.links a.website {
   background-position: -20px -20px;
 }
 /* line 74, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
-section#talks article div.photo span.links a.website:hover {
+section#talks article div.speaker div.photo span.links a.website:hover {
   background-position: -60px -20px;
 }
 /* line 75, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
-section#talks article div.photo span.links a.twitter {
+section#talks article div.speaker div.photo span.links a.twitter {
   background-position: -20px -60px;
 }
 /* line 76, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
-section#talks article div.photo span.links a.twitter:hover {
+section#talks article div.speaker div.photo span.links a.twitter:hover {
   background-position: -60px -60px;
 }
 /* line 77, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
-section#talks article div.photo span.links a:hover {
+section#talks article div.speaker div.photo span.links a:hover {
   background-color: black;
 }
-/* line 82, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+/* line 84, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
 section#talks article h3 {
   background: #ffffaa;
   margin: 0;
   padding: 20px 20px 10px 20px;
 }
-/* line 88, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
+/* line 90, /Users/arpanchinta/dev/rci/app/assets/stylesheets/talks.css.erb.scss */
 section#talks article p {
   margin: 10px 20px;
 }
