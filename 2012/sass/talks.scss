@@ -1,0 +1,92 @@
+section#talks{
+  margin-top: 20px;
+  article{
+    display: block;
+    float: left;
+    margin: 3% 4% 3% 1%;
+    width: 55%;
+    min-height: 240px;
+    padding: 0;
+    background: $white;
+    position: relative;
+    color: $dark-gray;
+    
+    a{color: $primary-color;}
+    
+    div.speaker{
+      display: block;
+      position: absolute;
+      top: -10px;
+      right: -78%;
+      width: 77%;
+      color: $white;
+      font-size: 13px;
+      line-height: 16px;
+
+      div.photo{
+        display: block;
+        position: relative;
+        background: rgba($black, 0.4);
+        padding: 4px;
+        width: 128px;
+        height: 148px;
+        float: left;
+        margin: 10px;
+      
+        @include border-radius(4px);
+        @include box-shadow(0 0 8px rgba(0,0,0,0.3));
+        z-index: 100;
+      
+        img{width: 128px; height: 128px;}
+      
+        h3{
+          font-size: 12px;
+          line-height: 12px;
+          font-weight: normal;
+          color: $white;
+          padding: 0;
+          margin: 0;
+          text-align: center;
+          background: transparent;
+        }
+      
+        span.links{
+          display: block;
+          position: absolute;
+          height: 20px;
+          background: $white;
+        
+          top: 112px;
+          left: 4px;
+        
+          a{
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: transparent url('mini-icons.png') -20px -20px  no-repeat;
+            float: left;
+            border: none;
+          
+            text-indent: -1000em;
+            overflow: hidden;
+          
+            &.website{ background-position: -20px -20px; }
+            &.website:hover{ background-position: -60px -20px; }
+            &.twitter{ background-position: -20px -60px; }
+            &.twitter:hover{ background-position: -60px -60px; }
+            &:hover{ background-color: $black; }
+          }
+        }
+      }
+    }
+    
+    
+    h3{
+      background: $highlight-color;
+      margin: 0;
+      padding: 20px 20px 10px 20px;
+    } 
+    
+    p{margin: 10px 20px;}
+  }
+}

@@ -1,0 +1,173 @@
+html{
+  background: $primary-color url('bg_waves.png') repeat fixed center center;
+  color: #fff;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+section#page{
+  @include container;
+  position: relative;
+}
+
+a{color: $highlight-color; text-decoration: none; border-bottom: dotted 1px;}
+
+header{
+  @include full;
+  position: relative;
+  opacity: 1;
+
+  padding-top: 30px;
+  height: 200px;
+  background: transparent url('logo-small.png') no-repeat center 30px;
+  overflow: hidden;
+  z-index: 10;
+  
+  a.home{
+    display: block;
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
+  
+  h1, h2{text-indent: -1000em;}
+  
+  p#twitter{
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    
+    height: 90px;
+    width: 160px;
+    background: transparent url('twitter.png') no-repeat center top;
+    padding: 15px 20px;
+    margin: 0;
+    
+    color: $dark-gray;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    
+    a{color: $primary-color;text-decoration: none;}
+  }
+}
+
+nav{
+  @include full;
+  @include clearfix;
+  position: relative;
+  opacity: 1;
+
+  background: $white;
+  @include box-shadow(0 0 5px rgba(0,0,0,0.3));
+  @include border-radius(10px);
+  z-index: 1;
+  
+  ul{
+    margin: 0; padding: 0;
+    
+    li{display: inline;}
+    
+    li:first-child a{ @include border-radius(10px 0 0 10px);}
+    li:last-child a{ @include border-radius(0 10px 10px 0);}
+    
+    a{
+      display: block;
+      @include columns(2);
+      
+      text-align: center;
+      text-decoration: none;
+      color: $primary-color;
+      border: none;
+      
+      padding: 80px 0 16px 0;
+      
+      background: transparent url("icons.png") no-repeat top center;
+
+      &.register{background-position: center 0px;}
+      &.talks{background-position: center -100px;}
+      &.schedule{background-position: center -200px;}
+      &.directions{background-position: center -300px;}
+      &.hotels{background-position: center -400px;}
+      &.videos{background-position: center -500px;}
+      &.badges{background-position: center -600px;}
+      &.index{background-position: center -700px;}
+      &.sponsors{background-position: center -800px;}
+      
+      &.index{@include alpha;}
+      &.directions{@include omega;}
+      
+      body#page_index &.index,
+      body#page_talks &.talks,
+      body#page_schedule &.schedule,
+      body#page_directions &.directions,
+      body#page_badges &.badges,
+      &:hover{
+        background-color: $highlight-color;
+      }
+    }
+    
+    
+  }
+}
+
+nav#secondary{
+  @include full;
+  @include clearfix;
+  position: relative;
+  
+  ul{
+    margin: 0; padding: 0;
+    text-align: center;
+    
+    li{display: inline;}
+    
+    a{
+      color: $white;
+      
+    }
+    
+  }
+
+}
+
+footer{
+  @include full;
+  padding-top: 100px;
+  position: relative;
+  text-align: center;
+  color: rgba($white, 0.6);
+  font-size: 11px;
+  
+  a{color: rgba($highlight-color, 0.7); text-decoration: none; border-bottom: dotted 1px;}
+}
+
+@media screen and (max-width: 800px) {
+  
+}
+
+@media screen and (max-width: 640px) {
+  header{
+    padding-top: 40px;
+    background-position: center 40px;
+    
+    p#twitter{
+      background: $black;
+      top: 0; right: 0; left: 0;
+      padding: 4px;
+      width: auto; height: auto;
+    }
+  }
+  
+  nav ul a{
+    @include columns(4);
+    &.schedule{@include omega;}
+    &.directions{@include alpha;}
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header{ background-image: url('logo-small.png'); height: 200px; }
+  nav ul a{ background-image: url('icons-small.png'); padding: 60px 0 8px 0;} 
+}

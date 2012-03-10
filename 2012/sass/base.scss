@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+// susy
+@import "compass/utilities/general/clearfix";
+@import "compass/utilities/general/float";
+@import "compass/layout/grid-background";
+@import "compass/utilities/general/clearfix";
+@import "susy";
+
+@import "compass/css3";
+@import "compass/css3/pie";
+@import "normalize";
+
+$white: #fff;
+$x-light-gray: #eee;
+$light-gray: #ccc;
+$gray: #999;
+$dark-gray: #666;
+$x-dark-gray: #333;
+$black: #000;
+
+$primary-color: #a00;
+$highlight-color: #ffa;
+
+$total-cols: 12;
+$col-width: 80px;
+$gutter-width: 2px;
+$side-gutter-width: 0px;
+
+@font-face {
+	font-family: 'Vegur';
+	src: url("fonts/Vegur Regular.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Vegur';
+	src: url("fonts/Vegur Bold.otf");
+	font-weight: bold;
+	font-style: normal;
+}
+
+html, header, nav, section#page{
+  font-family: Vegur, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}

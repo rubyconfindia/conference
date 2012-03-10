@@ -1,0 +1,96 @@
+section#index{
+  @include full;
+  @include clearfix;
+  position: relative;
+  margin-top: 10px;
+    
+  section#news{
+    @include columns(8);
+    @include alpha;
+    position: relative;
+    font-size: 14px;
+    
+    h2{
+      font-size: 14px;
+      margin: 10px 10px 0 10px;
+    }
+    
+    p{
+      margin: 0 10px 10px 20px;
+    }
+  }
+  
+  section#sponsors{
+    @include columns(4);
+    @include omega;
+    position: relative;
+    
+    h3{text-align: center;}
+
+    ul{
+      margin: 0; padding: 0;
+      border-bottom: dotted 1px rgba($white, 0.4);
+
+      li{display: inline; margin: 0; padding: 0;}
+
+      a{
+        @include full;
+        position: relative;
+        display: block;
+        margin: 10px;
+
+        text-align: center;
+        text-decoration: none;
+        color: $white;
+        border: none;
+        
+        &:hover{
+          @include box-shadow(0 0 10px rgba($highlight-color,0.9));
+          @include border-radius(12px);
+        }
+        
+        span{display: block; height: 0; width: 0; text-indent: -1000em; overflow: hidden;}
+        img{
+          display: block;
+          margin: 0 auto;
+          padding: 10px 0;
+          max-width: 95%;
+        }
+      }
+      
+      &.years{font-size: 20px; line-height: 50px;}
+    }
+    
+    ul.years{
+      font-size: 20px; line-height: 50px;
+      
+      a{color: #fff;}
+    }
+  }
+}
+
+footer{
+  @include full;
+  padding-top: 100px;
+  position: relative;
+  text-align: center;
+  color: rgba($white, 0.6);
+  font-size: 11px;
+  
+  a{color: rgba($highlight-color, 0.7); text-decoration: none; border-bottom: dotted 1px;}
+}
+
+@media screen and (max-width: 800px) {
+  
+}
+
+@media screen and (max-width: 640px) {
+  section#index{
+    section#news{@include columns(12,12);}
+    section#sponsors{
+      @include columns(8,12);
+      @include prefix(2,12);
+      @include suffix(2,12);
+    }
+  }
+}

@@ -1,0 +1,50 @@
+section#schedule{
+  
+  h2, h3{ text-align: center; margin-top: 80px;}
+  
+  ul{
+    display: block;
+    width: 100px;
+    margin: 10px auto;
+    padding: 10px 0;
+    @include border-radius(50px);
+    color: $primary-color;
+    background: rgba($black,0.6);
+    font-size: 16px;
+    
+    li{
+      list-style: none;
+      margin: 0;
+      padding: 30px 0;
+      position: relative;
+      height: 20px;
+      line-height: 20px;
+      border-bottom: solid 1px $x-dark-gray;
+      
+      span.time{display: block; text-align: center;}
+      &.break{
+        background: $white;
+        padding: 10px 0;
+        height: 40px;
+      }
+      &:last-child{border: none;}
+      
+      span.track1, span.track2{
+        padding: 0 10px;
+        display: block;
+        position: absolute;
+        width: 400px;
+        left: -420px;
+        top: 20px;
+        text-align: right;
+        color: $white;
+      }
+      
+      span.track2{left: auto; right: -420px; text-align: left;}
+      
+      strong, em{display: block; font-weight: normal; font-style: normal;}
+      strong{color: $highlight-color;}
+      em{color: $black;}
+    }
+  }
+}

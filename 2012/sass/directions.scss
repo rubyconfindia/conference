@@ -1,0 +1,30 @@
+section#directions{
+  @include full;
+  @include clearfix;
+  position: relative;
+  
+  div#venue{
+    @include columns(4);
+    @include alpha;
+    position: relative;
+    
+    h2, p, ul{margin-left: 20px;}
+  }
+  
+  div#map{
+    @include columns(8);
+    @include omega;
+    position: relative;
+    
+    iframe{
+      display: block;
+      height: 500px;
+      width: 100%;
+      margin: 20px auto;
+      @include box-shadow(0 0 5px rgba(0,0,0,0.3));
+      @include border-radius(4px);
+    }
+    
+    a.view{font-size: 12px; margin-left: 5%;}
+  }
+}
