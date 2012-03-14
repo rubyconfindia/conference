@@ -2,7 +2,6 @@
 
 // Uses compass for compilation: http://compass-style.org/
 
-
 @import "base";
 @import "fonts";
 @import "public";
@@ -12,6 +11,3 @@
 @import "schedule";
 @import "badges";
 @import "directions";
-
-
-//Added source SASS files & compass config file to make it easier for anyone to edit. Previously SASS files were being maintained in a separate rails app. 
