@@ -69,17 +69,6 @@ section#index{
   }
 }
 
-footer{
-  @include full;
-  padding-top: 100px;
-  position: relative;
-  text-align: center;
-  color: rgba($white, 0.6);
-  font-size: 11px;
-  
-  a{color: rgba($highlight-color, 0.7); text-decoration: none; border-bottom: dotted 1px;}
-}
-
 @media screen and (max-width: 800px) {
   
 }

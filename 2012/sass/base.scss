@@ -9,6 +9,7 @@
 
 @import "compass/css3";
 @import "compass/css3/pie";
+@import "compass/css3/transition";
 @import "normalize";
 
 $white: #fff;
@@ -24,7 +25,7 @@ $highlight-color: #ffa;
 
 $total-cols: 12;
 $col-width: 80px;
-$gutter-width: 2px;
+$gutter-width: 0px;
 $side-gutter-width: 0px;
 
 @font-face {
