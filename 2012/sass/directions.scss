@@ -4,27 +4,37 @@ section#directions{
   position: relative;
   
   div#venue{
-    @include columns(4);
-    @include alpha;
     position: relative;
     
     h2, p, ul{margin-left: 20px;}
   }
   
   div#map{
-    @include columns(8);
-    @include omega;
     position: relative;
     
     iframe{
       display: block;
       height: 500px;
-      width: 96%;
-      margin: 20px auto;
-      border: solid 6px transparent;
+      width: 100%;
+      margin: 0;
       @include box-shadow(0 0 10px rgba(0,0,0,0.8));
     }
     
     a.view{font-size: 12px; margin-left: 5%;}
+  }
+}
+
+@media screen and (min-width: 640px) {
+  section#directions{
+    div#venue{ @include columns(4);}
+    div#map{
+      @include columns(8);
+      
+      iframe{
+        width: 96%;
+        margin: 1.5% auto;
+        border: solid 6px transparent;
+      }
+    }
   }
 }
