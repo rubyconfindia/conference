@@ -2,55 +2,38 @@ section#badges{
   @include full;
   margin: 0; 
   padding: 0;
-  
-  color: $dark-gray;
-  
-  h2{
-    display: none;
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-  }
+  color: $white;
   
   ul{
      display: inline; margin: 0; padding: 0;
 
     li{
-      @include columns(12);
-      padding: 20px 0;
-      list-style: none;
+      @include full;
+      @include clearfix;
+      list: none;
       display: block;
-      margin-top: 2px;
       
-      img{@include alpha; float: left; margin: 0 20px;}
-      
-      textarea{
-        @include columns(8);
-        @include border-radius(6px);
-        background: transparent;
-        color: $white;
-        padding: 20px 20px 20px 20px;
-        margin-top: 76px;
-        height: 90px;
-        line-height: 15px;
-        display: block;
-        border: none;
-        font-size: 13px;
-        font-family: monospace;
-        font-color: $gray;
+      span{
+        @include transition-duration(2s);
+        @include columns(4);
+        text-align: center;
+
+        img{max-width: 95%; margin: 0 auto;}
       }
-      
-      &.transparent{
-        margin-top: 2px;
-      }
-      
       
       pre{
-        text-align: left;
-        font-size: 10px;
-        white-space: nowrap;
-        overflow: hidden;
+        @include columns(8);
+        margin-top: 76px;
+        line-height: 15px;
+        display: block;
+        font-size: 13px;
       }
     }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section#badges ul li span, section#badges ul li pre{
+    @include columns(12);
   }
 }
