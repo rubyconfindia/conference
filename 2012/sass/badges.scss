@@ -35,5 +35,6 @@ section#badges{
 @media screen and (max-width: 800px) {
   section#badges ul li span, section#badges ul li pre{
     @include columns(12);
+    margin-top: 0;
   }
 }

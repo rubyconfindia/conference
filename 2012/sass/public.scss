@@ -87,6 +87,7 @@ nav{
       body#page_schedule &.schedule,
       body#page_directions &.directions,
       body#page_badges &.badges,
+      body#page_sponsors &.sponsors,
       &:hover{
         background-color: $highlight-color;
       }
@@ -122,7 +123,9 @@ footer{
     }
   }
   
-  nav ul a{
-    @include columns(2);
-  }
+  nav ul a{ @include columns(2);}
+}
+
+@media screen and (min-width: 960px) {
+  nav{@include border-radius(4px);}
 }

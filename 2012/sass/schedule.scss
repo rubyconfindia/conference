@@ -20,7 +20,7 @@ section#schedule{
       position: relative;
       height: 20px;
       line-height: 20px;
-      border-bottom: solid 1px $x-dark-gray;
+      border-bottom: solid 1px rgba($black, 0.4);
       @include transition-duration(2s);
       
       span.time{display: block; text-align: center;}
