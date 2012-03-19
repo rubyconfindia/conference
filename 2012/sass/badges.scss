@@ -15,14 +15,15 @@ section#badges{
       
       span{
         @include transition-duration(2s);
-        @include columns(4);
+        @include columns(4,12);
         text-align: center;
 
         img{max-width: 95%; margin: 0 auto;}
       }
       
       pre{
-        @include columns(8);
+        @include columns(8,12);
+        @include omega(12);
         margin-top: 76px;
         line-height: 15px;
         display: block;
@@ -34,7 +35,7 @@ section#badges{
 
 @media screen and (max-width: 800px) {
   section#badges ul li span, section#badges ul li pre{
-    @include columns(12);
+    @include columns(12,12);
     margin-top: 0;
   }
 }

@@ -26,14 +26,14 @@ section#directions{
 
 @media screen and (min-width: 640px) {
   section#directions{
-    div#venue{ @include columns(4);}
+    div#venue{ @include columns(4,12);}
     div#map{
-      @include columns(8);
+      @include columns(8,12);
+      @include omega(12);
       
       iframe{
         width: 96%;
-        margin: 1.5% auto;
-        border: solid 6px transparent;
+        margin: 2%;
       }
     }
   }

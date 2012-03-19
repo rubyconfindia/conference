@@ -14,15 +14,16 @@ section#index{
   }
   
   article{
-    @include columns(12);
+    @include columns(12,12);
     @include transition-duration(2s);
     font-size: 14px;
+    clear: right;
 
     p{ margin: 4px 0; }
   }
 
   section#sponsor_logos{
-    @include columns(12);
+    @include columns(12,12);
 
     div{
       @include columns(12,12);
@@ -30,10 +31,10 @@ section#index{
       clear: right;
       
       h2{ border-top-color: $black; color: $black;}
-      
 
       article{
         @include columns(4,4);
+        margin: 0; padding: 0;
 
         a{
           position: relative;
@@ -45,9 +46,7 @@ section#index{
           border: none;
           @include border-radius(12px);
 
-          &:hover{
-            @include box-shadow(0 0 10px rgba($highlight-color,0.9));
-          }
+          &:hover{ @include box-shadow(0 0 10px rgba($highlight-color,0.4)); }
         
           span{display: block; height: 0; width: 0; text-indent: -1000em; }
 
@@ -68,16 +67,12 @@ section#index{
   section#index{
     article{
       @include columns(6,12);
-      &.participation, &.venue, &.videos{@include omega;}
-      &.previous{clear: right;}
+      &.participation, &.venue, &.videos{@include omega(12);}
     }
     
-    section#sponsor_logos{
-      div{
-        @include columns(6);
-        
-        &#gold_sponsors, &#associate_sponsors, &#supporters { @include omega; }
-      }
+    section#sponsor_logos div{
+      @include columns(6,12);
+      &#gold_sponsors, &#associate_sponsors, &#supporters { @include omega(12); }
     }
   }
 }
@@ -86,17 +81,13 @@ section#index{
   section#index{
     article{
       @include columns(4,12);
-
-      &.venue, &.videos{@include omega;}
-      &.previous{clear: right;}
+      &.venue, &.videos{@include omega(12);}
     }
 
-    section#sponsor_logos{
-      div{
-        @include columns(4,12);
+    section#sponsor_logos div{
+      @include columns(4,12);
 
-        &#silver_sponsors, &#supporters { @include omega; }
-      }
+      &#silver_sponsors, &#supporters { @include omega(12); }
     }
   }
 }

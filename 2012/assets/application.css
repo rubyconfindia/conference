@@ -599,8 +599,8 @@ nav ul a {
   display: block;
   display: inline;
   float: left;
-  width: 31.507%;
-  margin-right: 1.37%;
+  width: 32.394%;
+  margin-right: 1.408%;
   -moz-transition-property: length;
   -webkit-transition-property: length;
   -o-transition-property: length;
@@ -618,7 +618,7 @@ nav ul a {
 nav ul a.directions {
   display: inline;
   float: right;
-  margin-right: 1.37%;
+  margin-right: 0;
   #margin-left: -1em;
 }
 nav ul a.register {
@@ -704,10 +704,6 @@ footer a {
   }
   nav ul a {
     display: block;
-    display: inline;
-    float: left;
-    width: 31.507%;
-    margin-right: 1.37%;
     text-align: center;
     text-decoration: none;
     color: #aa0000;
@@ -720,10 +716,10 @@ footer a {
   }
 }
 @media screen and (max-width: 800px) {
-  nav ul a.schedule, nav ul a.badges {
+  nav ul a.schedule {
     display: inline;
     float: right;
-    margin-right: 1.37%;
+    margin-right: 0;
     #margin-left: -1em;
   }
 }
@@ -731,8 +727,8 @@ footer a {
   nav ul a {
     display: inline;
     float: left;
-    width: 15.068%;
-    margin-right: 1.37%;
+    width: 15.493%;
+    margin-right: 1.408%;
   }
 }
 @media screen and (min-width: 960px) {
@@ -765,13 +761,14 @@ section#index h2 {
 section#index article {
   display: inline;
   float: left;
-  width: 97.26%;
-  margin-right: 1.37%;
+  width: 100%;
+  margin-right: 1.408%;
   -moz-transition-duration: 2s;
   -webkit-transition-duration: 2s;
   -o-transition-duration: 2s;
   transition-duration: 2s;
   font-size: 14px;
+  clear: right;
 }
 section#index article p {
   margin: 4px 0;
@@ -779,8 +776,8 @@ section#index article p {
 section#index section#sponsor_logos {
   display: inline;
   float: left;
-  width: 97.26%;
-  margin-right: 1.37%;
+  width: 100%;
+  margin-right: 1.408%;
 }
 section#index section#sponsor_logos div {
   display: inline;
@@ -802,6 +799,8 @@ section#index section#sponsor_logos div article {
   float: left;
   width: 100%;
   margin-right: 4.348%;
+  margin: 0;
+  padding: 0;
 }
 section#index section#sponsor_logos div article a {
   position: relative;
@@ -818,10 +817,10 @@ section#index section#sponsor_logos div article a {
   border-radius: 12px;
 }
 section#index section#sponsor_logos div article a:hover {
-  -moz-box-shadow: 0 0 10px rgba(255, 255, 170, 0.9);
-  -webkit-box-shadow: 0 0 10px rgba(255, 255, 170, 0.9);
-  -o-box-shadow: 0 0 10px rgba(255, 255, 170, 0.9);
-  box-shadow: 0 0 10px rgba(255, 255, 170, 0.9);
+  -moz-box-shadow: 0 0 10px rgba(255, 255, 170, 0.4);
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 170, 0.4);
+  -o-box-shadow: 0 0 10px rgba(255, 255, 170, 0.4);
+  box-shadow: 0 0 10px rgba(255, 255, 170, 0.4);
 }
 section#index section#sponsor_logos div article a span {
   display: block;
@@ -846,22 +845,19 @@ section#index section#sponsor_logos div article a img {
   section#index article.participation, section#index article.venue, section#index article.videos {
     display: inline;
     float: right;
-    margin-right: 1.37%;
+    margin-right: 0;
     #margin-left: -1em;
-  }
-  section#index article.previous {
-    clear: right;
   }
   section#index section#sponsor_logos div {
     display: inline;
     float: left;
-    width: 47.945%;
-    margin-right: 1.37%;
+    width: 49.296%;
+    margin-right: 1.408%;
   }
   section#index section#sponsor_logos div#gold_sponsors, section#index section#sponsor_logos div#associate_sponsors, section#index section#sponsor_logos div#supporters {
     display: inline;
     float: right;
-    margin-right: 1.37%;
+    margin-right: 0;
     #margin-left: -1em;
   }
 }
@@ -875,11 +871,8 @@ section#index section#sponsor_logos div article a img {
   section#index article.venue, section#index article.videos {
     display: inline;
     float: right;
-    margin-right: 1.37%;
+    margin-right: 0;
     #margin-left: -1em;
-  }
-  section#index article.previous {
-    clear: right;
   }
   section#index section#sponsor_logos div {
     display: inline;
@@ -890,11 +883,20 @@ section#index section#sponsor_logos div article a img {
   section#index section#sponsor_logos div#silver_sponsors, section#index section#sponsor_logos div#supporters {
     display: inline;
     float: right;
-    margin-right: 1.37%;
+    margin-right: 0;
     #margin-left: -1em;
   }
 }
+section#talks {
+  clear: both;
+  margin-left: 1.37%;
+  margin-right: 1.37%;
+}
 section#talks article {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin-right: 1.408%;
   display: block;
   position: relative;
   color: #666666;
@@ -997,11 +999,11 @@ section#talks article div.talk h3 {
   section#talks article div.speaker {
     display: inline;
     float: left;
-    width: 39.726%;
-    margin-right: 1.37%;
+    width: 40.845%;
+    margin-right: 1.408%;
     display: inline;
     float: right;
-    margin-right: 1.37%;
+    margin-right: 0;
     #margin-left: -1em;
   }
   section#talks article div.speaker div.photo {
@@ -1010,9 +1012,8 @@ section#talks article div.talk h3 {
   section#talks article div.talk {
     display: inline;
     float: left;
-    width: 56.164%;
-    margin-right: 1.37%;
-    margin-left: 1.37%;
+    width: 57.746%;
+    margin-right: 1.408%;
     min-height: 240px;
   }
 }
@@ -1200,8 +1201,8 @@ section#badges ul li span {
   transition-duration: 2s;
   display: inline;
   float: left;
-  width: 31.507%;
-  margin-right: 1.37%;
+  width: 32.394%;
+  margin-right: 1.408%;
   text-align: center;
 }
 section#badges ul li span img {
@@ -1211,8 +1212,12 @@ section#badges ul li span img {
 section#badges ul li pre {
   display: inline;
   float: left;
-  width: 64.384%;
-  margin-right: 1.37%;
+  width: 66.197%;
+  margin-right: 1.408%;
+  display: inline;
+  float: right;
+  margin-right: 0;
+  #margin-left: -1em;
   margin-top: 76px;
   line-height: 15px;
   display: block;
@@ -1223,8 +1228,8 @@ section#badges ul li pre {
   section#badges ul li span, section#badges ul li pre {
     display: inline;
     float: left;
-    width: 97.26%;
-    margin-right: 1.37%;
+    width: 100%;
+    margin-right: 1.408%;
     margin-top: 0;
   }
 }
@@ -1264,20 +1269,28 @@ section#directions div#map a.view {
   section#directions div#venue {
     display: inline;
     float: left;
-    width: 31.507%;
-    margin-right: 1.37%;
+    width: 32.394%;
+    margin-right: 1.408%;
   }
   section#directions div#map {
     display: inline;
     float: left;
-    width: 64.384%;
-    margin-right: 1.37%;
+    width: 66.197%;
+    margin-right: 1.408%;
+    display: inline;
+    float: right;
+    margin-right: 0;
+    #margin-left: -1em;
   }
   section#directions div#map iframe {
     width: 96%;
-    margin: 1.5% auto;
-    border: solid 6px transparent;
+    margin: 2%;
   }
+}
+section#sponsors {
+  clear: both;
+  margin-left: 1.37%;
+  margin-right: 1.37%;
 }
 section#sponsors h2 {
   margin: 0;
@@ -1304,4 +1317,15 @@ section#sponsors div.sponsor div {
 }
 section#sponsors div.sponsor a {
   color: #aa0000;
+}
+
+@media screen and (min-width: 800px) {
+  section#sponsors {
+    display: inline;
+    float: left;
+    width: 64.384%;
+    margin-right: 1.37%;
+    padding-left: 16.438%;
+    padding-right: 16.438%;
+  }
 }

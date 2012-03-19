@@ -60,7 +60,7 @@ nav{
         
     a{
       display: block;
-      @include columns(4);
+      @include columns(4,12);
       @include transition-property(length);
       @include transition-duration(2s);
       
@@ -70,7 +70,7 @@ nav{
       border: none;
       line-height: 36px;
       
-      &.directions{@include omega;}
+      &.directions{@include omega(12);}
 
       &.register{background-position: center 0px;}
       &.talks{background-position: center -100px;}
@@ -139,8 +139,6 @@ footer{
         
       a{
         display: block;
-        @include columns(4);
-      
         text-align: center;
         text-decoration: none;
         color: $primary-color;
@@ -165,13 +163,12 @@ footer{
 
 @media screen and (max-width: 800px) {
   nav ul a{
-    &.schedule, &.badges {@include omega;}
+    &.schedule{@include omega(12);}
   }
 }
 
-
 @media screen and (min-width: 800px) {
-  nav ul a{ @include columns(2);}
+  nav ul a{ @include columns(2,12);}
 }
 
 @media screen and (min-width: 960px) {

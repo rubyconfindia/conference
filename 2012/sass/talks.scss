@@ -1,5 +1,9 @@
 section#talks{
+  @include full;
+
   article{
+    @include columns(12,12);
+    
     display: block;
     position: relative;
     color: $dark-gray;
@@ -91,15 +95,15 @@ section#talks{
  section#talks{
    article{
       div.speaker{
-        @include columns(5);
-        @include omega;
+        @include columns(5,12);
+        @include omega(12);
 
         div.photo{margin: -4px 10px 0 10px;}
       }
       
       div.talk{
-        @include columns(7);
-        @include alpha;
+        @include columns(7,12);
+        @include alpha(12);
         min-height: 240px;
  
       }
