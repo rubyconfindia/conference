@@ -1,44 +1,37 @@
 section#talks{
-  margin-top: 20px;
   article{
     display: block;
-    float: left;
-    margin: 3% 4% 3% 1%;
-    width: 55%;
-    min-height: 240px;
-    padding: 0;
-    background: $white;
     position: relative;
     color: $dark-gray;
-    
+    clear: both;
+    padding-top: 30px;
+
+    h3, p, ul{padding: 4px 10px;}
     a{color: $primary-color;}
     
     div.speaker{
       display: block;
-      position: absolute;
-      top: -10px;
-      right: -78%;
-      width: 77%;
       color: $white;
       font-size: 13px;
       line-height: 16px;
+      
+      p{background: transparent;}
 
       div.photo{
         display: block;
+        float: left;
         position: relative;
         background: rgba($black, 0.4);
         padding: 4px;
         width: 128px;
         height: 148px;
-        float: left;
-        margin: 10px;
+        margin: -20px 10px 0 0;
       
-        @include border-radius(4px);
+        @include border-radius(0 4px 4px 0);
         @include box-shadow(0 0 8px rgba(0,0,0,0.3));
-        z-index: 100;
       
         img{width: 128px; height: 128px;}
-      
+        
         h3{
           font-size: 12px;
           line-height: 12px;
@@ -80,13 +73,36 @@ section#talks{
       }
     }
     
+    div.talk{
+      background: $white;
+      min-height: 180px;
+
+      h3{
+        background: $highlight-color;
+        margin: 0;
+        padding: 20px 20px 10px 20px;
+      } 
+    }
     
-    h3{
-      background: $highlight-color;
-      margin: 0;
-      padding: 20px 20px 10px 20px;
-    } 
-    
-    p{margin: 10px 20px;}
   }
+}
+
+@media screen and (min-width: 800px) {
+ section#talks{
+   article{
+      div.speaker{
+        @include columns(5);
+        @include omega;
+
+        div.photo{margin: -4px 10px 0 10px;}
+      }
+      
+      div.talk{
+        @include columns(7);
+        @include alpha;
+        min-height: 240px;
+ 
+      }
+   }
+ } 
 }
