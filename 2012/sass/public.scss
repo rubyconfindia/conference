@@ -1,5 +1,5 @@
 html{
-  background: $primary-color url('bg_waves.png') repeat fixed center center;
+  background: $primary-color url('bg_waves.png') repeat center center;
   color: #fff;
   font-size: 16px;
   line-height: 19px;
@@ -107,6 +107,8 @@ footer{
 }
 
 @media screen and (min-width: 640px) {
+  html{background-position: fixed;}
+  
   header{
     padding-top: 4px;
     background-position: center 0px;
