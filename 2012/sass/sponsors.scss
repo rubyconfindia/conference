@@ -1,0 +1,27 @@
+section#sponsors{
+  h2{
+    margin: 0;
+    padding: 10px;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  div.sponsor{
+    display: block;
+    background: $white;
+    color: $dark-gray;
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 10px;
+
+    h3{
+      background: $highlight-color;
+      margin: 0;
+      padding: 20px 20px 10px 20px;
+    }
+    
+    div{padding: 4px 10px;}
+    
+  }
+}
