@@ -10,7 +10,7 @@ section#index{
     font-size: 14px;
     font-weight: bold;
     color: $highlight-color;
-    margin: 10px 10px 0 10px;
+    margin: 10px 0 0 0;
   }
   
   article{
@@ -18,7 +18,7 @@ section#index{
     @include transition-duration(2s);
     font-size: 14px;
 
-    p{ margin: 4px 10px 10px 10px; }
+    p{ margin: 4px 0; }
   }
 
   section#sponsor_logos{
@@ -27,6 +27,7 @@ section#index{
     div{
       @include columns(12,12);
       @include transition-duration(2s);
+      clear: right;
       
       h2{ border-top-color: $black; color: $black;}
       
@@ -63,14 +64,20 @@ section#index{
   }
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 640px) and (max-width: 800px) {
   section#index{
     article{
-      @include columns(6);
+      @include columns(6,12);
+      &.participation, &.venue, &.videos{@include omega;}
+      &.previous{clear: right;}
     }
     
     section#sponsor_logos{
-      div{@include columns(6,12);}
+      div{
+        @include columns(6);
+        
+        &#gold_sponsors, &#associate_sponsors, &#supporters { @include omega; }
+      }
     }
   }
 }
@@ -78,11 +85,18 @@ section#index{
 @media screen and (min-width: 800px) {
   section#index{
     article{
-      @include columns(4);
+      @include columns(4,12);
+
+      &.venue, &.videos{@include omega;}
+      &.previous{clear: right;}
     }
 
     section#sponsor_logos{
-      div{@include columns(4,12);}
+      div{
+        @include columns(4,12);
+
+        &#silver_sponsors, &#supporters { @include omega; }
+      }
     }
   }
 }

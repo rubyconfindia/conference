@@ -7,7 +7,6 @@ html{
 
 section#page{
   @include container;
-  position: relative;
 }
 
 a{color: $highlight-color; text-decoration: none; border-bottom: dotted 1px;}
@@ -70,6 +69,8 @@ nav{
       color: $primary-color;
       border: none;
       line-height: 36px;
+      
+      &.directions{@include omega;}
 
       &.register{background-position: center 0px;}
       &.talks{background-position: center -100px;}
@@ -161,6 +162,13 @@ footer{
     }
   }
 }
+
+@media screen and (max-width: 800px) {
+  nav ul a{
+    &.schedule, &.badges {@include omega;}
+  }
+}
+
 
 @media screen and (min-width: 800px) {
   nav ul a{ @include columns(2);}
