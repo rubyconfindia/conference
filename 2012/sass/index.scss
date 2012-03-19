@@ -3,83 +3,86 @@ section#index{
   @include clearfix;
   position: relative;
   margin-top: 10px;
-    
-  section#news{
-    @include columns(8);
-    @include alpha;
-    position: relative;
+
+  h2{
+    border-top: solid 4px $highlight-color;
+    padding-top: 4px;
     font-size: 14px;
-    
-    h2{
-      font-size: 14px;
-      margin: 10px 10px 0 10px;
-    }
-    
-    p{
-      margin: 0 10px 10px 20px;
-    }
+    font-weight: bold;
+    color: $highlight-color;
+    margin: 10px 10px 0 10px;
   }
   
-  section#sponsors{
-    @include columns(4);
-    @include omega;
-    position: relative;
-    
-    h3{text-align: center;}
+  article{
+    @include columns(12);
+    @include transition-duration(2s);
+    font-size: 14px;
 
-    ul{
-      margin: 0; padding: 0;
-      border-bottom: dotted 1px rgba($white, 0.4);
+    p{ margin: 4px 10px 10px 10px; }
+  }
 
-      li{display: inline; margin: 0; padding: 0;}
+  section#sponsor_logos{
+    @include columns(12);
 
-      a{
-        @include full;
-        position: relative;
-        display: block;
-        margin: 10px;
+    div{
+      @include columns(12,12);
+      @include transition-duration(2s);
+      
+      h2{ border-top-color: $black; color: $black;}
+      
 
-        text-align: center;
-        text-decoration: none;
-        color: $white;
-        border: none;
-        
-        &:hover{
-          @include box-shadow(0 0 10px rgba($highlight-color,0.9));
-          @include border-radius(12px);
-        }
-        
-        span{display: block; height: 0; width: 0; text-indent: -1000em; overflow: hidden;}
-        img{
+      article{
+        @include columns(4,4);
+
+        a{
+          position: relative;
           display: block;
-          margin: 0 auto;
-          padding: 10px 0;
-          max-width: 95%;
+          margin: 10px;
+
+          text-align: center;
+          text-decoration: none;
+          border: none;
+          @include border-radius(12px);
+
+          &:hover{
+            @include box-shadow(0 0 10px rgba($highlight-color,0.9));
+          }
+        
+          span{display: block; height: 0; width: 0; text-indent: -1000em; }
+
+          img{
+            display: block;
+            margin: 6px auto;
+            max-width: 96%;
+            padding: 2px;
+          }
         }
       }
-      
-      &.years{font-size: 20px; line-height: 50px;}
-    }
-    
-    ul.years{
-      font-size: 20px; line-height: 50px;
-      
-      a{color: #fff;}
+
     }
   }
 }
 
-@media screen and (max-width: 800px) {
-  
+@media screen and (min-width: 640px) {
+  section#index{
+    article{
+      @include columns(6);
+    }
+    
+    section#sponsor_logos{
+      div{@include columns(6,12);}
+    }
+  }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (min-width: 800px) {
   section#index{
-    section#news{@include columns(12,12);}
-    section#sponsors{
-      @include columns(8,12);
-      @include prefix(2,12);
-      @include suffix(2,12);
+    article{
+      @include columns(4);
+    }
+
+    section#sponsor_logos{
+      div{@include columns(4,12);}
     }
   }
 }
