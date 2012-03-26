@@ -576,16 +576,13 @@ header p#twitter a {
 }
 
 nav {
-  clear: both;
-  margin-left: 1.37%;
-  margin-right: 1.37%;
   overflow: hidden;
   *zoom: 1;
+  width: 100%;
   position: relative;
   background: white;
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 nav ul {
@@ -601,12 +598,14 @@ nav ul a {
   float: left;
   width: 32.394%;
   margin-right: 1.408%;
-  -moz-transition-property: length;
   -webkit-transition-property: length;
+  -moz-transition-property: length;
+  -ms-transition-property: length;
   -o-transition-property: length;
   transition-property: length;
-  -moz-transition-duration: 2s;
   -webkit-transition-duration: 2s;
+  -moz-transition-duration: 2s;
+  -ms-transition-duration: 2s;
   -o-transition-duration: 2s;
   transition-duration: 2s;
   text-align: center;
@@ -615,7 +614,7 @@ nav ul a {
   border: none;
   line-height: 36px;
 }
-nav ul a.directions {
+nav ul a.directions, nav ul a.photos {
   display: inline;
   float: right;
   margin-right: 0;
@@ -647,6 +646,9 @@ nav ul a.index {
 }
 nav ul a.sponsors {
   background-position: center -800px;
+}
+nav ul a.photos {
+  background-position: center -900px;
 }
 body#page_index nav ul a.index, body#page_talks nav ul a.talks, body#page_schedule nav ul a.schedule, body#page_directions nav ul a.directions, body#page_badges nav ul a.badges, body#page_sponsors nav ul a.sponsors, nav ul a:hover {
   background-color: #ffffaa;
@@ -733,12 +735,25 @@ footer a {
 }
 @media screen and (min-width: 960px) {
   nav {
-    -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
-    -o-border-radius: 4px;
+    -moz-border-radius: 4px;
     -ms-border-radius: 4px;
-    -khtml-border-radius: 4px;
+    -o-border-radius: 4px;
     border-radius: 4px;
+  }
+  nav ul li:first-child a {
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    -ms-border-radius: 4px 0 0 4px;
+    -o-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+  }
+  nav ul li:last-child a {
+    -webkit-border-radius: 0 4px 4px 0;
+    -moz-border-radius: 0 4px 4px 0;
+    -ms-border-radius: 0 4px 4px 0;
+    -o-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
   }
 }
 section#index {
@@ -763,8 +778,9 @@ section#index article {
   float: left;
   width: 100%;
   margin-right: 1.408%;
-  -moz-transition-duration: 2s;
   -webkit-transition-duration: 2s;
+  -moz-transition-duration: 2s;
+  -ms-transition-duration: 2s;
   -o-transition-duration: 2s;
   transition-duration: 2s;
   font-size: 14px;
@@ -784,8 +800,9 @@ section#index section#sponsor_logos div {
   float: left;
   width: 100%;
   margin-right: 1.408%;
-  -moz-transition-duration: 2s;
   -webkit-transition-duration: 2s;
+  -moz-transition-duration: 2s;
+  -ms-transition-duration: 2s;
   -o-transition-duration: 2s;
   transition-duration: 2s;
   clear: right;
@@ -809,17 +826,15 @@ section#index section#sponsor_logos div article a {
   text-align: center;
   text-decoration: none;
   border: none;
-  -moz-border-radius: 12px;
   -webkit-border-radius: 12px;
-  -o-border-radius: 12px;
+  -moz-border-radius: 12px;
   -ms-border-radius: 12px;
-  -khtml-border-radius: 12px;
+  -o-border-radius: 12px;
   border-radius: 12px;
 }
 section#index section#sponsor_logos div article a:hover {
-  -moz-box-shadow: 0 0 10px rgba(255, 255, 170, 0.4);
   -webkit-box-shadow: 0 0 10px rgba(255, 255, 170, 0.4);
-  -o-box-shadow: 0 0 10px rgba(255, 255, 170, 0.4);
+  -moz-box-shadow: 0 0 10px rgba(255, 255, 170, 0.4);
   box-shadow: 0 0 10px rgba(255, 255, 170, 0.4);
 }
 section#index section#sponsor_logos div article a span {
@@ -927,15 +942,13 @@ section#talks article div.speaker div.photo {
   width: 128px;
   height: 148px;
   margin: -20px 10px 0 0;
-  -moz-border-radius: 0 4px 4px 0;
   -webkit-border-radius: 0 4px 4px 0;
-  -o-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
   -ms-border-radius: 0 4px 4px 0;
-  -khtml-border-radius: 0 4px 4px 0;
+  -o-border-radius: 0 4px 4px 0;
   border-radius: 0 4px 4px 0;
-  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-  -o-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 section#talks article div.speaker div.photo img {
@@ -1029,14 +1042,14 @@ section#schedule ul {
   color: #aa0000;
   background: rgba(0, 0, 0, 0.6);
   font-size: 16px;
-  -moz-border-radius: 0 50px 50px 0;
   -webkit-border-radius: 0 50px 50px 0;
-  -o-border-radius: 0 50px 50px 0;
+  -moz-border-radius: 0 50px 50px 0;
   -ms-border-radius: 0 50px 50px 0;
-  -khtml-border-radius: 0 50px 50px 0;
+  -o-border-radius: 0 50px 50px 0;
   border-radius: 0 50px 50px 0;
-  -moz-transition-duration: 2s;
   -webkit-transition-duration: 2s;
+  -moz-transition-duration: 2s;
+  -ms-transition-duration: 2s;
   -o-transition-duration: 2s;
   transition-duration: 2s;
 }
@@ -1048,8 +1061,9 @@ section#schedule ul li {
   height: 20px;
   line-height: 20px;
   border-bottom: solid 1px rgba(0, 0, 0, 0.4);
-  -moz-transition-duration: 2s;
   -webkit-transition-duration: 2s;
+  -moz-transition-duration: 2s;
+  -ms-transition-duration: 2s;
   -o-transition-duration: 2s;
   transition-duration: 2s;
 }
@@ -1120,11 +1134,10 @@ section#schedule ul li em {
     height: 24px;
     text-align: center;
     line-height: 26px;
-    -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
-    -o-border-radius: 20px;
+    -moz-border-radius: 20px;
     -ms-border-radius: 20px;
-    -khtml-border-radius: 20px;
+    -o-border-radius: 20px;
     border-radius: 20px;
     background: rgba(0, 0, 0, 0.5);
   }
@@ -1148,11 +1161,10 @@ section#schedule ul li em {
     text-align: center;
   }
   section#schedule ul {
-    -moz-border-radius: 100px;
     -webkit-border-radius: 100px;
-    -o-border-radius: 100px;
+    -moz-border-radius: 100px;
     -ms-border-radius: 100px;
-    -khtml-border-radius: 100px;
+    -o-border-radius: 100px;
     border-radius: 100px;
     width: 12.5%;
     margin: 10px auto;
@@ -1195,8 +1207,9 @@ section#badges ul li {
   display: block;
 }
 section#badges ul li span {
-  -moz-transition-duration: 2s;
   -webkit-transition-duration: 2s;
+  -moz-transition-duration: 2s;
+  -ms-transition-duration: 2s;
   -o-transition-duration: 2s;
   transition-duration: 2s;
   display: inline;
@@ -1255,9 +1268,8 @@ section#directions div#map iframe {
   height: 500px;
   width: 100%;
   margin: 0;
-  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 section#directions div#map a.view {
@@ -1328,4 +1340,27 @@ section#sponsors div.sponsor a {
     padding-left: 16.438%;
     padding-right: 16.438%;
   }
+}
+section#photos div.flickr_badge_image {
+  display: block;
+  float: left;
+  margin: 4px;
+  padding: 4px;
+  background: white;
+  height: 160px;
+  text-align: center;
+  width: 240px;
+}
+section#photos div.flickr_badge_image a {
+  display: block;
+  float: left;
+}
+section#photos div.flickr_badge_image img {
+  display: block;
+  max-height: 100%;
+  margin: 0 auto;
+  float: none;
+}
+section#photos div#flickr_badge_source {
+  clear: both;
 }

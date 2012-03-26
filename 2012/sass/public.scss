@@ -48,8 +48,8 @@ header{
 }
 
 nav{
-  @include full;
   @include clearfix;
+  width: 100%;
   position: relative;
   background: $white;
   @include box-shadow(0 0 5px rgba(0,0,0,0.3));
@@ -70,7 +70,8 @@ nav{
       border: none;
       line-height: 36px;
       
-      &.directions{@include omega(12);}
+      &.register{@include alpha(12);}
+      &.directions, &.photos{@include omega(12);}
 
       &.register{background-position: center 0px;}
       &.talks{background-position: center -100px;}
@@ -81,6 +82,7 @@ nav{
       &.badges{background-position: center -600px;}
       &.index{background-position: center -700px;}
       &.sponsors{background-position: center -800px;}
+      &.photos{background-position: center -900px;}
       
       body#page_index &.index,
       body#page_talks &.talks,
@@ -172,5 +174,9 @@ footer{
 }
 
 @media screen and (min-width: 960px) {
-  nav{@include border-radius(4px);}
+  nav{
+    @include border-radius(4px);
+    ul li:first-child a{@include border-radius(4px 0 0 4px);}
+    ul li:last-child a{@include border-radius(0 4px 4px 0);}
+  }
 }

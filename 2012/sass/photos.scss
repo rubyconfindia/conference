@@ -1,0 +1,17 @@
+section#photos{
+  div.flickr_badge_image{
+    display: block;
+    float: left;
+    margin: 4px;
+    padding: 4px;
+    background: $white;
+    height: 160px;
+    text-align: center;
+    width: 240px;
+    
+    a{display: block; float: left;}
+    img{display: block; max-height: 100%; margin: 0 auto; float: none;}
+  }
+
+  div#flickr_badge_source{clear: both;}
+}
