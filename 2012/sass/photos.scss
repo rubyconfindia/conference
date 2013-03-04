@@ -10,7 +10,7 @@ section#photos{
     width: 240px;
     
     a{display: block; float: left;}
-    img{display: block; max-height: 100%; margin: 0 auto; float: none;}
+    img{display: block; max-height: 100%; max-width: 100%; margin: 0 auto; float: none;}
   }
 
   div#flickr_badge_source{clear: both;}

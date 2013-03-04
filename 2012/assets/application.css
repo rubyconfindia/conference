@@ -650,7 +650,7 @@ nav ul a.sponsors {
 nav ul a.photos {
   background-position: center -900px;
 }
-body#page_index nav ul a.index, body#page_talks nav ul a.talks, body#page_schedule nav ul a.schedule, body#page_directions nav ul a.directions, body#page_badges nav ul a.badges, body#page_sponsors nav ul a.sponsors, body#photos nav ul a.photos, nav ul a:hover {
+body#page_index nav ul a.index, body#page_talks nav ul a.talks, body#page_schedule nav ul a.schedule, body#page_directions nav ul a.directions, body#page_badges nav ul a.badges, body#page_sponsors nav ul a.sponsors, body#page_photos nav ul a.photos, nav ul a:hover {
   background-color: #ffffaa;
 }
 
@@ -1358,6 +1358,7 @@ section#photos div.flickr_badge_image a {
 section#photos div.flickr_badge_image img {
   display: block;
   max-height: 100%;
+  max-width: 100%;
   margin: 0 auto;
   float: none;
 }
