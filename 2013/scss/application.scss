@@ -1,1 +1,10 @@
+$gray-dark: #333;
+$white: #fff;
+$red: #a00;
+
+@import 'mixins';
 @import 'normalize';
+@import 'typography';
+
+
+@import 'layout';

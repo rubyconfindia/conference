@@ -28,3 +28,5 @@
 /tmp/*
 /2012/.sass-cache
 /2013/.sass-cache
+/2013/_site
+.rvmrc

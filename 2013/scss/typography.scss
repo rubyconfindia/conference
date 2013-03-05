@@ -1,0 +1,15 @@
+html, body{
+  
+  font-family: 'proxima-nova';
+}
+
+#header{
+  font-family: 'brandon-grotesque';
+  h1, h2, h3{
+    margin: 0; padding: 0; line-height: 1.2em;
+  }
+
+  h1{font-size: 60px; font-weight: 900;}
+  h2{font-size: 40px; font-weight: 300;}
+  h3{font-size: 30px; font-weight: 900;}
+}
