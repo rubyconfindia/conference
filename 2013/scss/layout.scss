@@ -1,21 +1,20 @@
 .container{
   display: block;
   @include border-box;
-  width: 800px;
+  width: 960px;
   max-width: 100%;
   margin: 0 auto;
   padding: 10px;
 }
 
-#content{
+#sidebar{
+  float: right;
+  @include border-box;
+
   .article{
     @include border-box;
-    padding: 10px;
-
-    @media screen and (min-width: 800px){
-      width: 50%; float: left;
-
-      &.sponsorship{width: 100%;}
-    }
+    padding: 0 10px;
   }
+
+  @media screen and (min-width: 720px){ width: 30%;}
 }

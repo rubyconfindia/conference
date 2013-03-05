@@ -331,7 +331,10 @@ table {
   border-spacing: 0; }
 
 html, body {
-  font-family: 'proxima-nova'; }
+  font-family: 'proxima-nova';
+  font-size: 14px;
+  color: #444;
+  background: white; }
 
 #header {
   font-family: 'brandon-grotesque'; }
@@ -377,32 +380,41 @@ html, body {
     #header h3 {
       font-size: 30px; } }
 
+#sidebar h1, #sidebar h2, #sidebar h3 {
+  color: #aa0000;
+  margin-bottom: 0; }
+  #sidebar h1 + p, #sidebar h2 + p, #sidebar h3 + p {
+    margin-top: 0; }
+
 .container {
   display: block;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 800px;
+  width: 960px;
   max-width: 100%;
   margin: 0 auto;
   padding: 10px; }
 
-#content .article {
+#sidebar {
+  float: right;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 10px; }
-  @media screen and (min-width: 800px) {
-    #content .article {
-      width: 50%;
-      float: left; }
-      #content .article.sponsorship {
-        width: 100%; } }
+  box-sizing: border-box; }
+  #sidebar .article {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 10px; }
+  @media screen and (min-width: 720px) {
+    #sidebar {
+      width: 30%; } }
 
 #header {
   padding: 20px;
   border-bottom: solid 4px #aa0000;
-  background: #f2ecce url("images/header.jpg") no-repeat bottom center; }
+  background: #f2ecce url("images/header.jpg") no-repeat center center;
+  background-size: auto 100%; }
   #header h1 a {
     color: #aa0000;
     text-decoration: none; }
@@ -426,6 +438,7 @@ html, body {
         text-align: right; } }
   @media screen and (min-width: 940px) {
     #header {
+      background-size: 100% auto;
       padding: 60px; }
       #header h2 {
         margin: -20px 0 0 200px; }

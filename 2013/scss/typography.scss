@@ -1,6 +1,8 @@
 html, body{
-  
   font-family: 'proxima-nova';
+  font-size: 14px;
+  color: #444;
+  background: $white;
 }
 
 #header{
@@ -36,5 +38,14 @@ html, body{
     h1{font-size: 92px;}
     h2{font-size: 30px;}
     h3{font-size: 30px;}
+  }
+}
+
+#sidebar{
+  h1, h2, h3{
+    color: $red;
+    margin-bottom: 0;
+
+    &+p{margin-top: 0;}
   }
 }
