@@ -1,12 +1,13 @@
 #header{
   padding: 20px;
   border-bottom: solid 4px $red;
-  background: #F2ECCE url('images/header.jpg') no-repeat bottom center;
+  background: #F2ECCE url('images/header.jpg') no-repeat center center;
+  background-size: auto 100%;
 
   h1{
     a{color: $red; text-decoration: none;}
     a span{color: $gray-dark;}
-  } 
+  }
 
   @media screen and (min-width: 700px){
     padding: 40px;
@@ -21,6 +22,7 @@
   }
 
   @media screen and (min-width: 940px){
+    background-size: 100% auto;
     padding: 60px;
     h2{margin: -20px 0 0 200px;}
     h3{margin-top: -72px; text-align: right;}
