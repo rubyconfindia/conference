@@ -7,6 +7,12 @@
   padding: 10px;
 }
 
+#content{
+  float: left;
+  @include border-box;
+  @media screen and (min-width: 720px){ width: 60%;}
+}
+
 #sidebar{
   float: right;
   @include border-box;
@@ -16,5 +22,5 @@
     padding: 0 10px;
   }
 
-  @media screen and (min-width: 720px){ width: 30%;}
+  @media screen and (min-width: 720px){ width: 40%;}
 }

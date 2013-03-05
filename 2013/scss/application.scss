@@ -1,11 +1,16 @@
 $gray-dark: #333;
 $white: #fff;
 $red: #a00;
+$cream: #F2ECCE;
 
-@import 'mixins';
-@import 'normalize';
-@import 'typography';
+$primary-color: $red;
+$secondary-color: $cream;
+
+@import "mixins";
+@import "normalize";
+@import "typography";
 
 
-@import 'layout';
-@import 'header';
+@import "layout";
+@import "header";
+@import "home";

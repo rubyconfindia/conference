@@ -1,7 +1,7 @@
 #header{
   padding: 20px;
   border-bottom: solid 4px $red;
-  background: #F2ECCE url('images/header.jpg') no-repeat center center;
+  background: $secondary-color url('images/header.jpg') no-repeat center center;
   background-size: auto 100%;
 
   h1{

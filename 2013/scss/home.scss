@@ -1,0 +1,42 @@
+#home{
+  #content{
+    margin-top: 20px;
+
+    h2{
+      margin: 0;
+      font-family: 'brandon-grotesque';
+      font-weight: 300; font-size: 40px;
+      text-align: center;
+    }
+
+    .speakers{
+      margin: 0; padding: 0;
+      text-align: center;
+
+      li{
+        margin: 10px 0; padding: 0;
+        display: inline-block;
+        text-align: center;
+        width: 160px;
+
+        img{
+          display: block;
+          margin: 5px auto;
+          width: 100px; height: 100px;
+          border-radius: 60px;
+          border: solid 10px $secondary-color;
+        }
+
+        a{
+          text-decoration: none;
+          color: $primary-color;
+          font-weight: 600;
+        }
+      }
+    }
+
+    #sidebar{
+      margin-top: 20px;
+    }
+  }  
+}

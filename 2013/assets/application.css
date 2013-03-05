@@ -380,10 +380,11 @@ html, body {
     #header h3 {
       font-size: 30px; } }
 
-#sidebar h1, #sidebar h2, #sidebar h3 {
+#sidebar h3 {
   color: #aa0000;
-  margin-bottom: 0; }
-  #sidebar h1 + p, #sidebar h2 + p, #sidebar h3 + p {
+  margin-bottom: 0;
+  font-size: 16px; }
+  #sidebar h3 + p {
     margin-top: 0; }
 
 .container {
@@ -395,6 +396,15 @@ html, body {
   max-width: 100%;
   margin: 0 auto;
   padding: 10px; }
+
+#content {
+  float: left;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media screen and (min-width: 720px) {
+    #content {
+      width: 60%; } }
 
 #sidebar {
   float: right;
@@ -408,7 +418,7 @@ html, body {
     padding: 0 10px; }
   @media screen and (min-width: 720px) {
     #sidebar {
-      width: 30%; } }
+      width: 40%; } }
 
 #header {
   padding: 20px;
@@ -445,3 +455,35 @@ html, body {
       #header h3 {
         margin-top: -72px;
         text-align: right; } }
+
+#home #content {
+  margin-top: 20px; }
+  #home #content h2 {
+    margin: 0;
+    font-family: 'brandon-grotesque';
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center; }
+  #home #content .speakers {
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+    #home #content .speakers li {
+      margin: 10px 0;
+      padding: 0;
+      display: inline-block;
+      text-align: center;
+      width: 160px; }
+      #home #content .speakers li img {
+        display: block;
+        margin: 5px auto;
+        width: 100px;
+        height: 100px;
+        border-radius: 60px;
+        border: solid 10px #f2ecce; }
+      #home #content .speakers li a {
+        text-decoration: none;
+        color: #aa0000;
+        font-weight: 600; }
+  #home #content #sidebar {
+    margin-top: 20px; }

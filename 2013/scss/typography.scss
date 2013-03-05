@@ -42,9 +42,10 @@ html, body{
 }
 
 #sidebar{
-  h1, h2, h3{
+  h3{
     color: $red;
     margin-bottom: 0;
+    font-size: 16px;
 
     &+p{margin-top: 0;}
   }
