@@ -402,7 +402,7 @@ html, body {
 #header {
   padding: 20px;
   border-bottom: solid 4px #aa0000;
-  background: #F2ECCE; }
+  background: #f2ecce url("images/header.jpg") no-repeat bottom center; }
   #header h1 a {
     color: #aa0000;
     text-decoration: none; }
