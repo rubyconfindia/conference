@@ -1,0 +1,28 @@
+#header{
+  padding: 20px;
+  border-bottom: solid 4px $red;
+  background: #F2ECCE;
+
+  h1{
+    a{color: $red; text-decoration: none;}
+    a span{color: $gray-dark;}
+  } 
+
+  @media screen and (min-width: 700px){
+    padding: 40px;
+    h2{margin: -12px 0 0 120px;}
+    h3{margin-top: -56px; text-align: right;}
+  }
+
+  @media screen and (min-width: 800px){
+    padding: 40px;
+    h2{margin: -16px 0 0 140px;}
+    h3{margin-top: -62px; text-align: right;}
+  }
+
+  @media screen and (min-width: 940px){
+    padding: 60px;
+    h2{margin: -20px 0 0 200px;}
+    h3{margin-top: -72px; text-align: right;}
+  }
+}
