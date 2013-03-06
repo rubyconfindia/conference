@@ -404,7 +404,7 @@ html, body {
   box-sizing: border-box; }
   @media screen and (min-width: 720px) {
     #content {
-      width: 60%; } }
+      width: 70%; } }
 
 #sidebar {
   float: right;
@@ -418,7 +418,7 @@ html, body {
     padding: 0 10px; }
   @media screen and (min-width: 720px) {
     #sidebar {
-      width: 40%; } }
+      width: 30%; } }
 
 #header {
   padding: 20px;
@@ -462,28 +462,52 @@ html, body {
     margin: 0;
     font-family: 'brandon-grotesque';
     font-weight: 300;
-    font-size: 40px;
+    font-size: 24px;
     text-align: center; }
+    @media screen and (min-width: 600px) {
+      #home #content h2 {
+        font-size: 30px; } }
+    @media screen and (min-width: 800px) {
+      #home #content h2 {
+        font-size: 40px; } }
   #home #content .speakers {
     margin: 0;
     padding: 0;
     text-align: center; }
+    @media screen and (min-width: 900px) {
+      #home #content .speakers {
+        margin: 0 20px; } }
     #home #content .speakers li {
-      margin: 10px 0;
+      margin: 0;
       padding: 0;
       display: inline-block;
       text-align: center;
-      width: 160px; }
+      width: 120px; }
+      @media screen and (min-width: 600px) {
+        #home #content .speakers li {
+          width: 140px; } }
+      @media screen and (min-width: 900px) {
+        #home #content .speakers li {
+          width: 160px; } }
       #home #content .speakers li img {
         display: block;
         margin: 5px auto;
-        width: 100px;
-        height: 100px;
-        border-radius: 60px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
         border: solid 10px #f2ecce; }
+        @media screen and (min-width: 600px) {
+          #home #content .speakers li img {
+            width: 100px;
+            height: 100px;
+            border-radius: 60px; } }
       #home #content .speakers li a {
         text-decoration: none;
         color: #aa0000;
-        font-weight: 600; }
-  #home #content #sidebar {
-    margin-top: 20px; }
+        font-weight: 600;
+        display: block;
+        margin: 0 auto; }
+      #home #content .speakers li span {
+        color: #999999; }
+#home #sidebar {
+  margin-top: 40px; }
