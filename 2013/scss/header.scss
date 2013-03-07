@@ -1,8 +1,10 @@
 #header{
-  padding: 20px;
+  padding: 20px 0;
   border-bottom: solid 4px $red;
   background: $secondary-color url('images/header.jpg') no-repeat center center;
   background-size: auto 100%;
+
+  .container{width: 1000px;}
 
   h1{
     a{color: $red; text-decoration: none;}
@@ -10,20 +12,20 @@
   }
 
   @media screen and (min-width: 700px){
-    padding: 40px;
+    padding: 40px 0;
     h2{margin: -12px 0 0 120px;}
     h3{margin-top: -56px; text-align: right;}
   }
 
   @media screen and (min-width: 800px){
-    padding: 40px;
+    padding: 40px 0;
     h2{margin: -16px 0 0 140px;}
     h3{margin-top: -62px; text-align: right;}
   }
 
   @media screen and (min-width: 940px){
     background-size: 100% auto;
-    padding: 60px;
+    padding: 60px 0;
     h2{margin: -20px 0 0 200px;}
     h3{margin-top: -72px; text-align: right;}
   }
