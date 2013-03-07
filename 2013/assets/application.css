@@ -491,16 +491,16 @@ html, body {
           width: 160px; } }
       #home #content .speakers li img {
         display: block;
-        margin: 5px auto;
+        margin: 10px auto;
         width: 80px;
         height: 80px;
-        border-radius: 50px;
-        border: solid 10px #f2ecce; }
+        border-radius: 40px;
+        box-shadow: 0 0 0 10px #f2ecce; }
         @media screen and (min-width: 600px) {
           #home #content .speakers li img {
             width: 100px;
             height: 100px;
-            border-radius: 60px; } }
+            border-radius: 50px; } }
       #home #content .speakers li a {
         text-decoration: none;
         color: #aa0000;

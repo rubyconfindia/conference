@@ -39,14 +39,14 @@
 
         img{
           display: block;
-          margin: 5px auto;
+          margin: 10px auto;
           width: 80px; height: 80px;
-          border-radius: 50px;
-          border: solid 10px $secondary-color;
+          border-radius: 40px;
+          box-shadow: 0 0 0 10px $secondary-color;
 
           @media screen and (min-width: 600px){
             width: 100px; height: 100px;
-            border-radius: 60px;
+            border-radius: 50px;
           }
 
         }
