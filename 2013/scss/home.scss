@@ -1,5 +1,5 @@
 #home{
-  #content{
+  .container{
     margin-top: 20px;
 
     h2{
@@ -16,9 +16,8 @@
     }
 
     .speakers{
-      margin: 0 0 40px 0; padding: 0 0 40px 0;
+      margin: 0 0 10px 0; padding: 0 0 20px 0;
       text-align: center;
-      border-bottom: solid 4px $secondary-color;
 
       li{
         margin: 0; padding: 0;
@@ -64,14 +63,16 @@
       @include border-box;
       width: 100%;
       padding: 0 20px;
-      float: left;
-      text-align: center;
-      
+      float: right;
+      text-align: right;
 
+      @media screen and (min-width: 600px){ width: 30%;}
 
-      @media screen and (min-width: 500px){ width: 50%;}
-      @media screen and (min-width: 800px){ width: 33%;}
-      // @media screen and (min-width: 900px){ width: 25%;}
+      &.sponsorship{
+        float: left;
+        text-align: left;
+        @media screen and (min-width: 600px){ width: 70%;}
+      }
     }
   }  
   

@@ -1,5 +1,5 @@
 #header{
-  padding: 20px 0;
+  padding: 20px 10px;
   border-bottom: solid 4px $red;
   background: $secondary-color url('images/header.jpg') no-repeat center center;
   background-size: auto 100%;
@@ -12,20 +12,20 @@
   }
 
   @media screen and (min-width: 700px){
-    padding: 40px 0;
+    padding: 40px 20px;
     h2{margin: -12px 0 0 120px;}
     h3{margin-top: -56px; text-align: right;}
   }
 
   @media screen and (min-width: 800px){
-    padding: 40px 0;
+    padding: 40px 20px;
     h2{margin: -16px 0 0 140px;}
     h3{margin-top: -62px; text-align: right;}
   }
 
-  @media screen and (min-width: 940px){
+  @media screen and (min-width: 1000px){
     background-size: 100% auto;
-    padding: 60px 0;
+    padding: 50px 20px;
     h2{margin: -20px 0 0 200px;}
     h3{margin-top: -72px; text-align: right;}
   }

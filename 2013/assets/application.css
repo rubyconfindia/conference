@@ -372,7 +372,7 @@ html, body {
       font-size: 24px; }
     #header h3 {
       font-size: 26px; } }
-  @media screen and (min-width: 940px) {
+  @media screen and (min-width: 1000px) {
     #header h1 {
       font-size: 92px; }
     #header h2 {
@@ -397,32 +397,47 @@ html, body {
   margin: 0 auto;
   padding: 10px; }
 
-ul.actions {
-  width: 100%;
-  margin: 20px 0;
-  padding: 0;
-  text-align: center; }
-  ul.actions li {
-    display: inline-block;
-    margin: 0; }
-
 ul.actions li a, a.button {
   margin: 0;
-  padding: 0 16px;
-  font-size: 21px;
-  line-height: 36px;
+  padding: 0 8px;
+  font-size: 24px;
+  line-height: 40px;
   font-family: 'brandon-grotesque';
-  font-weight: 300;
+  font-weight: 400;
   text-decoration: none;
   background: #aa0000;
   color: #f2ecce;
-  border-radius: 18px; }
+  border-radius: 4px; }
   ul.actions li a:hover, ul.actions li a:focus, ul.actions li a:active, a.button:hover, a.button:focus, a.button:active {
     color: #aa0000;
     background: #f2ecce; }
 
+ul.actions {
+  width: 100%;
+  margin: 0 0 20px 0;
+  padding: 20px;
+  text-align: center;
+  background: #f2ecce; }
+  @media screen and (min-width: 600px) {
+    ul.actions {
+      margin-top: 15px; } }
+  @media screen and (min-width: 800px) {
+    ul.actions {
+      margin-top: 30px; } }
+  ul.actions li {
+    display: block;
+    margin: 0 0 10px 0;
+    padding: 0; }
+    @media screen and (min-width: 600px) {
+      ul.actions li {
+        display: inline-block; } }
+  ul.actions li a {
+    margin: 0 20px; }
+  ul.actions li a:hover, ul.actions a:focus, ul.actions a:active {
+    background: white; }
+
 #header {
-  padding: 20px 0;
+  padding: 20px 10px;
   border-bottom: solid 4px #aa0000;
   background: #f2ecce url("images/header.jpg") no-repeat center center;
   background-size: auto 100%; }
@@ -435,7 +450,7 @@ ul.actions li a, a.button {
     color: #333333; }
   @media screen and (min-width: 700px) {
     #header {
-      padding: 40px 0; }
+      padding: 40px 20px; }
       #header h2 {
         margin: -12px 0 0 120px; }
       #header h3 {
@@ -443,54 +458,53 @@ ul.actions li a, a.button {
         text-align: right; } }
   @media screen and (min-width: 800px) {
     #header {
-      padding: 40px 0; }
+      padding: 40px 20px; }
       #header h2 {
         margin: -16px 0 0 140px; }
       #header h3 {
         margin-top: -62px;
         text-align: right; } }
-  @media screen and (min-width: 940px) {
+  @media screen and (min-width: 1000px) {
     #header {
       background-size: 100% auto;
-      padding: 60px 0; }
+      padding: 50px 20px; }
       #header h2 {
         margin: -20px 0 0 200px; }
       #header h3 {
         margin-top: -72px;
         text-align: right; } }
 
-#home #content {
+#home .container {
   margin-top: 20px; }
-  #home #content h2 {
+  #home .container h2 {
     margin: 0;
     font-family: 'brandon-grotesque';
     font-weight: 300;
     font-size: 24px;
     text-align: center; }
     @media screen and (min-width: 600px) {
-      #home #content h2 {
+      #home .container h2 {
         font-size: 30px; } }
     @media screen and (min-width: 800px) {
-      #home #content h2 {
+      #home .container h2 {
         font-size: 40px; } }
-  #home #content .speakers {
-    margin: 0 0 40px 0;
-    padding: 0 0 40px 0;
-    text-align: center;
-    border-bottom: solid 4px #f2ecce; }
-    #home #content .speakers li {
+  #home .container .speakers {
+    margin: 0 0 10px 0;
+    padding: 0 0 20px 0;
+    text-align: center; }
+    #home .container .speakers li {
       margin: 0;
       padding: 0;
       display: inline-block;
       text-align: center;
       width: 120px; }
       @media screen and (min-width: 600px) {
-        #home #content .speakers li {
+        #home .container .speakers li {
           width: 140px; } }
       @media screen and (min-width: 900px) {
-        #home #content .speakers li {
+        #home .container .speakers li {
           width: 160px; } }
-      #home #content .speakers li img {
+      #home .container .speakers li img {
         display: block;
         margin: 10px auto;
         width: 80px;
@@ -498,29 +512,32 @@ ul.actions li a, a.button {
         border-radius: 40px;
         box-shadow: 0 0 0 10px #f2ecce; }
         @media screen and (min-width: 600px) {
-          #home #content .speakers li img {
+          #home .container .speakers li img {
             width: 100px;
             height: 100px;
             border-radius: 50px; } }
-      #home #content .speakers li a {
+      #home .container .speakers li a {
         text-decoration: none;
         color: #aa0000;
         font-weight: 600;
         display: block;
         margin: 0 auto; }
-      #home #content .speakers li span {
+      #home .container .speakers li span {
         color: #999999; }
-  #home #content div.article {
+  #home .container div.article {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 100%;
     padding: 0 20px;
-    float: left;
-    text-align: center; }
-    @media screen and (min-width: 500px) {
-      #home #content div.article {
-        width: 50%; } }
-    @media screen and (min-width: 800px) {
-      #home #content div.article {
-        width: 33%; } }
+    float: right;
+    text-align: right; }
+    @media screen and (min-width: 600px) {
+      #home .container div.article {
+        width: 30%; } }
+    #home .container div.article.sponsorship {
+      float: left;
+      text-align: left; }
+      @media screen and (min-width: 600px) {
+        #home .container div.article.sponsorship {
+          width: 70%; } }

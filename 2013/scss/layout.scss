@@ -7,26 +7,17 @@
   padding: 10px;
 }
 
-ul.actions{
-  width: 100%;
-  margin: 20px 0;
-  padding: 0;
-  text-align: center;
-
-  li{display: inline-block; margin: 0;}
-}
-
 ul.actions li a, a.button{
   margin: 0;
-  padding: 0 16px;
-  font-size: 21px;
-  line-height: 36px;
+  padding: 0 8px;
+  font-size: 24px;
+  line-height: 40px;
   font-family: 'brandon-grotesque';
-  font-weight: 300;
+  font-weight: 400;
   text-decoration: none;
   background: $primary-color;
   color: $secondary-color;
-  border-radius: 18px;
+  border-radius: 4px;
 
   &:hover, &:focus, &:active{
     color: $primary-color;
@@ -34,16 +25,22 @@ ul.actions li a, a.button{
   }
 }
 
+ul.actions{
+  width: 100%;
+  margin: 0 0 20px 0;
+  padding: 20px;
+  text-align: center;
+  background: $secondary-color;
 
+  @media screen and (min-width: 600px){ margin-top: 15px;}
+  @media screen and (min-width: 800px){ margin-top: 30px;}
+  li{
+    display: block; margin: 0 0 10px 0; padding: 0;
 
-// #sidebar{
-//   float: right;
-//   @include border-box;
-
-//   .article{
-//     @include border-box;
-//     padding: 0 10px;
-//   }
-
-//   @media screen and (min-width: 720px){ width: 30%;}
-// }
+    @media screen and (min-width: 600px){
+      display: inline-block;
+    }
+  }
+  li a{margin: 0 20px;}
+  li a:hover, a:focus, a:active{background: $white;}
+}
