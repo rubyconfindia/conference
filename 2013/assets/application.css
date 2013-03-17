@@ -332,7 +332,7 @@ table {
 
 html, body {
   font-family: 'proxima-nova';
-  font-size: 15px;
+  font-size: 14px;
   color: #444;
   background: white; }
 
@@ -387,6 +387,11 @@ html, body {
   #sidebar h3 + p {
     margin-top: 0; }
 
+a {
+  color: #aa0000;
+  text-decoration: none;
+  border-bottom: dotted 1px #aa0000; }
+
 .container {
   display: block;
   -moz-box-sizing: border-box;
@@ -397,7 +402,7 @@ html, body {
   margin: 0 auto;
   padding: 10px; }
 
-ul.actions li a, a.button {
+a.button {
   margin: 0;
   padding: 0 8px;
   font-size: 24px;
@@ -406,17 +411,17 @@ ul.actions li a, a.button {
   font-weight: 400;
   text-decoration: none;
   background: #aa0000;
-  color: #f2ecce;
-  border-radius: 4px; }
-  ul.actions li a:hover, ul.actions li a:focus, ul.actions li a:active, a.button:hover, a.button:focus, a.button:active {
+  color: white; }
+  a.button:hover, a.button:focus, a.button:active {
     color: #aa0000;
     background: #f2ecce; }
 
 ul.actions {
-  margin: 0 0 20px 0;
-  padding: 20px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   text-align: center;
-  background: #f2ecce; }
+  background: #aa0000; }
   @media screen and (min-width: 600px) {
     ul.actions {
       margin-top: 15px; } }
@@ -425,15 +430,18 @@ ul.actions {
       margin-top: 30px; } }
   ul.actions li {
     display: block;
-    margin: 0 0 10px 0;
-    padding: 0; }
+    margin: 0 1px;
+    padding: 0 0 4px 0;
+    background: #aa0000;
+    color: #f2ecce; }
     @media screen and (min-width: 600px) {
       ul.actions li {
-        display: inline-block; } }
+        display: inline-block;
+        border-right: dotted 1px #f2ecce; }
+        ul.actions li:first-child {
+          border-left: dotted 1px #f2ecce; } }
   ul.actions li a {
     margin: 0 20px; }
-  ul.actions li a:hover, ul.actions a:focus, ul.actions a:active {
-    background: white; }
 
 #header {
   padding: 20px 10px;
@@ -444,7 +452,8 @@ ul.actions {
     width: 1000px; }
   #header h1 a {
     color: #aa0000;
-    text-decoration: none; }
+    text-decoration: none;
+    border: none; }
   #header h1 a span {
     color: #333333; }
   @media screen and (min-width: 700px) {
@@ -520,7 +529,8 @@ ul.actions {
         color: #aa0000;
         font-weight: 600;
         display: block;
-        margin: 0 auto; }
+        margin: 0 auto;
+        border: none; }
       #home .container .speakers li span {
         color: #999999; }
   #home .container div.article {
@@ -528,15 +538,28 @@ ul.actions {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 100%;
-    padding: 0 20px;
+    padding: 2px;
+    margin: 0.5%;
     float: right;
-    text-align: right; }
+    text-align: left;
+    border-top: solid 2px #aa0000; }
     @media screen and (min-width: 600px) {
       #home .container div.article {
-        width: 30%; } }
-    #home .container div.article.sponsorship {
-      float: left;
-      text-align: left; }
+        width: 19%; } }
+    #home .container div.article.sponsorship, #home .container div.article.contact {
+      float: left; }
       @media screen and (min-width: 600px) {
-        #home .container div.article.sponsorship {
-          width: 70%; } }
+        #home .container div.article.sponsorship, #home .container div.article.contact {
+          width: 39%; } }
+    #home .container div.article h3 {
+      color: #aa0000;
+      margin: 0;
+      font-size: 16px; }
+    #home .container div.article ul {
+      margin: 0;
+      padding-left: 24px;
+      font-weight: bold; }
+      #home .container div.article ul li a {
+        display: table;
+        font-weight: normal;
+        margin-left: 20px; }

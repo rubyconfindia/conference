@@ -1,6 +1,6 @@
 html, body{
   font-family: 'proxima-nova';
-  font-size: 15px;
+  font-size: 14px;
   color: #444;
   background: $white;
 }
@@ -49,4 +49,10 @@ html, body{
 
     &+p{margin-top: 0;}
   }
+}
+
+a{
+  color: $primary-color;
+  text-decoration: none;
+  border-bottom: dotted 1px $primary-color;
 }

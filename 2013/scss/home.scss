@@ -25,13 +25,8 @@
         text-align: center;
         width: 120px;
 
-        @media screen and (min-width: 600px){
-          width: 140px;
-        }
-
-        @media screen and (min-width: 900px){
-          width: 160px;
-        }
+        @media screen and (min-width: 600px){ width: 140px;}
+        @media screen and (min-width: 900px){ width: 160px;}
 
         img{
           display: block;
@@ -44,7 +39,6 @@
             width: 100px; height: 100px;
             border-radius: 50px;
           }
-
         }
 
         a{
@@ -53,6 +47,7 @@
           font-weight: 600;
           display: block;
           margin: 0 auto;
+          border: none;
         }
 
         span{color: $gray-light;}
@@ -62,16 +57,34 @@
     div.article{
       @include border-box;
       width: 100%;
-      padding: 0 20px;
+      padding: 2px;
+      margin: 0.5%;
       float: right;
-      text-align: right;
+      text-align: left;
+      border-top: solid 2px $primary-color;
 
-      @media screen and (min-width: 600px){ width: 30%;}
+      @media screen and (min-width: 600px){ width: 19%;}
 
-      &.sponsorship{
+      &.sponsorship, &.contact{
         float: left;
-        text-align: left;
-        @media screen and (min-width: 600px){ width: 70%;}
+        @media screen and (min-width: 600px){ width: 39%;}
+      }
+
+      h3{
+        color: $primary-color;
+        margin: 0;
+        font-size: 16px;
+      }
+
+      ul{
+        margin: 0; padding-left: 24px;
+        font-weight: bold;
+
+        li a{
+          display: table;
+          font-weight: normal; 
+          margin-left: 20px;
+        }
       }
     }
   }  

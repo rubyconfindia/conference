@@ -16,8 +16,7 @@ a.button{
   font-weight: 400;
   text-decoration: none;
   background: $primary-color;
-  color: $secondary-color;
-  border-radius: 4px;
+  color: $white;
 
   &:hover, &:focus, &:active{
     color: $primary-color;
@@ -27,20 +26,23 @@ a.button{
 
 ul.actions{
   width: 100%;
-  margin: 0 0 20px 0;
-  padding: 20px;
+  margin: 0;
+  padding: 0;
   text-align: center;
-  background: $secondary-color;
+  background: $primary-color;
 
   @media screen and (min-width: 600px){ margin-top: 15px;}
   @media screen and (min-width: 800px){ margin-top: 30px;}
   li{
-    display: block; margin: 0 0 10px 0; padding: 0;
+    display: block; margin: 0 1px; padding: 0 0 4px 0;
+    background: $primary-color;
+    color: $secondary-color;
 
     @media screen and (min-width: 600px){
       display: inline-block;
+      border-right: dotted 1px $secondary-color;
+      &:first-child{border-left: dotted 1px $secondary-color;}
     }
   }
   li a{margin: 0 20px;}
-  li a:hover, a:focus, a:active{background: $white;}
 }
