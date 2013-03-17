@@ -76,16 +76,14 @@
         font-size: 16px;
       }
 
-      ul{
-        margin: 0; padding-left: 24px;
-        font-weight: bold;
+      ul{margin: 0; padding-left: 24px;}
 
+      &.contact ul{
+        font-weight: bold;
         li a{
-          display: table;
-          font-weight: normal; 
-          margin-left: 20px;
+          display: table; font-weight: normal; margin: 0 0 0 20px;
         }
-      }
+      } 
     }
   }  
   

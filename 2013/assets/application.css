@@ -402,19 +402,22 @@ a {
   margin: 0 auto;
   padding: 10px; }
 
-a.button {
+ul.actions li a, a.button {
+  display: block;
   margin: 0;
-  padding: 0 8px;
-  font-size: 24px;
-  line-height: 40px;
+  padding: 10px 12px 6px 6px;
+  font-size: 14px;
+  line-height: 20px;
   font-family: 'brandon-grotesque';
   font-weight: 400;
   text-decoration: none;
-  background: #aa0000;
-  color: white; }
-  a.button:hover, a.button:focus, a.button:active {
-    color: #aa0000;
-    background: #f2ecce; }
+  color: white;
+  text-align: center;
+  border: none;
+  color: #f2ecce; }
+  ul.actions li a span, a.button span {
+    font-size: 24px;
+    color: white; }
 
 ul.actions {
   width: 100%;
@@ -430,16 +433,23 @@ ul.actions {
       margin-top: 30px; } }
   ul.actions li {
     display: block;
-    margin: 0 1px;
+    margin: 0;
     padding: 0 0 4px 0;
     background: #aa0000;
-    color: #f2ecce; }
+    color: #f2ecce;
+    border-top: dotted 1px #f2ecce; }
+    ul.actions li:first-child {
+      border-top: none; }
     @media screen and (min-width: 600px) {
       ul.actions li {
         display: inline-block;
-        border-right: dotted 1px #f2ecce; }
+        border-right: dotted 1px #f2ecce;
+        border-bottom: none;
+        border-top: none; }
         ul.actions li:first-child {
           border-left: dotted 1px #f2ecce; } }
+    ul.actions li:hover {
+      background: #000; }
   ul.actions li a {
     margin: 0 20px; }
 
@@ -557,9 +567,10 @@ ul.actions {
       font-size: 16px; }
     #home .container div.article ul {
       margin: 0;
-      padding-left: 24px;
+      padding-left: 24px; }
+    #home .container div.article.contact ul {
       font-weight: bold; }
-      #home .container div.article ul li a {
+      #home .container div.article.contact ul li a {
         display: table;
         font-weight: normal;
-        margin-left: 20px; }
+        margin: 0 0 0 20px; }

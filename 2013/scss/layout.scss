@@ -7,21 +7,21 @@
   padding: 10px;
 }
 
-a.button{
+ul.actions li a, a.button{
+  display: block;
   margin: 0;
-  padding: 0 8px;
-  font-size: 24px;
-  line-height: 40px;
+  padding: 10px 12px 6px 6px;
+  font-size: 14px;
+  line-height: 20px;
   font-family: 'brandon-grotesque';
   font-weight: 400;
   text-decoration: none;
-  background: $primary-color;
   color: $white;
+  text-align: center;
+  border: none;
+  color: $secondary-color;
 
-  &:hover, &:focus, &:active{
-    color: $primary-color;
-    background: $secondary-color;
-  }
+  span{font-size: 24px; color: $white;}
 }
 
 ul.actions{
@@ -33,16 +33,22 @@ ul.actions{
 
   @media screen and (min-width: 600px){ margin-top: 15px;}
   @media screen and (min-width: 800px){ margin-top: 30px;}
+
   li{
-    display: block; margin: 0 1px; padding: 0 0 4px 0;
+    display: block; margin: 0; padding: 0 0 4px 0;
     background: $primary-color;
     color: $secondary-color;
+    border-top: dotted 1px $secondary-color;
+    &:first-child{border-top: none;}
 
     @media screen and (min-width: 600px){
       display: inline-block;
       border-right: dotted 1px $secondary-color;
+      border-bottom: none;
+      border-top: none;
       &:first-child{border-left: dotted 1px $secondary-color;}
     }
+    &:hover{background: #000;}
   }
   li a{margin: 0 20px;}
 }
