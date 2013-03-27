@@ -1,7 +1,5 @@
 #home{
   .container{
-    margin-top: 20px;
-
     h2{
       margin: 0;
       font-family: 'brandon-grotesque';
@@ -16,8 +14,11 @@
     }
 
     .speakers{
-      margin: 0 0 10px 0; padding: 0 0 20px 0;
+      margin: 0 0 0 0; padding: 0 0 0 0;
       text-align: center;
+
+      @media screen and (min-width: 600px){ margin: 10px;}
+      @media screen and (min-width: 800px){ margin: 15px;}
 
       li{
         margin: 0; padding: 0;
