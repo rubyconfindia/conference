@@ -87,7 +87,7 @@
       } 
 
       &.sponsor {
-        width: 303px;
+        width: 100%;
         h3 {
           color: $secondary-color;
           border-top: solid 2px $secondary-color;
@@ -109,10 +109,11 @@
             }
           }
         }
-      }
 
-      &.platinum, &.gold, &.associate, &.dinner {
-        float: left;
+        @media screen and (min-width: 600px){ width: 32%;}
+        &.platinum, &.gold, &.associate, &.dinner {
+          float: left;
+        }
       }
     }
 

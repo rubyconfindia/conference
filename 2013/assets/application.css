@@ -573,7 +573,7 @@ ul.actions {
       font-weight: normal;
       margin: 0 0 0 20px; }
   #home .container div.article.sponsor {
-    width: 303px; }
+    width: 100%; }
     #home .container div.article.sponsor h3 {
       color: #f2ecce;
       border-top: solid 2px #f2ecce; }
@@ -590,7 +590,10 @@ ul.actions {
             margin-right: auto;
             max-width: 280px;
             max-height: 100px; }
-  #home .container div.article.platinum, #home .container div.article.gold, #home .container div.article.associate, #home .container div.article.dinner {
-    float: left; }
+    @media screen and (min-width: 600px) {
+      #home .container div.article.sponsor {
+        width: 32%; } }
+    #home .container div.article.sponsor.platinum, #home .container div.article.sponsor.gold, #home .container div.article.sponsor.associate, #home .container div.article.sponsor.dinner {
+      float: left; }
 #home .container.sponsor-block {
   background: #aa0000; }
