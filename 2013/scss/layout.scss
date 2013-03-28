@@ -1,5 +1,5 @@
 .container{
-  display: block;
+  display: table;
   @include border-box;
   width: 960px;
   max-width: 100%;

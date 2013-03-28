@@ -85,7 +85,39 @@
           display: table; font-weight: normal; margin: 0 0 0 20px;
         }
       } 
+
+      &.sponsor {
+        width: 303px;
+        h3 {
+          color: $secondary-color;
+          border-top: solid 2px $secondary-color;
+        }
+        ul {
+          padding-left: 0;
+          li {
+            display: block;
+            a {
+              border-bottom: none;
+              img {
+                margin: 10px 0 10px 0;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 280px; 
+                max-height: 100px; 
+              }
+            }
+          }
+        }
+      }
+
+      &.platinum, &.gold, &.associate, &.dinner {
+        float: left;
+      }
     }
-  }  
-  
+
+    &.sponsor-block {
+      background: $primary-color;
+    }
+  }
 }

@@ -393,7 +393,7 @@ a {
   border-bottom: dotted 1px #aa0000; }
 
 .container {
-  display: block;
+  display: table;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -572,3 +572,25 @@ ul.actions {
       display: table;
       font-weight: normal;
       margin: 0 0 0 20px; }
+  #home .container div.article.sponsor {
+    width: 303px; }
+    #home .container div.article.sponsor h3 {
+      color: #f2ecce;
+      border-top: solid 2px #f2ecce; }
+    #home .container div.article.sponsor ul {
+      padding-left: 0; }
+      #home .container div.article.sponsor ul li {
+        display: block; }
+        #home .container div.article.sponsor ul li a {
+          border-bottom: none; }
+          #home .container div.article.sponsor ul li a img {
+            margin: 10px 0 10px 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 280px;
+            max-height: 100px; }
+  #home .container div.article.platinum, #home .container div.article.gold, #home .container div.article.associate, #home .container div.article.dinner {
+    float: left; }
+#home .container.sponsor-block {
+  background: #aa0000; }
