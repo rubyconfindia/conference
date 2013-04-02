@@ -1,7 +1,5 @@
 #home{
   .container{
-    margin-top: 20px;
-
     h2{
       margin: 0;
       font-family: 'brandon-grotesque';
@@ -16,8 +14,11 @@
     }
 
     .speakers{
-      margin: 0 0 10px 0; padding: 0 0 20px 0;
+      margin: 0 0 0 0; padding: 0 0 0 0;
       text-align: center;
+
+      @media screen and (min-width: 600px){ margin: 10px;}
+      @media screen and (min-width: 800px){ margin: 15px;}
 
       li{
         margin: 0; padding: 0;
@@ -84,7 +85,40 @@
           display: table; font-weight: normal; margin: 0 0 0 20px;
         }
       } 
+
+      &.sponsor {
+        width: 100%;
+        h3 {
+          color: $secondary-color;
+          border-top: solid 2px $secondary-color;
+        }
+        ul {
+          padding-left: 0;
+          li {
+            display: block;
+            a {
+              border-bottom: none;
+              img {
+                margin: 30px 0 10px 0;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 280px; 
+                max-height: 100px; 
+              }
+            }
+          }
+        }
+
+        @media screen and (min-width: 600px){ width: 32%;}
+        &.platinum, &.gold, &.associate, &.dinner {
+          float: left;
+        }
+      }
     }
-  }  
-  
+
+    &.sponsor-block {
+      background: $primary-color;
+    }
+  }
 }
