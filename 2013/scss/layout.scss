@@ -1,10 +1,11 @@
 .container{
-  display: table;
+  display: block;
   @include border-box;
   width: 960px;
   max-width: 100%;
   margin: 0 auto;
   padding: 10px;
+  overflow: hidden;
 }
 
 ul.actions li a, a.button{
@@ -30,6 +31,7 @@ ul.actions{
   padding: 0;
   text-align: center;
   background: $primary-color;
+  clear: both;
 
   li{
     display: block; margin: 0; padding: 0 0 4px 0;

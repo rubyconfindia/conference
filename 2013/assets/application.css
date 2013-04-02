@@ -393,14 +393,15 @@ a {
   border-bottom: dotted 1px #aa0000; }
 
 .container {
-  display: table;
+  display: block;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 960px;
   max-width: 100%;
   margin: 0 auto;
-  padding: 10px; }
+  padding: 10px;
+  overflow: hidden; }
 
 ul.actions li a, a.button {
   display: block;
@@ -424,7 +425,8 @@ ul.actions {
   margin: 0;
   padding: 0;
   text-align: center;
-  background: #aa0000; }
+  background: #aa0000;
+  clear: both; }
   ul.actions li {
     display: block;
     margin: 0;
@@ -486,6 +488,9 @@ ul.actions {
         margin-top: -72px;
         text-align: right; } }
 
+#home .info {
+  margin-top: 40px;
+  margin-bottom: 40px; }
 #home .container h2 {
   margin: 0;
   font-family: 'brandon-grotesque';
@@ -541,7 +546,7 @@ ul.actions {
       border: none; }
     #home .container .speakers li span {
       color: #999999; }
-#home .container div.article {
+#home .container .article {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -549,51 +554,50 @@ ul.actions {
   padding: 2px;
   margin: 0.5%;
   float: right;
-  text-align: left;
-  border-top: solid 2px #aa0000; }
+  text-align: left; }
   @media screen and (min-width: 600px) {
-    #home .container div.article {
+    #home .container .article {
       width: 19%; } }
-  #home .container div.article.sponsorship, #home .container div.article.contact {
+  #home .container .article.sponsorship, #home .container .article.contact {
     float: left; }
     @media screen and (min-width: 600px) {
-      #home .container div.article.sponsorship, #home .container div.article.contact {
+      #home .container .article.sponsorship, #home .container .article.contact {
         width: 39%; } }
-  #home .container div.article h3 {
+  #home .container .article.sponsor {
+    float: left; }
+    @media screen and (min-width: 600px) {
+      #home .container .article.sponsor {
+        width: 32.3%; } }
+  #home .container .article h3 {
     color: #aa0000;
     margin: 0;
     font-size: 16px; }
-  #home .container div.article ul {
+  #home .container .article ul {
     margin: 0;
     padding-left: 24px; }
-  #home .container div.article.contact ul {
+  #home .container .article.contact ul {
     font-weight: bold; }
-    #home .container div.article.contact ul li a {
+    #home .container .article.contact ul li a {
       display: table;
       font-weight: normal;
       margin: 0 0 0 20px; }
-  #home .container div.article.sponsor {
-    width: 100%; }
-    #home .container div.article.sponsor h3 {
-      color: #f2ecce;
-      border-top: solid 2px #f2ecce; }
-    #home .container div.article.sponsor ul {
-      padding-left: 0; }
-      #home .container div.article.sponsor ul li {
-        display: block; }
-        #home .container div.article.sponsor ul li a {
-          border-bottom: none; }
-          #home .container div.article.sponsor ul li a img {
-            margin: 30px 0 10px 0;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 280px;
-            max-height: 100px; }
-    @media screen and (min-width: 600px) {
-      #home .container div.article.sponsor {
-        width: 32%; } }
-    #home .container div.article.sponsor.platinum, #home .container div.article.sponsor.gold, #home .container div.article.sponsor.associate, #home .container div.article.sponsor.dinner {
-      float: left; }
-#home .container.sponsor-block {
+#home .sponsors {
   background: #aa0000; }
+  #home .sponsors .article:nth-child(3n+1) {
+    clear: both; }
+  #home .sponsors .article h3 {
+    color: #f2ecce;
+    border-top: solid 2px #f2ecce; }
+  #home .sponsors .article ul {
+    padding: 0;
+    margin: 0; }
+    #home .sponsors .article ul li {
+      list-style-type: none;
+      margin: 20px 0 0 0;
+      padding: 0;
+      text-align: center; }
+    #home .sponsors .article ul img {
+      max-height: 100px;
+      max-width: 100%; }
+  #home .sponsors .article.platinum, #home .sponsors .article.gold, #home .sponsors .article.associate, #home .sponsors .article.dinner {
+    float: left; }
