@@ -7,26 +7,35 @@
   .container{width: 1000px;}
 
   h1{
+    background: transparent url('images/logo.png') no-repeat left top;
+    padding: 50px 0 0 0; background-size: 50px 50px;
     a{color: $red; text-decoration: none; border: none;}
     a span{color: $gray-dark;}
   }
 
-  @media screen and (min-width: 700px){
+  @media screen and (min-width: 500px){
+    h1{padding: 10px 0 0 60px; background-size: 60px 60px;}
+  }
+
+  @media screen and (min-width: 600px){
     padding: 40px 20px;
-    h2{margin: -12px 0 0 120px;}
+    h1{padding: 10px 0 0 70px; background-size: 70px 70px;}
+    h2{margin: -12px 0 0 190px;}
     h3{margin-top: -56px; text-align: right;}
   }
 
   @media screen and (min-width: 800px){
     padding: 40px 20px;
-    h2{margin: -16px 0 0 140px;}
+    h1{padding: 10px 0 0 80px; background-size: 80px 80px;}
+    h2{margin: -16px 0 0 220px;}
     h3{margin-top: -62px; text-align: right;}
   }
 
   @media screen and (min-width: 1000px){
     background-size: 100% auto;
     padding: 20px 20px 40px 20px;
-    h2{margin: -20px 0 0 210px;}
+    h1{padding: 32px 0 0 124px; background-size: 124px 124px;}
+    h2{margin: -20px 0 0 330px;}
     h3{margin-top: -72px; text-align: right;}
   }
 }

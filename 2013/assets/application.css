@@ -456,25 +456,39 @@ ul.actions {
   background-size: auto 100%; }
   #header .container {
     width: 1000px; }
-  #header h1 a {
-    color: #aa0000;
-    text-decoration: none;
-    border: none; }
-  #header h1 a span {
-    color: #333333; }
-  @media screen and (min-width: 700px) {
+  #header h1 {
+    background: transparent url("images/logo.png") no-repeat left top;
+    padding: 50px 0 0 0;
+    background-size: 50px 50px; }
+    #header h1 a {
+      color: #aa0000;
+      text-decoration: none;
+      border: none; }
+    #header h1 a span {
+      color: #333333; }
+  @media screen and (min-width: 500px) {
+    #header h1 {
+      padding: 10px 0 0 60px;
+      background-size: 60px 60px; } }
+  @media screen and (min-width: 600px) {
     #header {
       padding: 40px 20px; }
+      #header h1 {
+        padding: 10px 0 0 70px;
+        background-size: 70px 70px; }
       #header h2 {
-        margin: -12px 0 0 120px; }
+        margin: -12px 0 0 190px; }
       #header h3 {
         margin-top: -56px;
         text-align: right; } }
   @media screen and (min-width: 800px) {
     #header {
       padding: 40px 20px; }
+      #header h1 {
+        padding: 10px 0 0 80px;
+        background-size: 80px 80px; }
       #header h2 {
-        margin: -16px 0 0 140px; }
+        margin: -16px 0 0 220px; }
       #header h3 {
         margin-top: -62px;
         text-align: right; } }
@@ -482,8 +496,11 @@ ul.actions {
     #header {
       background-size: 100% auto;
       padding: 20px 20px 40px 20px; }
+      #header h1 {
+        padding: 32px 0 0 124px;
+        background-size: 124px 124px; }
       #header h2 {
-        margin: -20px 0 0 210px; }
+        margin: -20px 0 0 330px; }
       #header h3 {
         margin-top: -72px;
         text-align: right; } }
