@@ -563,11 +563,6 @@ ul.actions {
     @media screen and (min-width: 600px) {
       #home .container .article.sponsorship, #home .container .article.contact {
         width: 39%; } }
-  #home .container .article.sponsor {
-    float: left; }
-    @media screen and (min-width: 600px) {
-      #home .container .article.sponsor {
-        width: 32.3%; } }
   #home .container .article h3 {
     color: #aa0000;
     margin: 0;
@@ -582,22 +577,42 @@ ul.actions {
       font-weight: normal;
       margin: 0 0 0 20px; }
 #home .sponsors {
-  background: #aa0000; }
-  #home .sponsors .article:nth-child(3n+1) {
-    clear: both; }
-  #home .sponsors .article h3 {
-    color: #f2ecce;
-    border-top: solid 2px #f2ecce; }
-  #home .sponsors .article ul {
+  background: #f2ecce; }
+  #home .sponsors .article {
+    margin: 3% 0.5%;
+    float: left;
+    text-align: center; }
+    #home .sponsors .article:nth-child(4) {
+      clear: both; }
+    #home .sponsors .article.sponsor {
+      float: left; }
+      @media screen and (min-width: 600px) {
+        #home .sponsors .article.sponsor {
+          width: 32.3%; } }
+    #home .sponsors .article ul {
+      padding-left: 0; }
+  #home .sponsors h3, #home .sponsors li, #home .sponsors a {
+    text-align: center; }
+  #home .sponsors a {
+    border: none;
+    display: inline-block;
+    margin: 10px 0;
+    background: white;
+    max-height: 60px;
+    padding: 10px 20px;
+    border-radius: 40px; }
+    #home .sponsors a.light {
+      background: #333333; }
+    #home .sponsors a.medium {
+      background: #666666; }
+  #home .sponsors ul {
     padding: 0;
     margin: 0; }
-    #home .sponsors .article ul li {
+    #home .sponsors ul li {
       list-style-type: none;
-      margin: 20px 0 0 0;
+      margin: 0;
       padding: 0;
       text-align: center; }
-    #home .sponsors .article ul img {
-      max-height: 100px;
+    #home .sponsors ul img {
+      max-height: 60px;
       max-width: 100%; }
-  #home .sponsors .article.platinum, #home .sponsors .article.gold, #home .sponsors .article.associate, #home .sponsors .article.dinner {
-    float: left; }
