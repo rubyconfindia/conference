@@ -470,7 +470,7 @@ ul.actions {
     #header h1 {
       padding: 10px 0 0 60px;
       background-size: 60px 60px; } }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 700px) {
     #header {
       padding: 40px 20px; }
       #header h1 {
