@@ -574,12 +574,19 @@ ul.actions {
   text-align: left; }
   @media screen and (min-width: 600px) {
     #home .container .article {
-      width: 19%; } }
-  #home .container .article.sponsorship, #home .container .article.contact {
-    float: left; }
-    @media screen and (min-width: 600px) {
-      #home .container .article.sponsorship, #home .container .article.contact {
+      width: 19%; }
+      #home .container .article.news {
+        width: 59%; }
+      #home .container .article.contact {
+        width: 39%; }
+      #home .container .article.twitter {
         width: 39%; } }
+  #home .container .article.contact {
+    float: left; }
+  #home .container .article.news {
+    float: left; }
+  #home .container .article.twitter {
+    float: right; }
   #home .container .article h3 {
     color: #aa0000;
     margin: 0;
@@ -633,3 +640,7 @@ ul.actions {
     #home .sponsors ul img {
       max-height: 60px;
       max-width: 100%; }
+
+.twitter-timeline, #twitter-widget-0 {
+  display: block;
+  width: 100%; }
