@@ -403,23 +403,6 @@ a {
   padding: 10px;
   overflow: hidden; }
 
-ul.actions li a, a.button {
-  display: block;
-  margin: 0;
-  padding: 10px 12px 4px 4px;
-  font-size: 14px;
-  line-height: 20px;
-  font-family: 'brandon-grotesque';
-  font-weight: 400;
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  border: none;
-  color: #f2ecce; }
-  ul.actions li a span, a.button span {
-    font-size: 24px;
-    color: white; }
-
 ul.actions {
   width: 100%;
   margin: 0;
@@ -430,13 +413,14 @@ ul.actions {
   ul.actions li {
     display: block;
     margin: 0;
-    padding: 0 0 4px 0;
+    padding: 2px 0;
+    position: relative;
     background: #aa0000;
     color: #f2ecce;
     border-top: dotted 1px #f2ecce; }
     ul.actions li:first-child {
       border-top: none; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 640px) {
       ul.actions li {
         display: inline-block;
         border-right: dotted 1px #f2ecce;
@@ -448,6 +432,57 @@ ul.actions {
       background: #000; }
   ul.actions li a {
     margin: 0 20px; }
+
+ul.actions li a, a.button {
+  display: block;
+  margin: 0;
+  padding: 8px 12px 4px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: 'brandon-grotesque';
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  border: none;
+  color: #f2ecce; }
+  ul.actions li a span, a.button span {
+    display: block;
+    font-size: 24px;
+    color: white;
+    text-align: center; }
+
+.tooltip {
+  position: absolute;
+  display: block;
+  left: -1000em;
+  margin-left: -130px;
+  margin-top: 8px;
+  width: 240px;
+  padding: 8px 10px;
+  display: block;
+  background: #f2ecce;
+  color: #aa0000;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  z-index: 100; }
+  .tooltip:before, .tooltip:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -10px;
+    border: solid 10px transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.3); }
+  .tooltip:after {
+    top: -18px;
+    margin-left: -9px;
+    border-width: 9px;
+    border-bottom-color: #f2ecce; }
+
+*:hover > .tooltip, *.hover > .tooltip {
+  left: 50%; }
 
 #header {
   padding: 20px 10px;
@@ -505,6 +540,8 @@ ul.actions {
         margin-top: -72px;
         text-align: right; } }
 
+#home #header {
+  border-bottom: none; }
 #home .info {
   margin-top: 40px;
   margin-bottom: 40px; }
@@ -520,49 +557,6 @@ ul.actions {
   @media screen and (min-width: 800px) {
     #home .container h2 {
       font-size: 40px; } }
-#home .container .speakers {
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-  text-align: center; }
-  @media screen and (min-width: 600px) {
-    #home .container .speakers {
-      margin: 10px; } }
-  @media screen and (min-width: 800px) {
-    #home .container .speakers {
-      margin: 15px; } }
-  #home .container .speakers li {
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    text-align: center;
-    width: 120px; }
-    @media screen and (min-width: 600px) {
-      #home .container .speakers li {
-        width: 140px; } }
-    @media screen and (min-width: 900px) {
-      #home .container .speakers li {
-        width: 160px; } }
-    #home .container .speakers li img {
-      display: block;
-      margin: 10px auto;
-      width: 80px;
-      height: 80px;
-      border-radius: 40px;
-      box-shadow: 0 0 0 10px #f2ecce; }
-      @media screen and (min-width: 600px) {
-        #home .container .speakers li img {
-          width: 100px;
-          height: 100px;
-          border-radius: 50px; } }
-    #home .container .speakers li a {
-      text-decoration: none;
-      color: #aa0000;
-      font-weight: 600;
-      display: block;
-      margin: 0 auto;
-      border: none; }
-    #home .container .speakers li span {
-      color: #999999; }
 #home .container .article {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -649,3 +643,47 @@ ul.actions {
 .twitter-timeline, #twitter-widget-0 {
   display: block;
   width: 100%; }
+
+.speakers {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  text-align: center; }
+  @media screen and (min-width: 600px) {
+    .speakers {
+      margin: 10px; } }
+  @media screen and (min-width: 800px) {
+    .speakers {
+      margin: 15px; } }
+  .speakers li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+    width: 120px; }
+    @media screen and (min-width: 600px) {
+      .speakers li {
+        width: 140px; } }
+    @media screen and (min-width: 900px) {
+      .speakers li {
+        width: 160px; } }
+    .speakers li img {
+      display: block;
+      margin: 10px auto;
+      width: 80px;
+      height: 80px;
+      border-radius: 40px;
+      box-shadow: 0 0 0 10px #f2ecce; }
+      @media screen and (min-width: 600px) {
+        .speakers li img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50px; } }
+    .speakers li a {
+      text-decoration: none;
+      color: #aa0000;
+      font-weight: 600;
+      display: block;
+      margin: 0 auto;
+      border: none; }
+    .speakers li span {
+      color: #999999; }
