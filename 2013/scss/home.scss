@@ -1,6 +1,6 @@
 #home{
   #header{border-bottom: none;}
-  .info{margin-top: 40px; margin-bottom: 40px;}
+  .info{margin-top: 40px; margin-bottom: 10px;}
 
   .container{
     h2{
@@ -15,7 +15,7 @@
         font-size: 40px;
       }
     }
-    
+
     .article{
       @include border-box;
       width: 100%;
@@ -25,10 +25,10 @@
       text-align: left;
 
       @media screen and (min-width: 600px){ 
-        width: 19%;
+        width: 29%;
 
-        &.news{width: 59%;}
-        &.contact{width: 39%;}
+        // &.news{width: 59%;}
+        &.contact{width: 29%;}
         &.twitter{width: 39%;}
       }
 
@@ -97,4 +97,6 @@
 .twitter-timeline, #twitter-widget-0{
   display: block;
   width: 100%;
+  height: 300px;
+  background: $secondary-color;
 }
