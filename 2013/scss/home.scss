@@ -29,7 +29,6 @@
       @media screen and (min-width: 600px){ 
         width: 29%;
 
-        // &.news{width: 59%;}
         &.contact{width: 29%;}
         &.twitter{width: 39%;}
       }
@@ -40,12 +39,11 @@
       &.twitter{ float: right;}
 
       h3{
-        margin: 0;
-        padding-top: 12px;
-        font-size: 16px;
-        line-height: 20px;
+        margin: 18px 0 6px 0;
+        font-size: 21px;
+        font-weight: 100;
         text-align: center;
-        color: $primary-color;
+        // text-transform: lowercase;
       }
 
       ul{margin: 0; padding-left: 24px;}
@@ -74,7 +72,6 @@
           text-indent: -1000em;
           overflow: hidden;
           border: none;
-          // background: $secondary-color;
           background: $white;
           color: $primary-color;
 
@@ -121,7 +118,7 @@
         padding: 2px 12px 0 12px;
         text-align: center;
         border: none;
-        border-radius: 12px;
+        border-radius: 4px;
 
         &:hover, &:focus{
           background: $primary-color;
@@ -147,7 +144,8 @@
     background: $secondary-color;
 
     .article{
-      margin: 3% 0.5%;
+      @include border-box;
+      padding: 10px 5px;
       float: left;
       text-align: center;
       &:nth-child(4){clear: both;}
@@ -157,21 +155,15 @@
       }
 
       ul{padding-left: 0;}
+      ul li a{padding: 10px 20px;}
     }
 
-    h3, li, a{text-align: center;}
+    h3, li{text-align: center;}
 
     a{
-      border: none;
-      display: inline-block;
       margin: 10px 0;
-      background: $white;
       height: 80px;
-      padding: 10px 20px;
-      border-radius: 40px;
       width: 100%;
-      text-align: center;
-      @include border-box;
 
       &.light{background: $gray-dark;}
       &.medium{background: $gray;}

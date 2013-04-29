@@ -593,12 +593,10 @@ ul.actions li a, a.button {
   #home .container .article.twitter {
     float: right; }
   #home .container .article h3 {
-    margin: 0;
-    padding-top: 12px;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    color: #aa0000; }
+    margin: 18px 0 6px 0;
+    font-size: 21px;
+    font-weight: 100;
+    text-align: center; }
   #home .container .article ul {
     margin: 0;
     padding-left: 24px; }
@@ -659,7 +657,7 @@ ul.actions li a, a.button {
     padding: 2px 12px 0 12px;
     text-align: center;
     border: none;
-    border-radius: 12px; }
+    border-radius: 4px; }
     #home .container .article a:hover, #home .container .article a:focus {
       background: #aa0000;
       color: #f2ecce; }
@@ -674,7 +672,10 @@ ul.actions li a, a.button {
 #home .sponsors {
   background: #f2ecce; }
   #home .sponsors .article {
-    margin: 3% 0.5%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px 5px;
     float: left;
     text-align: center; }
     #home .sponsors .article:nth-child(4) {
@@ -686,21 +687,14 @@ ul.actions li a, a.button {
           width: 32.3%; } }
     #home .sponsors .article ul {
       padding-left: 0; }
-  #home .sponsors h3, #home .sponsors li, #home .sponsors a {
+    #home .sponsors .article ul li a {
+      padding: 10px 20px; }
+  #home .sponsors h3, #home .sponsors li {
     text-align: center; }
   #home .sponsors a {
-    border: none;
-    display: inline-block;
     margin: 10px 0;
-    background: white;
     height: 80px;
-    padding: 10px 20px;
-    border-radius: 40px;
-    width: 100%;
-    text-align: center;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
+    width: 100%; }
     #home .sponsors a.light {
       background: #333333; }
     #home .sponsors a.medium {
