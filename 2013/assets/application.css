@@ -392,12 +392,19 @@ a {
   text-decoration: none;
   border-bottom: dotted 1px #aa0000; }
 
+@font-face {
+  font-family: 'social-icons';
+  src: url("fonts/social-icons.eot?65157432");
+  src: url("fonts/social-icons.eot?65157432#iefix") format("embedded-opentype"), url("fonts/social-icons.woff?65157432") format("woff"), url("fonts/social-icons.ttf?65157432") format("truetype"), url("fonts/social-icons.svg?65157432#social-icons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 .container {
   display: block;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 960px;
+  width: 1200px;
   max-width: 100%;
   margin: 0 auto;
   padding: 10px;
@@ -562,10 +569,12 @@ ul.actions li a, a.button {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  padding: 2px;
+  padding: 0 0 10px 0;
   margin: 0.5%;
   float: right;
-  text-align: left; }
+  text-align: left;
+  background: #f2ecce;
+  border-radius: 4px; }
   @media screen and (min-width: 600px) {
     #home .container .article {
       width: 29%; }
@@ -576,22 +585,92 @@ ul.actions li a, a.button {
   #home .container .article.contact {
     float: left; }
   #home .container .article.news {
-    float: left; }
+    float: left;
+    clear: left; }
+  #home .container .article.previous {
+    float: left;
+    clear: left; }
   #home .container .article.twitter {
     float: right; }
   #home .container .article h3 {
-    color: #aa0000;
     margin: 0;
-    font-size: 16px; }
+    padding-top: 12px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #aa0000; }
   #home .container .article ul {
     margin: 0;
     padding-left: 24px; }
   #home .container .article.contact ul {
     font-weight: bold; }
+    #home .container .article.contact ul li {
+      display: block;
+      width: 50%;
+      float: left;
+      line-height: 32px;
+      border-radius: 18px;
+      padding: 4px 0 10px 0;
+      text-align: center;
+      margin: 4px 0; }
     #home .container .article.contact ul li a {
-      display: table;
+      display: inline-block;
+      position: relative;
       font-weight: normal;
-      margin: 0 0 0 20px; }
+      width: 32px;
+      height: 32px;
+      border-radius: 16px;
+      text-indent: -1000em;
+      overflow: hidden;
+      border: none;
+      background: white;
+      color: #aa0000; }
+      #home .container .article.contact ul li a:hover {
+        background: #aa0000;
+        color: #f2ecce; }
+      #home .container .article.contact ul li a:before {
+        content: "\2709";
+        font-family: 'social-icons';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 32px;
+        text-indent: 0;
+        text-align: center;
+        font-size: 16px;
+        line-height: 32px; }
+      #home .container .article.contact ul li a.phone:before {
+        content: "\e065"; }
+      #home .container .article.contact ul li a.twitter:before {
+        content: "\f309"; }
+  #home .container .article.news p {
+    padding: 0 10px;
+    text-align: center; }
+  #home .container .article.news a {
+    display: inline-block;
+    background: white; }
+  #home .container .article a {
+    box-sizing: border-box;
+    display: inline-block;
+    line-height: 24px;
+    font-weight: bold;
+    background: white;
+    padding: 2px 12px 0 12px;
+    text-align: center;
+    border: none;
+    border-radius: 12px; }
+    #home .container .article a:hover, #home .container .article a:focus {
+      background: #aa0000;
+      color: #f2ecce; }
+  #home .container .article.previous ul li {
+    display: block;
+    float: left;
+    list-style-type: none;
+    width: 30%;
+    margin-right: 3%; }
+    #home .container .article.previous ul li a {
+      width: 100%; }
 #home .sponsors {
   background: #f2ecce; }
   #home .sponsors .article {

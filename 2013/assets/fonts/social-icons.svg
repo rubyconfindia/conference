@@ -1,0 +1,42 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>
+Created by FontForge 20110222 at Mon Apr 29 11:00:12 2013
+ By root
+Copyright (C) 2012 by original authors @ fontello.com
+</metadata>
+<defs>
+<font id="icons" horiz-adv-x="364" >
+  <font-face 
+    font-family="icons"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1000"
+    panose-1="2 0 6 3 0 0 0 0 0 0"
+    ascent="850"
+    descent="-150"
+    bbox="-0.455696 -132 988.442 858.225"
+    underline-thickness="50"
+    underline-position="-100"
+    unicode-range="U+2709-F309"
+  />
+<missing-glyph 
+d="M33 0v666h265v-666h-265zM66 33h199v600h-199v-600z" />
+    <glyph glyph-name=".notdef" 
+d="M33 0v666h265v-666h-265zM66 33h199v600h-199v-600z" />
+    <glyph glyph-name=".null" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" horiz-adv-x="333" 
+ />
+    <glyph glyph-name="uni2709" unicode="&#x2709;" horiz-adv-x="930" 
+d="M17 626q2 14 26 14h846q38 0 20 -32q-8 -15 -24 -22q-8 -4 -96.5 -51t-181 -97t-96.5 -52q-16 -10 -46 -10q-29 0 -46 10q-4 2 -96.5 52t-181 97t-96.5 51q-32 18 -28 40zM895 486q20 11 20 -10v-368q0 -16 -17 -32t-33 -16h-800q-16 0 -33 16t-17 32v368q0 21 20 10
+l384 -200q17 -10 46 -10t46 10z" />
+    <glyph glyph-name="uniE065" unicode="&#xe065;" horiz-adv-x="988" 
+d="M0 627q0 51 28 77l138 138q46 38 77 -13l113 -211q18 -39 -14 -71l-51 -52q-5 -5 -5 -14q26 -99 132 -195q32 -33 67 -64q34 -31 34 -26q-1 3 10 -4q4 -2 31 -22q43 -31 40 -13q19 -6 27 2l61 60q39 30 72 12l203 -121q20 -13 24.5 -35t-12.5 -41l-141 -139
+q-27 -27 -74 -27q-142 5 -318 121q-258 186 -375 406q-73 152 -67 232z" />
+    <glyph glyph-name="uniF309" unicode="&#xf309;" horiz-adv-x="950" 
+d="M935 636q-37 -56 -94 -98v-24q0 -130 -60 -250q-60 -121 -186 -203q-127 -83 -290 -83q-159 0 -290 84q18 -2 46 -2q131 0 234 80q-64 2 -111.5 39t-64.5 93q9 -4 34 -4q26 0 50 6q-63 13 -106.5 64.5t-43.5 121.5v2q36 -20 84 -24q-84 58 -84 158q0 47 26 94
+q155 -189 390 -196q-6 18 -6 42q0 78 55.5 133t134.5 55q82 0 136 -58q58 12 120 44q-19 -66 -82 -104q55 8 108 30z" />
+  </font>
+</defs></svg>

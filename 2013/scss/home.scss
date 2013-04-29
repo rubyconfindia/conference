@@ -19,10 +19,12 @@
     .article{
       @include border-box;
       width: 100%;
-      padding: 2px;
+      padding: 0 0 10px 0;
       margin: 0.5%;
       float: right;
       text-align: left;
+      background: $secondary-color;
+      border-radius: 4px;
 
       @media screen and (min-width: 600px){ 
         width: 29%;
@@ -33,21 +35,109 @@
       }
 
       &.contact{float: left;}
-      &.news{float: left;}
+      &.news{float: left;  clear: left;}
+      &.previous{float: left; clear: left;}
       &.twitter{ float: right;}
 
       h3{
-        color: $primary-color;
         margin: 0;
+        padding-top: 12px;
         font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: $primary-color;
       }
 
       ul{margin: 0; padding-left: 24px;}
 
       &.contact ul{
         font-weight: bold;
+        
+        li{
+          display: block;
+          width: 50%;
+          float: left;
+          line-height: 32px;
+          border-radius: 18px;
+          padding: 4px 0 10px 0;
+          text-align: center;
+          margin: 4px 0;
+        }
+
         li a{
-          display: table; font-weight: normal; margin: 0 0 0 20px;
+          display: inline-block;
+          position: relative;
+          font-weight: normal;
+          width: 32px;
+          height: 32px;
+          border-radius: 16px;
+          text-indent: -1000em;
+          overflow: hidden;
+          border: none;
+          // background: $secondary-color;
+          background: $white;
+          color: $primary-color;
+
+          &:hover{
+            background: $primary-color;
+            color: $secondary-color;
+          }
+
+          &:before{
+            content: "\2709";
+            font-family: 'social-icons';
+            display: block;
+            position: absolute;
+            top: 0; left: 0;
+            width: 32px;
+
+            text-indent: 0;
+            text-align: center;
+            font-size: 16px;
+            line-height: 32px;
+          }
+          
+          &.phone:before{content: "\e065";}
+          &.twitter:before{content: "\f309";}
+
+
+        }
+      }
+
+      &.news{
+        p{padding: 0 10px; text-align: center;}
+        a{
+          display: inline-block;
+          background: $white;
+        }
+      }
+
+      a{
+        box-sizing: border-box;
+        display: inline-block;
+        line-height: 24px;
+        font-weight: bold;
+        background: $white;
+        padding: 2px 12px 0 12px;
+        text-align: center;
+        border: none;
+        border-radius: 12px;
+
+        &:hover, &:focus{
+          background: $primary-color;
+          color: $secondary-color;
+        }
+      }
+
+      &.previous ul{
+        li{
+          display: block;
+          float: left;
+          list-style-type: none;
+          width: 30%;
+          margin-right: 3%;
+
+          a{width: 100%;}
         }
       } 
     }
