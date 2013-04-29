@@ -581,7 +581,9 @@ ul.actions li a, a.button {
       #home .container .article.contact {
         width: 29%; }
       #home .container .article.twitter {
-        width: 39%; } }
+        width: 68%;
+        border: solid 10px #f2ecce;
+        background: transparent; } }
   #home .container .article.contact {
     float: left; }
   #home .container .article.news {
@@ -592,6 +594,16 @@ ul.actions li a, a.button {
     clear: left; }
   #home .container .article.twitter {
     float: right; }
+  #home .container .article.twitter div.tintup-holder {
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+    position: relative;
+    height: 500px;
+    width: 100%; }
+  #home .container .article.twitter iframe {
+    height: 500px;
+    width: 100%;
+    border: none; }
   #home .container .article h3 {
     margin: 18px 0 6px 0;
     font-size: 21px;

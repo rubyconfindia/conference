@@ -30,13 +30,29 @@
         width: 29%;
 
         &.contact{width: 29%;}
-        &.twitter{width: 39%;}
+        &.twitter{width: 68%; border: solid 10px $secondary-color; background: transparent;}
       }
 
       &.contact{float: left;}
       &.news{float: left;  clear: left;}
       &.previous{float: left; clear: left;}
       &.twitter{ float: right;}
+
+      &.twitter{
+        div.tintup-holder{
+          -webkit-overflow-scrolling:touch;
+          overflow:auto;
+          position:relative;
+          height:500px;
+          width:100%;
+        }
+
+        iframe{
+          height: 500px;
+          width: 100%;
+          border: none;
+        }
+      }
 
       h3{
         margin: 18px 0 6px 0;
