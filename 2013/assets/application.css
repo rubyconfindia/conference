@@ -730,15 +730,15 @@ ul.actions li a, a.button {
   background: #f2ecce; }
 
 .speakers, .talks {
-  margin: 0 0 0 0;
+  margin: 0;
   padding: 0 0 0 0;
   text-align: center; }
   @media screen and (min-width: 600px) {
     .speakers, .talks {
-      margin: 10px; } }
+      margin: 10px auto; } }
   @media screen and (min-width: 800px) {
     .speakers, .talks {
-      margin: 15px; } }
+      margin: 15px auto; } }
   .speakers li, .talks li {
     margin: 0;
     padding: 0;
@@ -753,7 +753,7 @@ ul.actions li a, a.button {
         width: 160px; } }
     .speakers li img, .talks li img {
       display: block;
-      margin: 10px auto;
+      margin: 10px auto 20px auto;
       width: 80px;
       height: 80px;
       border-radius: 40px;
@@ -776,10 +776,33 @@ ul.actions li a, a.button {
 .talks li {
   display: block;
   text-align: left;
-  padding-bottom: 40px; }
+  clear: both;
+  width: auto;
+  padding: 0 0 0 180px; }
+  .talks li div.speaker {
+    width: 160px;
+    float: left;
+    margin-left: -180px;
+    padding-bottom: 40px; }
   .talks li a, .talks li span {
     display: block;
     width: 160px;
     padding: 0;
     margin: 0;
     text-align: center; }
+  .talks li div.details {
+    padding: 10px 20px;
+    background: #f2ecce;
+    border-radius: 4px;
+    position: relative;
+    min-height: 100px; }
+    .talks li div.details:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 40px;
+      left: -20px;
+      width: 0;
+      height: 0;
+      border: solid 10px transparent;
+      border-right-color: #f2ecce; }

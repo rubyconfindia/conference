@@ -1,9 +1,9 @@
 .speakers, .talks{
-  margin: 0 0 0 0; padding: 0 0 0 0;
+  margin: 0; padding: 0 0 0 0;
   text-align: center;
 
-  @media screen and (min-width: 600px){ margin: 10px;}
-  @media screen and (min-width: 800px){ margin: 15px;}
+  @media screen and (min-width: 600px){ margin: 10px auto;}
+  @media screen and (min-width: 800px){ margin: 15px auto;}
 
   li{
     margin: 0; padding: 0;
@@ -16,7 +16,7 @@
 
     img{
       display: block;
-      margin: 10px auto;
+      margin: 10px auto 20px auto;
       width: 80px; height: 80px;
       border-radius: 40px;
       box-shadow: 0 0 0 10px $secondary-color;
@@ -44,7 +44,16 @@
   li{
     display: block;
     text-align: left;
-    padding-bottom: 40px;
+    clear: both;
+    width: auto;
+    padding: 0 0 0 180px;
+
+    div.speaker{
+      width: 160px;
+      float: left;
+      margin-left: -180px;
+      padding-bottom: 40px;
+    }
 
     a, span{
       display: block;
@@ -52,6 +61,24 @@
       padding: 0;
       margin: 0;
       text-align: center;
+    }
+
+    div.details{
+      padding: 10px 20px;
+      background: $secondary-color;
+      border-radius: 4px;
+      position: relative;
+      min-height: 100px;
+
+      &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 40px; left: -20px;
+        width: 0; height: 0;
+        border: solid 10px transparent;
+        border-right-color: $secondary-color;
+      }
     }
   }
 }
