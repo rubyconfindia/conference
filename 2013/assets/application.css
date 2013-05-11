@@ -739,19 +739,19 @@ ul.actions li a, a.button {
   @media screen and (min-width: 800px) {
     .speakers, .talks {
       margin: 15px auto; } }
-  .speakers li, .talks li {
+  .speakers > li, .talks > li {
     margin: 0;
     padding: 0;
     display: inline-block;
     text-align: center;
     width: 120px; }
     @media screen and (min-width: 600px) {
-      .speakers li, .talks li {
+      .speakers > li, .talks > li {
         width: 140px; } }
     @media screen and (min-width: 900px) {
-      .speakers li, .talks li {
+      .speakers > li, .talks > li {
         width: 160px; } }
-    .speakers li img, .talks li img {
+    .speakers > li img, .talks > li img {
       display: block;
       margin: 10px auto 20px auto;
       width: 80px;
@@ -759,44 +759,44 @@ ul.actions li a, a.button {
       border-radius: 40px;
       box-shadow: 0 0 0 10px #f2ecce; }
       @media screen and (min-width: 600px) {
-        .speakers li img, .talks li img {
+        .speakers > li img, .talks > li img {
           width: 100px;
           height: 100px;
           border-radius: 50px; } }
-    .speakers li a, .talks li a {
+    .speakers > li a, .talks > li a {
       text-decoration: none;
       color: #aa0000;
       font-weight: 600;
       display: block;
       margin: 0 auto;
       border: none; }
-    .speakers li span, .talks li span {
+    .speakers > li span, .talks > li span {
       color: #999999; }
 
-.talks li {
+.talks > li {
   display: block;
   text-align: left;
   clear: both;
   width: auto;
   padding: 0 0 0 180px; }
-  .talks li div.speaker {
+  .talks > li div.speaker {
     width: 160px;
     float: left;
     margin-left: -180px;
     padding-bottom: 40px; }
-  .talks li a, .talks li span {
+  .talks > li a, .talks > li span {
     display: block;
     width: 160px;
     padding: 0;
     margin: 0;
     text-align: center; }
-  .talks li div.details {
+  .talks > li div.details {
     padding: 10px 20px;
     background: #f2ecce;
     border-radius: 4px;
     position: relative;
     min-height: 100px; }
-    .talks li div.details:before {
+    .talks > li div.details:before {
       content: "";
       display: block;
       position: absolute;

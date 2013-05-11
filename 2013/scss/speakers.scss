@@ -5,7 +5,7 @@
   @media screen and (min-width: 600px){ margin: 10px auto;}
   @media screen and (min-width: 800px){ margin: 15px auto;}
 
-  li{
+  >li{
     margin: 0; padding: 0;
     display: inline-block;
     text-align: center;
@@ -41,7 +41,7 @@
 }
 
 .talks{
-  li{
+  >li{
     display: block;
     text-align: left;
     clear: both;

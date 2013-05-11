@@ -100,6 +100,711 @@
             <span>guest speaker</span>
           </div>
         </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            <h2>...but we had to kill unicorns</h2>
+            <p>How often do you have to leave you comfort zone? Well, it has happened in my team recently. We had to abandon our way of thinking about Rails applications. Unicorn and single threaded MRI wasn't the choice anymore, neither was JRuby. So we had to make a big step. We prepared our app to be thread safe, we improved everything we could. We fixed some open source libraries. We killed horde of unicorns and adopted pumas. Everything to be able to make a few concurrent external request on each request to our application and still to handle 200k requests per minute.</p>
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/prakashmurthy">Prakash Murthy</a>
+          </div>
+          <div class="details">
+            <h2>Taking Ruby Community in India to a new level</h2>
+            <p>So you are here at the only ruby conference in India, and have the following questions running through your mind:</p>
+            <ul>
+              <li>How come there aren't more events like this in India where I can meet fellow ruby enthusiasts across the nation on a more frequent basis?</li>
+              <li>In fact, why isn't there an active ruby community in my home town? Why can't someone organize regular meetings so that I can get an opportunity to meet other local ruby developers in person and learn from them on a regular basis?</li>
+              <li>How would it be if every major city in India have a size-able ruby & rails community solving real-world problems in the local community and creating job opportunities galore for the local developers?</li>
+            </ul>
+            <p><strong>Fear not!</strong></p>
+            <p>This talk will address all that and more, while exploring the numerous ways in which you - yes, you who are reading this - can contribute towards making the Ruby community in India to scale new heights, irrespective of how long you have been programming in ruby.</p>
+            <p>Bring your community building hat, and explore with me the beautiful future we could create together for the Indian ruby community!"</p>
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/benjaminleesmith">Benjamin Smith</a>
+          </div>
+          <div class="details">
+            <h2>Hacking with Gems</h2>
+            <p>"What's the worst that could happen if your app has a dependency on a malicious gem? How easy would it be to write a gem that could compromise a box?</p>
+            <p>Much of the Ruby community blindly trusts our gems. This talk will make you second guess that trust. It will also show you how to vet gems that you do choose to use."</p>
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/dasch">Daniel Schierbeck</a>
+          </div>
+          <div class="details">
+            <h2>Curly — Refactoring the view layer</h2>
+            <p>"While most parts of Rails have been thoroughly overhauled during the past few years, one part has stubbornly refused improvement. The view layer is still by default using ERB to transform your app’s objects into HTML. While HAML has gained a lot of traction, it is not a fundamental shift away from ERB, but rather a preference for putting HTML in your Ruby rather than the other way around.</p>
+            <p>More recent efforts in the realm of JavaScript have produced Mustache and its ambitious younger brother, Handlebars. While these are more radical in their attempt to separate structure and logic, they still do not feel like native Rails code.</p>
+            <p>Curly is a project that aims to bring a simple, powerful, and clean view layer to your Rails apps, by completely separating structure and logic while integrating with Rails. By writing all your view logic in a plain old Ruby class, you get back all the powerful means of refactoring and improving your code.</p>
+            <p>Curly is open source and available at http://github.com/zendesk/curly"</p>
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/rocky-jaiswal">Rocky Jaiswal</a>
+          </div>
+          <div class="details">
+            <h2>Concurrency and Ruby</h2>
+            <p>"With the rising popularity of JRuby and Rails itself allowing concurrent requests by default, it is about time we Ruby programmers learned something about dealing with concurrency.</p>
+            <p>This talk will focus on explaining thread safety, immutability and concurrency for the Ruby programmer and how to avoid basic pitfalls and write code that works well in a multi-threaded environment. We will also look at using libraries like Akka that provide a nice abstraction over writing multi-threaded code.</p>
+            <p>Finally, we will also look at how functional programming deals with concurrency in a better manner and what tools does Ruby provide to write more ""functional"" code."</p>
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/schneems">Richard Schneeman</a>
+          </div>
+          <div class="details">
+            <h2>Dissecting Ruby with Ruby</h2>
+            <p>Underneath the beautiful veneer of our Ruby libraries lies a twisted tangle of writhing guts. Maybe you're curious how the pieces fit together or maybe you're tracking down a bug, either way it's easy to get lost in the blood and bile that ties our code together. In this talk you'll learn how to use simple and sharp Ruby tools to slice into large libraries with surgical precision. We'll do some live hacking on Rails on the stage and cover useful code probing techniques. Turn your impossible bugs into pull requests, and level up your programming skills by Dissecting Ruby with Ruby.</p>
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/shadabahmed">Shadab Ahmed</a>
+          </div>
+          <div class="details">
+            <h2>Inside Git Guts with Ruby</h2>
+            <p>"Most ruby programmers use git in their daily use. I would like to show that git is beyond just commit and pull/push. I want to show how simple, the basic architecture of git is, so that people appreciate and understand it better.</p>
+            <p>My favorite reference on git is http://git-scm.com/book. I have a hard copy of the book. In fact, after getting inspired from the book, I conducted a training session on git internally in my company using these slides(http://dl.dropbox.com/u/51548306/git-hands-on-2.pptx)</p>
+            <p>In this session we will see how we can quickly customize git in Ruby and see the insides of Git. I will showcase commands like:</p>
+            <p>git open</p>
+            <p>Shows the content of any git object. We will use this to walk through a chain of commits, their trees and blob objects</p>
+            <p>git rollback</p>
+            <p>Reverts your last commit</p>
+            <p>git make subtree</p>
+            <p>Does everything required to do a subtree merge in your git repo</p>
+            <p>The whole presentation will be in terminal and I will explore .git folder and show the audience, what is the relevance of a particular file/folder is.</p>
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/sausheong">Sau Sheong Chang</a>
+          </div>
+          <div class="details">
+            <h2>Ruby, Rock and Roll</h2>
+            <p>Muse is a Ruby domain-specific language for creating digital music. In this presentation, I will talk on how Ruby can be used to create digital music through a simple analog software synthesizer, either transcribed from existing music scores, or algorithmically created out of data from various sources.</p>
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/nikhilvallishayee">Nikhil Vallishayee</a>
+          </div>
+          <div class="details">
+            <h2>Split In Between</h2>
+            <p>We are all building products - web products , ours or other's; or dreaming about it. And Rails, Agile and Sound OO design makes that simple. As simple as following well laid out instructions ( assuming off course, that a viable idea has first come out of *somewhere*  and has *someone* chasing it).</p>
+            <p>What I intend to do with this talk is to ponder, publicly, on the consequences of introducing a simple design decision while going about *initial* brick laying - splitting the product into separate API and front_end processes from the very start; and consider the tech and biz consequences of this over time.</p>
+            <p>Duh. An API sounds very elementary; especially if your product is designed to have multiple front_ends spanning the web and mobiles. I would still think this an open topic and an excellent way of spending 25,000 minutes of collective time and here's why: </p>
+            <p>* I saw this decision taken on a project when it was spawned on which I ended up spending 3 years (and foreseebly another 5 years) on and have been wondering why ever since.</p>
+            <p>* Over the years, I have alternatively defended and opposed this design principle on grounds of - business scalability, over engineering, maintenance costs</p>
+            <p>* I have effectively used this design decision to generate drastic business viability in terms of: branding A/B, product pruning and A/B testing, 3rd party vendoring of front_end apps, localization and internationalization</p>
+            <p>* I have seen the technical consequences of this action play out: initial engineering overhead, cost bonus on front_end revamps, modularity and malleability of core business logic, offshore_ability of front_end modules</p>
+            <p>I aim to keep the talk lighthearted and with brevity in mind, intend to run through the core idea of a split, common rants, the trade-offs and consequences, business scalability and viability that this achieves, technical and maintainability consequences, ActiveResource and it's limitations, and my vision of the ideal JSONified almost_RESTful API approach.</p>
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <img src="assets/images/speakers/face.png" />
+            <a href="http://github.com/arnvald">Grzegorz</a>
+          </div>
+          <div class="details">
+            
+          </div>
+        </li>
       </ul>
     </div>
   </div>
