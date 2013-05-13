@@ -738,7 +738,10 @@ ul.actions li a, a.button {
       margin: 10px auto; } }
   @media screen and (min-width: 800px) {
     .speakers, .talks {
-      margin: 15px auto; } }
+      margin: 15px 50px; } }
+  @media screen and (min-width: 900px) {
+    .speakers, .talks {
+      margin: 15px 100px; } }
   .speakers > li, .talks > li {
     margin: 0;
     padding: 0;
@@ -778,11 +781,11 @@ ul.actions li a, a.button {
   text-align: left;
   clear: both;
   width: auto;
-  padding: 0 0 20px 180px; }
+  padding: 0 0 20px 160px; }
   .talks > li div.speaker {
     width: 160px;
     float: left;
-    margin-left: -180px;
+    margin-left: -160px;
     padding-bottom: 40px; }
   .talks > li a, .talks > li span {
     display: block;
@@ -806,6 +809,17 @@ ul.actions li a, a.button {
       height: 0;
       border: solid 10px transparent;
       border-right-color: #f2ecce; }
+  .talks > li:nth-child(2n) {
+    padding: 0 160px 20px 0; }
+    .talks > li:nth-child(2n) div.speaker {
+      float: right;
+      margin-left: auto;
+      margin-right: -160px; }
+    .talks > li:nth-child(2n) div.details:before {
+      left: auto;
+      right: -20px;
+      border-right-color: transparent;
+      border-left-color: #f2ecce; }
 
 .badges ul {
   margin: 0 auto;

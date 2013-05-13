@@ -3,7 +3,8 @@
   text-align: center;
 
   @media screen and (min-width: 600px){ margin: 10px auto;}
-  @media screen and (min-width: 800px){ margin: 15px auto;}
+  @media screen and (min-width: 800px){ margin: 15px 50px;}
+  @media screen and (min-width: 900px){ margin: 15px 100px;}
 
   >li{
     margin: 0; padding: 0;
@@ -46,12 +47,12 @@
     text-align: left;
     clear: both;
     width: auto;
-    padding: 0 0 20px 180px;
+    padding: 0 0 20px 160px;
 
     div.speaker{
       width: 160px;
       float: left;
-      margin-left: -180px;
+      margin-left: -160px;
       padding-bottom: 40px;
     }
 
@@ -78,6 +79,23 @@
         width: 0; height: 0;
         border: solid 10px transparent;
         border-right-color: $secondary-color;
+      }
+    }
+
+    &:nth-child(2n){
+      padding: 0 160px 20px 0;
+
+      div.speaker{
+        float: right;
+        margin-left: auto;
+        margin-right: -160px;
+      }
+
+      div.details:before{
+        left: auto;
+        right: -20px;
+        border-right-color: transparent;
+        border-left-color: $secondary-color;
       }
     }
   }
