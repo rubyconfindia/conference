@@ -1,0 +1,27 @@
+.badges{
+  ul{
+    margin: 0 auto; padding: 0;
+
+    width: 800px;
+    text-align: center;
+
+    li{
+      display: block;
+      list-style: none;
+      background: $secondary-color;
+      border-radius: 4px;
+      
+      img{
+        display: inline-block;
+        margin: 10px 0 0 0;
+        padding: 4px;
+        background: $white;
+        border-radius: 4px;
+      }
+
+      pre{
+
+      }
+    }
+  }
+}

@@ -806,3 +806,20 @@ ul.actions li a, a.button {
       height: 0;
       border: solid 10px transparent;
       border-right-color: #f2ecce; }
+
+.badges ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 800px;
+  text-align: center; }
+  .badges ul li {
+    display: block;
+    list-style: none;
+    background: #f2ecce;
+    border-radius: 4px; }
+    .badges ul li img {
+      display: inline-block;
+      margin: 10px 0 0 0;
+      padding: 4px;
+      background: white;
+      border-radius: 4px; }
