@@ -730,18 +730,22 @@ ul.actions li a, a.button {
   background: #f2ecce; }
 
 .speakers, .talks {
-  margin: 0;
+  margin: 0 1%;
   padding: 0 0 0 0;
-  text-align: center; }
+  text-align: center;
+  width: 98%; }
   @media screen and (min-width: 600px) {
     .speakers, .talks {
-      margin: 10px auto; } }
+      margin: 10px 2%;
+      width: 96%; } }
   @media screen and (min-width: 800px) {
     .speakers, .talks {
-      margin: 15px 50px; } }
+      margin: 15px 5%;
+      width: 90%; } }
   @media screen and (min-width: 900px) {
     .speakers, .talks {
-      margin: 15px 100px; } }
+      margin: 15px 10%;
+      width: 80%; } }
   .speakers > li, .talks > li {
     margin: 0;
     padding: 0;
