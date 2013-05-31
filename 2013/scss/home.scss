@@ -26,11 +26,13 @@
       background: $secondary-color;
       border-radius: 4px;
 
+      &.twitter{display: none;}
+
       @media screen and (min-width: 600px){ 
         width: 29%;
 
         &.contact{width: 29%;}
-        &.twitter{width: 68%; border: solid 10px $secondary-color; background: transparent;}
+        &.twitter{display: block; width: 68%; border: solid 10px $secondary-color; background: transparent;}
       }
 
       &.contact{float: left;}
@@ -172,6 +174,19 @@
 
       ul{padding-left: 0;}
       ul li a{padding: 10px 20px;}
+
+      @media screen and (max-width: 640px){
+        &.associate:nth-child(5), &.associate:nth-child(6){
+          h3{display: none;}
+        }
+      }
+
+      @media screen and (min-width: 640px){
+        &.associate{margin: 0; padding: 0;}
+        &.associate:nth-child(4), &.associate:nth-child(6){
+          h3{color: $secondary-color;}
+        }
+      }
     }
 
     h3, li{text-align: center;}

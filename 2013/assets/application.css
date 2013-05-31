@@ -423,8 +423,9 @@ ul.actions {
     padding: 2px 0;
     position: relative;
     background: #aa0000;
-    color: #f2ecce;
-    border-top: dotted 1px #f2ecce; }
+    color: #f2ecce; }
+    ul.actions li:hover {
+      background: #000; }
     ul.actions li:first-child {
       border-top: none; }
     @media screen and (min-width: 640px) {
@@ -435,8 +436,6 @@ ul.actions {
         border-top: none; }
         ul.actions li:first-child {
           border-left: dotted 1px #f2ecce; } }
-    ul.actions li:hover {
-      background: #000; }
   ul.actions li a {
     margin: 0 20px; }
 
@@ -444,7 +443,7 @@ ul.actions li a, a.button {
   display: block;
   margin: 0;
   padding: 8px 12px 4px 12px;
-  font-size: 14px;
+  font-size: 24px;
   line-height: 20px;
   font-family: 'brandon-grotesque';
   font-weight: 400;
@@ -452,13 +451,22 @@ ul.actions li a, a.button {
   color: white;
   text-align: center;
   border: none;
-  color: #f2ecce; }
+  color: white; }
   ul.actions li a span, a.button span {
     display: block;
-    font-size: 24px;
-    color: white;
+    font-size: 14px;
+    color: #f2ecce;
     text-align: center; }
 
+@media screen and (max-width: 640px) {
+  ul.actions li {
+    display: block;
+    width: 50%;
+    float: left; }
+    ul.actions li a, ul.actions li a span {
+      text-align: left; }
+    ul.actions li:nth-child(2n) a, ul.actions li:nth-child(2n) a span {
+      text-align: right; } }
 .tooltip {
   position: absolute;
   display: block;
@@ -575,12 +583,15 @@ ul.actions li a, a.button {
   text-align: left;
   background: #f2ecce;
   border-radius: 4px; }
+  #home .container .article.twitter {
+    display: none; }
   @media screen and (min-width: 600px) {
     #home .container .article {
       width: 29%; }
       #home .container .article.contact {
         width: 29%; }
       #home .container .article.twitter {
+        display: block;
         width: 68%;
         border: solid 10px #f2ecce;
         background: transparent; } }
@@ -701,6 +712,15 @@ ul.actions li a, a.button {
       padding-left: 0; }
     #home .sponsors .article ul li a {
       padding: 10px 20px; }
+    @media screen and (max-width: 640px) {
+      #home .sponsors .article.associate:nth-child(5) h3, #home .sponsors .article.associate:nth-child(6) h3 {
+        display: none; } }
+    @media screen and (min-width: 640px) {
+      #home .sponsors .article.associate {
+        margin: 0;
+        padding: 0; }
+      #home .sponsors .article.associate:nth-child(4) h3, #home .sponsors .article.associate:nth-child(6) h3 {
+        color: #f2ecce; } }
   #home .sponsors h3, #home .sponsors li {
     text-align: center; }
   #home .sponsors a {

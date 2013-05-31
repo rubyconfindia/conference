@@ -11,7 +11,7 @@ ul.actions{
     position: relative;
     background: $primary-color;
     color: $secondary-color;
-    border-top: dotted 1px $secondary-color;
+    &:hover{background: #000;}
     &:first-child{border-top: none;}
 
     @media screen and (min-width: 640px){
@@ -21,7 +21,6 @@ ul.actions{
       border-top: none;
       &:first-child{border-left: dotted 1px $secondary-color;}
     }
-    &:hover{background: #000;}
   }
   li a{margin: 0 20px;}
 }
@@ -30,7 +29,7 @@ ul.actions li a, a.button{
   display: block;
   margin: 0;
   padding: 8px 12px 4px 12px;
-  font-size: 14px;
+  font-size: 24px;
   line-height: 20px;
   font-family: 'brandon-grotesque';
   font-weight: 400;
@@ -38,13 +37,35 @@ ul.actions li a, a.button{
   color: $white;
   text-align: center;
   border: none;
-  color: $secondary-color;
+  color: $white;
 
   span{
     display: block;
-    font-size: 24px;
-    color: $white;
+    font-size: 14px;
+    color: $secondary-color;
     text-align: center;
+
+    // @media screen and (max-width: 640px){
+    //   display: none;
+    // }
+  }
+}
+
+@media screen and (max-width: 640px){
+  ul.actions li{
+    display: block;
+    width: 50%;
+    float: left;
+
+    a, a span{
+      text-align: left;
+    }
+
+    &:nth-child(2n){
+      a, a span{
+        text-align: right;
+      }
+    }
   }
 }
 
