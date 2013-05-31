@@ -176,13 +176,13 @@
       ul li a{padding: 10px 20px;}
 
       @media screen and (max-width: 640px){
+        &.associate{padding: 0;}
         &.associate:nth-child(5), &.associate:nth-child(6){
           h3{display: none;}
         }
       }
 
       @media screen and (min-width: 640px){
-        &.associate{margin: 0; padding: 0;}
         &.associate:nth-child(4), &.associate:nth-child(6){
           h3{color: $secondary-color;}
         }

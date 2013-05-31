@@ -713,12 +713,11 @@ ul.actions li a, a.button {
     #home .sponsors .article ul li a {
       padding: 10px 20px; }
     @media screen and (max-width: 640px) {
+      #home .sponsors .article.associate {
+        padding: 0; }
       #home .sponsors .article.associate:nth-child(5) h3, #home .sponsors .article.associate:nth-child(6) h3 {
         display: none; } }
     @media screen and (min-width: 640px) {
-      #home .sponsors .article.associate {
-        margin: 0;
-        padding: 0; }
       #home .sponsors .article.associate:nth-child(4) h3, #home .sponsors .article.associate:nth-child(6) h3 {
         color: #f2ecce; } }
   #home .sponsors h3, #home .sponsors li {
