@@ -3,3 +3,17 @@
   -webkit-box-sizing:border-box; 
   box-sizing:border-box;
 }
+
+@mixin transition{
+ -webkit-transition-property: length;
+  -moz-transition-property: length;
+  -ms-transition-property: length;
+  -o-transition-property: length;
+  transition-property: length;
+  -webkit-transition-duration: 2s;
+  -moz-transition-duration: 2s;
+  -ms-transition-duration: 2s;
+  -o-transition-duration: 2s;
+  transition-duration: 2s;
+}
+

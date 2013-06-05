@@ -1,0 +1,126 @@
+.schedule{
+  h2, h3{ text-align: left; margin: 40px 110px 0 110px;}
+  
+  ul{
+    display: block;
+    width: 25%;
+    margin: 10px 0;
+    padding: 10px 0;
+    color: $primary-color;
+    background: $secondary-color;
+    font-size: 16px;
+    border-radius: 0 50px 50px 0;
+    @include transition;
+    
+    li{
+      list-style: none;
+      margin: 0;
+      padding: 80px 0;
+      position: relative;
+      height: 20px;
+      line-height: 20px;
+      border-bottom: solid 1px rgba($black, 0.1);
+      @include transition;
+      
+      span.time{display: block; text-align: center;}
+      &.single{padding: 30px 0;}
+      &.break{
+        font-weight: bold;
+        // background: $secnodary;
+        padding: 10px 0;
+        height: 40px;
+      }
+      &:last-child{border: none;}
+      &.no-speaker span.track1{top: 30px;}
+      
+      span.track1, span.track2{
+        padding: 0 10px;
+        display: block;
+        position: absolute;
+        width: 300%;
+        left: 100%;
+        top: 20px;
+        text-align: left;
+        font-weight: bold;
+      }
+      
+      span.track2{ top: 100px;}
+      
+      strong{display: block;}
+      em{display: block; font-style: normal; font-weight: normal;}
+      em{color: $black;}
+    }
+  }
+}
+
+@media screen and (min-width: 640px){
+  .schedule ul li{
+    padding: 60px 0;
+    
+    span.track2{top: 80px;}
+  }
+}
+
+@media screen and (max-width: 800px) {
+  span.track1, span.track2{
+    position: relative;
+    strong, em{padding-left: 30px;}
+
+    strong:before{
+      content: "1";
+      display: inline-block;
+      position: absolute;
+      left: 10px;
+      width: 24px;
+      height: 24px;
+      text-align: center;
+      line-height: 26px;
+      border-radius: 20px;
+      background: $secondary-color;
+    }
+  }
+  
+  span.track2 strong:before{content: "2";}
+  
+  li.single{
+    span.track1, span.track2{
+      strong, em{padding-left: 0;}
+
+      strong:before{
+        content: "";
+        width: 0;
+        height: 0;
+        margin: 0;
+      }
+    }
+  } 
+}
+
+@media screen and (min-width: 800px) {
+  .schedule{
+    h2, h3{ text-align: center;}
+    
+    ul{
+      border-radius: 100px;
+      width: 14%;
+      margin: 10px auto;
+      
+      li{
+        padding: 30px 0;
+        
+        span.track1, span.track2{width: 280%;}
+        span.track1{left: auto; right: 100%; text-align: right;}
+        span.track2{top: 20px;}
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .schedule{
+    ul{width: 10%;}
+    li{
+      span.track1, span.track2{width: 500%;}  
+    }
+  }
+}
