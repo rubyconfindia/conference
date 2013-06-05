@@ -730,6 +730,8 @@ ul.actions li a, a.button {
       background: #333333; }
     #home .sponsors a.medium {
       background: #666666; }
+    #home .sponsors a.nilenso {
+      background: #f8337d; }
   #home .sponsors ul {
     padding: 0;
     margin: 0; }
