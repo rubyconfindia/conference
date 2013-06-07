@@ -862,3 +862,131 @@ ul.actions li a, a.button {
       padding: 4px;
       background: white;
       border-radius: 4px; }
+
+.schedule h2, .schedule h3 {
+  text-align: left;
+  margin: 40px 110px 0 110px; }
+.schedule ul {
+  display: block;
+  width: 25%;
+  margin: 10px 0;
+  padding: 10px 0;
+  color: #aa0000;
+  background: #f2ecce;
+  font-size: 16px;
+  border-radius: 0 50px 50px 0;
+  -webkit-transition-property: length;
+  -moz-transition-property: length;
+  -ms-transition-property: length;
+  -o-transition-property: length;
+  transition-property: length;
+  -webkit-transition-duration: 2s;
+  -moz-transition-duration: 2s;
+  -ms-transition-duration: 2s;
+  -o-transition-duration: 2s;
+  transition-duration: 2s; }
+  .schedule ul li {
+    list-style: none;
+    margin: 0;
+    padding: 80px 0;
+    position: relative;
+    height: 20px;
+    line-height: 20px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+    -webkit-transition-property: length;
+    -moz-transition-property: length;
+    -ms-transition-property: length;
+    -o-transition-property: length;
+    transition-property: length;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -ms-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s; }
+    .schedule ul li span.time {
+      display: block;
+      text-align: center; }
+    .schedule ul li.single {
+      padding: 30px 0; }
+    .schedule ul li.break {
+      font-weight: bold;
+      padding: 10px 0;
+      height: 40px; }
+    .schedule ul li:last-child {
+      border: none; }
+    .schedule ul li.no-speaker span.track1 {
+      top: 30px; }
+    .schedule ul li span.track1, .schedule ul li span.track2 {
+      padding: 0 10px;
+      display: block;
+      position: absolute;
+      width: 300%;
+      left: 100%;
+      top: 20px;
+      text-align: left;
+      font-weight: bold; }
+    .schedule ul li span.track2 {
+      top: 100px; }
+    .schedule ul li strong {
+      display: block; }
+    .schedule ul li em {
+      display: block;
+      font-style: normal;
+      font-weight: normal; }
+    .schedule ul li em {
+      color: black; }
+
+@media screen and (min-width: 640px) {
+  .schedule ul li {
+    padding: 60px 0; }
+    .schedule ul li span.track2 {
+      top: 80px; } }
+@media screen and (max-width: 800px) {
+  span.track1, span.track2 {
+    position: relative; }
+    span.track1 strong, span.track1 em, span.track2 strong, span.track2 em {
+      padding-left: 30px; }
+    span.track1 strong:before, span.track2 strong:before {
+      content: "1";
+      display: inline-block;
+      position: absolute;
+      left: 10px;
+      width: 24px;
+      height: 24px;
+      text-align: center;
+      line-height: 26px;
+      border-radius: 20px;
+      background: #f2ecce; }
+
+  span.track2 strong:before {
+    content: "2"; }
+
+  li.single span.track1 strong, li.single span.track1 em, li.single span.track2 strong, li.single span.track2 em {
+    padding-left: 0; }
+  li.single span.track1 strong:before, li.single span.track2 strong:before {
+    content: "";
+    width: 0;
+    height: 0;
+    margin: 0; } }
+@media screen and (min-width: 800px) {
+  .schedule h2, .schedule h3 {
+    text-align: center; }
+  .schedule ul {
+    border-radius: 100px;
+    width: 14%;
+    margin: 10px auto; }
+    .schedule ul li {
+      padding: 30px 0; }
+      .schedule ul li span.track1, .schedule ul li span.track2 {
+        width: 280%; }
+      .schedule ul li span.track1 {
+        left: auto;
+        right: 100%;
+        text-align: right; }
+      .schedule ul li span.track2 {
+        top: 20px; } }
+@media screen and (min-width: 1000px) {
+  .schedule ul {
+    width: 10%; }
+  .schedule li span.track1, .schedule li span.track2 {
+    width: 500%; } }
