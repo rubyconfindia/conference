@@ -32,7 +32,7 @@
         Schedule
         <span>talks &amp; timetable</span>
       </a>
-    </li><li><a href="http://rubyconfindia.doattend.com/" target="_blank">
+    </li><!-- <li><a href="http://rubyconfindia.doattend.com/" target="_blank">
         Buy Tickets
         <span>closes 18th May</span>
       </a>
@@ -298,7 +298,10 @@ In this talk we will share our experiences with building a micro service based a
         </li>
         <li>
           <div class="speaker">
-            <img src="assets/images/speakers/face.png" />
+            <img id="steven-and-kitty" src="assets/images/speakers/steven-and-kitty-2.png" />
+            <script language="javascript">
+              document.getElementById('steven-and-kitty').src = 'assets/images/speakers/steven-and-kitty-' + (Math.floor(Math.random() * 2) + 1) + '.png';
+            </script>
             <a href="http://github.com/deobald">Steven Deobald</a>
             <a href="http://github.com/kitallis">Akshay Gupta</a>
           </div>
