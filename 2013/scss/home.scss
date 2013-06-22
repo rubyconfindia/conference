@@ -195,10 +195,14 @@
       margin: 10px 0;
       height: 80px;
       width: 100%;
+      box-shadow: 0 0 10px 0 rgba($black, 0.15);
 
-      &.light{background: $gray-dark;}
-      &.medium{background: $gray;}
-      &.nilenso{background: #f8337d;}
+      &.light, &.light:hover, &.light:focus{background: $gray-dark;}
+      &.medium, &.medium:hover, &.medium:focus{background: $gray;}
+      &.dark, &.dark:hover, &.dark:focus{background: $white;}
+      &:hover, &:focus{
+        box-shadow: 0 0 10px 0 rgba($black, 0.7);
+      }
     }
 
     ul{padding: 0; margin: 0;

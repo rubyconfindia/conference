@@ -725,13 +725,16 @@ ul.actions li a, a.button {
   #home .sponsors a {
     margin: 10px 0;
     height: 80px;
-    width: 100%; }
-    #home .sponsors a.light {
+    width: 100%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15); }
+    #home .sponsors a.light, #home .sponsors a.light:hover, #home .sponsors a.light:focus {
       background: #333333; }
-    #home .sponsors a.medium {
+    #home .sponsors a.medium, #home .sponsors a.medium:hover, #home .sponsors a.medium:focus {
       background: #666666; }
-    #home .sponsors a.nilenso {
-      background: #f8337d; }
+    #home .sponsors a.dark, #home .sponsors a.dark:hover, #home .sponsors a.dark:focus {
+      background: white; }
+    #home .sponsors a:hover, #home .sponsors a:focus {
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7); }
   #home .sponsors ul {
     padding: 0;
     margin: 0; }
