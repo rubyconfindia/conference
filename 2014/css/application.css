@@ -1042,9 +1042,9 @@ header h3.twitter a:hover {
 /* line 135, ../_scss/application.scss */
 .lightbox .lightbox-content {
   position: absolute;
-  height: 540px;
-  width: 800px;
-  margin-left: -400px;
+  height: 615px;
+  width: 530px;
+  margin-left: -265px;
   left: 50%;
   top: 10%;
   background: white;
@@ -1087,7 +1087,7 @@ header h3.twitter a:hover {
 /* line 171, ../_scss/application.scss */
 .lightbox iframe {
   border: none;
-  height: 540px !important;
+  height: 615px !important;
 }
 
 /* line 178, ../_scss/application.scss */
