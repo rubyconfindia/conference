@@ -408,51 +408,57 @@ table {
 body {
   font: 16px/1.5 "proxima nova", "proxima-nova", "helvetica neue", helvetica, arial, sans-serif;
 }
+@media screen and (max-width: 700px) {
+  /* line 1, ../scss/base/_typography.scss */
+  body {
+    font-size: 14px;
+  }
+}
 
-/* line 4, ../scss/base/_typography.scss */
+/* line 7, ../scss/base/_typography.scss */
 h1, h2, h3, h4, h5, h6, p, ul {
   margin: 0;
   font-weight: normal;
 }
 
-/* line 9, ../scss/base/_typography.scss */
+/* line 12, ../scss/base/_typography.scss */
 h2 {
   font-size: 34px;
-  line-height: 1.05;
+  line-height: 1.1764;
   padding: 0.69em 0 0.413em;
 }
 @media screen and (max-width: 900px) {
-  /* line 9, ../scss/base/_typography.scss */
+  /* line 12, ../scss/base/_typography.scss */
   h2 {
-    font-size: 29px;
+    font-size: 21px;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 9, ../scss/base/_typography.scss */
+  /* line 12, ../scss/base/_typography.scss */
   h2 {
     font-weight: 300;
   }
 }
 
-/* line 17, ../scss/base/_typography.scss */
+/* line 20, ../scss/base/_typography.scss */
 h3 {
   font-size: 21px;
   line-height: 1.14285714285714;
   padding: 0.76em 0 .39em;
 }
 @media screen and (max-width: 900px) {
-  /* line 17, ../scss/base/_typography.scss */
+  /* line 20, ../scss/base/_typography.scss */
   h3 {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 
-/* line 23, ../scss/base/_typography.scss */
+/* line 26, ../scss/base/_typography.scss */
 p {
   padding-bottom: 1.5em;
 }
 
-/* line 26, ../scss/base/_typography.scss */
+/* line 29, ../scss/base/_typography.scss */
 strong, .strong {
   font-weight: bold;
 }
@@ -1000,18 +1006,18 @@ header h2 {
 }
 /* line 96, ../scss/application.scss */
 header h3.twitter a {
-  font-size: 24px;
+  font-size: 1.14285em;
   text-decoration: none;
   font-weight: 300;
 }
 
-/* line 106, ../scss/application.scss */
+/* line 105, ../scss/application.scss */
 .home p {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-/* line 110, ../scss/application.scss */
+/* line 109, ../scss/application.scss */
 p.large {
   color: rgba(0, 0, 0, 0.6);
   max-width: 640px;
@@ -1022,14 +1028,15 @@ p.large {
   text-align: center;
 }
 @media screen and (max-width: 700px) {
-  /* line 110, ../scss/application.scss */
+  /* line 109, ../scss/application.scss */
   p.large {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
   }
 }
-/* line 121, ../scss/application.scss */
+/* line 120, ../scss/application.scss */
 p.large + p {
+  text-align: center;
   max-width: 552px;
   margin: 0 auto;
   padding-bottom: .8em;
@@ -1037,7 +1044,7 @@ p.large + p {
 
 /* line 128, ../scss/application.scss */
 .button {
-  display: inline-block;
+  display: block;
   font-weight: 300;
   font-size: 26px;
   line-height: 32px;
@@ -1052,8 +1059,12 @@ p.large + p {
   border-radius: 4px;
   text-decoration: none;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 260px;
+  margin-bottom: 24px;
 }
-/* line 140, ../scss/application.scss */
+/* line 142, ../scss/application.scss */
 .button:hover {
   color: #a00;
   border-color: #a00;
@@ -1063,15 +1074,10 @@ p.large + p {
   .button {
     font-size: 24px;
     font-weight: 400;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 260px;
-    margin-top: 2%;
   }
 }
 
-/* line 145, ../scss/application.scss */
+/* line 147, ../scss/application.scss */
 .lightbox {
   display: none;
   background: rgba(0, 0, 0, 0.6);
@@ -1081,11 +1087,11 @@ p.large + p {
   bottom: 0;
   left: 0;
 }
-/* line 151, ../scss/application.scss */
+/* line 153, ../scss/application.scss */
 .lightbox:target {
   display: block;
 }
-/* line 153, ../scss/application.scss */
+/* line 155, ../scss/application.scss */
 .lightbox .lightbox-content {
   position: absolute;
   height: 540px;
@@ -1098,7 +1104,7 @@ p.large + p {
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-/* line 163, ../scss/application.scss */
+/* line 165, ../scss/application.scss */
 .lightbox .lightbox-content a.close {
   display: block;
   position: absolute;
@@ -1117,7 +1123,7 @@ p.large + p {
   -o-border-radius: 12px;
   border-radius: 12px;
 }
-/* line 175, ../scss/application.scss */
+/* line 177, ../scss/application.scss */
 .lightbox .lightbox-content a.close:before {
   content: "\00d7";
   display: block;
@@ -1131,14 +1137,14 @@ p.large + p {
   text-indent: 0;
 }
 
-/* line 196, ../scss/application.scss */
+/* line 198, ../scss/application.scss */
 svg {
   width: 100%;
   z-index: 10;
   position: relative;
 }
 
-/* line 204, ../scss/application.scss */
+/* line 206, ../scss/application.scss */
 .image-gallery {
   overflow: hidden;
   position: relative;
@@ -1146,7 +1152,7 @@ svg {
   height: 0;
   padding-top: 45%;
 }
-/* line 211, ../scss/application.scss */
+/* line 213, ../scss/application.scss */
 .image-gallery:before {
   content: "";
   display: block;
@@ -1160,12 +1166,12 @@ svg {
   background-size: 100% auto;
 }
 @media screen and (min-width: 1500px) {
-  /* line 211, ../scss/application.scss */
+  /* line 213, ../scss/application.scss */
   .image-gallery:before {
     background-size: 100% 100%;
   }
 }
-/* line 229, ../scss/application.scss */
+/* line 231, ../scss/application.scss */
 .image-gallery figure {
   display: block;
   position: absolute;
@@ -1174,14 +1180,14 @@ svg {
   bottom: 0;
   left: 0;
 }
-/* line 235, ../scss/application.scss */
+/* line 237, ../scss/application.scss */
 .image-gallery img {
   display: block;
   position: absolute;
   top: 0;
   width: 100%;
 }
-/* line 242, ../scss/application.scss */
+/* line 244, ../scss/application.scss */
 .image-gallery figcaption {
   display: block;
   position: absolute;
@@ -1193,40 +1199,45 @@ svg {
   -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
 }
-/* line 251, ../scss/application.scss */
+/* line 253, ../scss/application.scss */
 .image-gallery figcaption a {
   color: white;
 }
-/* line 254, ../scss/application.scss */
+/* line 256, ../scss/application.scss */
 .image-gallery figcaption:hover {
   background: #2da4cc;
 }
-/* line 257, ../scss/application.scss */
+/* line 259, ../scss/application.scss */
 .image-gallery figcaption span {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* line 264, ../scss/application.scss */
+/* line 266, ../scss/application.scss */
 .page {
-  max-width: 1280px;
   padding: 0;
   margin: 0 auto;
 }
-/* line 268, ../scss/application.scss */
+/* line 270, ../scss/application.scss */
 .page iframe {
   border: none;
-  height: 640px !important;
+  height: 600px;
+}
+@media screen and (max-width: 700px) {
+  /* line 270, ../scss/application.scss */
+  .page iframe {
+    height: 640px;
+  }
 }
 
-/* line 273, ../scss/application.scss */
+/* line 278, ../scss/application.scss */
 .buy-tickets {
   max-width: 640px;
   margin: 0 auto 48px;
   padding: 36px 20px 24px;
   position: relative;
 }
-/* line 279, ../scss/application.scss */
+/* line 285, ../scss/application.scss */
 .buy-tickets:before {
   position: absolute;
   content: "";
@@ -1241,7 +1252,7 @@ svg {
   margin-left: -30px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
-  /* line 279, ../scss/application.scss */
+  /* line 285, ../scss/application.scss */
   .buy-tickets:before {
     background-position: 0 0;
     -webkit-background-size: 444px auto;
@@ -1251,33 +1262,30 @@ svg {
     background-image: url('../images/sprites-2x-s49afbe8350.png');
   }
 }
-/* line 287, ../scss/application.scss */
-.buy-tickets iframe {
-  max-width: 640px;
-  margin: 12px auto 24px;
-}
-
-/* line 296, ../scss/application.scss */
-.tickets:before {
-  position: absolute;
-  content: "";
-  top: 3em;
-  right: 1.5em;
-  background-image: url('../images/sprites-s81af367ff4.png');
-  background-position: 0 -368px;
-  background-repeat: no-repeat;
-  display: block;
-  height: 82px;
-  width: 81px;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
-  /* line 296, ../scss/application.scss */
-  .tickets:before {
-    background-position: 0 -368px;
-    -webkit-background-size: 444px auto;
-    -moz-background-size: 444px auto;
-    -o-background-size: 444px auto;
-    background-size: 444px auto;
-    background-image: url('../images/sprites-2x-s49afbe8350.png');
+@media screen and (max-width: 700px) {
+  /* line 278, ../scss/application.scss */
+  .buy-tickets {
+    padding-top: 0;
+  }
+  /* line 295, ../scss/application.scss */
+  .buy-tickets:before {
+    background: none;
   }
 }
+/* line 299, ../scss/application.scss */
+.buy-tickets iframe {
+  max-width: 640px;
+  margin: 12px auto;
+}
+/* line 302, ../scss/application.scss */
+.buy-tickets iframe body {
+  background: transparent !important;
+  font-family: "proxima nova", "proxima-nova", "helvetica neue", helvetica, arial, sans-serif;
+}
+
+/* line 308, ../scss/application.scss */
+#event {
+  margin-bottom: 3em !important;
+}
+
+/*body classes and graphic elements*/

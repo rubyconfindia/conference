@@ -94,8 +94,7 @@ header{
 
   h3.twitter{    
     a{
-      font-size: 24px;
-      
+      font-size: 1.14285em;
       text-decoration: none;
       font-weight: 300;
 
@@ -116,9 +115,10 @@ p.large{
 	padding-bottom: 0.9em;
 	text-align: center;
 //	font-weight: 300;
-	@media screen and (max-width: 700px){font-size: 20px; font-weight: 400;}
+	@media screen and (max-width: 700px){font-size: 18px; font-weight: 400;}
 
 	& + p {
+		text-align: center;
 		max-width: 552px;
 		margin: 0 auto;
 		padding-bottom:  .8em;
@@ -126,7 +126,7 @@ p.large{
 }
 
 .button{
-  display: inline-block;
+  display: block;
   font-weight: 300;
   font-size: 26px;
   line-height: 32px;
@@ -137,9 +137,11 @@ p.large{
   @include border-radius(4px);
   text-decoration: none;
   text-align: center;
+  margin-left: auto; margin-right: auto; max-width: 260px; 
+  margin-bottom: 24px; 
   &:hover{ color: #a00; border-color: #a00;}
 
-  @media screen and (max-width: 700px){font-size: 24px; font-weight: 400; display: block; margin-left: auto; margin-right: auto; max-width: 260px; margin-top: 2%; }
+  @media screen and (max-width: 700px){font-size: 24px; font-weight: 400;}
 }
 
 .lightbox{
@@ -262,12 +264,15 @@ svg{
 }
 
 .page {
-	max-width: 1280px;
+//	max-width: 1280px;
 	padding: 0;
 	margin: 0 auto;
 	iframe {
 		border: none;
-		height: 640px !important;
+		height: 600px;
+		@media screen and (max-width: 700px) {
+			height: 640px;
+		}
 	}
 }
 .buy-tickets {
@@ -276,6 +281,7 @@ svg{
 	margin: 0 auto 48px;
 	padding: 36px 20px 24px;
 	position: relative;
+	
 	&:before {
 		position: absolute;
 		content: "";
@@ -284,20 +290,24 @@ svg{
 		top: 0;
 		margin-left: -30px;
 	}
+	@media screen and (max-width: 700px){
+		padding-top: 0;
+		&:before {
+			background: none;
+		}
+	}
 	iframe {
 		max-width: 640px;
-		margin: 12px auto 24px;
+		margin: 12px auto;
+		body {
+			background: transparent !important;
+			font-family: $sans;
+		}
 	}
 }
 #event {
 //	padding: 0 1em;
+	margin-bottom: 3em !important;
 }
-.tickets {
-	&:before {
-		position: absolute;
-		content: "";
-		top: 3em;
-		right: 1.5em;
-		@include sprite-background('starfish');	
-	}
-}
+
+/*body classes and graphic elements*/
