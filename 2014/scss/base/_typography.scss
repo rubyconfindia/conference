@@ -1,0 +1,28 @@
+body {
+	font: 16px/1.5 "proxima nova", "proxima-nova", "helvetica neue", helvetica, arial, sans-serif
+}
+h1, h2, h3, h4, h5, h6, p, ul {
+	margin: 0;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 34px;
+	line-height: 1.05;
+	padding: 0.69em 0 0.413em;
+	@media screen and (max-width: 900px){font-size: 29px;}
+	@media screen and (max-width: 700px){font-weight: 300;}
+}
+
+h3 {
+	font-size: 21px;
+	line-height: 1.14285714285714;
+	padding: 0.76em 0 .39em;
+	@media screen and (max-width: 900px){font-size: 18px;}
+}
+p {
+	padding-bottom: 1.5em;
+}
+strong, .strong {
+	font-weight: bold;
+}

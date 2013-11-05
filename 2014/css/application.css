@@ -1,4 +1,4 @@
-/* normalize.css v2.1.2 | MIT License | git.io/normalize */
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -248,7 +248,7 @@ figure {
  */
 /* line 253, ../scss/base/_normalize.scss */
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
@@ -402,6 +402,59 @@ textarea {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/* line 1, ../scss/base/_typography.scss */
+body {
+  font: 16px/1.5 "proxima nova", "proxima-nova", "helvetica neue", helvetica, arial, sans-serif;
+}
+
+/* line 4, ../scss/base/_typography.scss */
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  font-weight: normal;
+}
+
+/* line 9, ../scss/base/_typography.scss */
+h2 {
+  font-size: 34px;
+  line-height: 1.05;
+  padding: 0.69em 0 0.413em;
+}
+@media screen and (max-width: 900px) {
+  /* line 9, ../scss/base/_typography.scss */
+  h2 {
+    font-size: 29px;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 9, ../scss/base/_typography.scss */
+  h2 {
+    font-weight: 300;
+  }
+}
+
+/* line 17, ../scss/base/_typography.scss */
+h3 {
+  font-size: 21px;
+  line-height: 1.14285714285714;
+  padding: 0.76em 0 .39em;
+}
+@media screen and (max-width: 900px) {
+  /* line 17, ../scss/base/_typography.scss */
+  h3 {
+    font-size: 18px;
+  }
+}
+
+/* line 23, ../scss/base/_typography.scss */
+p {
+  padding-bottom: 1.5em;
+}
+
+/* line 26, ../scss/base/_typography.scss */
+strong, .strong {
+  font-weight: bold;
 }
 
 /* line 1, ../scss/modules/_syntax.scss */
@@ -785,85 +838,94 @@ table {
   box-sizing: border-box;
 }
 
-/* line 14, ../scss/application.scss */
+/* line 15, ../scss/application.scss */
 html {
   background: transparent url("../images/sand.jpg") repeat;
-  font-family: "proxima-nova";
 }
 
-/* line 19, ../scss/application.scss */
+/* line 18, ../scss/application.scss */
+a {
+  color: #2da4cc;
+  text-decoration: none;
+}
+/* line 21, ../scss/application.scss */
+a:hover {
+  color: #a00;
+}
+
+/* line 25, ../scss/application.scss */
 header {
   display: block;
-  width: 100%;
-  margin: 0;
-  padding: 1px 0;
+  margin: 0 0 24px;
+  padding: 1px 20px;
   background: transparent url("../images/water.png") no-repeat left top;
   text-align: center;
 }
 @media screen and (max-width: 1600px) {
-  /* line 19, ../scss/application.scss */
+  /* line 25, ../scss/application.scss */
   header {
     background-size: 100% auto;
   }
 }
-/* line 31, ../scss/application.scss */
+/* line 37, ../scss/application.scss */
 header h1 {
   display: block;
   width: 100%;
+  font-weight: bold;
   padding: 8% 0 0 0;
   margin: 0;
 }
-/* line 37, ../scss/application.scss */
+/* line 44, ../scss/application.scss */
 header h1 a {
   display: block;
   color: #a00;
   text-decoration: none;
   font-size: 100px;
   line-height: 0.9em;
-  font-family: "bello-pro";
+  font-family: "bello-pro", georgia, serif;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 900px) {
-  /* line 37, ../scss/application.scss */
+  /* line 44, ../scss/application.scss */
   header h1 a {
     font-size: 80px;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 37, ../scss/application.scss */
+  /* line 44, ../scss/application.scss */
   header h1 a {
     font-size: 70px;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 37, ../scss/application.scss */
+  /* line 44, ../scss/application.scss */
   header h1 a {
     font-size: 60px;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 37, ../scss/application.scss */
+  /* line 44, ../scss/application.scss */
   header h1 a {
     font-size: 50px;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 37, ../scss/application.scss */
+  /* line 44, ../scss/application.scss */
   header h1 a {
     font-size: 40px;
   }
 }
-/* line 52, ../scss/application.scss */
+/* line 59, ../scss/application.scss */
 header h1 a span {
   display: block;
 }
-/* line 54, ../scss/application.scss */
+/* line 61, ../scss/application.scss */
 header h1 a:before {
   content: "";
   margin: 0 auto 20px auto;
 }
 @media screen and (min-width: 900px) {
-  /* line 54, ../scss/application.scss */
+  /* line 61, ../scss/application.scss */
   header h1 a:before {
     background-image: url('../images/sprites-s81af367ff4.png');
     background-position: 0 -789px;
@@ -874,7 +936,7 @@ header h1 a:before {
   }
 }
 @media screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 900px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 900px) and (min-device-pixel-ratio: 2) {
-  /* line 54, ../scss/application.scss */
+  /* line 61, ../scss/application.scss */
   header h1 a:before {
     background-position: 0 -789px;
     -webkit-background-size: 444px auto;
@@ -885,7 +947,7 @@ header h1 a:before {
   }
 }
 @media screen and (min-width: 600px) and (max-width: 900px) {
-  /* line 54, ../scss/application.scss */
+  /* line 61, ../scss/application.scss */
   header h1 a:before {
     background-image: url('../images/sprites-s81af367ff4.png');
     background-position: 0 -450px;
@@ -897,7 +959,7 @@ header h1 a:before {
   }
 }
 @media screen and (min-width: 600px) and (max-width: 900px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 600px) and (max-width: 900px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 600px) and (max-width: 900px) and (min-device-pixel-ratio: 2) {
-  /* line 54, ../scss/application.scss */
+  /* line 61, ../scss/application.scss */
   header h1 a:before {
     background-position: 0 -450px;
     -webkit-background-size: 444px auto;
@@ -908,86 +970,73 @@ header h1 a:before {
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 54, ../scss/application.scss */
+  /* line 61, ../scss/application.scss */
   header h1 a:before {
-    background-image: url('../images/sprites-s81af367ff4.png');
-    background-position: -20px -150px;
+    background-image: url("../images/sprites-2x-s49afbe8350.png");
+    background-position: 0 -410px;
     background-repeat: no-repeat;
+    background-size: 73px auto;
     display: block;
     height: 65px;
-    width: 64px;
     margin-bottom: 8px;
+    width: 64px;
   }
 }
-@media screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 600px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (max-width: 600px) and (min-device-pixel-ratio: 2) {
-  /* line 54, ../scss/application.scss */
-  header h1 a:before {
-    background-position: 0 -150px;
-    -webkit-background-size: 444px auto;
-    -moz-background-size: 444px auto;
-    -o-background-size: 444px auto;
-    background-size: 444px auto;
-    background-image: url('../images/sprites-2x-s49afbe8350.png');
-  }
-}
-/* line 63, ../scss/application.scss */
+/* line 79, ../scss/application.scss */
 header h2 {
   color: rgba(0, 0, 0, 0.6);
-  font-weight: 100;
-  font-size: 50px;
-  margin: 8px 0 0 0;
-}
-@media screen and (max-width: 900px) {
-  /* line 63, ../scss/application.scss */
-  header h2 {
-    font-size: 40px;
-  }
+  font-weight: 500;
 }
 @media screen and (max-width: 700px) {
-  /* line 63, ../scss/application.scss */
-  header h2 {
-    font-size: 30px;
-    font-weight: 300;
+  /* line 82, ../scss/application.scss */
+  header h2 a {
+    display: block;
   }
 }
-/* line 74, ../scss/application.scss */
+/* line 93, ../scss/application.scss */
 header h3.twitter a {
   font-size: 24px;
-  color: #2da4cc;
   text-decoration: none;
   font-weight: 300;
 }
-/* line 80, ../scss/application.scss */
-header h3.twitter a:hover {
-  color: #a00;
+
+/* line 103, ../scss/application.scss */
+.home p {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-/* line 86, ../scss/application.scss */
-.home p {
+/* line 107, ../scss/application.scss */
+p.large {
   color: rgba(0, 0, 0, 0.6);
   max-width: 640px;
-  font-size: 30px;
+  font-size: 26px;
+  line-height: 1.230;
   margin: 0 auto;
-  padding: 20px;
+  padding-bottom: 0.9em;
   text-align: center;
-  font-weight: 300;
 }
 @media screen and (max-width: 700px) {
-  /* line 86, ../scss/application.scss */
-  .home p {
+  /* line 107, ../scss/application.scss */
+  p.large {
     font-size: 20px;
     font-weight: 400;
   }
 }
+/* line 118, ../scss/application.scss */
+p.large + p {
+  max-width: 552px;
+  margin: 0 auto;
+  padding-bottom: .8em;
+}
 
-/* line 99, ../scss/application.scss */
+/* line 125, ../scss/application.scss */
 .button {
   display: inline-block;
-  margin-top: 10%;
   font-weight: 300;
-  font-size: 30px;
-  line-height: 40px;
-  padding: 0 20px;
+  font-size: 26px;
+  line-height: 32px;
+  padding: 4px 20px;
   color: #2da4cc;
   border: solid 2px #2da4cc;
   background: transparent;
@@ -999,20 +1048,25 @@ header h3.twitter a:hover {
   text-decoration: none;
   text-align: center;
 }
-/* line 113, ../scss/application.scss */
+/* line 137, ../scss/application.scss */
 .button:hover {
   color: #a00;
   border-color: #a00;
 }
 @media screen and (max-width: 700px) {
-  /* line 99, ../scss/application.scss */
+  /* line 125, ../scss/application.scss */
   .button {
     font-size: 24px;
     font-weight: 400;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 260px;
+    margin-top: 2%;
   }
 }
 
-/* line 118, ../scss/application.scss */
+/* line 142, ../scss/application.scss */
 .lightbox {
   display: none;
   background: rgba(0, 0, 0, 0.6);
@@ -1022,11 +1076,11 @@ header h3.twitter a:hover {
   bottom: 0;
   left: 0;
 }
-/* line 124, ../scss/application.scss */
+/* line 148, ../scss/application.scss */
 .lightbox:target {
   display: block;
 }
-/* line 126, ../scss/application.scss */
+/* line 150, ../scss/application.scss */
 .lightbox .lightbox-content {
   position: absolute;
   height: 540px;
@@ -1039,7 +1093,7 @@ header h3.twitter a:hover {
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-/* line 136, ../scss/application.scss */
+/* line 160, ../scss/application.scss */
 .lightbox .lightbox-content a.close {
   display: block;
   position: absolute;
@@ -1058,7 +1112,7 @@ header h3.twitter a:hover {
   -o-border-radius: 12px;
   border-radius: 12px;
 }
-/* line 148, ../scss/application.scss */
+/* line 172, ../scss/application.scss */
 .lightbox .lightbox-content a.close:before {
   content: "\00d7";
   display: block;
@@ -1071,20 +1125,15 @@ header h3.twitter a:hover {
   text-align: center;
   text-indent: 0;
 }
-/* line 162, ../scss/application.scss */
-.lightbox iframe {
-  border: none;
-  height: 540px !important;
-}
 
-/* line 169, ../scss/application.scss */
+/* line 193, ../scss/application.scss */
 svg {
   width: 100%;
   z-index: 10;
   position: relative;
 }
 
-/* line 177, ../scss/application.scss */
+/* line 201, ../scss/application.scss */
 .image-gallery {
   overflow: hidden;
   position: relative;
@@ -1092,7 +1141,7 @@ svg {
   height: 0;
   padding-top: 45%;
 }
-/* line 184, ../scss/application.scss */
+/* line 208, ../scss/application.scss */
 .image-gallery:before {
   content: "";
   display: block;
@@ -1106,12 +1155,12 @@ svg {
   background-size: 100% auto;
 }
 @media screen and (min-width: 1500px) {
-  /* line 184, ../scss/application.scss */
+  /* line 208, ../scss/application.scss */
   .image-gallery:before {
     background-size: 100% 100%;
   }
 }
-/* line 202, ../scss/application.scss */
+/* line 226, ../scss/application.scss */
 .image-gallery figure {
   display: block;
   position: absolute;
@@ -1120,23 +1169,59 @@ svg {
   bottom: 0;
   left: 0;
 }
-/* line 208, ../scss/application.scss */
+/* line 232, ../scss/application.scss */
 .image-gallery img {
   display: block;
   position: absolute;
   top: 0;
   width: 100%;
 }
-/* line 215, ../scss/application.scss */
+/* line 239, ../scss/application.scss */
 .image-gallery figcaption {
   display: block;
   position: absolute;
   left: 5%;
   bottom: 20%;
   padding: 10px 20px;
-  background: rgba(255, 255, 255, 0.6);
-  color: black;
-  -webkit-box-shadow: 0 0 6px black;
-  -moz-box-shadow: 0 0 6px black;
-  box-shadow: 0 0 6px black;
+  background: rgba(45, 164, 204, 0.9);
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+}
+/* line 248, ../scss/application.scss */
+.image-gallery figcaption a {
+  color: white;
+}
+/* line 251, ../scss/application.scss */
+.image-gallery figcaption:hover {
+  background: #2da4cc;
+}
+/* line 254, ../scss/application.scss */
+.image-gallery figcaption span {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* line 261, ../scss/application.scss */
+.page {
+  max-width: 1280px;
+  padding: 0;
+  margin: 0 auto;
+}
+/* line 265, ../scss/application.scss */
+.page iframe {
+  border: none;
+  height: 640px !important;
+}
+
+/* line 270, ../scss/application.scss */
+.buy-tickets {
+  max-width: 640px;
+  margin: 0 auto 48px;
+  padding: 0 20px;
+}
+/* line 275, ../scss/application.scss */
+.buy-tickets iframe {
+  max-width: 640px;
+  margin: 0 auto 24px;
 }
