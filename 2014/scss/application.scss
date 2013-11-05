@@ -78,7 +78,7 @@ header{
 
   h2{
     color: rgba(black, 0.6);
-    font-weight: 100;
+    font-weight: 500;
     a {
 	    @media screen and (max-width: 700px){display: block;}
     }
@@ -112,7 +112,7 @@ p.large{
 	margin: 0 auto;
 	padding-bottom: 0.9em;
 	text-align: center;
-	font-weight: 300;
+//	font-weight: 300;
 	@media screen and (max-width: 700px){font-size: 20px; font-weight: 400;}
 
 	& + p {

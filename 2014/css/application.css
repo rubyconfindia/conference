@@ -985,7 +985,7 @@ header h1 a:before {
 /* line 79, ../scss/application.scss */
 header h2 {
   color: rgba(0, 0, 0, 0.6);
-  font-weight: 100;
+  font-weight: 500;
 }
 @media screen and (max-width: 700px) {
   /* line 82, ../scss/application.scss */
@@ -1015,7 +1015,6 @@ p.large {
   margin: 0 auto;
   padding-bottom: 0.9em;
   text-align: center;
-  font-weight: 300;
 }
 @media screen and (max-width: 700px) {
   /* line 107, ../scss/application.scss */
