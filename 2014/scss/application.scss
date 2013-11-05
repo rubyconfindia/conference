@@ -12,30 +12,23 @@
 
 @include border-box-sizing;
 
-html{
-  background: transparent url('../images/sand.jpg') repeat;
-}
-body {
-	position: relative;
-}
+html{ background: transparent url('../images/sand.jpg') repeat;}
+body { position: relative;}
+
 a {
 	color: $blue;
 	text-decoration: none;
-	&:hover {
-		color: #a00;
-	}
+	&:hover { color: #a00;}
 }
+
 header{
   display: block;
-//  width: 100%;
   margin: 0 0 24px;
   padding: 1px 20px;
   background: transparent url('../images/water.png') no-repeat left top;
   text-align: center;
 
-  @media screen and (max-width: 1600px){
-    background-size: 100% auto;
-  }
+  @media screen and (max-width: 1600px){ background-size: 100% auto;}
 
   h1{
     display: block;
@@ -62,34 +55,46 @@ header{
       span{ display: block;}
 
       &:before{
-       content: ""; margin: 0 auto 20px auto;
-       @media screen and (min-width: 900px){ @include sprite-background('logo-large');}
-       @media screen and (min-width: 600px) and (max-width: 900px){ @include sprite-background('logo'); margin-bottom: 12px;}
-       @media screen and (max-width: 600px){
-	       background-image: url("../images/sprites-2x-s49afbe8350.png");
-    background-position: 0 -410px;
-    background-repeat: no-repeat;
-    background-size: 73px auto;
-    display: block;
-    height: 65px;
-    margin-bottom: 8px;
-    width: 64px;
-       }
-     }
+        content: ""; margin: 0 auto 20px auto;
+        @media screen and (min-width: 900px){ @include sprite-background('logo-large');}
+        @media screen and (min-width: 600px) and (max-width: 900px){ @include sprite-background('logo'); margin-bottom: 12px;}
+        @media screen and (max-width: 600px){
+          background-image: url("../images/sprites-2x-s49afbe8350.png");
+          background-position: 0 -410px;
+          background-repeat: no-repeat;
+          background-size: 73px auto;
+          display: block;
+          height: 65px;
+          margin-bottom: 8px;
+          width: 64px;
+         }
+      }
     }
   }
 
   h2{
     color: rgba(black, 0.6);
     font-weight: 500;
-    a {
-	    @media screen and (max-width: 700px){display: block;}
-    }
-//    font-size: 50px;
-//    margin: 8px 0 0 0;
+    margin: 8px 0 20px 0;
+    font-size: 30px;
+    @media screen and (max-width: 900px){font-size: 24px;}
+    // @media screen and (max-width: 700px){font-size: 30px;}
 
- //   @media screen and (max-width: 900px){font-size: 40px;}
- //   @media screen and (max-width: 700px){font-size: 30px; font-weight: 300;}
+    a {
+      color: #555;
+      
+      &:before, &:after{
+        content: "\2022";
+        display: inline-block;
+        padding: 0 10px;
+      }
+
+	    @media screen and (max-width: 700px){
+        display: block;
+        &:before, &:after{display: none;}
+      }
+    }
+
   }
 
   h3.twitter{    
@@ -106,6 +111,7 @@ header{
 .home p {
 	padding-left: 20px;
 	padding-right: 20px;
+  text-align: center;
 }
 p.large{
 	color: rgba(black, 0.6);
@@ -115,7 +121,6 @@ p.large{
 	margin: 0 auto;
 	padding-bottom: 0.9em;
 	text-align: center;
-//	font-weight: 300;
 	@media screen and (max-width: 700px){font-size: 20px; font-weight: 400;}
 
 	& + p {
@@ -128,18 +133,39 @@ p.large{
 .button{
   display: inline-block;
   font-weight: 300;
-  font-size: 26px;
+  font-size: 30px;
   line-height: 32px;
   padding:  4px 20px;
-  color: #2da4cc;
   border: solid 2px #2da4cc;
-  background: transparent;
+  background: #2da4cc;
+  color: white;
   @include border-radius(4px);
   text-decoration: none;
   text-align: center;
-  &:hover{ color: #a00; border-color: #a00;}
+  margin-bottom: 40px;
 
-  @media screen and (max-width: 700px){font-size: 24px; font-weight: 400; display: block; margin-left: auto; margin-right: auto; max-width: 260px; margin-top: 2%; }
+  &:hover{ background: #a00; border-color: #a00; color: white;}
+
+  &.sponsor{
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    background: transparent;
+    color: #2da4cc;
+    &:hover{ color: #a00; border-color: #a00; background: transparent;}
+  }
+
+  @media screen and (max-width: 700px){
+    font-size: 24px;
+    font-weight: 400;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 260px;
+    margin-top: 2%;
+
+    &.sponsor{font-size: 20px;}
+  }
 }
 
 .lightbox{

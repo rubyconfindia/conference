@@ -843,22 +843,22 @@ html {
   background: transparent url("../images/sand.jpg") repeat;
 }
 
-/* line 18, ../scss/application.scss */
+/* line 16, ../scss/application.scss */
 body {
   position: relative;
 }
 
-/* line 21, ../scss/application.scss */
+/* line 18, ../scss/application.scss */
 a {
   color: #2da4cc;
   text-decoration: none;
 }
-/* line 24, ../scss/application.scss */
+/* line 21, ../scss/application.scss */
 a:hover {
   color: #a00;
 }
 
-/* line 28, ../scss/application.scss */
+/* line 24, ../scss/application.scss */
 header {
   display: block;
   margin: 0 0 24px;
@@ -867,12 +867,12 @@ header {
   text-align: center;
 }
 @media screen and (max-width: 1600px) {
-  /* line 28, ../scss/application.scss */
+  /* line 24, ../scss/application.scss */
   header {
     background-size: 100% auto;
   }
 }
-/* line 40, ../scss/application.scss */
+/* line 33, ../scss/application.scss */
 header h1 {
   display: block;
   width: 100%;
@@ -880,7 +880,7 @@ header h1 {
   padding: 8% 0 0 0;
   margin: 0;
 }
-/* line 47, ../scss/application.scss */
+/* line 40, ../scss/application.scss */
 header h1 a {
   display: block;
   color: #a00;
@@ -891,46 +891,46 @@ header h1 a {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 900px) {
-  /* line 47, ../scss/application.scss */
+  /* line 40, ../scss/application.scss */
   header h1 a {
     font-size: 80px;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 47, ../scss/application.scss */
+  /* line 40, ../scss/application.scss */
   header h1 a {
     font-size: 70px;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 47, ../scss/application.scss */
+  /* line 40, ../scss/application.scss */
   header h1 a {
     font-size: 60px;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 47, ../scss/application.scss */
+  /* line 40, ../scss/application.scss */
   header h1 a {
     font-size: 50px;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 47, ../scss/application.scss */
+  /* line 40, ../scss/application.scss */
   header h1 a {
     font-size: 40px;
   }
 }
-/* line 62, ../scss/application.scss */
+/* line 55, ../scss/application.scss */
 header h1 a span {
   display: block;
 }
-/* line 64, ../scss/application.scss */
+/* line 57, ../scss/application.scss */
 header h1 a:before {
   content: "";
   margin: 0 auto 20px auto;
 }
 @media screen and (min-width: 900px) {
-  /* line 64, ../scss/application.scss */
+  /* line 57, ../scss/application.scss */
   header h1 a:before {
     background-image: url('../images/sprites-s81af367ff4.png');
     background-position: 0 -789px;
@@ -941,7 +941,7 @@ header h1 a:before {
   }
 }
 @media screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 900px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 900px) and (min-device-pixel-ratio: 2) {
-  /* line 64, ../scss/application.scss */
+  /* line 57, ../scss/application.scss */
   header h1 a:before {
     background-position: 0 -789px;
     -webkit-background-size: 444px auto;
@@ -952,7 +952,7 @@ header h1 a:before {
   }
 }
 @media screen and (min-width: 600px) and (max-width: 900px) {
-  /* line 64, ../scss/application.scss */
+  /* line 57, ../scss/application.scss */
   header h1 a:before {
     background-image: url('../images/sprites-s81af367ff4.png');
     background-position: 0 -450px;
@@ -964,7 +964,7 @@ header h1 a:before {
   }
 }
 @media screen and (min-width: 600px) and (max-width: 900px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 600px) and (max-width: 900px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 600px) and (max-width: 900px) and (min-device-pixel-ratio: 2) {
-  /* line 64, ../scss/application.scss */
+  /* line 57, ../scss/application.scss */
   header h1 a:before {
     background-position: 0 -450px;
     -webkit-background-size: 444px auto;
@@ -975,7 +975,7 @@ header h1 a:before {
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 64, ../scss/application.scss */
+  /* line 57, ../scss/application.scss */
   header h1 a:before {
     background-image: url("../images/sprites-2x-s49afbe8350.png");
     background-position: 0 -410px;
@@ -987,31 +987,54 @@ header h1 a:before {
     width: 64px;
   }
 }
-/* line 82, ../scss/application.scss */
+/* line 75, ../scss/application.scss */
 header h2 {
   color: rgba(0, 0, 0, 0.6);
   font-weight: 500;
+  margin: 8px 0 20px 0;
+  font-size: 30px;
+}
+@media screen and (max-width: 900px) {
+  /* line 75, ../scss/application.scss */
+  header h2 {
+    font-size: 24px;
+  }
+}
+/* line 83, ../scss/application.scss */
+header h2 a {
+  color: #555;
+}
+/* line 86, ../scss/application.scss */
+header h2 a:before, header h2 a:after {
+  content: "\2022";
+  display: inline-block;
+  padding: 0 10px;
 }
 @media screen and (max-width: 700px) {
-  /* line 85, ../scss/application.scss */
+  /* line 83, ../scss/application.scss */
   header h2 a {
     display: block;
   }
+  /* line 94, ../scss/application.scss */
+  header h2 a:before, header h2 a:after {
+    display: none;
+  }
 }
-/* line 96, ../scss/application.scss */
+/* line 101, ../scss/application.scss */
 header h3.twitter a {
   font-size: 24px;
   text-decoration: none;
   font-weight: 300;
 }
 
-/* line 106, ../scss/application.scss */
+/* line 111, ../scss/application.scss */
 .home p {
   padding-left: 20px;
   padding-right: 20px;
+  text-align: center;
 }
 
-/* line 110, ../scss/application.scss */
+/* line 116, ../scss/application.scss */
 p.large {
   color: rgba(0, 0, 0, 0.6);
   max-width: 640px;
@@ -1022,29 +1045,29 @@ p.large {
   text-align: center;
 }
 @media screen and (max-width: 700px) {
-  /* line 110, ../scss/application.scss */
+  /* line 116, ../scss/application.scss */
   p.large {
     font-size: 20px;
     font-weight: 400;
   }
 }
-/* line 121, ../scss/application.scss */
+/* line 126, ../scss/application.scss */
 p.large + p {
   max-width: 552px;
   margin: 0 auto;
   padding-bottom: .8em;
 }
 
-/* line 128, ../scss/application.scss */
+/* line 133, ../scss/application.scss */
 .button {
   display: inline-block;
   font-weight: 300;
-  font-size: 26px;
+  font-size: 30px;
   line-height: 32px;
   padding: 4px 20px;
-  color: #2da4cc;
   border: solid 2px #2da4cc;
-  background: transparent;
+  background: #2da4cc;
+  color: white;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -1052,14 +1075,30 @@ p.large + p {
   border-radius: 4px;
   text-decoration: none;
   text-align: center;
+  margin-bottom: 40px;
 }
-/* line 140, ../scss/application.scss */
+/* line 147, ../scss/application.scss */
 .button:hover {
+  background: #a00;
+  border-color: #a00;
+  color: white;
+}
+/* line 149, ../scss/application.scss */
+.button.sponsor {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 400;
+  background: transparent;
+  color: #2da4cc;
+}
+/* line 155, ../scss/application.scss */
+.button.sponsor:hover {
   color: #a00;
   border-color: #a00;
+  background: transparent;
 }
 @media screen and (max-width: 700px) {
-  /* line 128, ../scss/application.scss */
+  /* line 133, ../scss/application.scss */
   .button {
     font-size: 24px;
     font-weight: 400;
@@ -1069,9 +1108,13 @@ p.large + p {
     max-width: 260px;
     margin-top: 2%;
   }
+  /* line 167, ../scss/application.scss */
+  .button.sponsor {
+    font-size: 20px;
+  }
 }
 
-/* line 145, ../scss/application.scss */
+/* line 171, ../scss/application.scss */
 .lightbox {
   display: none;
   background: rgba(0, 0, 0, 0.6);
@@ -1081,11 +1124,11 @@ p.large + p {
   bottom: 0;
   left: 0;
 }
-/* line 151, ../scss/application.scss */
+/* line 177, ../scss/application.scss */
 .lightbox:target {
   display: block;
 }
-/* line 153, ../scss/application.scss */
+/* line 179, ../scss/application.scss */
 .lightbox .lightbox-content {
   position: absolute;
   height: 540px;
@@ -1098,7 +1141,7 @@ p.large + p {
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-/* line 163, ../scss/application.scss */
+/* line 189, ../scss/application.scss */
 .lightbox .lightbox-content a.close {
   display: block;
   position: absolute;
@@ -1117,7 +1160,7 @@ p.large + p {
   -o-border-radius: 12px;
   border-radius: 12px;
 }
-/* line 175, ../scss/application.scss */
+/* line 201, ../scss/application.scss */
 .lightbox .lightbox-content a.close:before {
   content: "\00d7";
   display: block;
@@ -1131,14 +1174,14 @@ p.large + p {
   text-indent: 0;
 }
 
-/* line 196, ../scss/application.scss */
+/* line 222, ../scss/application.scss */
 svg {
   width: 100%;
   z-index: 10;
   position: relative;
 }
 
-/* line 204, ../scss/application.scss */
+/* line 230, ../scss/application.scss */
 .image-gallery {
   overflow: hidden;
   position: relative;
@@ -1146,7 +1189,7 @@ svg {
   height: 0;
   padding-top: 45%;
 }
-/* line 211, ../scss/application.scss */
+/* line 237, ../scss/application.scss */
 .image-gallery:before {
   content: "";
   display: block;
@@ -1159,7 +1202,7 @@ svg {
   background: transparent url("../images/sand-shadow.png") no-repeat top center;
   background-size: 100% auto;
 }
-/* line 228, ../scss/application.scss */
+/* line 254, ../scss/application.scss */
 .image-gallery figure {
   display: block;
   position: absolute;
@@ -1168,14 +1211,14 @@ svg {
   bottom: 0;
   left: 0;
 }
-/* line 234, ../scss/application.scss */
+/* line 260, ../scss/application.scss */
 .image-gallery img {
   display: block;
   position: absolute;
   top: 0;
   width: 100%;
 }
-/* line 241, ../scss/application.scss */
+/* line 267, ../scss/application.scss */
 .image-gallery figcaption {
   display: block;
   position: absolute;
@@ -1187,39 +1230,39 @@ svg {
   -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
 }
-/* line 250, ../scss/application.scss */
+/* line 276, ../scss/application.scss */
 .image-gallery figcaption a {
   color: white;
 }
-/* line 253, ../scss/application.scss */
+/* line 279, ../scss/application.scss */
 .image-gallery figcaption:hover {
   background: #2da4cc;
 }
-/* line 256, ../scss/application.scss */
+/* line 282, ../scss/application.scss */
 .image-gallery figcaption span {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* line 263, ../scss/application.scss */
+/* line 289, ../scss/application.scss */
 .page {
   padding: 0;
   margin: 0 auto;
 }
-/* line 267, ../scss/application.scss */
+/* line 293, ../scss/application.scss */
 .page iframe {
   border: none;
   height: 640px !important;
 }
 
-/* line 272, ../scss/application.scss */
+/* line 298, ../scss/application.scss */
 .buy-tickets {
   max-width: 640px;
   margin: 0 auto 48px;
   padding: 36px 20px 24px;
   position: relative;
 }
-/* line 277, ../scss/application.scss */
+/* line 303, ../scss/application.scss */
 .buy-tickets:before {
   position: absolute;
   content: "";
@@ -1234,7 +1277,7 @@ svg {
   margin-left: -30px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
-  /* line 277, ../scss/application.scss */
+  /* line 303, ../scss/application.scss */
   .buy-tickets:before {
     background-position: 0 0;
     -webkit-background-size: 444px auto;
@@ -1244,7 +1287,7 @@ svg {
     background-image: url('../images/sprites-2x-s49afbe8350.png');
   }
 }
-/* line 285, ../scss/application.scss */
+/* line 311, ../scss/application.scss */
 .buy-tickets iframe {
   max-width: 640px;
   margin: 12px auto 24px;
@@ -1258,7 +1301,7 @@ svg {
   border-radius: 4px;
 }
 
-/* line 295, ../scss/application.scss */
+/* line 321, ../scss/application.scss */
 .tickets:before {
   position: absolute;
   content: "";
@@ -1272,7 +1315,7 @@ svg {
   width: 81px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
-  /* line 295, ../scss/application.scss */
+  /* line 321, ../scss/application.scss */
   .tickets:before {
     background-position: 0 -368px;
     -webkit-background-size: 444px auto;
