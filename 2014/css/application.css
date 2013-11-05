@@ -1,4 +1,4 @@
-/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -248,7 +248,7 @@ figure {
  */
 /* line 253, ../scss/base/_normalize.scss */
 fieldset {
-  border: 1px solid #c0c0c0;
+  border: 1px solid silver;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
@@ -438,7 +438,7 @@ h2 {
 h3 {
   font-size: 21px;
   line-height: 1.14285714285714;
-  padding: 0.76em 0 .39em;
+  padding: 0.76em 0 0.39em;
 }
 @media screen and (max-width: 900px) {
   /* line 17, ../scss/base/_typography.scss */
@@ -1159,13 +1159,7 @@ svg {
   background: transparent url("../images/sand-shadow.png") no-repeat top center;
   background-size: 100% auto;
 }
-@media screen and (min-width: 1500px) {
-  /* line 211, ../scss/application.scss */
-  .image-gallery:before {
-    background-size: 100% 100%;
-  }
-}
-/* line 229, ../scss/application.scss */
+/* line 228, ../scss/application.scss */
 .image-gallery figure {
   display: block;
   position: absolute;
@@ -1174,14 +1168,14 @@ svg {
   bottom: 0;
   left: 0;
 }
-/* line 235, ../scss/application.scss */
+/* line 234, ../scss/application.scss */
 .image-gallery img {
   display: block;
   position: absolute;
   top: 0;
   width: 100%;
 }
-/* line 242, ../scss/application.scss */
+/* line 241, ../scss/application.scss */
 .image-gallery figcaption {
   display: block;
   position: absolute;
@@ -1193,40 +1187,39 @@ svg {
   -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
 }
-/* line 251, ../scss/application.scss */
+/* line 250, ../scss/application.scss */
 .image-gallery figcaption a {
   color: white;
 }
-/* line 254, ../scss/application.scss */
+/* line 253, ../scss/application.scss */
 .image-gallery figcaption:hover {
   background: #2da4cc;
 }
-/* line 257, ../scss/application.scss */
+/* line 256, ../scss/application.scss */
 .image-gallery figcaption span {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* line 264, ../scss/application.scss */
+/* line 263, ../scss/application.scss */
 .page {
-  max-width: 1280px;
   padding: 0;
   margin: 0 auto;
 }
-/* line 268, ../scss/application.scss */
+/* line 267, ../scss/application.scss */
 .page iframe {
   border: none;
   height: 640px !important;
 }
 
-/* line 273, ../scss/application.scss */
+/* line 272, ../scss/application.scss */
 .buy-tickets {
   max-width: 640px;
   margin: 0 auto 48px;
   padding: 36px 20px 24px;
   position: relative;
 }
-/* line 279, ../scss/application.scss */
+/* line 277, ../scss/application.scss */
 .buy-tickets:before {
   position: absolute;
   content: "";
@@ -1241,7 +1234,7 @@ svg {
   margin-left: -30px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
-  /* line 279, ../scss/application.scss */
+  /* line 277, ../scss/application.scss */
   .buy-tickets:before {
     background-position: 0 0;
     -webkit-background-size: 444px auto;
@@ -1251,13 +1244,21 @@ svg {
     background-image: url('../images/sprites-2x-s49afbe8350.png');
   }
 }
-/* line 287, ../scss/application.scss */
+/* line 285, ../scss/application.scss */
 .buy-tickets iframe {
   max-width: 640px;
   margin: 12px auto 24px;
+  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
 }
 
-/* line 296, ../scss/application.scss */
+/* line 295, ../scss/application.scss */
 .tickets:before {
   position: absolute;
   content: "";
@@ -1271,7 +1272,7 @@ svg {
   width: 81px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
-  /* line 296, ../scss/application.scss */
+  /* line 295, ../scss/application.scss */
   .tickets:before {
     background-position: 0 -368px;
     -webkit-background-size: 444px auto;
