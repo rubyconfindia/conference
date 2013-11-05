@@ -837,7 +837,7 @@ strong, .strong {
 }
 
 /* Literal.Number.Integer.Long */
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 700px) {
   /* line 4, ../scss/modules/_sprites.scss */
   header:before, header h1:before, header h2:before, header h3:before, header:after, header h1:after, header h2:after, header h3:after {
     content: "";
@@ -860,7 +860,7 @@ strong, .strong {
     display: block;
     height: 104px;
     width: 98px;
-    bottom: 0%;
+    bottom: -14%;
     left: 4%;
   }
   /* line 18, ../scss/modules/_sprites.scss */
@@ -933,7 +933,7 @@ strong, .strong {
     left: auto;
   }
 }
-@media screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 900px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 900px) and (min-device-pixel-ratio: 2) {
+@media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
   /* line 4, ../scss/modules/_sprites.scss */
   header:before, header h1:before, header h2:before, header h3:before, header:after, header h1:after, header h2:after, header h3:after {
     background-position: 0 -368px;
@@ -944,7 +944,7 @@ strong, .strong {
     background-image: url('../images/sprites-2x-s49afbe8350.png');
   }
 }
-@media screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 900px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 900px) and (min-device-pixel-ratio: 2) {
+@media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
   /* line 13, ../scss/modules/_sprites.scss */
   header h1:before {
     background-position: 0 -685px;
@@ -955,7 +955,7 @@ strong, .strong {
     background-image: url('../images/sprites-2x-s49afbe8350.png');
   }
 }
-@media screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 900px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 900px) and (min-device-pixel-ratio: 2) {
+@media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
   /* line 18, ../scss/modules/_sprites.scss */
   header h2:before {
     background-position: 0 0;
@@ -966,7 +966,7 @@ strong, .strong {
     background-image: url('../images/sprites-2x-s49afbe8350.png');
   }
 }
-@media screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 900px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 900px) and (min-device-pixel-ratio: 2) {
+@media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
   /* line 23, ../scss/modules/_sprites.scss */
   header h3:before {
     -webkit-background-size: 444px auto;
@@ -976,7 +976,7 @@ strong, .strong {
     background-image: url('../images/sprites-2x-s49afbe8350.png');
   }
 }
-@media screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 900px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 900px) and (min-device-pixel-ratio: 2) {
+@media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
   /* line 28, ../scss/modules/_sprites.scss */
   header h3:after {
     background-position: 0 -150px;
@@ -987,7 +987,7 @@ strong, .strong {
     background-image: url('../images/sprites-2x-s49afbe8350.png');
   }
 }
-@media screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 900px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 900px) and (min-device-pixel-ratio: 2) {
+@media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
   /* line 33, ../scss/modules/_sprites.scss */
   header h2:after {
     background-position: 0 -368px;
@@ -998,7 +998,7 @@ strong, .strong {
     background-image: url('../images/sprites-2x-s49afbe8350.png');
   }
 }
-@media screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 900px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 900px) and (min-device-pixel-ratio: 2) {
+@media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
   /* line 38, ../scss/modules/_sprites.scss */
   header h1:after {
     background-position: 0 -79px;
@@ -1009,7 +1009,7 @@ strong, .strong {
     background-image: url('../images/sprites-2x-s49afbe8350.png');
   }
 }
-@media screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 900px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 900px) and (min-device-pixel-ratio: 2) {
+@media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
   /* line 43, ../scss/modules/_sprites.scss */
   header:after {
     background-position: 0 -368px;
