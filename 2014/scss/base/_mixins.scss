@@ -1,0 +1,31 @@
+$sprites: sprite-map("sprites/*.png", $layout: smart);
+$sprites-retina: sprite-map("sprites-2x/*.png", $layout: smart);
+
+@mixin sprite-background($name) {
+  background-image: sprite-url($sprites);
+  background-position: sprite-position($sprites, $name);
+  background-repeat: no-repeat;
+  display: block;
+  height: image-height(sprite-file($sprites, $name));
+  width: image-width(sprite-file($sprites, $name));
+  
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 2) {
+    // Workaround for https://gist.github.com/2140082
+    @if (sprite-position($sprites, $name) != sprite-position($sprites-retina, $name)) {
+      $ypos: round(nth(sprite-position($sprites-retina, $name), 2) / 2);
+      background-position: 0 $ypos;
+    }
+    // Hard coded width of the normal sprite image. There must be a smarter way to do this.
+    @include background-size(444px auto);
+    background-image: sprite-url($sprites-retina);
+  }
+}
+ 
+@mixin retina-background($normal, $retina) {
+    background-image: image-url($normal);
+
+    @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 2) {
+        background-image: image-url($retina);
+        background-size: (image-width($retina) / 2) (image-height($retina) / 2);
+    }
+}

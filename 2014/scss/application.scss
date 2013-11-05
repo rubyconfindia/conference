@@ -1,0 +1,227 @@
+@import "compass/css3";
+@import "compass/css3/images";
+
+@import "base/mixins";
+@import "base/normalize";
+@import "base/susy";
+@import "base/typography";
+@import "base/colors";
+
+@import "modules/syntax";
+
+@include border-box-sizing;
+
+html{
+  background: transparent url('/images/sand.jpg') repeat;
+  font-family: "proxima-nova";
+}
+
+header{
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 1px 0;
+  background: transparent url('/images/water.png') no-repeat left top;
+  text-align: center;
+
+  @media screen and (max-width: 1600px){
+    background-size: 100% auto;
+  }
+
+  h1{
+    display: block;
+    width: 100%;
+    padding: 8% 0 0 0;
+    margin: 0;
+  
+    a{
+      display: block;
+      color: #a00;
+      text-decoration: none;
+      font-size: 100px;
+      line-height: 0.9em;
+      font-family: "bello-pro";
+      @include text-shadow(1px 1px 1px rgba(black, 0.2));
+
+      @media screen and (max-width: 900px){font-size: 80px;}
+      @media screen and (max-width: 800px){font-size: 70px;}
+      @media screen and (max-width: 700px){font-size: 60px;}
+      @media screen and (max-width: 600px){font-size: 50px;}
+      @media screen and (max-width: 500px){font-size: 40px;}
+
+      span{ display: block;}
+
+      &:before{
+       content: ""; margin: 0 auto 20px auto;
+       @media screen and (min-width: 900px){ @include sprite-background('logo-large');}
+       @media screen and (min-width: 600px) and (max-width: 900px){ @include sprite-background('logo'); margin-bottom: 12px;}
+       @media screen and (max-width: 600px){ @include sprite-background('logo-small'); margin-bottom: 8px;}
+     }
+    }
+  }
+
+  h2{
+    color: rgba(black, 0.6);
+    font-weight: 100;
+    font-size: 50px;
+    margin: 8px 0 0 0;
+
+    @media screen and (max-width: 900px){font-size: 40px;}
+    @media screen and (max-width: 700px){font-size: 30px; font-weight: 300;}
+  }
+
+  h3.twitter{    
+    a{
+      font-size: 24px;
+      color: #2da4cc;
+      text-decoration: none;
+      font-weight: 300;
+
+      &:hover{ color: #a00;}
+    }
+  }
+}
+
+.home{
+  p{
+    color: rgba(black, 0.6);
+    max-width: 640px;
+    font-size: 30px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-weight: 300;
+
+    @media screen and (max-width: 700px){font-size: 20px; font-weight: 400;}
+  }
+}
+
+.button{
+  display: inline-block;
+  margin-top: 10%;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 40px;
+  padding:  0 20px;
+  color: #2da4cc;
+  border: solid 2px #2da4cc;
+  background: transparent;
+  @include border-radius(4px);
+  text-decoration: none;
+  text-align: center;
+
+  &:hover{ color: #a00; border-color: #a00;}
+
+  @media screen and (max-width: 700px){font-size: 24px; font-weight: 400;}
+}
+
+.lightbox{
+  display: none;
+  background: rgba(black, 0.6);
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+
+  &:target{display: block;}
+
+  .lightbox-content{
+    position: absolute;
+    height: 540px;
+    width: 800px;
+    margin-left: -400px;
+    left: 50%;
+    top: 10%;
+    background: white;
+    @include box-shadow(0 0 5px rgba(black, 0.5));
+
+    a.close{
+      display: block;
+      position: absolute;
+      overflow: hidden;
+      text-decoration: none;
+      text-indent: -100em;
+      top: -8px; right: -8px;
+      width: 24px; height: 24px;
+      background: white;
+      color: black;
+      @include border-radius(12px);
+
+      &:before{
+        content: "\00d7";
+        display: block;
+        position: absolute;
+        width: 24px; height: 24px;
+        line-height: 28px;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        text-indent: 0;
+      }
+    }
+  }
+
+  iframe{border: none; height: 540px !important;}
+}
+
+// .sand-shadow-container{
+//   z-index: 20;
+// }
+
+svg{
+  width: 100%;
+  z-index: 10;
+  position: relative;
+  
+}
+
+
+.image-gallery{
+  overflow: hidden;
+  position: relative;
+  margin-top: 100px;
+  height: 0;
+  padding-top: 45%;
+
+  &:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    z-index: 10;
+    background: transparent url('/images/sand-shadow.png') no-repeat top center;
+    background-size: 100% auto;
+
+    @media screen and (min-width: 1500px){
+      background-size: 100% 100%;
+
+    }
+  }
+
+  figure{
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+  }
+
+  img{
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  figcaption{
+    display: block;
+    position: absolute;
+    left: 5%;
+    bottom: 20%;
+    padding: 10px 20px;
+    background: rgba(white, 0.6);
+    color: black;
+
+    @include box-shadow(0 0 6px rgba(black, 1));
+  }
+}
+

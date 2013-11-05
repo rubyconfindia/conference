@@ -1,11 +1,11 @@
-/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-/* line 22, ../_scss/base/_normalize.scss */
+/* line 22, ../scss/base/_normalize.scss */
 article,
 aside,
 details,
@@ -24,7 +24,7 @@ summary {
 /**
  * Correct `inline-block` display not defined in IE 8/9.
  */
-/* line 32, ../_scss/base/_normalize.scss */
+/* line 32, ../scss/base/_normalize.scss */
 audio,
 canvas,
 video {
@@ -35,7 +35,7 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 41, ../_scss/base/_normalize.scss */
+/* line 41, ../scss/base/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -44,7 +44,7 @@ audio:not([controls]) {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 50, ../_scss/base/_normalize.scss */
+/* line 50, ../scss/base/_normalize.scss */
 [hidden] {
   display: none;
 }
@@ -57,7 +57,7 @@ audio:not([controls]) {
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-/* line 64, ../_scss/base/_normalize.scss */
+/* line 64, ../scss/base/_normalize.scss */
 html {
   font-family: sans-serif;
   /* 1 */
@@ -70,7 +70,7 @@ html {
 /**
  * Remove default margin.
  */
-/* line 74, ../_scss/base/_normalize.scss */
+/* line 74, ../scss/base/_normalize.scss */
 body {
   margin: 0;
 }
@@ -81,7 +81,7 @@ body {
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
-/* line 86, ../_scss/base/_normalize.scss */
+/* line 86, ../scss/base/_normalize.scss */
 a:focus {
   outline: thin dotted;
 }
@@ -89,7 +89,7 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 95, ../_scss/base/_normalize.scss */
+/* line 95, ../scss/base/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -102,7 +102,7 @@ a:hover {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 108, ../_scss/base/_normalize.scss */
+/* line 108, ../scss/base/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -111,7 +111,7 @@ h1 {
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
-/* line 117, ../_scss/base/_normalize.scss */
+/* line 117, ../scss/base/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -119,7 +119,7 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 126, ../_scss/base/_normalize.scss */
+/* line 126, ../scss/base/_normalize.scss */
 b,
 strong {
   font-weight: bold;
@@ -128,7 +128,7 @@ strong {
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
-/* line 134, ../_scss/base/_normalize.scss */
+/* line 134, ../scss/base/_normalize.scss */
 dfn {
   font-style: italic;
 }
@@ -136,7 +136,7 @@ dfn {
 /**
  * Address differences between Firefox and other browsers.
  */
-/* line 142, ../_scss/base/_normalize.scss */
+/* line 142, ../scss/base/_normalize.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -146,7 +146,7 @@ hr {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 152, ../_scss/base/_normalize.scss */
+/* line 152, ../scss/base/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -155,7 +155,7 @@ mark {
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
-/* line 164, ../_scss/base/_normalize.scss */
+/* line 164, ../scss/base/_normalize.scss */
 code,
 kbd,
 pre,
@@ -167,7 +167,7 @@ samp {
 /**
  * Improve readability of pre-formatted text in all browsers.
  */
-/* line 173, ../_scss/base/_normalize.scss */
+/* line 173, ../scss/base/_normalize.scss */
 pre {
   white-space: pre-wrap;
 }
@@ -175,7 +175,7 @@ pre {
 /**
  * Set consistent quote types.
  */
-/* line 181, ../_scss/base/_normalize.scss */
+/* line 181, ../scss/base/_normalize.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
@@ -183,7 +183,7 @@ q {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 189, ../_scss/base/_normalize.scss */
+/* line 189, ../scss/base/_normalize.scss */
 small {
   font-size: 80%;
 }
@@ -191,7 +191,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 198, ../_scss/base/_normalize.scss */
+/* line 198, ../scss/base/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -200,12 +200,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 205, ../_scss/base/_normalize.scss */
+/* line 205, ../scss/base/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 209, ../_scss/base/_normalize.scss */
+/* line 209, ../scss/base/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -216,7 +216,7 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9.
  */
-/* line 221, ../_scss/base/_normalize.scss */
+/* line 221, ../scss/base/_normalize.scss */
 img {
   border: 0;
 }
@@ -224,7 +224,7 @@ img {
 /**
  * Correct overflow displayed oddly in IE 9.
  */
-/* line 229, ../_scss/base/_normalize.scss */
+/* line 229, ../scss/base/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -235,7 +235,7 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari 5.
  */
-/* line 241, ../_scss/base/_normalize.scss */
+/* line 241, ../scss/base/_normalize.scss */
 figure {
   margin: 0;
 }
@@ -246,9 +246,9 @@ figure {
 /**
  * Define consistent border, margin, and padding.
  */
-/* line 253, ../_scss/base/_normalize.scss */
+/* line 253, ../scss/base/_normalize.scss */
 fieldset {
-  border: 1px solid #c0c0c0;
+  border: 1px solid silver;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
@@ -257,7 +257,7 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-/* line 264, ../_scss/base/_normalize.scss */
+/* line 264, ../scss/base/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -270,7 +270,7 @@ legend {
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 278, ../_scss/base/_normalize.scss */
+/* line 278, ../scss/base/_normalize.scss */
 button,
 input,
 select,
@@ -287,7 +287,7 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 290, ../_scss/base/_normalize.scss */
+/* line 290, ../scss/base/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -299,7 +299,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-/* line 302, ../_scss/base/_normalize.scss */
+/* line 302, ../scss/base/_normalize.scss */
 button,
 select {
   text-transform: none;
@@ -312,7 +312,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 317, ../_scss/base/_normalize.scss */
+/* line 317, ../scss/base/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -326,7 +326,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 327, ../_scss/base/_normalize.scss */
+/* line 327, ../scss/base/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -336,7 +336,7 @@ html input[disabled] {
  * 1. Address box sizing set to `content-box` in IE 8/9.
  * 2. Remove excess padding in IE 8/9.
  */
-/* line 337, ../_scss/base/_normalize.scss */
+/* line 337, ../scss/base/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -350,7 +350,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 348, ../_scss/base/_normalize.scss */
+/* line 348, ../scss/base/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -364,7 +364,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 361, ../_scss/base/_normalize.scss */
+/* line 361, ../scss/base/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -373,7 +373,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 370, ../_scss/base/_normalize.scss */
+/* line 370, ../scss/base/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -384,7 +384,7 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-/* line 380, ../_scss/base/_normalize.scss */
+/* line 380, ../scss/base/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -398,65 +398,65 @@ textarea {
 /**
  * Remove most spacing between table cells.
  */
-/* line 393, ../_scss/base/_normalize.scss */
+/* line 393, ../scss/base/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 1, ../_scss/modules/_syntax.scss */
+/* line 1, ../scss/modules/_syntax.scss */
 .highlight {
   background: #ffffff;
 }
 
-/* line 2, ../_scss/modules/_syntax.scss */
+/* line 2, ../scss/modules/_syntax.scss */
 .highlight .c {
   color: #999988;
   font-style: italic;
 }
 
 /* Comment */
-/* line 3, ../_scss/modules/_syntax.scss */
+/* line 3, ../scss/modules/_syntax.scss */
 .highlight .err {
   color: #a61717;
   background-color: #e3d2d2;
 }
 
 /* Error */
-/* line 4, ../_scss/modules/_syntax.scss */
+/* line 4, ../scss/modules/_syntax.scss */
 .highlight .k {
   font-weight: bold;
 }
 
 /* Keyword */
-/* line 5, ../_scss/modules/_syntax.scss */
+/* line 5, ../scss/modules/_syntax.scss */
 .highlight .o {
   font-weight: bold;
 }
 
 /* Operator */
-/* line 6, ../_scss/modules/_syntax.scss */
+/* line 6, ../scss/modules/_syntax.scss */
 .highlight .cm {
   color: #999988;
   font-style: italic;
 }
 
 /* Comment.Multiline */
-/* line 7, ../_scss/modules/_syntax.scss */
+/* line 7, ../scss/modules/_syntax.scss */
 .highlight .cp {
   color: #999999;
   font-weight: bold;
 }
 
 /* Comment.Preproc */
-/* line 8, ../_scss/modules/_syntax.scss */
+/* line 8, ../scss/modules/_syntax.scss */
 .highlight .c1 {
   color: #999988;
   font-style: italic;
 }
 
 /* Comment.Single */
-/* line 9, ../_scss/modules/_syntax.scss */
+/* line 9, ../scss/modules/_syntax.scss */
 .highlight .cs {
   color: #999999;
   font-weight: bold;
@@ -464,356 +464,356 @@ table {
 }
 
 /* Comment.Special */
-/* line 10, ../_scss/modules/_syntax.scss */
+/* line 10, ../scss/modules/_syntax.scss */
 .highlight .gd {
   color: #000000;
   background-color: #ffdddd;
 }
 
 /* Generic.Deleted */
-/* line 11, ../_scss/modules/_syntax.scss */
+/* line 11, ../scss/modules/_syntax.scss */
 .highlight .gd .x {
   color: #000000;
   background-color: #ffaaaa;
 }
 
 /* Generic.Deleted.Specific */
-/* line 12, ../_scss/modules/_syntax.scss */
+/* line 12, ../scss/modules/_syntax.scss */
 .highlight .ge {
   font-style: italic;
 }
 
 /* Generic.Emph */
-/* line 13, ../_scss/modules/_syntax.scss */
+/* line 13, ../scss/modules/_syntax.scss */
 .highlight .gr {
   color: #aa0000;
 }
 
 /* Generic.Error */
-/* line 14, ../_scss/modules/_syntax.scss */
+/* line 14, ../scss/modules/_syntax.scss */
 .highlight .gh {
   color: #999999;
 }
 
 /* Generic.Heading */
-/* line 15, ../_scss/modules/_syntax.scss */
+/* line 15, ../scss/modules/_syntax.scss */
 .highlight .gi {
   color: #000000;
   background-color: #ddffdd;
 }
 
 /* Generic.Inserted */
-/* line 16, ../_scss/modules/_syntax.scss */
+/* line 16, ../scss/modules/_syntax.scss */
 .highlight .gi .x {
   color: #000000;
   background-color: #aaffaa;
 }
 
 /* Generic.Inserted.Specific */
-/* line 17, ../_scss/modules/_syntax.scss */
+/* line 17, ../scss/modules/_syntax.scss */
 .highlight .go {
   color: #888888;
 }
 
 /* Generic.Output */
-/* line 18, ../_scss/modules/_syntax.scss */
+/* line 18, ../scss/modules/_syntax.scss */
 .highlight .gp {
   color: #555555;
 }
 
 /* Generic.Prompt */
-/* line 19, ../_scss/modules/_syntax.scss */
+/* line 19, ../scss/modules/_syntax.scss */
 .highlight .gs {
   font-weight: bold;
 }
 
 /* Generic.Strong */
-/* line 20, ../_scss/modules/_syntax.scss */
+/* line 20, ../scss/modules/_syntax.scss */
 .highlight .gu {
   color: #aaaaaa;
 }
 
 /* Generic.Subheading */
-/* line 21, ../_scss/modules/_syntax.scss */
+/* line 21, ../scss/modules/_syntax.scss */
 .highlight .gt {
   color: #aa0000;
 }
 
 /* Generic.Traceback */
-/* line 22, ../_scss/modules/_syntax.scss */
+/* line 22, ../scss/modules/_syntax.scss */
 .highlight .kc {
   font-weight: bold;
 }
 
 /* Keyword.Constant */
-/* line 23, ../_scss/modules/_syntax.scss */
+/* line 23, ../scss/modules/_syntax.scss */
 .highlight .kd {
   font-weight: bold;
 }
 
 /* Keyword.Declaration */
-/* line 24, ../_scss/modules/_syntax.scss */
+/* line 24, ../scss/modules/_syntax.scss */
 .highlight .kp {
   font-weight: bold;
 }
 
 /* Keyword.Pseudo */
-/* line 25, ../_scss/modules/_syntax.scss */
+/* line 25, ../scss/modules/_syntax.scss */
 .highlight .kr {
   font-weight: bold;
 }
 
 /* Keyword.Reserved */
-/* line 26, ../_scss/modules/_syntax.scss */
+/* line 26, ../scss/modules/_syntax.scss */
 .highlight .kt {
   color: #445588;
   font-weight: bold;
 }
 
 /* Keyword.Type */
-/* line 27, ../_scss/modules/_syntax.scss */
+/* line 27, ../scss/modules/_syntax.scss */
 .highlight .m {
   color: #009999;
 }
 
 /* Literal.Number */
-/* line 28, ../_scss/modules/_syntax.scss */
+/* line 28, ../scss/modules/_syntax.scss */
 .highlight .s {
   color: #dd1144;
 }
 
 /* Literal.String */
-/* line 29, ../_scss/modules/_syntax.scss */
+/* line 29, ../scss/modules/_syntax.scss */
 .highlight .na {
   color: teal;
 }
 
 /* Name.Attribute */
-/* line 30, ../_scss/modules/_syntax.scss */
+/* line 30, ../scss/modules/_syntax.scss */
 .highlight .nb {
   color: #0086b3;
 }
 
 /* Name.Builtin */
-/* line 31, ../_scss/modules/_syntax.scss */
+/* line 31, ../scss/modules/_syntax.scss */
 .highlight .nc {
   color: #445588;
   font-weight: bold;
 }
 
 /* Name.Class */
-/* line 32, ../_scss/modules/_syntax.scss */
+/* line 32, ../scss/modules/_syntax.scss */
 .highlight .no {
   color: teal;
 }
 
 /* Name.Constant */
-/* line 33, ../_scss/modules/_syntax.scss */
+/* line 33, ../scss/modules/_syntax.scss */
 .highlight .ni {
   color: purple;
 }
 
 /* Name.Entity */
-/* line 34, ../_scss/modules/_syntax.scss */
+/* line 34, ../scss/modules/_syntax.scss */
 .highlight .ne {
   color: #990000;
   font-weight: bold;
 }
 
 /* Name.Exception */
-/* line 35, ../_scss/modules/_syntax.scss */
+/* line 35, ../scss/modules/_syntax.scss */
 .highlight .nf {
   color: #990000;
   font-weight: bold;
 }
 
 /* Name.Function */
-/* line 36, ../_scss/modules/_syntax.scss */
+/* line 36, ../scss/modules/_syntax.scss */
 .highlight .nn {
   color: #555555;
 }
 
 /* Name.Namespace */
-/* line 37, ../_scss/modules/_syntax.scss */
+/* line 37, ../scss/modules/_syntax.scss */
 .highlight .nt {
   color: navy;
 }
 
 /* Name.Tag */
-/* line 38, ../_scss/modules/_syntax.scss */
+/* line 38, ../scss/modules/_syntax.scss */
 .highlight .nv {
   color: teal;
 }
 
 /* Name.Variable */
-/* line 39, ../_scss/modules/_syntax.scss */
+/* line 39, ../scss/modules/_syntax.scss */
 .highlight .ow {
   font-weight: bold;
 }
 
 /* Operator.Word */
-/* line 40, ../_scss/modules/_syntax.scss */
+/* line 40, ../scss/modules/_syntax.scss */
 .highlight .w {
   color: #bbbbbb;
 }
 
 /* Text.Whitespace */
-/* line 41, ../_scss/modules/_syntax.scss */
+/* line 41, ../scss/modules/_syntax.scss */
 .highlight .mf {
   color: #009999;
 }
 
 /* Literal.Number.Float */
-/* line 42, ../_scss/modules/_syntax.scss */
+/* line 42, ../scss/modules/_syntax.scss */
 .highlight .mh {
   color: #009999;
 }
 
 /* Literal.Number.Hex */
-/* line 43, ../_scss/modules/_syntax.scss */
+/* line 43, ../scss/modules/_syntax.scss */
 .highlight .mi {
   color: #009999;
 }
 
 /* Literal.Number.Integer */
-/* line 44, ../_scss/modules/_syntax.scss */
+/* line 44, ../scss/modules/_syntax.scss */
 .highlight .mo {
   color: #009999;
 }
 
 /* Literal.Number.Oct */
-/* line 45, ../_scss/modules/_syntax.scss */
+/* line 45, ../scss/modules/_syntax.scss */
 .highlight .sb {
   color: #dd1144;
 }
 
 /* Literal.String.Backtick */
-/* line 46, ../_scss/modules/_syntax.scss */
+/* line 46, ../scss/modules/_syntax.scss */
 .highlight .sc {
   color: #dd1144;
 }
 
 /* Literal.String.Char */
-/* line 47, ../_scss/modules/_syntax.scss */
+/* line 47, ../scss/modules/_syntax.scss */
 .highlight .sd {
   color: #dd1144;
 }
 
 /* Literal.String.Doc */
-/* line 48, ../_scss/modules/_syntax.scss */
+/* line 48, ../scss/modules/_syntax.scss */
 .highlight .s2 {
   color: #dd1144;
 }
 
 /* Literal.String.Double */
-/* line 49, ../_scss/modules/_syntax.scss */
+/* line 49, ../scss/modules/_syntax.scss */
 .highlight .se {
   color: #dd1144;
 }
 
 /* Literal.String.Escape */
-/* line 50, ../_scss/modules/_syntax.scss */
+/* line 50, ../scss/modules/_syntax.scss */
 .highlight .sh {
   color: #dd1144;
 }
 
 /* Literal.String.Heredoc */
-/* line 51, ../_scss/modules/_syntax.scss */
+/* line 51, ../scss/modules/_syntax.scss */
 .highlight .si {
   color: #dd1144;
 }
 
 /* Literal.String.Interpol */
-/* line 52, ../_scss/modules/_syntax.scss */
+/* line 52, ../scss/modules/_syntax.scss */
 .highlight .sx {
   color: #dd1144;
 }
 
 /* Literal.String.Other */
-/* line 53, ../_scss/modules/_syntax.scss */
+/* line 53, ../scss/modules/_syntax.scss */
 .highlight .sr {
   color: #009926;
 }
 
 /* Literal.String.Regex */
-/* line 54, ../_scss/modules/_syntax.scss */
+/* line 54, ../scss/modules/_syntax.scss */
 .highlight .s1 {
   color: #dd1144;
 }
 
 /* Literal.String.Single */
-/* line 55, ../_scss/modules/_syntax.scss */
+/* line 55, ../scss/modules/_syntax.scss */
 .highlight .ss {
   color: #990073;
 }
 
 /* Literal.String.Symbol */
-/* line 56, ../_scss/modules/_syntax.scss */
+/* line 56, ../scss/modules/_syntax.scss */
 .highlight .bp {
   color: #999999;
 }
 
 /* Name.Builtin.Pseudo */
-/* line 57, ../_scss/modules/_syntax.scss */
+/* line 57, ../scss/modules/_syntax.scss */
 .highlight .vc {
   color: teal;
 }
 
 /* Name.Variable.Class */
-/* line 58, ../_scss/modules/_syntax.scss */
+/* line 58, ../scss/modules/_syntax.scss */
 .highlight .vg {
   color: teal;
 }
 
 /* Name.Variable.Global */
-/* line 59, ../_scss/modules/_syntax.scss */
+/* line 59, ../scss/modules/_syntax.scss */
 .highlight .vi {
   color: teal;
 }
 
 /* Name.Variable.Instance */
-/* line 60, ../_scss/modules/_syntax.scss */
+/* line 60, ../scss/modules/_syntax.scss */
 .highlight .il {
   color: #009999;
 }
 
 /* Literal.Number.Integer.Long */
-/* line 14, ../_scss/base/susy/_grid.scss */
+/* line 14, ../scss/base/susy/_grid.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 14, ../_scss/application.scss */
+/* line 14, ../scss/application.scss */
 html {
-  background: transparent url("../images/sand.jpg") repeat;
+  background: transparent url("/images/sand.jpg") repeat;
   font-family: "proxima-nova";
 }
 
-/* line 19, ../_scss/application.scss */
+/* line 19, ../scss/application.scss */
 header {
   display: block;
   width: 100%;
   margin: 0;
   padding: 1px 0;
-  background: transparent url("../images/water.png") no-repeat left top;
+  background: transparent url("/images/water.png") no-repeat left top;
   text-align: center;
 }
 @media screen and (max-width: 1600px) {
-  /* line 19, ../_scss/application.scss */
+  /* line 19, ../scss/application.scss */
   header {
     background-size: 100% auto;
   }
 }
-/* line 31, ../_scss/application.scss */
+/* line 31, ../scss/application.scss */
 header h1 {
   display: block;
   width: 100%;
   padding: 8% 0 0 0;
   margin: 0;
 }
-/* line 37, ../_scss/application.scss */
+/* line 37, ../scss/application.scss */
 header h1 a {
   display: block;
   color: #a00;
@@ -824,46 +824,46 @@ header h1 a {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 900px) {
-  /* line 37, ../_scss/application.scss */
+  /* line 37, ../scss/application.scss */
   header h1 a {
     font-size: 80px;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 37, ../_scss/application.scss */
+  /* line 37, ../scss/application.scss */
   header h1 a {
     font-size: 70px;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 37, ../_scss/application.scss */
+  /* line 37, ../scss/application.scss */
   header h1 a {
     font-size: 60px;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 37, ../_scss/application.scss */
+  /* line 37, ../scss/application.scss */
   header h1 a {
     font-size: 50px;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 37, ../_scss/application.scss */
+  /* line 37, ../scss/application.scss */
   header h1 a {
     font-size: 40px;
   }
 }
-/* line 52, ../_scss/application.scss */
+/* line 52, ../scss/application.scss */
 header h1 a span {
   display: block;
 }
-/* line 54, ../_scss/application.scss */
+/* line 54, ../scss/application.scss */
 header h1 a:before {
   content: "";
   margin: 0 auto 20px auto;
 }
 @media screen and (min-width: 900px) {
-  /* line 54, ../_scss/application.scss */
+  /* line 54, ../scss/application.scss */
   header h1 a:before {
     background-image: url('../images/sprites-s81af367ff4.png');
     background-position: 0 -789px;
@@ -874,7 +874,7 @@ header h1 a:before {
   }
 }
 @media screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 900px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 900px) and (min-device-pixel-ratio: 2) {
-  /* line 54, ../_scss/application.scss */
+  /* line 54, ../scss/application.scss */
   header h1 a:before {
     background-position: 0 -789px;
     -webkit-background-size: 444px auto;
@@ -885,7 +885,7 @@ header h1 a:before {
   }
 }
 @media screen and (min-width: 600px) and (max-width: 900px) {
-  /* line 54, ../_scss/application.scss */
+  /* line 54, ../scss/application.scss */
   header h1 a:before {
     background-image: url('../images/sprites-s81af367ff4.png');
     background-position: 0 -450px;
@@ -897,7 +897,7 @@ header h1 a:before {
   }
 }
 @media screen and (min-width: 600px) and (max-width: 900px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 600px) and (max-width: 900px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 600px) and (max-width: 900px) and (min-device-pixel-ratio: 2) {
-  /* line 54, ../_scss/application.scss */
+  /* line 54, ../scss/application.scss */
   header h1 a:before {
     background-position: 0 -450px;
     -webkit-background-size: 444px auto;
@@ -908,7 +908,7 @@ header h1 a:before {
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 54, ../_scss/application.scss */
+  /* line 54, ../scss/application.scss */
   header h1 a:before {
     background-image: url('../images/sprites-s81af367ff4.png');
     background-position: -20px -150px;
@@ -920,7 +920,7 @@ header h1 a:before {
   }
 }
 @media screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 600px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (max-width: 600px) and (min-device-pixel-ratio: 2) {
-  /* line 54, ../_scss/application.scss */
+  /* line 54, ../scss/application.scss */
   header h1 a:before {
     background-position: 0 -150px;
     -webkit-background-size: 444px auto;
@@ -930,73 +930,60 @@ header h1 a:before {
     background-image: url('../images/sprites-2x-s49afbe8350.png');
   }
 }
-/* line 63, ../_scss/application.scss */
+/* line 63, ../scss/application.scss */
 header h2 {
   color: rgba(0, 0, 0, 0.6);
   font-weight: 100;
-  font-size: 40px;
+  font-size: 50px;
   margin: 8px 0 0 0;
 }
-/* line 69, ../_scss/application.scss */
-header h2 a {
-  color: rgba(0, 0, 0, 0.6);
-  text-decoration: none;
-}
-/* line 73, ../_scss/application.scss */
-header h2 a:hover {
-  color: #2da4cc;
-}
 @media screen and (max-width: 900px) {
-  /* line 63, ../_scss/application.scss */
+  /* line 63, ../scss/application.scss */
   header h2 {
     font-size: 40px;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 63, ../_scss/application.scss */
+  /* line 63, ../scss/application.scss */
   header h2 {
     font-size: 30px;
     font-weight: 300;
   }
 }
-/* line 80, ../_scss/application.scss */
-header h3.twitter {
+/* line 74, ../scss/application.scss */
+header h3.twitter a {
   font-size: 24px;
   color: #2da4cc;
+  text-decoration: none;
   font-weight: 300;
 }
-/* line 85, ../_scss/application.scss */
-header h3.twitter a {
-  color: #2da4cc;
-  text-decoration: none;
-}
-/* line 89, ../_scss/application.scss */
+/* line 80, ../scss/application.scss */
 header h3.twitter a:hover {
   color: #a00;
 }
 
-/* line 95, ../_scss/application.scss */
+/* line 86, ../scss/application.scss */
 .home p {
   color: rgba(0, 0, 0, 0.6);
-  max-width: 840px;
-  font-size: 25px;
+  max-width: 640px;
+  font-size: 30px;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
   font-weight: 300;
 }
 @media screen and (max-width: 700px) {
-  /* line 95, ../_scss/application.scss */
+  /* line 86, ../scss/application.scss */
   .home p {
     font-size: 20px;
     font-weight: 400;
   }
 }
 
-/* line 108, ../_scss/application.scss */
+/* line 99, ../scss/application.scss */
 .button {
   display: inline-block;
-  margin: 10px 20px 0px 20px;
+  margin-top: 10%;
   font-weight: 300;
   font-size: 30px;
   line-height: 40px;
@@ -1012,20 +999,20 @@ header h3.twitter a:hover {
   text-decoration: none;
   text-align: center;
 }
-/* line 122, ../_scss/application.scss */
+/* line 113, ../scss/application.scss */
 .button:hover {
   color: #a00;
   border-color: #a00;
 }
 @media screen and (max-width: 700px) {
-  /* line 108, ../_scss/application.scss */
+  /* line 99, ../scss/application.scss */
   .button {
     font-size: 24px;
     font-weight: 400;
   }
 }
 
-/* line 127, ../_scss/application.scss */
+/* line 118, ../scss/application.scss */
 .lightbox {
   display: none;
   background: rgba(0, 0, 0, 0.6);
@@ -1035,16 +1022,16 @@ header h3.twitter a:hover {
   bottom: 0;
   left: 0;
 }
-/* line 133, ../_scss/application.scss */
+/* line 124, ../scss/application.scss */
 .lightbox:target {
   display: block;
 }
-/* line 135, ../_scss/application.scss */
+/* line 126, ../scss/application.scss */
 .lightbox .lightbox-content {
   position: absolute;
-  height: 615px;
-  width: 530px;
-  margin-left: -265px;
+  height: 540px;
+  width: 800px;
+  margin-left: -400px;
   left: 50%;
   top: 10%;
   background: white;
@@ -1052,7 +1039,7 @@ header h3.twitter a:hover {
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-/* line 145, ../_scss/application.scss */
+/* line 136, ../scss/application.scss */
 .lightbox .lightbox-content a.close {
   display: block;
   position: absolute;
@@ -1071,7 +1058,7 @@ header h3.twitter a:hover {
   -o-border-radius: 12px;
   border-radius: 12px;
 }
-/* line 157, ../_scss/application.scss */
+/* line 148, ../scss/application.scss */
 .lightbox .lightbox-content a.close:before {
   content: "\00d7";
   display: block;
@@ -1084,20 +1071,20 @@ header h3.twitter a:hover {
   text-align: center;
   text-indent: 0;
 }
-/* line 171, ../_scss/application.scss */
+/* line 162, ../scss/application.scss */
 .lightbox iframe {
   border: none;
-  height: 615px !important;
+  height: 540px !important;
 }
 
-/* line 178, ../_scss/application.scss */
+/* line 169, ../scss/application.scss */
 svg {
   width: 100%;
   z-index: 10;
   position: relative;
 }
 
-/* line 186, ../_scss/application.scss */
+/* line 177, ../scss/application.scss */
 .image-gallery {
   overflow: hidden;
   position: relative;
@@ -1105,7 +1092,7 @@ svg {
   height: 0;
   padding-top: 45%;
 }
-/* line 193, ../_scss/application.scss */
+/* line 184, ../scss/application.scss */
 .image-gallery:before {
   content: "";
   display: block;
@@ -1115,16 +1102,16 @@ svg {
   width: 100%;
   height: 180px;
   z-index: 10;
-  background: transparent url("../images/sand-shadow.png") no-repeat top center;
+  background: transparent url("/images/sand-shadow.png") no-repeat top center;
   background-size: 100% auto;
 }
 @media screen and (min-width: 1500px) {
-  /* line 193, ../_scss/application.scss */
+  /* line 184, ../scss/application.scss */
   .image-gallery:before {
     background-size: 100% 100%;
   }
 }
-/* line 211, ../_scss/application.scss */
+/* line 202, ../scss/application.scss */
 .image-gallery figure {
   display: block;
   position: absolute;
@@ -1133,14 +1120,14 @@ svg {
   bottom: 0;
   left: 0;
 }
-/* line 217, ../_scss/application.scss */
+/* line 208, ../scss/application.scss */
 .image-gallery img {
   display: block;
   position: absolute;
   top: 0;
   width: 100%;
 }
-/* line 224, ../_scss/application.scss */
+/* line 215, ../scss/application.scss */
 .image-gallery figcaption {
   display: block;
   position: absolute;
