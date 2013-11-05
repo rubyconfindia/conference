@@ -1,47 +1,49 @@
-header{
-  &:before, h1:before, h2:before, h3:before,
-  &:after, h1:after, h2:after, h3:after{
-    content: "";
-    @include sprite-background("starfish_small");
-    display: block;
-    position: absolute;
-    left: 160px;
-    bottom: 120px;
-  }
+@media screen and (min-width: 900px){
+  header{
+    &:before, h1:before, h2:before, h3:before,
+    &:after, h1:after, h2:after, h3:after{
+      content: "";
+      @include sprite-background("starfish_small");
+      display: block;
+      position: absolute;
+      left: 12%;
+      bottom: 25%;
+    }
 
-  h1:before{
-    @include sprite-background("turtle");
-    bottom: 10px; left: 40px;
-  }
+    h1:before{
+      @include sprite-background("turtle");
+      bottom: 0%; left: 4%;
+    }
 
-  h2:before{
-    @include sprite-background("waterdrop_1");
-    bottom: 120px; left: 260px;
-  }
+    h2:before{
+      @include sprite-background("waterdrop_1");
+      bottom: 30%; left: 23%;
+    }
 
-  h3:before{
-    @include sprite-background("waterdrop_4");
-    bottom: 110px; left: 310px;
-  }
+    h3:before{
+      @include sprite-background("waterdrop_4");
+      bottom: 23%; left: 24%;
+    }
 
-  h3:after{
-    @include sprite-background("waterdrop_2");
-    bottom: 150px; left: 330px;
-  }
+    h3:after{
+      @include sprite-background("waterdrop_2");
+      bottom: 25%; left: 29%;
+    }
 
-  h2:after{
-    @include sprite-background("starfish");
-    top: 40px; right: 50px; left: auto;
-  }
+    h2:after{
+      @include sprite-background("starfish");
+      top: 12%; right: 5%; left: auto;
+    }
 
-  h1:after{
-    @include sprite-background("shell");
-    top: 210px; right: 360px; left: auto;
-  }
+    h1:after{
+      @include sprite-background("shell");
+      top: 60%; right: 30%; left: auto;
+    }
 
-  &:after{
-    @include sprite-background("starfish_small");
-    top: 330px; right: 200px; left: auto;
-  }
+    &:after{
+      @include sprite-background("starfish_small");
+      top: 65%; right: 17%; left: auto;
+    }
 
+  }
 }
