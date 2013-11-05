@@ -1262,7 +1262,7 @@ p.large + p {
 
 /* line 126, ../scss/application.scss */
 .button {
-  display: block;
+  display: inline-block;
   font-weight: 300;
   font-size: 30px;
   line-height: 32px;
@@ -1302,7 +1302,7 @@ p.large + p {
 @media screen and (max-width: 700px) {
   /* line 126, ../scss/application.scss */
   .button {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 400;
     display: block;
     margin-left: auto;
@@ -1312,7 +1312,7 @@ p.large + p {
   }
   /* line 160, ../scss/application.scss */
   .button.sponsor {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 

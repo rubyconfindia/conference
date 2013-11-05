@@ -124,7 +124,7 @@ p.large{
 }
 
 .button{
-  display: block;
+  display: inline-block;
   font-weight: 300;
   font-size: 30px;
   line-height: 32px;
@@ -149,7 +149,7 @@ p.large{
   }
 
   @media screen and (max-width: 700px){
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 400;
     display: block;
     margin-left: auto;
@@ -157,7 +157,7 @@ p.large{
     max-width: 260px;
     margin-top: 2%;
 
-    &.sponsor{font-size: 20px;}
+    &.sponsor{font-size: 18px;}
   }
 }
 
