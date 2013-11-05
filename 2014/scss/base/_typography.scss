@@ -1,5 +1,8 @@
 body {
-	font: 16px/1.5 "proxima nova", "proxima-nova", "helvetica neue", helvetica, arial, sans-serif
+	font: 16px/1.5 $sans;
+	@media screen and (max-width: 700px) {
+		font-size: 14px;
+	}
 }
 h1, h2, h3, h4, h5, h6, p, ul {
 	margin: 0;
@@ -8,9 +11,9 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 h2 {
 	font-size: 34px;
-	line-height: 1.05;
+	line-height: 1.1764;
 	padding: 0.69em 0 0.413em;
-	@media screen and (max-width: 900px){font-size: 29px;}
+	@media screen and (max-width: 900px){font-size: 21px;}
 	@media screen and (max-width: 700px){font-weight: 300;}
 }
 
@@ -18,7 +21,7 @@ h3 {
 	font-size: 21px;
 	line-height: 1.14285714285714;
 	padding: 0.76em 0 .39em;
-	@media screen and (max-width: 900px){font-size: 18px;}
+	@media screen and (max-width: 900px){font-size: 14px;}
 }
 p {
 	padding-bottom: 1.5em;

@@ -92,8 +92,7 @@ header{
 
   h3.twitter{    
     a{
-      font-size: 24px;
-      
+      font-size: 1.14285em;
       text-decoration: none;
       font-weight: 300;
 
@@ -114,9 +113,10 @@ p.large{
 	margin: 0 auto;
 	padding-bottom: 0.9em;
 	text-align: center;
-	@media screen and (max-width: 700px){font-size: 20px; font-weight: 400;}
+  @media screen and (max-width: 700px){font-size: 18px; font-weight: 400;}
 
 	& + p {
+		text-align: center;
 		max-width: 552px;
 		margin: 0 auto;
 		padding-bottom:  .8em;
@@ -124,7 +124,7 @@ p.large{
 }
 
 .button{
-  display: inline-block;
+  display: block;
   font-weight: 300;
   font-size: 30px;
   line-height: 32px;
@@ -160,65 +160,6 @@ p.large{
     &.sponsor{font-size: 20px;}
   }
 }
-
-.lightbox{
-  display: none;
-  background: rgba(black, 0.6);
-  position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
-
-  &:target{display: block;}
-
-  .lightbox-content{
-    position: absolute;
-    height: 540px;
-    width: 800px;
-    margin-left: -400px;
-    left: 50%;
-    top: 10%;
-    background: white;
-    @include box-shadow(0 0 5px rgba(black, 0.5));
-
-    a.close{
-      display: block;
-      position: absolute;
-      overflow: hidden;
-      text-decoration: none;
-      text-indent: -100em;
-      top: -8px; right: -8px;
-      width: 24px; height: 24px;
-      background: white;
-      color: black;
-      @include border-radius(12px);
-
-      &:before{
-        content: "\00d7";
-        display: block;
-        position: absolute;
-        width: 24px; height: 24px;
-        line-height: 28px;
-        font-size: 24px;
-        font-weight: bold;
-        text-align: center;
-        text-indent: 0;
-      }
-    }
-  }
-
-  //iframe{border: none; height: 540px !important;}
-}
-
-// .sand-shadow-container{
-//   z-index: 20;
-// }
-
-svg{
-  width: 100%;
-  z-index: 10;
-  position: relative;
-  
-}
-
 
 .image-gallery{
   overflow: hidden;
@@ -268,12 +209,15 @@ svg{
 }
 
 .page {
-	// max-width: 1280px;
 	padding: 0;
 	margin: 0 auto;
 	iframe {
 		border: none;
-		height: 640px !important;
+		height: 600px;
+		
+    @media screen and (max-width: 700px) {
+			height: 640px;
+		}
 	}
 }
 .buy-tickets {
@@ -290,10 +234,21 @@ svg{
 		top: 0;
 		margin-left: -30px;
 	}
+
+	@media screen and (max-width: 700px){
+		padding-top: 0;
+		&:before {
+			background: none;
+		}
+	}
 	iframe {
 		max-width: 640px;
 		margin: 12px auto 24px;
     @include box-shadow(0 0 6px 0 rgba(black, 0.3));
     @include border-radius(4px);
 	}
+}
+#event {
+//	padding: 0 1em;
+	margin-bottom: 3em !important;
 }
