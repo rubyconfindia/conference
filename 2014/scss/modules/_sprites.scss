@@ -1,0 +1,47 @@
+header{
+  &:before, h1:before, h2:before, h3:before,
+  &:after, h1:after, h2:after, h3:after{
+    content: "";
+    @include sprite-background("starfish_small");
+    display: block;
+    position: absolute;
+    left: 160px;
+    bottom: 120px;
+  }
+
+  h1:before{
+    @include sprite-background("turtle");
+    bottom: 10px; left: 40px;
+  }
+
+  h2:before{
+    @include sprite-background("waterdrop_1");
+    bottom: 120px; left: 260px;
+  }
+
+  h3:before{
+    @include sprite-background("waterdrop_4");
+    bottom: 110px; left: 310px;
+  }
+
+  h3:after{
+    @include sprite-background("waterdrop_2");
+    bottom: 150px; left: 330px;
+  }
+
+  h2:after{
+    @include sprite-background("starfish");
+    top: 40px; right: 50px; left: auto;
+  }
+
+  h1:after{
+    @include sprite-background("shell");
+    top: 210px; right: 360px; left: auto;
+  }
+
+  &:after{
+    @include sprite-background("starfish_small");
+    top: 330px; right: 200px; left: auto;
+  }
+
+}

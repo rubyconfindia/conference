@@ -9,6 +9,7 @@
 @import "base/colors";
 
 @import "modules/syntax";
+@import "modules/sprites";
 
 @include border-box-sizing;
 
@@ -27,6 +28,7 @@ header{
   padding: 1px 20px;
   background: transparent url('../images/water.png') no-repeat left top;
   text-align: center;
+  position: relative;
 
   @media screen and (max-width: 1600px){ background-size: 100% auto;}
 
@@ -58,16 +60,7 @@ header{
         content: ""; margin: 0 auto 20px auto;
         @media screen and (min-width: 900px){ @include sprite-background('logo-large');}
         @media screen and (min-width: 600px) and (max-width: 900px){ @include sprite-background('logo'); margin-bottom: 12px;}
-        @media screen and (max-width: 600px){
-          background-image: url("../images/sprites-2x-s49afbe8350.png");
-          background-position: 0 -410px;
-          background-repeat: no-repeat;
-          background-size: 73px auto;
-          display: block;
-          height: 65px;
-          margin-bottom: 8px;
-          width: 64px;
-         }
+        @media screen and (max-width: 600px){ @include sprite-background('logo-small'); margin-bottom: 8px;}
       }
     }
   }
@@ -245,10 +238,6 @@ svg{
     z-index: 10;
     background: transparent url('../images/sand-shadow.png') no-repeat top center;
     background-size: 100% auto;
-
-    // @media screen and (min-width: 1500px){
-    //   background-size: 100% 100%;
-    // }
   }
 
   figure{
@@ -271,18 +260,10 @@ svg{
     bottom: 20%;
     padding: 10px 20px;
     background: rgba($blue, 0.9);
-//    color: black;
-	@include box-shadow(0 0 6px rgba(black, 0.6));
-	a {
-		color: white;
-	}
-    &:hover {
-		background: $blue;
-	}
-	span {
-		font-size: 14px;
-		color: rgba(white, 0.6);
-	}
+  	@include box-shadow(0 0 6px rgba(black, 0.6));
+  	a { color: white; }
+    &:hover { background: $blue;}
+  	span { font-size: 14px; color: rgba(white, 0.6);}
   }
 }
 
@@ -300,6 +281,7 @@ svg{
 	margin: 0 auto 48px;
 	padding: 36px 20px 24px;
 	position: relative;
+
 	&:before {
 		position: absolute;
 		content: "";
@@ -313,16 +295,5 @@ svg{
 		margin: 12px auto 24px;
     @include box-shadow(0 0 6px 0 rgba(black, 0.3));
     @include border-radius(4px);
-	}
-}
-#event {
-}
-.tickets {
-	&:before {
-		position: absolute;
-		content: "";
-		top: 3em;
-		right: 1.5em;
-		@include sprite-background('starfish');	
 	}
 }
