@@ -1,3 +1,3 @@
 RewriteEngine on
-RewriteRule ^$ 2013
-RewriteRule ^([^/]*).html$ 2013/$1.html
+RewriteRule ^$ 2014
+RewriteRule ^([^/]*).html$ 2014/$1.html
