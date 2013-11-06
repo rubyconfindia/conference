@@ -75,8 +75,6 @@ header{
   h2{
     color: rgba(black, 0.6);
     font-weight: 500;
-//    @media screen and (max-width: 900px){font-size: 24px;}
-    // @media screen and (max-width: 700px){font-size: 30px;}
 	.div {
 		display: inline-block;
 		margin: 0 10px;
@@ -134,7 +132,7 @@ p.large{
 }
 
 .button{
-  display: inline-block;
+  display: block;
   font-weight: 300;
   font-size: 26px;
   line-height: 32px;
@@ -146,7 +144,9 @@ p.large{
   text-decoration: none;
   text-align: center;
   margin-bottom: 24px;
-
+  margin-left: auto;
+  margin-right: auto;
+  width: 252px;
   &:hover{ background: #a00; border-color: #a00; color: white;}
 
   &.sponsor{
@@ -163,8 +163,6 @@ p.large{
     font-weight: 400;
     display: block;
     margin-bottom: 12px;
-    margin-left: auto;
-    margin-right: auto;
     max-width: 260px;
     margin-top: 2%;
 
