@@ -1443,7 +1443,11 @@ p.large + p {
     background: none;
   }
 }
-/* line 263, ../scss/application.scss */
+/* line 264, ../scss/application.scss */
+.buy-tickets ol {
+  list-style-image: url("http://localhost.rubyconfindia.org/2014/images/sprites/waterdrop_2.png");
+}
+/* line 268, ../scss/application.scss */
 .buy-tickets iframe {
   max-width: 640px;
   margin: 12px auto 24px;
@@ -1457,7 +1461,16 @@ p.large + p {
   border-radius: 4px;
 }
 
-/* line 270, ../scss/application.scss */
+/* line 276, ../scss/application.scss */
+.faq {
+  width: 640px;
+}
+/* line 279, ../scss/application.scss */
+.faq ol {
+  list-style-image: url("http://localhost.rubyconfindia.org/2014/images/sprites/waterdrop_2.png");
+}
+
+/* line 284, ../scss/application.scss */
 #event {
   margin-bottom: 3em !important;
 }

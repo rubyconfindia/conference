@@ -260,6 +260,11 @@ p.large{
 			background: none;
 		}
 	}
+
+    ol {
+        list-style-image: url('http://localhost.rubyconfindia.org/2014/images/sprites/waterdrop_2.png')
+    }
+
 	iframe {
 		max-width: 640px;
 		margin: 12px auto 24px;
@@ -267,6 +272,15 @@ p.large{
     @include border-radius(4px);
 	}
 }
+
+.faq {
+    width: 640px;
+
+    ol {
+        list-style-image: url('http://localhost.rubyconfindia.org/2014/images/sprites/waterdrop_2.png')
+    }
+}
+
 #event {
 //	padding: 0 1em;
 	margin-bottom: 3em !important;
