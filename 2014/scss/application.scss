@@ -30,7 +30,7 @@ header{
   text-align: center;
   position: relative;
 
-  @media screen and (max-width: 1600px){ background-size: 100% auto;}
+  @media screen and (max-width: 1600px){ background-size: 100% auto; margin-bottom: 12px; }
 
   h1{
     display: block;
@@ -48,11 +48,11 @@ header{
       font-family: "bello-pro", georgia, serif;
       @include text-shadow(1px 1px 1px rgba(black, 0.2));
 
-      @media screen and (max-width: 900px){font-size: 80px;}
-      @media screen and (max-width: 800px){font-size: 70px;}
-      @media screen and (max-width: 700px){font-size: 60px;}
-      @media screen and (max-width: 600px){font-size: 50px;}
-      @media screen and (max-width: 500px){font-size: 40px;}
+      @media screen and (max-width: 900px){font-size: 76px;}
+      @media screen and (max-width: 800px){font-size: 68px;}
+      @media screen and (max-width: 700px){font-size: 54px; font-weight: normal;}
+      @media screen and (max-width: 600px){font-size: 47px;}
+      @media screen and (max-width: 500px){font-size: 34px;}
 
       span{ display: block;}
 
@@ -60,7 +60,14 @@ header{
         content: ""; margin: 0 auto 20px auto;
         @media screen and (min-width: 900px){ @include sprite-background('logo-large');}
         @media screen and (min-width: 600px) and (max-width: 900px){ @include sprite-background('logo'); margin-bottom: 12px;}
-        @media screen and (max-width: 600px){ @include sprite-background('logo-small'); margin-bottom: 8px;}
+        @media screen and (max-width: 600px){ 
+         background: url("../images/sprites-2x/logo-small.png") no-repeat left top;
+         height: 48px;
+         width: 48px;
+		 @include background-size(48px auto);
+         margin-bottom: 8px;
+         display: block; 
+        }
       }
     }
   }
@@ -68,21 +75,24 @@ header{
   h2{
     color: rgba(black, 0.6);
     font-weight: 500;
-    margin: 8px 0 20px 0;
-    font-size: 30px;
-    @media screen and (max-width: 900px){font-size: 24px;}
+//    @media screen and (max-width: 900px){font-size: 24px;}
     // @media screen and (max-width: 700px){font-size: 30px;}
-
+	.div {
+		display: inline-block;
+		margin: 0 10px;
+		@media screen and (max-width: 700px) {
+			display: none;
+		}		
+	}
     a {
-      color: #555;
-      
-      &:before, &:after{
+    //  color: #555;
+      /*&:before {
         content: "\2022";
         display: inline-block;
         padding: 0 10px;
-      }
+      }*/
 
-	    @media screen and (max-width: 700px){
+	  @media screen and (max-width: 700px){
         display: block;
         &:before, &:after{display: none;}
       }
@@ -92,9 +102,9 @@ header{
 
   h3.twitter{    
     a{
-      font-size: 1.14285em;
+      //font-size: 1.14285em;
       text-decoration: none;
-      font-weight: 300;
+      font-weight: 500;
 
       &:hover{ }
     }
@@ -126,21 +136,21 @@ p.large{
 .button{
   display: inline-block;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 26px;
   line-height: 32px;
-  padding:  4px 20px;
+  padding:  4px 20px 6px;
   border: solid 2px #2da4cc;
   background: #2da4cc;
   color: white;
   @include border-radius(4px);
   text-decoration: none;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 
   &:hover{ background: #a00; border-color: #a00; color: white;}
 
   &.sponsor{
-    margin-top: 20px;
+  //  margin-top: 20px;
     font-size: 24px;
     font-weight: 400;
     background: transparent;
@@ -149,9 +159,10 @@ p.large{
   }
 
   @media screen and (max-width: 700px){
-    font-size: 26px;
+    font-size: 18px;
     font-weight: 400;
     display: block;
+    margin-bottom: 12px;
     margin-left: auto;
     margin-right: auto;
     max-width: 260px;
@@ -164,10 +175,15 @@ p.large{
 .image-gallery{
   overflow: hidden;
   position: relative;
-  margin-top: 100px;
+  margin-top: 4.5em;
   height: 0;
   padding-top: 45%;
-
+  
+  @media screen and (max-width: 700px) {
+  	margin-top: 1.5em;
+  	padding-top: 60%;
+  }
+  
   &:before{
     content: "";
     display: block;
@@ -201,10 +217,15 @@ p.large{
     bottom: 20%;
     padding: 10px 20px;
     background: rgba($blue, 0.9);
+	font-size: 18px;
+	line-height: 24px;
   	@include box-shadow(0 0 6px rgba(black, 0.6));
   	a { color: white; }
-    &:hover { background: $blue;}
-  	span { font-size: 14px; color: rgba(white, 0.6);}
+    &:hover, &:active { background: $blue;}
+  	@media screen and (max-width: 700px) {
+	  	font-size: 14px;
+	  	right: 5%;
+  	}
   }
 }
 
