@@ -1154,6 +1154,7 @@ header h2 .div {
 }
 /* line 85, ../scss/application.scss */
 header h2 a {
+  text-decoration: none;
   /*&:before {
     content: "\2022";
     display: inline-block;
@@ -1165,14 +1166,13 @@ header h2 a {
   header h2 a {
     display: block;
   }
-  /* line 95, ../scss/application.scss */
+  /* line 96, ../scss/application.scss */
   header h2 a:before, header h2 a:after {
     display: none;
   }
 }
-/* line 102, ../scss/application.scss */
+/* line 103, ../scss/application.scss */
 header h3.twitter a {
-  text-decoration: none;
   font-weight: 500;
 }
 
@@ -1326,6 +1326,7 @@ p.large + p {
 /* line 221, ../scss/application.scss */
 .image-gallery figcaption a {
   color: white;
+  text-decoration: none;
 }
 /* line 222, ../scss/application.scss */
 .image-gallery figcaption:hover, .image-gallery figcaption:active {
