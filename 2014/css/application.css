@@ -449,7 +449,7 @@ h3 {
 @media screen and (max-width: 900px) {
   /* line 20, ../scss/base/_typography.scss */
   h3 {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -1122,51 +1122,6 @@ header h1 a:before {
   content: "";
   margin: 0 auto 20px auto;
 }
-@media screen and (min-width: 900px) {
-  /* line 59, ../scss/application.scss */
-  header h1 a:before {
-    background-image: url('../images/sprites-s81af367ff4.png');
-    background-position: 0 -789px;
-    background-repeat: no-repeat;
-    display: block;
-    height: 124px;
-    width: 124px;
-  }
-}
-@media screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 900px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 900px) and (min-device-pixel-ratio: 2) {
-  /* line 59, ../scss/application.scss */
-  header h1 a:before {
-    background-position: 0 -789px;
-    -webkit-background-size: 444px auto;
-    -moz-background-size: 444px auto;
-    -o-background-size: 444px auto;
-    background-size: 444px auto;
-    background-image: url('../images/sprites-2x-s49afbe8350.png');
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 900px) {
-  /* line 59, ../scss/application.scss */
-  header h1 a:before {
-    background-image: url('../images/sprites-s81af367ff4.png');
-    background-position: 0 -450px;
-    background-repeat: no-repeat;
-    display: block;
-    height: 85px;
-    width: 84px;
-    margin-bottom: 12px;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 900px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 600px) and (max-width: 900px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 600px) and (max-width: 900px) and (min-device-pixel-ratio: 2) {
-  /* line 59, ../scss/application.scss */
-  header h1 a:before {
-    background-position: 0 -450px;
-    -webkit-background-size: 444px auto;
-    -moz-background-size: 444px auto;
-    -o-background-size: 444px auto;
-    background-size: 444px auto;
-    background-image: url('../images/sprites-2x-s49afbe8350.png');
-  }
-}
 @media screen and (max-width: 600px) {
   /* line 59, ../scss/application.scss */
   header h1 a:before {
@@ -1400,15 +1355,40 @@ p.large + p {
     height: 640px;
   }
 }
+/* line 241, ../scss/application.scss */
+.page ol {
+  padding: 0;
+}
+/* line 246, ../scss/application.scss */
+.page li {
+  position: relative;
+  list-style: none;
+  padding-left: 24px;
+  padding-bottom: 8px;
+}
+/* line 252, ../scss/application.scss */
+.page li:before {
+  position: absolute;
+  left: 0;
+  top: 1px;
+  content: url("../images/sprites/waterdrop_2.png");
+  height: 24px;
+  width: 24px;
+}
+/* line 262, ../scss/application.scss */
+.page li h3 {
+  padding-top: 4px;
+  font-weight: 500;
+}
 
-/* line 242, ../scss/application.scss */
+/* line 268, ../scss/application.scss */
 .buy-tickets {
   max-width: 640px;
   margin: 0 auto 48px;
   padding: 36px 20px 24px;
   position: relative;
 }
-/* line 248, ../scss/application.scss */
+/* line 274, ../scss/application.scss */
 .buy-tickets:before {
   position: absolute;
   content: "";
@@ -1423,7 +1403,7 @@ p.large + p {
   margin-left: -30px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
-  /* line 248, ../scss/application.scss */
+  /* line 274, ../scss/application.scss */
   .buy-tickets:before {
     background-position: 0 0;
     -webkit-background-size: 444px auto;
@@ -1434,20 +1414,16 @@ p.large + p {
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 242, ../scss/application.scss */
+  /* line 268, ../scss/application.scss */
   .buy-tickets {
     padding-top: 0;
   }
-  /* line 259, ../scss/application.scss */
+  /* line 285, ../scss/application.scss */
   .buy-tickets:before {
     background: none;
   }
 }
-/* line 264, ../scss/application.scss */
-.buy-tickets ol {
-  list-style-image: url("http://localhost.rubyconfindia.org/2014/images/sprites/waterdrop_2.png");
-}
-/* line 268, ../scss/application.scss */
+/* line 291, ../scss/application.scss */
 .buy-tickets iframe {
   max-width: 640px;
   margin: 12px auto 24px;
@@ -1461,16 +1437,13 @@ p.large + p {
   border-radius: 4px;
 }
 
-/* line 276, ../scss/application.scss */
+/* line 299, ../scss/application.scss */
 .faq {
-  width: 640px;
-}
-/* line 279, ../scss/application.scss */
-.faq ol {
-  list-style-image: url("http://localhost.rubyconfindia.org/2014/images/sprites/waterdrop_2.png");
+  max-width: 640px;
+  padding: 0px 24px 24px;
 }
 
-/* line 284, ../scss/application.scss */
+/* line 304, ../scss/application.scss */
 #event {
   margin-bottom: 3em !important;
 }

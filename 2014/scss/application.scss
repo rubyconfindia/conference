@@ -58,8 +58,8 @@ header{
 
       &:before{
         content: ""; margin: 0 auto 20px auto;
-        @media screen and (min-width: 900px){ @include sprite-background('logo-large');}
-        @media screen and (min-width: 600px) and (max-width: 900px){ @include sprite-background('logo'); margin-bottom: 12px;}
+      //  @media screen and (min-width: 900px){ @include sprite-background('logo-large');}
+      //  @media screen and (min-width: 600px) and (max-width: 900px){ @include sprite-background('logo'); margin-bottom: 12px;}
         @media screen and (max-width: 600px){ 
          background: url("../images/sprites-2x/logo-small.png") no-repeat left top;
          height: 48px;
@@ -238,6 +238,32 @@ p.large{
 			height: 640px;
 		}
 	}
+	ol {
+    	padding: 0;
+    //	list-style: outside decimal;
+    //    list-style-image: url('http://localhost.rubyconfindia.org/2014/images/sprites/waterdrop_2.png')
+    }
+	li {
+		position: relative;
+		list-style: none;
+	//	list-style: decimal outside;
+		padding-left: 24px;
+		padding-bottom: 8px;
+		&:before {
+			position: absolute;
+			left: 0;
+			top: 1px;
+			content: url("../images/sprites/waterdrop_2.png");
+			height: 24px;
+			width: 24px;
+		//	background: url("../images/sprites/waterdrop_2.png") no-repeat center center;
+		//	@include background-size(100% auto);
+		}
+		h3 {
+			padding-top: 4px;
+			font-weight: 500;
+		}
+	}
 }
 .buy-tickets {
 	max-width: 640px;
@@ -261,10 +287,7 @@ p.large{
 		}
 	}
 
-    ol {
-        list-style-image: url('http://localhost.rubyconfindia.org/2014/images/sprites/waterdrop_2.png')
-    }
-
+    
 	iframe {
 		max-width: 640px;
 		margin: 12px auto 24px;
@@ -274,11 +297,8 @@ p.large{
 }
 
 .faq {
-    width: 640px;
-
-    ol {
-        list-style-image: url('http://localhost.rubyconfindia.org/2014/images/sprites/waterdrop_2.png')
-    }
+    max-width: 640px;
+	padding: 0px 24px 24px;
 }
 
 #event {
