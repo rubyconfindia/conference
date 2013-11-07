@@ -33,3 +33,5 @@
 /2014/_site
 /_site
 .rvmrc
+.ruby-gemset
+.ruby-version
