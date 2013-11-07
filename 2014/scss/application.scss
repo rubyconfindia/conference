@@ -58,8 +58,17 @@ header{
 
       &:before{
         content: ""; margin: 0 auto 20px auto;
-      //  @media screen and (min-width: 900px){ @include sprite-background('logo-large');}
-      //  @media screen and (min-width: 600px) and (max-width: 900px){ @include sprite-background('logo'); margin-bottom: 12px;}
+        @media screen and (min-width: 900px){ @include sprite-background('logo-large');}
+        @media screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 2) {
+	        background-image: url('../images/sprites-2x-s49afbe8350.png');
+			background-position: 0 -782px;
+			background-repeat: no-repeat;
+			display: block;
+			height: 124px;
+			width: 124px;
+			@include background-size(139px auto);
+        }
+        @media screen and (min-width: 600px) and (max-width: 900px){ @include sprite-background('logo'); margin-bottom: 12px;}
         @media screen and (max-width: 600px){ 
          background: url("../images/sprites-2x/logo-small.png") no-repeat left top;
          height: 48px;
