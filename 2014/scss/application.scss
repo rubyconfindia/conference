@@ -18,7 +18,7 @@ body { position: relative;}
 
 a {
 	color: $blue;
-	text-decoration: none;
+	text-decoration: underline;
 	&:hover { color: #a00;}
 }
 

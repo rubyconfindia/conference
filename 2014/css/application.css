@@ -1041,7 +1041,7 @@ body {
 /* line 19, ../scss/application.scss */
 a {
   color: #2da4cc;
-  text-decoration: none;
+  text-decoration: underline;
 }
 /* line 22, ../scss/application.scss */
 a:hover {
