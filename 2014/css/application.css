@@ -1,4 +1,4 @@
-/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -248,7 +248,7 @@ figure {
  */
 /* line 253, ../scss/base/_normalize.scss */
 fieldset {
-  border: 1px solid #c0c0c0;
+  border: 1px solid silver;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
@@ -444,7 +444,7 @@ h2 {
 h3 {
   font-size: 21px;
   line-height: 1.14285714285714;
-  padding: 0.76em 0 .39em;
+  padding: 0.76em 0 0.39em;
 }
 @media screen and (max-width: 900px) {
   /* line 20, ../scss/base/_typography.scss */
@@ -933,94 +933,6 @@ strong, .strong {
     left: auto;
   }
 }
-@media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
-  /* line 4, ../scss/modules/_sprites.scss */
-  header:before, header h1:before, header h2:before, header h3:before, header:after, header h1:after, header h2:after, header h3:after {
-    background-position: 0 -368px;
-    -webkit-background-size: 444px auto;
-    -moz-background-size: 444px auto;
-    -o-background-size: 444px auto;
-    background-size: 444px auto;
-    background-image: url('../images/sprites-2x-s49afbe8350.png');
-  }
-}
-@media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
-  /* line 13, ../scss/modules/_sprites.scss */
-  header h1:before {
-    background-position: 0 -685px;
-    -webkit-background-size: 444px auto;
-    -moz-background-size: 444px auto;
-    -o-background-size: 444px auto;
-    background-size: 444px auto;
-    background-image: url('../images/sprites-2x-s49afbe8350.png');
-  }
-}
-@media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
-  /* line 18, ../scss/modules/_sprites.scss */
-  header h2:before {
-    background-position: 0 0;
-    -webkit-background-size: 444px auto;
-    -moz-background-size: 444px auto;
-    -o-background-size: 444px auto;
-    background-size: 444px auto;
-    background-image: url('../images/sprites-2x-s49afbe8350.png');
-  }
-}
-@media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
-  /* line 23, ../scss/modules/_sprites.scss */
-  header h3:before {
-    -webkit-background-size: 444px auto;
-    -moz-background-size: 444px auto;
-    -o-background-size: 444px auto;
-    background-size: 444px auto;
-    background-image: url('../images/sprites-2x-s49afbe8350.png');
-  }
-}
-@media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
-  /* line 28, ../scss/modules/_sprites.scss */
-  header h3:after {
-    background-position: 0 -150px;
-    -webkit-background-size: 444px auto;
-    -moz-background-size: 444px auto;
-    -o-background-size: 444px auto;
-    background-size: 444px auto;
-    background-image: url('../images/sprites-2x-s49afbe8350.png');
-  }
-}
-@media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
-  /* line 33, ../scss/modules/_sprites.scss */
-  header h2:after {
-    background-position: 0 -368px;
-    -webkit-background-size: 444px auto;
-    -moz-background-size: 444px auto;
-    -o-background-size: 444px auto;
-    background-size: 444px auto;
-    background-image: url('../images/sprites-2x-s49afbe8350.png');
-  }
-}
-@media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
-  /* line 38, ../scss/modules/_sprites.scss */
-  header h1:after {
-    background-position: 0 -79px;
-    -webkit-background-size: 444px auto;
-    -moz-background-size: 444px auto;
-    -o-background-size: 444px auto;
-    background-size: 444px auto;
-    background-image: url('../images/sprites-2x-s49afbe8350.png');
-  }
-}
-@media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
-  /* line 43, ../scss/modules/_sprites.scss */
-  header:after {
-    background-position: 0 -368px;
-    -webkit-background-size: 444px auto;
-    -moz-background-size: 444px auto;
-    -o-background-size: 444px auto;
-    background-size: 444px auto;
-    background-image: url('../images/sprites-2x-s49afbe8350.png');
-  }
-}
-
 /* line 14, ../scss/base/susy/_grid.scss */
 * {
   -webkit-box-sizing: border-box;
@@ -1133,17 +1045,6 @@ header h1 a:before {
     width: 124px;
   }
 }
-@media screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 900px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 900px) and (min-device-pixel-ratio: 2) {
-  /* line 59, ../scss/application.scss */
-  header h1 a:before {
-    background-position: 0 -789px;
-    -webkit-background-size: 444px auto;
-    -moz-background-size: 444px auto;
-    -o-background-size: 444px auto;
-    background-size: 444px auto;
-    background-image: url('../images/sprites-2x-s49afbe8350.png');
-  }
-}
 @media screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 59, ../scss/application.scss */
   header h1 a:before {
@@ -1169,17 +1070,6 @@ header h1 a:before {
     height: 85px;
     width: 84px;
     margin-bottom: 12px;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 900px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 600px) and (max-width: 900px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 600px) and (max-width: 900px) and (min-device-pixel-ratio: 2) {
-  /* line 59, ../scss/application.scss */
-  header h1 a:before {
-    background-position: 0 -450px;
-    -webkit-background-size: 444px auto;
-    -moz-background-size: 444px auto;
-    -o-background-size: 444px auto;
-    background-size: 444px auto;
-    background-image: url('../images/sprites-2x-s49afbe8350.png');
   }
 }
 @media screen and (max-width: 600px) {
@@ -1462,17 +1352,6 @@ p.large + p {
   left: 50%;
   top: 0;
   margin-left: -30px;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
-  /* line 283, ../scss/application.scss */
-  .buy-tickets:before {
-    background-position: 0 0;
-    -webkit-background-size: 444px auto;
-    -moz-background-size: 444px auto;
-    -o-background-size: 444px auto;
-    background-size: 444px auto;
-    background-image: url('../images/sprites-2x-s49afbe8350.png');
-  }
 }
 @media screen and (max-width: 700px) {
   /* line 277, ../scss/application.scss */
