@@ -155,12 +155,10 @@ p.large{
   margin-bottom: 24px;
   margin-left: auto;
   margin-right: auto;
-  width: 252px;
+  width: 270px;
   &:hover{ background: #a00; border-color: #a00; color: white;}
 
-  &.sponsor{
-  //  margin-top: 20px;
-    font-size: 24px;
+  &.alternate {
     font-weight: 400;
     background: transparent;
     color: #2da4cc;
@@ -172,10 +170,8 @@ p.large{
     font-weight: 400;
     display: block;
     margin-bottom: 12px;
-    max-width: 260px;
+    max-width: 230px;
     margin-top: 2%;
-
-    &.sponsor{font-size: 18px;}
   }
 }
 
