@@ -156,13 +156,26 @@ p.large{
   margin-left: auto;
   margin-right: auto;
   width: 270px;
-  &:hover{ background: #a00; border-color: #a00; color: white;}
+  &:hover{
+    background: #a00;
+    border-color: #a00;
+    color: white;
+
+    &>.tooltip { display: block; }
+  }
 
   &.alternate {
     font-weight: 400;
     background: transparent;
     color: #2da4cc;
     &:hover{ color: #a00; border-color: #a00; background: transparent;}
+  }
+
+  .tooltip {
+      font-size: 15px;
+      line-height: 18px;
+      font-weight: 500;
+      display: none;
   }
 
   @media screen and (max-width: 700px){
@@ -172,6 +185,12 @@ p.large{
     margin-bottom: 12px;
     max-width: 230px;
     margin-top: 2%;
+
+    .tooltip {
+        font-size: 12px;
+        line-height: 12px;
+        font-weight: 600;
+    }
   }
 }
 
