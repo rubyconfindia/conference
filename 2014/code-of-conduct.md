@@ -11,23 +11,21 @@ RubyConf India is a community conference intended for networking and collaborati
 value the participation of each member of the community and want all participants to have an enjoyable and fulfilling
 experience. 
 
-Any harrasment or inappropriate behaviour by any participant during the course of the conference, at the venue or
-otherwise, will not be tolerated.
-
-Attendees violating these rules may be asked to leave the conference without a refund at the sole discretion of the
-conference organizers.
+Any harassment or inappropriate behaviour by any participant during the course of the conference, at the venue or
+otherwise, will not be tolerated. Attendees violating these rules may be asked to leave the conference without a refund
+at the sole discretion of the conference organizers.
 
 Thank you for helping make this a welcoming, friendly event for all.
 
 Long version
 ---
 At the outset, we assume that most people are intelligent and well-intended, and we are not inclined to tell people
-what to do. That said, we take issues of harrasment very seriously. Let us be clear- we do not condone harassment or
-inappropriate behaviour, at our conferences or anywhere. It is counter to our values as an organiztion and a community;
+what to do. That said, we take issues of harassment very seriously. Let us be clear- we do not condone harassment or
+inappropriate behaviour, at our conferences or anywhere. It is counter to our values as an organization and a community;
 and more importantly, it is counter to our values as human beings. 
 
 We believe that a diverse community based on mutual respect is the base for a creative and productive environment
-enabling the success of thes endeavour. It is our endeavour to provide a safe, unbiased and harrasment-free environment
+enabling the success of this endeavour. It is our endeavour to provide a safe, unbiased and harassment-free environment
 to all members of the community so that they may achieve the above goals.
 
 All communication should be appropriate for a professional audience and must be sufficiently inclusive of people from
@@ -58,7 +56,7 @@ get together in person.
 
 Participant procedure for handling incidents
 ---
-If a participant is the victim of or witnesses any harrasment or inappropriate behaviour, they should:
+If a participant is the victim of or witnesses any harassment or inappropriate behaviour, they should:
 
 - indicate to the person performing such actions that it is inappropriate and unacceptable
 - refrain from engaging the purported offender beyond above warning
@@ -94,7 +92,7 @@ _This section is not to be published; if at all, just a list of references could
 
 [General](#)
 ---
-- harrasment-free
+- harassment-free
 - safe
 - unbiased; gender, sexual orientation, ethnicity, ...
 
