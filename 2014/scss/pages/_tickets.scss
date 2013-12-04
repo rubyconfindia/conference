@@ -1,0 +1,30 @@
+.buy-tickets {
+  max-width: 640px;
+  margin: 0 auto 48px;
+  padding: 36px 20px 24px;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: "";
+    @include sprite-background("specs");
+    left: 50%;
+    top: 0;
+    margin-left: -30px;
+  }
+
+  @media screen and (max-width: 700px){
+    padding-top: 0;
+    &:before {
+      background: none;
+    }
+  }
+
+    
+  iframe {
+    max-width: 640px;
+    margin: 12px auto 24px;
+    @include box-shadow(0 0 6px 0 rgba(black, 0.3));
+    @include border-radius(4px);
+  }
+}

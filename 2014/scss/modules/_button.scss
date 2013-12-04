@@ -1,0 +1,23 @@
+.button{
+  display: inline-block;
+  font-size: 26px;
+  line-height: 32px;
+  padding:  4px 20px 6px;
+  margin: 10px;
+  color: $gray;
+  border: solid 2px;
+  text-decoration: none;
+  text-align: center;
+  width: 270px;
+  @include border-radius(8px);
+  
+  &:hover{ border: solid 2px; color: $blue;}
+
+  &.important{
+    color: $red;
+    border-width: 4px;
+    font-weight: 700;
+
+    &:hover{color: $blue;}
+  }
+}

@@ -29,16 +29,18 @@
       top: 65%; right: 17%; left: auto;
     }
 
-    h3{position: relative; padding-bottom: 60px;}
+    // h3{position: relative; padding-bottom: 60px;}
 
     h3:before{
       @include sprite-background("starfish");
       bottom: -20px; left: 35%;
+      display: none;
     }
 
     h3:after{
       @include sprite-background("starfish_small");
       bottom: 10px; left: 55%;
+      display: none;
     }
 
   }

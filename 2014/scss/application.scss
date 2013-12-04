@@ -11,10 +11,15 @@
 @import "modules/syntax";
 @import "modules/sprites";
 @import "modules/header";
+@import "modules/gallery";
+@import "modules/button";
+@import "modules/nav";
+
+@import "pages/tickets";
 
 @include border-box-sizing;
 
-html{ background: #FEF0C4 url('../images/texture.png') repeat-y;}
+html{ background: #FEF0C4 url('../images/texture.png') center center repeat-y;}
 body { position: relative;}
 
 .home p {
@@ -23,123 +28,22 @@ body { position: relative;}
   text-align: center;
 }
 
-.button{
-  display: inline-block;
-  font-size: 26px;
-  line-height: 32px;
-  padding:  4px 20px 6px;
-  margin: 10px;
-  border: solid 2px $gray;
-  color: $gray;
-  text-decoration: none;
-  text-align: center;
-  width: 270px;
-  @include border-radius(8px);
-  
-  &:hover{
-    border: solid 2px $red;
-  }
-
-  &.important{
-    color: $red;
-    font-weight: 700;
-    border-color: $red;
-    border-width: 4px;
-
-    &:hover{color: $red-dark; border-color: $red-dark;}
-  }
-
-  .tooltip {
-      font-size: 15px;
-      line-height: 18px;
-      font-weight: 500;
-      display: none;
-  }
-
-  @media screen and (max-width: 700px){
-    font-size: 18px;
-    font-weight: 400;
-    display: block;
-    margin-bottom: 12px;
-    max-width: 230px;
-    margin-top: 2%;
-
-    .tooltip {
-        font-size: 12px;
-        line-height: 12px;
-        font-weight: 600;
-    }
-  }
-}
-
-.image-gallery{
-  overflow: hidden;
-  position: relative;
-  margin-top: 4.5em;
-  height: 0;
-  padding-top: 45%;
-  
-  @media screen and (max-width: 700px) {
-  	margin-top: 1.5em;
-  	padding-top: 60%;
-  }
-  
-  &:before{
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 180px;
-    z-index: 10;
-    background: transparent url('../images/sand-shadow.png') no-repeat top center;
-    background-size: 100% auto;
-  }
-
-  figure{
-    display: block;
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-  }
-
-  img{
-    display: block;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
-
-  figcaption{
-    display: block;
-    position: absolute;
-    left: 5%;
-    bottom: 20%;
-    padding: 10px 20px;
-    background: rgba($blue, 0.9);
-  	font-size: 18px;
-  	line-height: 24px;
-  	@include box-shadow(0 0 6px rgba(black, 0.6));
-  	a { color: white; text-decoration: none;}
-    &:hover, &:active { background: $blue;}
-
-  	@media screen and (max-width: 700px) { font-size: 14px; right: 5%;}
-  }
-}
-
 .page {
 	padding: 0;
 	margin: 0 auto;
-	iframe { border: none; height: 600px;		
+  width: 720px;
+	
+  iframe { border: none; height: 600px;		
     @media screen and (max-width: 700px) { height: 640px;}
 	}
   
-	ol { padding: 0;}
+	ul { padding: 0;}
 	li {
 		position: relative;
 		list-style: none;
 		padding-left: 24px;
-		padding-bottom: 8px;
+    padding: 0 0 0 24px;
+    margin: 5px 0 0 0;
 		
     &:before {
 			position: absolute;
@@ -153,43 +57,7 @@ body { position: relative;}
 		h3 { padding-top: 4px; font-weight: 500;}
 	}
 }
-.buy-tickets {
-	max-width: 640px;
-	margin: 0 auto 48px;
-	padding: 36px 20px 24px;
-	position: relative;
-
-	&:before {
-		position: absolute;
-		content: "";
-		@include sprite-background("specs");
-		left: 50%;
-		top: 0;
-		margin-left: -30px;
-	}
-
-	@media screen and (max-width: 700px){
-		padding-top: 0;
-		&:before {
-			background: none;
-		}
-	}
-
-    
-	iframe {
-		max-width: 640px;
-		margin: 12px auto 24px;
-    @include box-shadow(0 0 6px 0 rgba(black, 0.3));
-    @include border-radius(4px);
-	}
-}
-
-.faq {
-    max-width: 640px;
-	padding: 0px 24px 24px;
-}
 
 #event {
-//	padding: 0 1em;
 	margin-bottom: 3em !important;
 }

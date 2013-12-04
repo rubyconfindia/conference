@@ -416,7 +416,7 @@ body {
 }
 
 /* line 6, ../scss/base/_typography.scss */
-h1, h2, h3, h4, h5, h6, p, ul {
+h1, h2, h3, h4, h5, h6, p, ol, ul, li {
   margin: 0;
   line-height: 1.5;
   font-weight: 300;
@@ -454,7 +454,7 @@ h3 {
 }
 
 /* line 26, ../scss/base/_typography.scss */
-p {
+p, li {
   font-size: 18px;
   padding-bottom: 1.5em;
 }
@@ -911,11 +911,6 @@ a:hover, a:focus {
     right: 17%;
     left: auto;
   }
-  /* line 32, ../scss/modules/_sprites.scss */
-  header h3 {
-    position: relative;
-    padding-bottom: 60px;
-  }
   /* line 34, ../scss/modules/_sprites.scss */
   header h3:before {
     background-image: url('../images/sprites-s81af367ff4.png');
@@ -927,8 +922,9 @@ a:hover, a:focus {
     width: 81px;
     bottom: -20px;
     left: 35%;
+    display: none;
   }
-  /* line 39, ../scss/modules/_sprites.scss */
+  /* line 40, ../scss/modules/_sprites.scss */
   header h3:after {
     background-image: url('../images/sprites-s81af367ff4.png');
     background-position: -81px -368px;
@@ -939,6 +935,7 @@ a:hover, a:focus {
     width: 56px;
     bottom: 10px;
     left: 55%;
+    display: none;
   }
 }
 @media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
@@ -993,7 +990,7 @@ a:hover, a:focus {
   }
 }
 @media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
-  /* line 39, ../scss/modules/_sprites.scss */
+  /* line 40, ../scss/modules/_sprites.scss */
   header h3:after {
     background-image: url('../images/sprites-2x-s49afbe8350.png');
     background-size: 140px 1380px;
@@ -1145,105 +1142,21 @@ header h3 a:hover {
   color: #aa0000;
 }
 
-/* line 14, ../scss/base/susy/_grid.scss */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* line 17, ../scss/application.scss */
-html {
-  background: #fef0c4 url("../images/texture.png") repeat-y;
-}
-
-/* line 18, ../scss/application.scss */
-body {
-  position: relative;
-}
-
-/* line 20, ../scss/application.scss */
-.home p {
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: center;
-}
-
-/* line 26, ../scss/application.scss */
-.button {
-  display: inline-block;
-  font-size: 26px;
-  line-height: 32px;
-  padding: 4px 20px 6px;
-  margin: 10px;
-  border: solid 2px rgba(0, 0, 0, 0.6);
-  color: rgba(0, 0, 0, 0.6);
-  text-decoration: none;
-  text-align: center;
-  width: 270px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
-}
-/* line 39, ../scss/application.scss */
-.button:hover {
-  border: solid 2px #aa0000;
-}
-/* line 43, ../scss/application.scss */
-.button.important {
-  color: #aa0000;
-  font-weight: 700;
-  border-color: #aa0000;
-  border-width: 4px;
-}
-/* line 49, ../scss/application.scss */
-.button.important:hover {
-  color: #950000;
-  border-color: #950000;
-}
-/* line 52, ../scss/application.scss */
-.button .tooltip {
-  font-size: 15px;
-  line-height: 18px;
-  font-weight: 500;
-  display: none;
-}
-@media screen and (max-width: 700px) {
-  /* line 26, ../scss/application.scss */
-  .button {
-    font-size: 18px;
-    font-weight: 400;
-    display: block;
-    margin-bottom: 12px;
-    max-width: 230px;
-    margin-top: 2%;
-  }
-  /* line 67, ../scss/application.scss */
-  .button .tooltip {
-    font-size: 12px;
-    line-height: 12px;
-    font-weight: 600;
-  }
-}
-
-/* line 75, ../scss/application.scss */
+/* line 1, ../scss/modules/_gallery.scss */
 .image-gallery {
   overflow: hidden;
   position: relative;
-  margin-top: 4.5em;
   height: 0;
   padding-top: 45%;
 }
 @media screen and (max-width: 700px) {
-  /* line 75, ../scss/application.scss */
+  /* line 1, ../scss/modules/_gallery.scss */
   .image-gallery {
     margin-top: 1.5em;
     padding-top: 60%;
   }
 }
-/* line 87, ../scss/application.scss */
+/* line 12, ../scss/modules/_gallery.scss */
 .image-gallery:before {
   content: "";
   display: block;
@@ -1256,7 +1169,7 @@ body {
   background: transparent url("../images/sand-shadow.png") no-repeat top center;
   background-size: 100% auto;
 }
-/* line 100, ../scss/application.scss */
+/* line 25, ../scss/modules/_gallery.scss */
 .image-gallery figure {
   display: block;
   position: absolute;
@@ -1265,94 +1178,136 @@ body {
   bottom: 0;
   left: 0;
 }
-/* line 106, ../scss/application.scss */
+/* line 31, ../scss/modules/_gallery.scss */
 .image-gallery img {
   display: block;
   position: absolute;
   top: 0;
   width: 100%;
 }
-/* line 113, ../scss/application.scss */
+/* line 38, ../scss/modules/_gallery.scss */
 .image-gallery figcaption {
   display: block;
   position: absolute;
   left: 5%;
   bottom: 20%;
-  padding: 10px 20px;
-  background: rgba(45, 164, 204, 0.9);
+  background: rgba(45, 164, 204, 0.8);
   font-size: 18px;
   line-height: 24px;
   -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
 }
-/* line 123, ../scss/application.scss */
-.image-gallery figcaption a {
-  color: white;
-  text-decoration: none;
-}
-/* line 124, ../scss/application.scss */
-.image-gallery figcaption:hover, .image-gallery figcaption:active {
+/* line 48, ../scss/modules/_gallery.scss */
+.image-gallery figcaption:hover, .image-gallery figcaption:active, .image-gallery figcaption:focus {
   background: #2da4cc;
 }
+/* line 50, ../scss/modules/_gallery.scss */
+.image-gallery figcaption a {
+  display: block;
+  padding: 10px 20px;
+  font-weight: 300;
+  color: white;
+}
+/* line 55, ../scss/modules/_gallery.scss */
+.image-gallery figcaption a:hover {
+  border: none;
+}
 @media screen and (max-width: 700px) {
-  /* line 113, ../scss/application.scss */
+  /* line 38, ../scss/modules/_gallery.scss */
   .image-gallery figcaption {
     font-size: 14px;
     right: 5%;
   }
 }
 
-/* line 130, ../scss/application.scss */
-.page {
-  padding: 0;
-  margin: 0 auto;
+/* line 1, ../scss/modules/_button.scss */
+.button {
+  display: inline-block;
+  font-size: 26px;
+  line-height: 32px;
+  padding: 4px 20px 6px;
+  margin: 10px;
+  color: rgba(0, 0, 0, 0.6);
+  border: solid 2px;
+  text-decoration: none;
+  text-align: center;
+  width: 270px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
 }
-/* line 133, ../scss/application.scss */
-.page iframe {
-  border: none;
-  height: 600px;
+/* line 14, ../scss/modules/_button.scss */
+.button:hover {
+  border: solid 2px;
+  color: #2da4cc;
 }
-@media screen and (max-width: 700px) {
-  /* line 133, ../scss/application.scss */
-  .page iframe {
-    height: 640px;
-  }
+/* line 16, ../scss/modules/_button.scss */
+.button.important {
+  color: #aa0000;
+  border-width: 4px;
+  font-weight: 700;
 }
-/* line 137, ../scss/application.scss */
-.page ol {
-  padding: 0;
-}
-/* line 138, ../scss/application.scss */
-.page li {
-  position: relative;
-  list-style: none;
-  padding-left: 24px;
-  padding-bottom: 8px;
-}
-/* line 144, ../scss/application.scss */
-.page li:before {
-  position: absolute;
-  left: 0;
-  top: 1px;
-  content: url("../images/sprites/waterdrop_2.png");
-  height: 24px;
-  width: 24px;
-}
-/* line 153, ../scss/application.scss */
-.page li h3 {
-  padding-top: 4px;
-  font-weight: 500;
+/* line 21, ../scss/modules/_button.scss */
+.button.important:hover {
+  color: #2da4cc;
 }
 
-/* line 156, ../scss/application.scss */
+/* line 1, ../scss/modules/_nav.scss */
+nav, .page nav {
+  display: block;
+  text-align: center;
+}
+/* line 5, ../scss/modules/_nav.scss */
+nav ul, .page nav ul {
+  display: inline-block;
+  border: solid 1px #ffc62a;
+  margin: 0;
+  padding: 0;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
+/* line 12, ../scss/modules/_nav.scss */
+nav ul li, .page nav ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border-left: solid 1px #ffc62a;
+}
+/* line 17, ../scss/modules/_nav.scss */
+nav ul li:first-child, .page nav ul li:first-child {
+  border-left: none;
+}
+/* line 19, ../scss/modules/_nav.scss */
+nav ul li:before, .page nav ul li:before {
+  display: none;
+}
+/* line 21, ../scss/modules/_nav.scss */
+nav ul li a, .page nav ul li a {
+  color: rgba(0, 0, 0, 0.6);
+  display: block;
+  padding: 0 10px;
+  text-transform: lowercase;
+}
+/* line 27, ../scss/modules/_nav.scss */
+nav ul li a:hover, .page nav ul li a:hover {
+  border-bottom: none;
+  color: #aa0000;
+}
+
+/* line 1, ../scss/pages/_tickets.scss */
 .buy-tickets {
   max-width: 640px;
   margin: 0 auto 48px;
   padding: 36px 20px 24px;
   position: relative;
 }
-/* line 162, ../scss/application.scss */
+/* line 7, ../scss/pages/_tickets.scss */
 .buy-tickets:before {
   position: absolute;
   content: "";
@@ -1368,7 +1323,7 @@ body {
   margin-left: -30px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
-  /* line 162, ../scss/application.scss */
+  /* line 7, ../scss/pages/_tickets.scss */
   .buy-tickets:before {
     background-image: url('../images/sprites-2x-s49afbe8350.png');
     background-size: 140px 1380px;
@@ -1378,16 +1333,16 @@ body {
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 156, ../scss/application.scss */
+  /* line 1, ../scss/pages/_tickets.scss */
   .buy-tickets {
     padding-top: 0;
   }
-  /* line 173, ../scss/application.scss */
+  /* line 18, ../scss/pages/_tickets.scss */
   .buy-tickets:before {
     background: none;
   }
 }
-/* line 179, ../scss/application.scss */
+/* line 24, ../scss/pages/_tickets.scss */
 .buy-tickets iframe {
   max-width: 640px;
   margin: 12px auto 24px;
@@ -1401,13 +1356,75 @@ body {
   border-radius: 4px;
 }
 
-/* line 187, ../scss/application.scss */
-.faq {
-  max-width: 640px;
-  padding: 0px 24px 24px;
+/* line 14, ../scss/base/susy/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* line 192, ../scss/application.scss */
+/* line 22, ../scss/application.scss */
+html {
+  background: #fef0c4 url("../images/texture.png") center center repeat-y;
+}
+
+/* line 23, ../scss/application.scss */
+body {
+  position: relative;
+}
+
+/* line 25, ../scss/application.scss */
+.home p {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+/* line 31, ../scss/application.scss */
+.page {
+  padding: 0;
+  margin: 0 auto;
+  width: 720px;
+}
+/* line 36, ../scss/application.scss */
+.page iframe {
+  border: none;
+  height: 600px;
+}
+@media screen and (max-width: 700px) {
+  /* line 36, ../scss/application.scss */
+  .page iframe {
+    height: 640px;
+  }
+}
+/* line 40, ../scss/application.scss */
+.page ul {
+  padding: 0;
+}
+/* line 41, ../scss/application.scss */
+.page li {
+  position: relative;
+  list-style: none;
+  padding-left: 24px;
+  padding: 0 0 0 24px;
+  margin: 5px 0 0 0;
+}
+/* line 48, ../scss/application.scss */
+.page li:before {
+  position: absolute;
+  left: 0;
+  top: 1px;
+  content: url("../images/sprites/waterdrop_2.png");
+  height: 24px;
+  width: 24px;
+}
+/* line 57, ../scss/application.scss */
+.page li h3 {
+  padding-top: 4px;
+  font-weight: 500;
+}
+
+/* line 61, ../scss/application.scss */
 #event {
   margin-bottom: 3em !important;
 }
