@@ -1147,7 +1147,7 @@ header h3 a:hover {
   overflow: hidden;
   position: relative;
   height: 0;
-  padding-top: 42%;
+  padding-top: 42.25%;
 }
 @media screen and (max-width: 700px) {
   /* line 1, ../scss/modules/_gallery.scss */
@@ -1301,6 +1301,52 @@ nav ul li a:hover, .page nav ul li a:hover {
   color: #aa0000;
 }
 
+/* line 2, ../scss/pages/_home.scss */
+.home h3 {
+  text-align: center;
+}
+
+/* line 5, ../scss/pages/_home.scss */
+ul.speakers {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+/* line 9, ../scss/pages/_home.scss */
+ul.speakers li {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  padding: 0;
+  margin: 10px;
+  line-height: 1em;
+}
+/* line 16, ../scss/pages/_home.scss */
+ul.speakers li img {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+  border: solid 4px white;
+}
+/* line 23, ../scss/pages/_home.scss */
+ul.speakers li:before {
+  display: none;
+}
+/* line 26, ../scss/pages/_home.scss */
+ul.speakers h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+/* line 27, ../scss/pages/_home.scss */
+ul.speakers a {
+  font-size: 16px;
+}
+
 /* line 1, ../scss/pages/_tickets.scss */
 .buy-tickets {
   max-width: 640px;
@@ -1364,45 +1410,45 @@ nav ul li a:hover, .page nav ul li a:hover {
   box-sizing: border-box;
 }
 
-/* line 22, ../scss/application.scss */
+/* line 23, ../scss/application.scss */
 html {
   background: #fef0c4 url("../images/texture.png") repeat-y center center;
 }
 
-/* line 23, ../scss/application.scss */
+/* line 24, ../scss/application.scss */
 body {
   position: relative;
 }
 
-/* line 25, ../scss/application.scss */
+/* line 26, ../scss/application.scss */
 .home p {
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
 }
 
-/* line 31, ../scss/application.scss */
+/* line 32, ../scss/application.scss */
 .page {
-  padding: 0;
+  padding: 0 0 200px 0;
   margin: 0 auto;
-  width: 720px;
+  width: 960px;
 }
-/* line 36, ../scss/application.scss */
+/* line 37, ../scss/application.scss */
 .page iframe {
   border: none;
   height: 600px;
 }
 @media screen and (max-width: 700px) {
-  /* line 36, ../scss/application.scss */
+  /* line 37, ../scss/application.scss */
   .page iframe {
     height: 640px;
   }
 }
-/* line 40, ../scss/application.scss */
+/* line 41, ../scss/application.scss */
 .page ul {
   padding: 0;
 }
-/* line 41, ../scss/application.scss */
+/* line 42, ../scss/application.scss */
 .page li {
   position: relative;
   list-style: none;
@@ -1410,7 +1456,7 @@ body {
   padding: 0 0 0 24px;
   margin: 5px 0 0 0;
 }
-/* line 48, ../scss/application.scss */
+/* line 49, ../scss/application.scss */
 .page li:before {
   position: absolute;
   left: 0;
@@ -1419,13 +1465,13 @@ body {
   height: 24px;
   width: 24px;
 }
-/* line 57, ../scss/application.scss */
+/* line 58, ../scss/application.scss */
 .page li h3 {
   padding-top: 4px;
   font-weight: 500;
 }
 
-/* line 61, ../scss/application.scss */
+/* line 62, ../scss/application.scss */
 #event {
   margin-bottom: 3em !important;
 }

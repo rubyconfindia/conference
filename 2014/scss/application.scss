@@ -15,6 +15,7 @@
 @import "modules/button";
 @import "modules/nav";
 
+@import "pages/home";
 @import "pages/tickets";
 
 @include border-box-sizing;
@@ -29,9 +30,9 @@ body { position: relative;}
 }
 
 .page {
-	padding: 0;
+	padding: 0 0 200px 0;
 	margin: 0 auto;
-  width: 720px;
+  width: 960px;
 	
   iframe { border: none; height: 600px;		
     @media screen and (max-width: 700px) { height: 640px;}

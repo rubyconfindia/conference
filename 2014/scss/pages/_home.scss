@@ -1,0 +1,29 @@
+.home{
+  h3{text-align: center;}
+}
+
+ul.speakers{
+  margin: 0; padding: 0;
+  text-align: center;
+
+  li{
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    padding: 0; margin: 10px;
+    line-height: 1em;
+
+    img{
+      display: inline-block;
+      width: 120px; height: 120px;
+      @include border-radius(60px);
+      border: solid 4px $white;
+    }
+
+    &:before{display: none;}
+  }
+
+  h4{font-size: 16px; font-weight: 700;}
+  a{font-size: 16px;}
+
+}
