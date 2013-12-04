@@ -10,9 +10,11 @@
       bottom: 25%;
     }
 
+    &:before{left: 28%; bottom: 40%;}
+
     h1:before{
       @include sprite-background("turtle");
-      bottom: -14%; left: 4%;
+      bottom: -14%; right: 4%; left: auto;
     }
 
     h2:before{
@@ -37,7 +39,7 @@
 
     h1:after{
       @include sprite-background("shell");
-      top: 60%; right: 30%; left: auto;
+      top: 40%; right: 24%; left: auto;
     }
 
     &:after{

@@ -854,6 +854,11 @@ strong, .strong {
     bottom: 25%;
   }
   /* line 13, ../scss/modules/_sprites.scss */
+  header:before {
+    left: 28%;
+    bottom: 40%;
+  }
+  /* line 15, ../scss/modules/_sprites.scss */
   header h1:before {
     background-image: url('../images/sprites-s81af367ff4.png');
     background-position: 0 -685px;
@@ -863,9 +868,10 @@ strong, .strong {
     height: 104px;
     width: 98px;
     bottom: -14%;
-    left: 4%;
+    right: 4%;
+    left: auto;
   }
-  /* line 18, ../scss/modules/_sprites.scss */
+  /* line 20, ../scss/modules/_sprites.scss */
   header h2:before {
     background-image: url('../images/sprites-s81af367ff4.png');
     background-position: -90px 0;
@@ -877,7 +883,7 @@ strong, .strong {
     bottom: 30%;
     left: 23%;
   }
-  /* line 23, ../scss/modules/_sprites.scss */
+  /* line 25, ../scss/modules/_sprites.scss */
   header h3:before {
     background-image: url('../images/sprites-s81af367ff4.png');
     background-position: 0 0;
@@ -889,7 +895,7 @@ strong, .strong {
     bottom: 23%;
     left: 24%;
   }
-  /* line 28, ../scss/modules/_sprites.scss */
+  /* line 30, ../scss/modules/_sprites.scss */
   header h3:after {
     background-image: url('../images/sprites-s81af367ff4.png');
     background-position: 0 -150px;
@@ -901,7 +907,7 @@ strong, .strong {
     bottom: 25%;
     left: 29%;
   }
-  /* line 33, ../scss/modules/_sprites.scss */
+  /* line 35, ../scss/modules/_sprites.scss */
   header h2:after {
     background-image: url('../images/sprites-s81af367ff4.png');
     background-position: 0 -368px;
@@ -914,7 +920,7 @@ strong, .strong {
     right: 5%;
     left: auto;
   }
-  /* line 38, ../scss/modules/_sprites.scss */
+  /* line 40, ../scss/modules/_sprites.scss */
   header h1:after {
     background-image: url('../images/sprites-s81af367ff4.png');
     background-position: -39px -79px;
@@ -923,11 +929,11 @@ strong, .strong {
     display: block;
     height: 64px;
     width: 87px;
-    top: 60%;
-    right: 30%;
+    top: 40%;
+    right: 24%;
     left: auto;
   }
-  /* line 43, ../scss/modules/_sprites.scss */
+  /* line 45, ../scss/modules/_sprites.scss */
   header:after {
     background-image: url('../images/sprites-s81af367ff4.png');
     background-position: -81px -368px;
@@ -952,7 +958,7 @@ strong, .strong {
   }
 }
 @media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
-  /* line 13, ../scss/modules/_sprites.scss */
+  /* line 15, ../scss/modules/_sprites.scss */
   header h1:before {
     background-image: url('../images/sprites-2x-s49afbe8350.png');
     background-size: 140px 1380px;
@@ -962,7 +968,7 @@ strong, .strong {
   }
 }
 @media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
-  /* line 18, ../scss/modules/_sprites.scss */
+  /* line 20, ../scss/modules/_sprites.scss */
   header h2:before {
     background-image: url('../images/sprites-2x-s49afbe8350.png');
     background-size: 140px 1380px;
@@ -972,7 +978,7 @@ strong, .strong {
   }
 }
 @media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
-  /* line 23, ../scss/modules/_sprites.scss */
+  /* line 25, ../scss/modules/_sprites.scss */
   header h3:before {
     background-image: url('../images/sprites-2x-s49afbe8350.png');
     background-size: 140px 1380px;
@@ -982,7 +988,7 @@ strong, .strong {
   }
 }
 @media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
-  /* line 28, ../scss/modules/_sprites.scss */
+  /* line 30, ../scss/modules/_sprites.scss */
   header h3:after {
     background-image: url('../images/sprites-2x-s49afbe8350.png');
     background-size: 140px 1380px;
@@ -992,7 +998,7 @@ strong, .strong {
   }
 }
 @media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
-  /* line 33, ../scss/modules/_sprites.scss */
+  /* line 35, ../scss/modules/_sprites.scss */
   header h2:after {
     background-image: url('../images/sprites-2x-s49afbe8350.png');
     background-size: 140px 1380px;
@@ -1002,7 +1008,7 @@ strong, .strong {
   }
 }
 @media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
-  /* line 38, ../scss/modules/_sprites.scss */
+  /* line 40, ../scss/modules/_sprites.scss */
   header h1:after {
     background-image: url('../images/sprites-2x-s49afbe8350.png');
     background-size: 140px 1380px;
@@ -1012,7 +1018,7 @@ strong, .strong {
   }
 }
 @media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
-  /* line 43, ../scss/modules/_sprites.scss */
+  /* line 45, ../scss/modules/_sprites.scss */
   header:after {
     background-image: url('../images/sprites-2x-s49afbe8350.png');
     background-size: 140px 1380px;
@@ -1031,7 +1037,7 @@ strong, .strong {
 
 /* line 16, ../scss/application.scss */
 html {
-  background: transparent url("../images/sand.jpg") repeat;
+  background: #fef0c4 url("../images/texture.png") repeat-y;
 }
 
 /* line 17, ../scss/application.scss */
