@@ -1352,8 +1352,8 @@ ul.speakers .phone, ul.contact .phone {
 }
 
 /* line 31, ../scss/pages/_home.scss */
-ul.contact {
-  margin-top: 200px;
+#contact {
+  margin-top: 100px;
 }
 
 /* line 1, ../scss/pages/_tickets.scss */
