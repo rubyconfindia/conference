@@ -2,13 +2,13 @@
   h3{text-align: center;}
 }
 
-ul.speakers{
+ul.speakers, ul.contact{
   margin: 0; padding: 0;
   text-align: center;
 
   li{
     display: inline-block;
-    width: 150px;
+    width: 140px;
     text-align: center;
     padding: 0; margin: 10px;
     line-height: 1em;
@@ -25,5 +25,7 @@ ul.speakers{
 
   h4{font-size: 16px; font-weight: 700;}
   a{font-size: 16px;}
-
+  .phone{color: $gray;}
 }
+
+ul.contact{margin-top: 200px;}

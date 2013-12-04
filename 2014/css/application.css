@@ -1147,7 +1147,7 @@ header h3 a:hover {
   overflow: hidden;
   position: relative;
   height: 0;
-  padding-top: 42.25%;
+  padding-top: 42.28%;
 }
 @media screen and (max-width: 700px) {
   /* line 1, ../scss/modules/_gallery.scss */
@@ -1307,22 +1307,22 @@ nav ul li a:hover, .page nav ul li a:hover {
 }
 
 /* line 5, ../scss/pages/_home.scss */
-ul.speakers {
+ul.speakers, ul.contact {
   margin: 0;
   padding: 0;
   text-align: center;
 }
 /* line 9, ../scss/pages/_home.scss */
-ul.speakers li {
+ul.speakers li, ul.contact li {
   display: inline-block;
-  width: 150px;
+  width: 140px;
   text-align: center;
   padding: 0;
   margin: 10px;
   line-height: 1em;
 }
 /* line 16, ../scss/pages/_home.scss */
-ul.speakers li img {
+ul.speakers li img, ul.contact li img {
   display: inline-block;
   width: 120px;
   height: 120px;
@@ -1334,17 +1334,26 @@ ul.speakers li img {
   border: solid 4px white;
 }
 /* line 23, ../scss/pages/_home.scss */
-ul.speakers li:before {
+ul.speakers li:before, ul.contact li:before {
   display: none;
 }
 /* line 26, ../scss/pages/_home.scss */
-ul.speakers h4 {
+ul.speakers h4, ul.contact h4 {
   font-size: 16px;
   font-weight: 700;
 }
 /* line 27, ../scss/pages/_home.scss */
-ul.speakers a {
+ul.speakers a, ul.contact a {
   font-size: 16px;
+}
+/* line 28, ../scss/pages/_home.scss */
+ul.speakers .phone, ul.contact .phone {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 31, ../scss/pages/_home.scss */
+ul.contact {
+  margin-top: 200px;
 }
 
 /* line 1, ../scss/pages/_tickets.scss */
@@ -1429,9 +1438,9 @@ body {
 
 /* line 32, ../scss/application.scss */
 .page {
-  padding: 0 0 200px 0;
+  padding: 0 20px 200px 20px;
   margin: 0 auto;
-  width: 960px;
+  max-width: 960px;
 }
 /* line 37, ../scss/application.scss */
 .page iframe {

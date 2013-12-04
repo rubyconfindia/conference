@@ -30,9 +30,9 @@ body { position: relative;}
 }
 
 .page {
-	padding: 0 0 200px 0;
+	padding: 0 20px 200px 20px;
 	margin: 0 auto;
-  width: 960px;
+  max-width: 960px;
 	
   iframe { border: none; height: 600px;		
     @media screen and (max-width: 700px) { height: 640px;}
