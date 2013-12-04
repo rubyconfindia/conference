@@ -2,7 +2,7 @@
   h3{text-align: center;}
 }
 
-ul.speakers, ul.contact{
+ul.speakers, ul.contact, ul.sponsors{
   margin: 0; padding: 0;
   text-align: center;
 
@@ -26,6 +26,33 @@ ul.speakers, ul.contact{
   h4{font-size: 16px; font-weight: 700;}
   a{font-size: 16px;}
   .phone{color: $gray;}
+}
+
+ul.sponsors{
+  li{
+    display: inline-block;
+    width: 150px;
+    margin: 15px;
+
+    img{
+      background: $white;
+      margin: 0;
+      width: auto;
+      height: auto;
+      @include border-radius(0);
+      @include box-shadow(0 0 0 4px $white, 0 0 4px 4px rgba($black, 0.1));
+    }
+
+    a:hover{
+      border: none;
+      img{
+        @include box-shadow(0 0 0 4px $white, 0 0 4px 4px rgba($black, 0.4));
+      }
+    }
+  }
+
+  &.gold li{width: 350px;}
+  &.silver li{width: 200px;}
 }
 
 #contact{margin-top: 100px;}

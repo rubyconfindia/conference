@@ -1307,13 +1307,13 @@ nav ul li a:hover, .page nav ul li a:hover {
 }
 
 /* line 5, ../scss/pages/_home.scss */
-ul.speakers, ul.contact {
+ul.speakers, ul.contact, ul.sponsors {
   margin: 0;
   padding: 0;
   text-align: center;
 }
 /* line 9, ../scss/pages/_home.scss */
-ul.speakers li, ul.contact li {
+ul.speakers li, ul.contact li, ul.sponsors li {
   display: inline-block;
   width: 140px;
   text-align: center;
@@ -1322,7 +1322,7 @@ ul.speakers li, ul.contact li {
   line-height: 1em;
 }
 /* line 16, ../scss/pages/_home.scss */
-ul.speakers li img, ul.contact li img {
+ul.speakers li img, ul.contact li img, ul.sponsors li img {
   display: inline-block;
   width: 120px;
   height: 120px;
@@ -1334,24 +1334,64 @@ ul.speakers li img, ul.contact li img {
   border: solid 4px white;
 }
 /* line 23, ../scss/pages/_home.scss */
-ul.speakers li:before, ul.contact li:before {
+ul.speakers li:before, ul.contact li:before, ul.sponsors li:before {
   display: none;
 }
 /* line 26, ../scss/pages/_home.scss */
-ul.speakers h4, ul.contact h4 {
+ul.speakers h4, ul.contact h4, ul.sponsors h4 {
   font-size: 16px;
   font-weight: 700;
 }
 /* line 27, ../scss/pages/_home.scss */
-ul.speakers a, ul.contact a {
+ul.speakers a, ul.contact a, ul.sponsors a {
   font-size: 16px;
 }
 /* line 28, ../scss/pages/_home.scss */
-ul.speakers .phone, ul.contact .phone {
+ul.speakers .phone, ul.contact .phone, ul.sponsors .phone {
   color: rgba(0, 0, 0, 0.6);
 }
 
-/* line 31, ../scss/pages/_home.scss */
+/* line 32, ../scss/pages/_home.scss */
+ul.sponsors li {
+  display: inline-block;
+  width: 150px;
+  margin: 15px;
+}
+/* line 37, ../scss/pages/_home.scss */
+ul.sponsors li img {
+  background: white;
+  margin: 0;
+  width: auto;
+  height: auto;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 0 0 0 4px white, 0 0 4px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 0 4px white, 0 0 4px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 4px white, 0 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+/* line 46, ../scss/pages/_home.scss */
+ul.sponsors li a:hover {
+  border: none;
+}
+/* line 48, ../scss/pages/_home.scss */
+ul.sponsors li a:hover img {
+  -webkit-box-shadow: 0 0 0 4px white, 0 0 4px 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 0 4px white, 0 0 4px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 0 4px white, 0 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+/* line 54, ../scss/pages/_home.scss */
+ul.sponsors.gold li {
+  width: 350px;
+}
+/* line 55, ../scss/pages/_home.scss */
+ul.sponsors.silver li {
+  width: 200px;
+}
+
+/* line 58, ../scss/pages/_home.scss */
 #contact {
   margin-top: 100px;
 }
