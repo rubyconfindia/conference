@@ -1,9 +1,9 @@
 @media screen and (min-width: 700px){
   header{
-    &:before, h1:before, h2:before, h3:before,
-    &:after, h1:after, h2:after, h3:after{
+    &:before, h1:before, h3:before,
+    &:after, h1:after, h3:after{
       content: "";
-      @include sprite-background("starfish_small");
+      @include sprite-background("starfish");
       display: block;
       position: absolute;
       left: 12%;
@@ -12,28 +12,11 @@
   }
 
   header{
-    &:before{left: 28%; bottom: 40%;}
+    &:before{left: auto; right: 10%; bottom: 40%;}
 
     h1:before{
       @include sprite-background("turtle");
       bottom: -14%; right: 4%; left: auto;
-    }
-
-    h3{position: relative; padding-bottom: 60px;}
-
-    h3:before{
-      @include sprite-background("waterdrop_4");
-      bottom: 10px; left: 45%;
-    }
-
-    h3:after{
-      @include sprite-background("waterdrop_2");
-      bottom: 10px; left: 55%;
-    }
-
-    h2:after{
-      @include sprite-background("starfish");
-      top: 12%; right: 5%; left: auto;
     }
 
     h1:after{
@@ -45,5 +28,18 @@
       @include sprite-background("starfish_small");
       top: 65%; right: 17%; left: auto;
     }
+
+    h3{position: relative; padding-bottom: 60px;}
+
+    h3:before{
+      @include sprite-background("starfish");
+      bottom: -20px; left: 35%;
+    }
+
+    h3:after{
+      @include sprite-background("starfish_small");
+      bottom: 10px; left: 55%;
+    }
+
   }
 }

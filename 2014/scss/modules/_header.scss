@@ -1,0 +1,54 @@
+header{
+  display: block;
+  margin: 0 0 24px;
+  padding: 1px 20px;
+  background: transparent url('../images/water.png') no-repeat left top;
+  text-align: center;
+  position: relative;
+
+  @media screen and (max-width: 1600px){ background-size: 100% auto; margin-bottom: 12px; }
+
+  a.github{ position: absolute; top: 0; right: 0; border: none;}
+
+  h1{
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    padding: 8% 0 0 0;
+    margin: 0;
+  
+    a{
+      color: $red;
+      display: block;
+      font-size: 100px;
+      line-height: 0.9em;
+      border: none;
+      font-family: "bello-pro", georgia, serif;
+      @include text-shadow(1px 1px 1px rgba(black, 0.2));
+
+      @media screen and (max-width: 900px){font-size: 76px;}
+      @media screen and (max-width: 800px){font-size: 68px;}
+      @media screen and (max-width: 700px){font-size: 54px; font-weight: normal;}
+      @media screen and (max-width: 600px){font-size: 47px;}
+      @media screen and (max-width: 500px){font-size: 34px;}
+
+      span{ display: block;}
+
+      &:before{
+        content: "";margin: 0 auto 20px auto;
+        @media screen and (min-width: 900px){ @include sprite-background('logo-large');}
+        @media screen and (max-width: 900px){ @include sprite-background('logo'); margin-bottom: 12px;}
+      }
+
+      &:hover{
+        color: $red;
+        border: none;
+        @include text-shadow(2px 2px 2px rgba(black, 0.3));
+      }
+    }
+  }
+
+  h3 a{color: rgba($black, 0.6); font-weight: 700;}
+  h3 a:hover{color: $red;}
+}
+

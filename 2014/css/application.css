@@ -852,15 +852,15 @@ a:hover, a:focus {
 /* Literal.Number.Integer.Long */
 @media screen and (min-width: 700px) {
   /* line 4, ../scss/modules/_sprites.scss */
-  header:before, header h1:before, header h2:before, header h3:before, header:after, header h1:after, header h2:after, header h3:after {
+  header:before, header h1:before, header h3:before, header:after, header h1:after, header h3:after {
     content: "";
     background-image: url('../images/sprites-s81af367ff4.png');
-    background-position: -81px -368px;
+    background-position: 0 -368px;
     background-repeat: no-repeat;
     overflow: hidden;
     display: block;
-    height: 53px;
-    width: 56px;
+    height: 82px;
+    width: 81px;
     display: block;
     position: absolute;
     left: 12%;
@@ -868,7 +868,8 @@ a:hover, a:focus {
   }
   /* line 15, ../scss/modules/_sprites.scss */
   header:before {
-    left: 28%;
+    left: auto;
+    right: 10%;
     bottom: 40%;
   }
   /* line 17, ../scss/modules/_sprites.scss */
@@ -885,48 +886,6 @@ a:hover, a:focus {
     left: auto;
   }
   /* line 22, ../scss/modules/_sprites.scss */
-  header h3 {
-    position: relative;
-    padding-bottom: 60px;
-  }
-  /* line 24, ../scss/modules/_sprites.scss */
-  header h3:before {
-    background-image: url('../images/sprites-s81af367ff4.png');
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    display: block;
-    height: 33px;
-    width: 29px;
-    bottom: 10px;
-    left: 45%;
-  }
-  /* line 29, ../scss/modules/_sprites.scss */
-  header h3:after {
-    background-image: url('../images/sprites-s81af367ff4.png');
-    background-position: 0 -150px;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    display: block;
-    height: 22px;
-    width: 20px;
-    bottom: 10px;
-    left: 55%;
-  }
-  /* line 34, ../scss/modules/_sprites.scss */
-  header h2:after {
-    background-image: url('../images/sprites-s81af367ff4.png');
-    background-position: 0 -368px;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    display: block;
-    height: 82px;
-    width: 81px;
-    top: 12%;
-    right: 5%;
-    left: auto;
-  }
-  /* line 39, ../scss/modules/_sprites.scss */
   header h1:after {
     background-image: url('../images/sprites-s81af367ff4.png');
     background-position: -39px -79px;
@@ -939,7 +898,7 @@ a:hover, a:focus {
     right: 24%;
     left: auto;
   }
-  /* line 44, ../scss/modules/_sprites.scss */
+  /* line 27, ../scss/modules/_sprites.scss */
   header:after {
     background-image: url('../images/sprites-s81af367ff4.png');
     background-position: -81px -368px;
@@ -952,15 +911,44 @@ a:hover, a:focus {
     right: 17%;
     left: auto;
   }
+  /* line 32, ../scss/modules/_sprites.scss */
+  header h3 {
+    position: relative;
+    padding-bottom: 60px;
+  }
+  /* line 34, ../scss/modules/_sprites.scss */
+  header h3:before {
+    background-image: url('../images/sprites-s81af367ff4.png');
+    background-position: 0 -368px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    height: 82px;
+    width: 81px;
+    bottom: -20px;
+    left: 35%;
+  }
+  /* line 39, ../scss/modules/_sprites.scss */
+  header h3:after {
+    background-image: url('../images/sprites-s81af367ff4.png');
+    background-position: -81px -368px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    height: 53px;
+    width: 56px;
+    bottom: 10px;
+    left: 55%;
+  }
 }
 @media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
   /* line 4, ../scss/modules/_sprites.scss */
-  header:before, header h1:before, header h2:before, header h3:before, header:after, header h1:after, header h2:after, header h3:after {
+  header:before, header h1:before, header h3:before, header:after, header h1:after, header h3:after {
     background-image: url('../images/sprites-2x-s49afbe8350.png');
     background-size: 140px 1380px;
-    background-position: -81px -368px;
-    height: 53px;
-    width: 56px;
+    background-position: 0 -368px;
+    height: 82px;
+    width: 81px;
   }
 }
 
@@ -975,37 +963,7 @@ a:hover, a:focus {
   }
 }
 @media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
-  /* line 24, ../scss/modules/_sprites.scss */
-  header h3:before {
-    background-image: url('../images/sprites-2x-s49afbe8350.png');
-    background-size: 140px 1380px;
-    background-position: 0 0;
-    height: 33px;
-    width: 29px;
-  }
-}
-@media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
-  /* line 29, ../scss/modules/_sprites.scss */
-  header h3:after {
-    background-image: url('../images/sprites-2x-s49afbe8350.png');
-    background-size: 140px 1380px;
-    background-position: 0 -150px;
-    height: 22px;
-    width: 20px;
-  }
-}
-@media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
-  /* line 34, ../scss/modules/_sprites.scss */
-  header h2:after {
-    background-image: url('../images/sprites-2x-s49afbe8350.png');
-    background-size: 140px 1380px;
-    background-position: 0 -368px;
-    height: 82px;
-    width: 81px;
-  }
-}
-@media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
-  /* line 39, ../scss/modules/_sprites.scss */
+  /* line 22, ../scss/modules/_sprites.scss */
   header h1:after {
     background-image: url('../images/sprites-2x-s49afbe8350.png');
     background-size: 140px 1380px;
@@ -1015,7 +973,7 @@ a:hover, a:focus {
   }
 }
 @media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
-  /* line 44, ../scss/modules/_sprites.scss */
+  /* line 27, ../scss/modules/_sprites.scss */
   header:after {
     background-image: url('../images/sprites-2x-s49afbe8350.png');
     background-size: 140px 1380px;
@@ -1024,25 +982,28 @@ a:hover, a:focus {
     width: 56px;
   }
 }
-
-/* line 14, ../scss/base/susy/_grid.scss */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+@media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
+  /* line 34, ../scss/modules/_sprites.scss */
+  header h3:before {
+    background-image: url('../images/sprites-2x-s49afbe8350.png');
+    background-size: 140px 1380px;
+    background-position: 0 -368px;
+    height: 82px;
+    width: 81px;
+  }
+}
+@media screen and (min-width: 700px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 700px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 700px) and (min-device-pixel-ratio: 2) {
+  /* line 39, ../scss/modules/_sprites.scss */
+  header h3:after {
+    background-image: url('../images/sprites-2x-s49afbe8350.png');
+    background-size: 140px 1380px;
+    background-position: -81px -368px;
+    height: 53px;
+    width: 56px;
+  }
 }
 
-/* line 16, ../scss/application.scss */
-html {
-  background: #fef0c4 url("../images/texture.png") repeat-y;
-}
-
-/* line 17, ../scss/application.scss */
-body {
-  position: relative;
-}
-
-/* line 19, ../scss/application.scss */
+/* line 1, ../scss/modules/_header.scss */
 header {
   display: block;
   margin: 0 0 24px;
@@ -1052,20 +1013,20 @@ header {
   position: relative;
 }
 @media screen and (max-width: 1600px) {
-  /* line 19, ../scss/application.scss */
+  /* line 1, ../scss/modules/_header.scss */
   header {
     background-size: 100% auto;
     margin-bottom: 12px;
   }
 }
-/* line 29, ../scss/application.scss */
+/* line 11, ../scss/modules/_header.scss */
 header a.github {
   position: absolute;
   top: 0;
   right: 0;
   border: none;
 }
-/* line 31, ../scss/application.scss */
+/* line 13, ../scss/modules/_header.scss */
 header h1 {
   display: block;
   width: 100%;
@@ -1073,7 +1034,7 @@ header h1 {
   padding: 8% 0 0 0;
   margin: 0;
 }
-/* line 38, ../scss/application.scss */
+/* line 20, ../scss/modules/_header.scss */
 header h1 a {
   color: #aa0000;
   display: block;
@@ -1084,47 +1045,47 @@ header h1 a {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 900px) {
-  /* line 38, ../scss/application.scss */
+  /* line 20, ../scss/modules/_header.scss */
   header h1 a {
     font-size: 76px;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 38, ../scss/application.scss */
+  /* line 20, ../scss/modules/_header.scss */
   header h1 a {
     font-size: 68px;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 38, ../scss/application.scss */
+  /* line 20, ../scss/modules/_header.scss */
   header h1 a {
     font-size: 54px;
     font-weight: normal;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 38, ../scss/application.scss */
+  /* line 20, ../scss/modules/_header.scss */
   header h1 a {
     font-size: 47px;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 38, ../scss/application.scss */
+  /* line 20, ../scss/modules/_header.scss */
   header h1 a {
     font-size: 34px;
   }
 }
-/* line 53, ../scss/application.scss */
+/* line 35, ../scss/modules/_header.scss */
 header h1 a span {
   display: block;
 }
-/* line 55, ../scss/application.scss */
+/* line 37, ../scss/modules/_header.scss */
 header h1 a:before {
   content: "";
   margin: 0 auto 20px auto;
 }
 @media screen and (min-width: 900px) {
-  /* line 55, ../scss/application.scss */
+  /* line 37, ../scss/modules/_header.scss */
   header h1 a:before {
     background-image: url('../images/sprites-s81af367ff4.png');
     background-position: 0 -789px;
@@ -1136,7 +1097,7 @@ header h1 a:before {
   }
 }
 @media screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 900px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 900px) and (min-device-pixel-ratio: 2) {
-  /* line 55, ../scss/application.scss */
+  /* line 37, ../scss/modules/_header.scss */
   header h1 a:before {
     background-image: url('../images/sprites-2x-s49afbe8350.png');
     background-size: 140px 1380px;
@@ -1146,7 +1107,7 @@ header h1 a:before {
   }
 }
 @media screen and (max-width: 900px) {
-  /* line 55, ../scss/application.scss */
+  /* line 37, ../scss/modules/_header.scss */
   header h1 a:before {
     background-image: url('../images/sprites-s81af367ff4.png');
     background-position: 0 -450px;
@@ -1159,7 +1120,7 @@ header h1 a:before {
   }
 }
 @media screen and (max-width: 900px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 900px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (max-width: 900px) and (min-device-pixel-ratio: 2) {
-  /* line 55, ../scss/application.scss */
+  /* line 37, ../scss/modules/_header.scss */
   header h1 a:before {
     background-image: url('../images/sprites-2x-s49afbe8350.png');
     background-size: 140px 1380px;
@@ -1168,24 +1129,47 @@ header h1 a:before {
     width: 84px;
   }
 }
-/* line 63, ../scss/application.scss */
+/* line 43, ../scss/modules/_header.scss */
+header h1 a:hover {
+  color: #aa0000;
+  border: none;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+/* line 51, ../scss/modules/_header.scss */
 header h3 a {
   color: rgba(0, 0, 0, 0.6);
   font-weight: 700;
 }
-/* line 64, ../scss/application.scss */
+/* line 52, ../scss/modules/_header.scss */
 header h3 a:hover {
   color: #aa0000;
 }
 
-/* line 67, ../scss/application.scss */
+/* line 14, ../scss/base/susy/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 17, ../scss/application.scss */
+html {
+  background: #fef0c4 url("../images/texture.png") repeat-y;
+}
+
+/* line 18, ../scss/application.scss */
+body {
+  position: relative;
+}
+
+/* line 20, ../scss/application.scss */
 .home p {
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
 }
 
-/* line 73, ../scss/application.scss */
+/* line 26, ../scss/application.scss */
 .button {
   display: inline-block;
   font-size: 26px;
@@ -1203,29 +1187,23 @@ header h3 a:hover {
   -o-border-radius: 8px;
   border-radius: 8px;
 }
-/* line 86, ../scss/application.scss */
+/* line 39, ../scss/application.scss */
 .button:hover {
-  background: #950000;
-  border-color: #950000;
-  color: white;
+  border: solid 2px #aa0000;
 }
-/* line 91, ../scss/application.scss */
-.button:hover > .tooltip {
-  display: block;
-}
-/* line 94, ../scss/application.scss */
+/* line 43, ../scss/application.scss */
 .button.important {
   color: #aa0000;
   font-weight: 700;
   border-color: #aa0000;
   border-width: 4px;
 }
-/* line 100, ../scss/application.scss */
+/* line 49, ../scss/application.scss */
 .button.important:hover {
   color: #950000;
   border-color: #950000;
 }
-/* line 103, ../scss/application.scss */
+/* line 52, ../scss/application.scss */
 .button .tooltip {
   font-size: 15px;
   line-height: 18px;
@@ -1233,7 +1211,7 @@ header h3 a:hover {
   display: none;
 }
 @media screen and (max-width: 700px) {
-  /* line 73, ../scss/application.scss */
+  /* line 26, ../scss/application.scss */
   .button {
     font-size: 18px;
     font-weight: 400;
@@ -1242,7 +1220,7 @@ header h3 a:hover {
     max-width: 230px;
     margin-top: 2%;
   }
-  /* line 118, ../scss/application.scss */
+  /* line 67, ../scss/application.scss */
   .button .tooltip {
     font-size: 12px;
     line-height: 12px;
@@ -1250,7 +1228,7 @@ header h3 a:hover {
   }
 }
 
-/* line 126, ../scss/application.scss */
+/* line 75, ../scss/application.scss */
 .image-gallery {
   overflow: hidden;
   position: relative;
@@ -1259,13 +1237,13 @@ header h3 a:hover {
   padding-top: 45%;
 }
 @media screen and (max-width: 700px) {
-  /* line 126, ../scss/application.scss */
+  /* line 75, ../scss/application.scss */
   .image-gallery {
     margin-top: 1.5em;
     padding-top: 60%;
   }
 }
-/* line 138, ../scss/application.scss */
+/* line 87, ../scss/application.scss */
 .image-gallery:before {
   content: "";
   display: block;
@@ -1278,7 +1256,7 @@ header h3 a:hover {
   background: transparent url("../images/sand-shadow.png") no-repeat top center;
   background-size: 100% auto;
 }
-/* line 151, ../scss/application.scss */
+/* line 100, ../scss/application.scss */
 .image-gallery figure {
   display: block;
   position: absolute;
@@ -1287,14 +1265,14 @@ header h3 a:hover {
   bottom: 0;
   left: 0;
 }
-/* line 157, ../scss/application.scss */
+/* line 106, ../scss/application.scss */
 .image-gallery img {
   display: block;
   position: absolute;
   top: 0;
   width: 100%;
 }
-/* line 164, ../scss/application.scss */
+/* line 113, ../scss/application.scss */
 .image-gallery figcaption {
   display: block;
   position: absolute;
@@ -1308,51 +1286,51 @@ header h3 a:hover {
   -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
 }
-/* line 174, ../scss/application.scss */
+/* line 123, ../scss/application.scss */
 .image-gallery figcaption a {
   color: white;
   text-decoration: none;
 }
-/* line 175, ../scss/application.scss */
+/* line 124, ../scss/application.scss */
 .image-gallery figcaption:hover, .image-gallery figcaption:active {
   background: #2da4cc;
 }
 @media screen and (max-width: 700px) {
-  /* line 164, ../scss/application.scss */
+  /* line 113, ../scss/application.scss */
   .image-gallery figcaption {
     font-size: 14px;
     right: 5%;
   }
 }
 
-/* line 181, ../scss/application.scss */
+/* line 130, ../scss/application.scss */
 .page {
   padding: 0;
   margin: 0 auto;
 }
-/* line 184, ../scss/application.scss */
+/* line 133, ../scss/application.scss */
 .page iframe {
   border: none;
   height: 600px;
 }
 @media screen and (max-width: 700px) {
-  /* line 184, ../scss/application.scss */
+  /* line 133, ../scss/application.scss */
   .page iframe {
     height: 640px;
   }
 }
-/* line 188, ../scss/application.scss */
+/* line 137, ../scss/application.scss */
 .page ol {
   padding: 0;
 }
-/* line 189, ../scss/application.scss */
+/* line 138, ../scss/application.scss */
 .page li {
   position: relative;
   list-style: none;
   padding-left: 24px;
   padding-bottom: 8px;
 }
-/* line 195, ../scss/application.scss */
+/* line 144, ../scss/application.scss */
 .page li:before {
   position: absolute;
   left: 0;
@@ -1361,20 +1339,20 @@ header h3 a:hover {
   height: 24px;
   width: 24px;
 }
-/* line 204, ../scss/application.scss */
+/* line 153, ../scss/application.scss */
 .page li h3 {
   padding-top: 4px;
   font-weight: 500;
 }
 
-/* line 207, ../scss/application.scss */
+/* line 156, ../scss/application.scss */
 .buy-tickets {
   max-width: 640px;
   margin: 0 auto 48px;
   padding: 36px 20px 24px;
   position: relative;
 }
-/* line 213, ../scss/application.scss */
+/* line 162, ../scss/application.scss */
 .buy-tickets:before {
   position: absolute;
   content: "";
@@ -1390,7 +1368,7 @@ header h3 a:hover {
   margin-left: -30px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
-  /* line 213, ../scss/application.scss */
+  /* line 162, ../scss/application.scss */
   .buy-tickets:before {
     background-image: url('../images/sprites-2x-s49afbe8350.png');
     background-size: 140px 1380px;
@@ -1400,16 +1378,16 @@ header h3 a:hover {
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 207, ../scss/application.scss */
+  /* line 156, ../scss/application.scss */
   .buy-tickets {
     padding-top: 0;
   }
-  /* line 224, ../scss/application.scss */
+  /* line 173, ../scss/application.scss */
   .buy-tickets:before {
     background: none;
   }
 }
-/* line 230, ../scss/application.scss */
+/* line 179, ../scss/application.scss */
 .buy-tickets iframe {
   max-width: 640px;
   margin: 12px auto 24px;
@@ -1423,13 +1401,13 @@ header h3 a:hover {
   border-radius: 4px;
 }
 
-/* line 238, ../scss/application.scss */
+/* line 187, ../scss/application.scss */
 .faq {
   max-width: 640px;
   padding: 0px 24px 24px;
 }
 
-/* line 243, ../scss/application.scss */
+/* line 192, ../scss/application.scss */
 #event {
   margin-bottom: 3em !important;
 }
