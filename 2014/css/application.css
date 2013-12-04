@@ -1259,11 +1259,12 @@ header h3 a:hover {
 nav, .page nav {
   display: block;
   text-align: center;
+  margin: 20px 0;
 }
-/* line 5, ../scss/modules/_nav.scss */
+/* line 6, ../scss/modules/_nav.scss */
 nav ul, .page nav ul {
   display: inline-block;
-  border: solid 1px #ffc62a;
+  border: solid 1px #aa0000;
   margin: 0;
   padding: 0;
   -webkit-border-radius: 8px;
@@ -1272,29 +1273,29 @@ nav ul, .page nav ul {
   -o-border-radius: 8px;
   border-radius: 8px;
 }
-/* line 12, ../scss/modules/_nav.scss */
+/* line 13, ../scss/modules/_nav.scss */
 nav ul li, .page nav ul li {
   display: inline-block;
   margin: 0;
   padding: 0;
-  border-left: solid 1px #ffc62a;
+  border-left: solid 1px #aa0000;
 }
-/* line 17, ../scss/modules/_nav.scss */
+/* line 18, ../scss/modules/_nav.scss */
 nav ul li:first-child, .page nav ul li:first-child {
   border-left: none;
 }
-/* line 19, ../scss/modules/_nav.scss */
+/* line 20, ../scss/modules/_nav.scss */
 nav ul li:before, .page nav ul li:before {
   display: none;
 }
-/* line 21, ../scss/modules/_nav.scss */
+/* line 22, ../scss/modules/_nav.scss */
 nav ul li a, .page nav ul li a {
-  color: rgba(0, 0, 0, 0.6);
+  color: #aa0000;
   display: block;
   padding: 0 10px;
   text-transform: lowercase;
 }
-/* line 27, ../scss/modules/_nav.scss */
+/* line 28, ../scss/modules/_nav.scss */
 nav ul li a:hover, .page nav ul li a:hover {
   border-bottom: none;
   color: #aa0000;

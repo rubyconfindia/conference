@@ -1,10 +1,11 @@
 nav, .page nav{
   display: block;
   text-align: center;
+  margin: 20px 0;
 
   ul{
     display: inline-block;
-    border: solid 1px $light-brown;
+    border: solid 1px $red;
     margin: 0; 
     padding: 0;
     @include border-radius(8px);
@@ -12,14 +13,14 @@ nav, .page nav{
     li{
       display: inline-block;
       margin: 0; padding: 0;
-      border-left: solid 1px $light-brown;
+      border-left: solid 1px $red;
 
       &:first-child{border-left: none;}
 
       &:before{display: none;}
       
       a{
-        color: $gray;
+        color: $red;
         display: block;
         padding: 0 10px;
         text-transform: lowercase;
