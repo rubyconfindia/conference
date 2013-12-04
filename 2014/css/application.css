@@ -1194,22 +1194,23 @@ header h3 a:hover {
   background: rgba(45, 164, 204, 0.8);
   font-size: 18px;
   line-height: 24px;
+  z-index: 20;
   -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
 }
-/* line 48, ../scss/modules/_gallery.scss */
+/* line 49, ../scss/modules/_gallery.scss */
 .image-gallery figcaption:hover, .image-gallery figcaption:active, .image-gallery figcaption:focus {
   background: #2da4cc;
 }
-/* line 50, ../scss/modules/_gallery.scss */
+/* line 51, ../scss/modules/_gallery.scss */
 .image-gallery figcaption a {
   display: block;
   padding: 10px 20px;
   font-weight: 300;
   color: white;
 }
-/* line 55, ../scss/modules/_gallery.scss */
+/* line 56, ../scss/modules/_gallery.scss */
 .image-gallery figcaption a:hover {
   border: none;
 }

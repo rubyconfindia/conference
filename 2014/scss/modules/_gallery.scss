@@ -43,6 +43,7 @@
     background: $blue-light;
     font-size: 18px;
     line-height: 24px;
+    z-index: 20;
     @include box-shadow(0 0 6px $gray);
     
     &:hover, &:active, &:focus { background: $blue;}
