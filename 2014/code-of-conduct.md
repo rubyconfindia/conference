@@ -45,6 +45,18 @@ Harassment and inappropriate behaviour can include (but is not limited to):
 - repeated harassment of others
 - advocating for, or encouraging, any of the above behaviour
 
+In addition to the above the following guidelines are applicable to participants who have purchased tickets that
+include accomodation at The LaLiT Golf & Spa Resort.
+
+- Supreme ticket holders will be required to provide relevant details regarding all persons who will be residing with
+  them at the allocated room to conference organizers as well as Hotel staff.
+- Deluxe and Lite ticket holders will have to reside in their allocated room only; no re-allocations will be allowed
+  without the express permission of conference organizers.
+- Allowing any additional persons to reside in the rooms will constitute inappropriate behaviour.
+- Any violation of the rules of the resort as informed during check-in (including, but not limited to damage of resort
+  property) will be the liability of the respective participant and the resort may take appropriate action against the
+  participant; the conference organizers may not be held resposible for the same.
+
 Any such incidents reported to conference organizers may be dealt with by actions ranging from warning the offender to
 desist from such behaviour to expulsion of the participant from the remainder of the conference without refund or
 rebate in any form.
