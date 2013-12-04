@@ -5,7 +5,7 @@ nav, .page nav{
 
   ul{
     display: inline-block;
-    border: solid 1px $red;
+    border: solid 1px $gray-xlight;
     margin: 0; 
     padding: 0;
     @include border-radius(8px);
@@ -13,19 +13,19 @@ nav, .page nav{
     li{
       display: inline-block;
       margin: 0; padding: 0;
-      border-left: solid 1px $red;
+      border-left: solid 1px $gray-xlight;
 
       &:first-child{border-left: none;}
 
       &:before{display: none;}
       
       a{
-        color: $red;
+        color: $gray;
         display: block;
         padding: 0 10px;
         text-transform: lowercase;
 
-        &:hover{border-bottom: none; color: $blue;}
+        &:hover{border-bottom: none; color: $red;}
       }
       
     }
