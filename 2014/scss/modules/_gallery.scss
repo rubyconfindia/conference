@@ -2,8 +2,8 @@
   overflow: hidden;
   position: relative;
   height: 0;
-  padding-top: 45%;
-  
+  padding-top: 42%;
+
   @media screen and (max-width: 700px) {
     margin-top: 1.5em;
     padding-top: 60%;
@@ -13,12 +13,12 @@
     content: "";
     display: block;
     position: absolute;
-    top: 0;
+    top: -1px;
+    bottom: -1px;
     left: 0;
-    width: 100%;
-    height: 180px;
+    right: 0;
     z-index: 10;
-    background: transparent url('../images/sand-shadow.png') no-repeat top center;
+    background: transparent url('../images/gallery-divider.png') no-repeat top center;
     background-size: 100% auto;
   }
 

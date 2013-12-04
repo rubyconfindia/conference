@@ -1147,7 +1147,7 @@ header h3 a:hover {
   overflow: hidden;
   position: relative;
   height: 0;
-  padding-top: 45%;
+  padding-top: 42%;
 }
 @media screen and (max-width: 700px) {
   /* line 1, ../scss/modules/_gallery.scss */
@@ -1161,12 +1161,12 @@ header h3 a:hover {
   content: "";
   display: block;
   position: absolute;
-  top: 0;
+  top: -1px;
+  bottom: -1px;
   left: 0;
-  width: 100%;
-  height: 180px;
+  right: 0;
   z-index: 10;
-  background: transparent url("../images/sand-shadow.png") no-repeat top center;
+  background: transparent url("../images/gallery-divider.png") no-repeat top center;
   background-size: 100% auto;
 }
 /* line 25, ../scss/modules/_gallery.scss */
@@ -1366,7 +1366,7 @@ nav ul li a:hover, .page nav ul li a:hover {
 
 /* line 22, ../scss/application.scss */
 html {
-  background: #fef0c4 url("../images/texture.png") center center repeat-y;
+  background: #fef0c4 url("../images/texture.png") repeat-y center center;
 }
 
 /* line 23, ../scss/application.scss */
