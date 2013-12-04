@@ -2,11 +2,11 @@
 @import "compass/css3/images";
 
 @import "base/var";
+@import "base/colors";
 @import "base/mixins";
 @import "base/normalize";
 @import "base/susy";
 @import "base/typography";
-@import "base/colors";
 
 @import "modules/syntax";
 @import "modules/sprites";
@@ -15,12 +15,6 @@
 
 html{ background: #FEF0C4 url('../images/texture.png') repeat-y;}
 body { position: relative;}
-
-a {
-	color: $blue;
-	text-decoration: underline;
-	&:hover { color: #a00;}
-}
 
 header{
   display: block;
@@ -32,6 +26,8 @@ header{
 
   @media screen and (max-width: 1600px){ background-size: 100% auto; margin-bottom: 12px; }
 
+  a.github{ position: absolute; top: 0; right: 0; border: none;}
+
   h1{
     display: block;
     width: 100%;
@@ -40,11 +36,11 @@ header{
     margin: 0;
   
     a{
+      color: $red;
       display: block;
-      color: #a00;
-      text-decoration: none;
       font-size: 100px;
       line-height: 0.9em;
+      border: none;
       font-family: "bello-pro", georgia, serif;
       @include text-shadow(1px 1px 1px rgba(black, 0.2));
 
@@ -57,118 +53,51 @@ header{
       span{ display: block;}
 
       &:before{
-        content: ""; margin: 0 auto 20px auto;
+        content: "";margin: 0 auto 20px auto;
         @media screen and (min-width: 900px){ @include sprite-background('logo-large');}
-        @media screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 2) {
-	        background-image: url('../images/sprites-2x-s49afbe8350.png');
-			background-position: 0 -782px;
-			background-repeat: no-repeat;
-			display: block;
-			height: 124px;
-			width: 124px;
-			@include background-size(139px auto);
-        }
-        @media screen and (min-width: 600px) and (max-width: 900px){ @include sprite-background('logo'); margin-bottom: 12px;}
-        @media screen and (max-width: 600px){ 
-         background: url("../images/sprites-2x/logo-small.png") no-repeat left top;
-         height: 48px;
-         width: 48px;
-		 @include background-size(48px auto);
-         margin-bottom: 8px;
-         display: block; 
-        }
+        @media screen and (max-width: 900px){ @include sprite-background('logo'); margin-bottom: 12px;}
       }
     }
   }
 
-  h2{
-    color: rgba(black, 0.6);
-    font-weight: 500;
-	.div {
-		display: inline-block;
-		margin: 0 10px;
-		@media screen and (max-width: 700px) {
-			display: none;
-		}		
-	}
-    a {
-    	text-decoration: none;
-    //  color: #555;
-      /*&:before {
-        content: "\2022";
-        display: inline-block;
-        padding: 0 10px;
-      }*/
-
-	  @media screen and (max-width: 700px){
-        display: block;
-        &:before, &:after{display: none;}
-      }
-    }
-
-  }
-
-  h3.twitter{    
-    a{
-      //font-size: 1.14285em;
-      font-weight: 500;
-
-      &:hover{ }
-    }
-  }
+  h3 a{color: rgba($black, 0.6); font-weight: 700;}
+  h3 a:hover{color: $red;}
 }
+
 .home p {
 	padding-left: 20px;
 	padding-right: 20px;
   text-align: center;
 }
-p.large{
-	color: rgba(black, 0.6);
-	max-width: 640px;
-	font-size: 26px;
-	line-height: 1.230;
-	margin: 0 auto;
-	padding-bottom: 0.9em;
-	text-align: center;
-  @media screen and (max-width: 700px){font-size: 18px; font-weight: 400;}
-
-	& + p {
-		text-align: center;
-		max-width: 552px;
-		margin: 0 auto;
-		padding-bottom:  .8em;
-	}
-}
 
 .button{
-  display: block;
-  font-weight: 300;
+  display: inline-block;
   font-size: 26px;
   line-height: 32px;
   padding:  4px 20px 6px;
-  border: solid 2px #2da4cc;
-  background: #2da4cc;
-  color: white;
-  @include border-radius(4px);
+  margin: 10px;
+  border: solid 2px $gray;
+  color: $gray;
   text-decoration: none;
   text-align: center;
-  margin-bottom: 24px;
-  margin-left: auto;
-  margin-right: auto;
   width: 270px;
+  @include border-radius(8px);
+  
   &:hover{
-    background: #a00;
-    border-color: #a00;
+    background: $red-dark;
+    border-color: $red-dark;
     color: white;
 
     &>.tooltip { display: block; }
   }
 
-  &.alternate {
-    font-weight: 400;
-    background: transparent;
-    color: #2da4cc;
-    &:hover{ color: #a00; border-color: #a00; background: transparent;}
+  &.important{
+    color: $red;
+    font-weight: 700;
+    border-color: $red;
+    border-width: 4px;
+
+    &:hover{color: $red-dark; border-color: $red-dark;}
   }
 
   .tooltip {
@@ -239,54 +168,40 @@ p.large{
     bottom: 20%;
     padding: 10px 20px;
     background: rgba($blue, 0.9);
-	font-size: 18px;
-	line-height: 24px;
+  	font-size: 18px;
+  	line-height: 24px;
   	@include box-shadow(0 0 6px rgba(black, 0.6));
   	a { color: white; text-decoration: none;}
     &:hover, &:active { background: $blue;}
-  	@media screen and (max-width: 700px) {
-	  	font-size: 14px;
-	  	right: 5%;
-  	}
+
+  	@media screen and (max-width: 700px) { font-size: 14px; right: 5%;}
   }
 }
 
 .page {
 	padding: 0;
 	margin: 0 auto;
-	iframe {
-		border: none;
-		height: 600px;
-		
-    @media screen and (max-width: 700px) {
-			height: 640px;
-		}
+	iframe { border: none; height: 600px;		
+    @media screen and (max-width: 700px) { height: 640px;}
 	}
-	ol {
-    	padding: 0;
-    //	list-style: outside decimal;
-    //    list-style-image: url('http://localhost.rubyconfindia.org/2014/images/sprites/waterdrop_2.png')
-    }
+  
+	ol { padding: 0;}
 	li {
 		position: relative;
 		list-style: none;
-	//	list-style: decimal outside;
 		padding-left: 24px;
 		padding-bottom: 8px;
-		&:before {
+		
+    &:before {
 			position: absolute;
 			left: 0;
 			top: 1px;
 			content: url("../images/sprites/waterdrop_2.png");
 			height: 24px;
 			width: 24px;
-		//	background: url("../images/sprites/waterdrop_2.png") no-repeat center center;
-		//	@include background-size(100% auto);
 		}
-		h3 {
-			padding-top: 4px;
-			font-weight: 500;
-		}
+
+		h3 { padding-top: 4px; font-weight: 500;}
 	}
 }
 .buy-tickets {

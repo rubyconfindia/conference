@@ -1,31 +1,36 @@
 body {
 	font: 16px/1.5 $sans;
-	@media screen and (max-width: 700px) {
-		font-size: 14px;
-	}
+
+	@media screen and (max-width: 700px) { font-size: 14px;}
 }
 h1, h2, h3, h4, h5, h6, p, ul {
 	margin: 0;
-	font-weight: normal;
+	line-height: 1.5;
+	font-weight: 300;
+	color: $gray;
 }
 
 h2 {
 	font-size: 34px;
-	line-height: 1.1764;
 	padding: 0.69em 0 0.413em;
 	@media screen and (max-width: 900px){font-size: 21px;}
 	@media screen and (max-width: 700px){font-weight: 300;}
 }
 
 h3 {
-	font-size: 21px;
-	line-height: 1.14285714285714;
+	font-size: 24px;
 	padding: 0.76em 0 .39em;
 	@media screen and (max-width: 900px){font-size: 16px;}
 }
+
 p {
+	font-size: 18px;
 	padding-bottom: 1.5em;
 }
+
 strong, .strong {
 	font-weight: bold;
 }
+
+a{color: $red; text-decoration: none;}
+a:hover, a:focus{color: $red-dark; border-bottom: dotted 1px; }

@@ -9,7 +9,9 @@
       left: 12%;
       bottom: 25%;
     }
+  }
 
+  header{
     &:before{left: 28%; bottom: 40%;}
 
     h1:before{
@@ -17,19 +19,16 @@
       bottom: -14%; right: 4%; left: auto;
     }
 
-    h2:before{
-      @include sprite-background("waterdrop_1");
-      bottom: 30%; left: 23%;
-    }
+    h3{position: relative; padding-bottom: 60px;}
 
     h3:before{
       @include sprite-background("waterdrop_4");
-      bottom: 23%; left: 24%;
+      bottom: 10px; left: 45%;
     }
 
     h3:after{
       @include sprite-background("waterdrop_2");
-      bottom: 25%; left: 29%;
+      bottom: 10px; left: 55%;
     }
 
     h2:after{
@@ -46,6 +45,5 @@
       @include sprite-background("starfish_small");
       top: 65%; right: 17%; left: auto;
     }
-
   }
 }
