@@ -53,9 +53,9 @@ include accomodation at The LaLiT Golf & Spa Resort.
 - Deluxe and Lite ticket holders will have to reside in their allocated room only; no re-allocations will be allowed
   without the express permission of conference organizers.
 - Allowing any additional persons to reside in the rooms will constitute inappropriate behaviour.
-- Any violation of the rules of the resort as informed during check-in (including, but not limited to damage of resort
-  property) will be the liability of the respective participant and the resort may take appropriate action against the
-  participant; the conference organizers may not be held resposible for the same.
+- Attendees will be held responsible for any violation of the rules of the resort (including, but not limited to damage
+  of resort property) and the resort may take appropriate action against the participant; the conference organizers may
+  not be held resposible for the same.
 
 Any such incidents reported to conference organizers may be dealt with by actions ranging from warning the offender to
 desist from such behaviour to expulsion of the participant from the remainder of the conference without refund or
