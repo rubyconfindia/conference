@@ -1,11 +1,12 @@
 nav, .page nav{
+  position: absolute;
+  top: 10px;
+  left: 10px;
   display: block;
   text-align: center;
-  margin: 20px 0;
 
   ul{
     display: inline-block;
-    border: solid 1px $gray-xlight;
     margin: 0; 
     padding: 0;
     @include border-radius(8px);
@@ -20,7 +21,7 @@ nav, .page nav{
       &:before{display: none;}
       
       a{
-        color: $gray;
+        color: $white;
         display: block;
         padding: 0 10px;
         text-transform: lowercase;
