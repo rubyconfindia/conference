@@ -24,20 +24,12 @@
 html{ background: #FEF0C4 url('../images/texture.png')  repeat-y center center;}
 body { position: relative;}
 
-.home p {
-	padding-left: 20px;
-	padding-right: 20px;
-  text-align: center;
-}
-
 .page {
 	padding: 0 20px 200px 20px;
 	margin: 0 auto;
   max-width: 960px;
-	
-  iframe { border: none; height: 600px;		
-    @media screen and (max-width: 700px) { height: 640px;}
-	}
+  position: relative;
+  top: -200px;
   
 	ul { padding: 0;}
 	li {

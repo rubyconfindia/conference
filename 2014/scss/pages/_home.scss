@@ -1,5 +1,36 @@
 .home{
+  h1 {
+    width: 100%;
+    padding: 8% 0 0 0;
+
+    a {
+      font-size: 100px;
+
+      @media screen and (max-width: 900px){font-size: 76px;}
+      @media screen and (max-width: 800px){font-size: 68px;}
+      @media screen and (max-width: 700px){font-size: 54px; font-weight: normal;}
+      @media screen and (max-width: 600px){font-size: 47px;}
+      @media screen and (max-width: 500px){font-size: 34px;}
+
+      &:before {
+        content: "";margin: 0 auto 20px auto;
+        @media screen and (min-width: 900px){ @include sprite-background('logo-large');}
+        @media screen and (max-width: 900px){ @include sprite-background('logo'); margin-bottom: 12px;}
+      }
+    }
+  }
+
   h3{text-align: center;}
+
+  p {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  .page {
+    top: 0px
+  }
 }
 
 ul.speakers, ul.contact, ul.sponsors{
