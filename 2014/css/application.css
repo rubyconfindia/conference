@@ -1454,6 +1454,11 @@ ul.sponsors.silver li {
   border-radius: 4px;
 }
 
+/* line 1, ../scss/pages/_faq.scss */
+.faq .detail {
+  margin: 50px auto 0px auto;
+}
+
 /* line 14, ../scss/base/susy/_grid.scss */
 * {
   -webkit-box-sizing: border-box;
@@ -1461,45 +1466,45 @@ ul.sponsors.silver li {
   box-sizing: border-box;
 }
 
-/* line 23, ../scss/application.scss */
+/* line 24, ../scss/application.scss */
 html {
   background: #fef0c4 url("../images/texture.png") repeat-y center center;
 }
 
-/* line 24, ../scss/application.scss */
+/* line 25, ../scss/application.scss */
 body {
   position: relative;
 }
 
-/* line 26, ../scss/application.scss */
+/* line 27, ../scss/application.scss */
 .home p {
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
 }
 
-/* line 32, ../scss/application.scss */
+/* line 33, ../scss/application.scss */
 .page {
   padding: 0 20px 200px 20px;
   margin: 0 auto;
   max-width: 960px;
 }
-/* line 37, ../scss/application.scss */
+/* line 38, ../scss/application.scss */
 .page iframe {
   border: none;
   height: 600px;
 }
 @media screen and (max-width: 700px) {
-  /* line 37, ../scss/application.scss */
+  /* line 38, ../scss/application.scss */
   .page iframe {
     height: 640px;
   }
 }
-/* line 41, ../scss/application.scss */
+/* line 42, ../scss/application.scss */
 .page ul {
   padding: 0;
 }
-/* line 42, ../scss/application.scss */
+/* line 43, ../scss/application.scss */
 .page li {
   position: relative;
   list-style: none;
@@ -1507,7 +1512,7 @@ body {
   padding: 0 0 0 24px;
   margin: 5px 0 0 0;
 }
-/* line 49, ../scss/application.scss */
+/* line 50, ../scss/application.scss */
 .page li:before {
   position: absolute;
   left: 0;
@@ -1516,13 +1521,13 @@ body {
   height: 24px;
   width: 24px;
 }
-/* line 58, ../scss/application.scss */
+/* line 59, ../scss/application.scss */
 .page li h3 {
   padding-top: 4px;
   font-weight: 500;
 }
 
-/* line 62, ../scss/application.scss */
+/* line 63, ../scss/application.scss */
 #event {
   margin-bottom: 3em !important;
 }
