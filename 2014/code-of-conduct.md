@@ -124,10 +124,6 @@ _This section is not to be published; if at all, just a list of references could
   get together in person.
 - Speakers and exhibitors should use good judgment;
 
-[Flickr Community Guidelines]()
----
-- Don’t be creepy: You know the guy. Don't be that guy
-
 
 [openSUSE](http://en.opensuse.org/openSUSE:Conference_code_of_conduct)
 ---
