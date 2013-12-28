@@ -1165,6 +1165,7 @@ header h3 a:hover {
 
 /* line 1, ../scss/modules/_button.scss */
 .button {
+  position: relative;
   display: inline-block;
   font-size: 26px;
   line-height: 32px;
@@ -1181,20 +1182,53 @@ header h3 a:hover {
   -o-border-radius: 8px;
   border-radius: 8px;
 }
-/* line 14, ../scss/modules/_button.scss */
+/* line 15, ../scss/modules/_button.scss */
 .button:hover {
   border: solid 2px;
   color: #2da4cc;
 }
-/* line 16, ../scss/modules/_button.scss */
+/* line 17, ../scss/modules/_button.scss */
 .button.important {
   color: #aa0000;
   border-width: 4px;
   font-weight: 700;
 }
-/* line 21, ../scss/modules/_button.scss */
+/* line 22, ../scss/modules/_button.scss */
 .button.important:hover {
   color: #2da4cc;
+}
+/* line 25, ../scss/modules/_button.scss */
+.button span.tooltip {
+  position: absolute;
+  display: block;
+  bottom: -42px;
+  font-size: 16px;
+  text-align: center;
+  width: 200px;
+  left: -1000em;
+  margin-left: -100px;
+  background: #2da4cc;
+  color: white;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 39, ../scss/modules/_button.scss */
+.button span.tooltip:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  margin-left: -6px;
+  border: solid 6px transparent;
+  border-bottom-color: #2da4cc;
+}
+/* line 51, ../scss/modules/_button.scss */
+.button:hover span.tooltip {
+  left: 50%;
 }
 
 /* line 1, ../scss/modules/_nav.scss */
