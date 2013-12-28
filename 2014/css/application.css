@@ -1026,10 +1026,10 @@ header a.github {
 /* line 13, ../scss/modules/_header.scss */
 header h1 {
   display: block;
-  width: 18%;
   font-weight: bold;
   padding: 5% 0% 8% 0%;
-  margin: 0 auto;
+  margin: 20px 0;
+  text-align: center;
 }
 /* line 20, ../scss/modules/_header.scss */
 header h1 a {
@@ -1528,20 +1528,101 @@ ul.sponsors.silver li {
   }
 }
 
-/* line 34, ../scss/pages/_tickets.scss */
-.page iframe {
-  max-width: 640px;
-  height: 670px;
+/* line 36, ../scss/pages/_tickets.scss */
+.tickets .terms, .tickets iframe {
+  background: white;
   margin: 75px auto auto;
-  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
+}
+/* line 41, ../scss/pages/_tickets.scss */
+.tickets .terms {
+  position: relative;
+  display: block;
+  background: white;
+  height: 670px;
+  overflow: auto;
+  padding: 20px;
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+}
+/* line 51, ../scss/pages/_tickets.scss */
+.tickets .terms h2, .tickets .terms h3 {
+  font-weight: bold;
+}
+/* line 52, ../scss/pages/_tickets.scss */
+.tickets .terms h2 {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+/* line 53, ../scss/pages/_tickets.scss */
+.tickets .terms h3 {
+  font-size: 14px;
+}
+/* line 54, ../scss/pages/_tickets.scss */
+.tickets .terms ul li, .tickets .terms p {
+  font-size: 13px;
+}
+/* line 57, ../scss/pages/_tickets.scss */
+.tickets iframe {
+  height: 670px;
+  border: none !important;
+  width: 66.10169%;
   float: right;
+  margin-right: 0;
+  *margin-left: -1em;
+  display: inline;
+}
+@media screen and (max-width: 960px) {
+  /* line 64, ../scss/pages/_tickets.scss */
+  .tickets .terms {
+    width: 40.67797%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline;
+  }
+  /* line 65, ../scss/pages/_tickets.scss */
+  .tickets iframe {
+    width: 57.62712%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 69, ../scss/pages/_tickets.scss */
+  .tickets .terms {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline;
+  }
+  /* line 70, ../scss/pages/_tickets.scss */
+  .tickets iframe {
+    width: 49.15254%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline;
+  }
+}
+@media screen and (max-width: 720px) {
+  /* line 74, ../scss/pages/_tickets.scss */
+  .tickets .terms {
+    height: auto;
+  }
+  /* line 75, ../scss/pages/_tickets.scss */
+  .tickets .terms, .tickets iframe {
+    float: none;
+    width: auto;
+    margin-right: auto;
+    *margin-left: auto;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
 /* line 1, ../scss/pages/_faq.scss */
@@ -1574,11 +1655,17 @@ body {
   position: relative;
   top: -110px;
 }
-/* line 34, ../scss/application.scss */
+@media screen and (max-width: 720px) {
+  /* line 27, ../scss/application.scss */
+  .page {
+    top: -50px;
+  }
+}
+/* line 36, ../scss/application.scss */
 .page ul {
   padding: 0;
 }
-/* line 35, ../scss/application.scss */
+/* line 37, ../scss/application.scss */
 .page li {
   position: relative;
   list-style: none;
@@ -1586,7 +1673,7 @@ body {
   padding: 0 0 0 24px;
   margin: 5px 0 0 0;
 }
-/* line 42, ../scss/application.scss */
+/* line 44, ../scss/application.scss */
 .page li:before {
   position: absolute;
   left: 0;
@@ -1595,13 +1682,13 @@ body {
   height: 24px;
   width: 24px;
 }
-/* line 51, ../scss/application.scss */
+/* line 53, ../scss/application.scss */
 .page li h3 {
   padding-top: 4px;
   font-weight: 500;
 }
 
-/* line 55, ../scss/application.scss */
+/* line 57, ../scss/application.scss */
 #event {
   margin-bottom: 3em !important;
 }

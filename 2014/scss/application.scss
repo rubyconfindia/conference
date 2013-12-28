@@ -31,6 +31,8 @@ body { position: relative;}
   position: relative;
   top: -110px;
 
+  @media screen and (max-width: 720px){top: -50px;}
+
 	ul { padding: 0;}
 	li {
 		position: relative;

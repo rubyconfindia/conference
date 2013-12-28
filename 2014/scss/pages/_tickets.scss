@@ -31,13 +31,52 @@
   }
 }
 
-.page iframe {
-  max-width: 640px;
-  height: 670px;
-  margin: 75px auto auto;
-  @include box-shadow(0 0 6px 0 rgba(black, 0.3));
-  @include border-radius(4px);
-  float: right;
+.tickets{
 
-  //@media screen and (max-width: 700px) { height: 640px;}
+  .terms, iframe{
+    background: $white;
+    margin: 75px auto auto;
+  }
+
+  .terms{
+    position: relative;
+    display: block;
+    background: $white;
+    height: 670px;
+    overflow: auto;
+    padding: 20px;
+
+    @include span-columns(4);
+
+    h2, h3{font-weight: bold;}
+    h2{font-size: 18px; margin: 0; padding: 0;}
+    h3{font-size: 14px;}
+    ul li, p{font-size: 13px;}
+  }
+
+  iframe {
+    height: 670px;
+    border: none !important;
+    @include span-columns(8 omega);
+  }
+
+  @media screen and (max-width: 960px) {
+    .terms{@include span-columns(5);}
+    iframe{@include span-columns(7 omega);}
+  }
+
+  @media screen and (max-width: 800px) {
+    .terms{@include span-columns(6);}
+    iframe{@include span-columns(6 omega);}
+  }
+
+  @media screen and (max-width: 720px) {
+    .terms{height: auto;}
+    .terms, iframe{
+      @include reset-columns;
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
 }
+
