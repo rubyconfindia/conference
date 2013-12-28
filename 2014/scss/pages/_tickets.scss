@@ -42,7 +42,7 @@
     position: relative;
     display: block;
     background: $white;
-    height: 670px;
+    height: 750px;
     overflow: auto;
     padding: 20px;
 
@@ -55,7 +55,7 @@
   }
 
   iframe {
-    height: 670px;
+    height: 750px;
     border: none !important;
     @include span-columns(8 omega);
   }

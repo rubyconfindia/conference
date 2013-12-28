@@ -1538,7 +1538,7 @@ ul.sponsors.silver li {
   position: relative;
   display: block;
   background: white;
-  height: 670px;
+  height: 750px;
   overflow: auto;
   padding: 20px;
   width: 32.20339%;
@@ -1566,7 +1566,7 @@ ul.sponsors.silver li {
 }
 /* line 57, ../scss/pages/_tickets.scss */
 .tickets iframe {
-  height: 670px;
+  height: 750px;
   border: none !important;
   width: 66.10169%;
   float: right;
