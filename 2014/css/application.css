@@ -104,7 +104,7 @@ a:hover {
  */
 /* line 108, ../scss/base/_normalize.scss */
 h1 {
-  font-size: 2em;
+  font-size: 40px;
   margin: 0.67em 0;
 }
 
@@ -456,7 +456,7 @@ h3 {
 /* line 26, ../scss/base/_typography.scss */
 p, li {
   font-size: 18px;
-  padding-bottom: 1.5em;
+  padding-top: 1.5em;
 }
 
 /* line 31, ../scss/base/_typography.scss */

@@ -1,19 +1,15 @@
 Code of Conduct
 ===
 
-TL; DR
----
-**Be nice to everyone.**
-
 Short Version
 ---
+
 RubyConf India is a community conference intended for networking and collaboration in the developer community. We
 value the participation of each member of the community and want all participants to have an enjoyable and fulfilling
-experience. 
-
-Any harassment or inappropriate behaviour by any participant during the course of the conference, at the venue or
-otherwise, will not be tolerated. Attendees violating these rules may be asked to leave the conference without a refund
-at the sole discretion of the conference organizers.
+experience. We are committed to providing a safe environment for everyone regardless of gender, race, nationality,
+religion, disability, appearance or sexual orientation. Any misconduct by any participant during the course of the
+conference, at the venue or otherwise, will not be tolerated. Attendees violating these rules may be asked to leave the
+conference without a refund at the sole discretion of the conference organizers.
 
 Thank you for helping make this a welcoming, friendly event for all.
 
@@ -75,7 +71,8 @@ If a participant is the victim of or witnesses any harassment or inappropriate b
 - immediately bring the incident to the attention of the conference organizers
   (note: organizers will be wearing distinguishing clothing which will be announced during the welcome address)
 - preferably provide all relevant details of the incident to the organizers in writing
-- refrain from posting incident online or any form of public shaming
+- refrain from posting incident online or any form of public shaming before the conference organizers have been given an
+opportunity to redress the matter
 
 Responsibility of Sponsors
 ---
@@ -126,10 +123,6 @@ _This section is not to be published; if at all, just a list of references could
   everyone can focus on the conference itself, and the great networking and community richness that can happen when we
   get together in person.
 - Speakers and exhibitors should use good judgment;
-
-[Flickr Community Guidelines]()
----
-- Don’t be creepy: You know the guy. Don't be that guy
 
 
 [openSUSE](http://en.opensuse.org/openSUSE:Conference_code_of_conduct)
