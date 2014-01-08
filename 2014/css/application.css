@@ -1384,13 +1384,13 @@ nav ul li a:hover, .page nav ul li a:hover {
 }
 
 /* line 36, ../scss/pages/_home.scss */
-ul.speakers, ul.contact, ul.sponsors {
+ul.speakers, ul.contact, ul.sponsors, ul.organizers {
   margin: 0;
   padding: 0;
   text-align: center;
 }
 /* line 40, ../scss/pages/_home.scss */
-ul.speakers li, ul.contact li, ul.sponsors li {
+ul.speakers li, ul.contact li, ul.sponsors li, ul.organizers li {
   display: inline-block;
   width: 140px;
   text-align: center;
@@ -1399,7 +1399,7 @@ ul.speakers li, ul.contact li, ul.sponsors li {
   line-height: 1em;
 }
 /* line 47, ../scss/pages/_home.scss */
-ul.speakers li img, ul.contact li img, ul.sponsors li img {
+ul.speakers li img, ul.contact li img, ul.sponsors li img, ul.organizers li img {
   display: inline-block;
   width: 120px;
   height: 120px;
@@ -1411,31 +1411,31 @@ ul.speakers li img, ul.contact li img, ul.sponsors li img {
   border: solid 4px white;
 }
 /* line 54, ../scss/pages/_home.scss */
-ul.speakers li:before, ul.contact li:before, ul.sponsors li:before {
+ul.speakers li:before, ul.contact li:before, ul.sponsors li:before, ul.organizers li:before {
   display: none;
 }
 /* line 57, ../scss/pages/_home.scss */
-ul.speakers h4, ul.contact h4, ul.sponsors h4 {
+ul.speakers h4, ul.contact h4, ul.sponsors h4, ul.organizers h4 {
   font-size: 16px;
   font-weight: 700;
 }
 /* line 58, ../scss/pages/_home.scss */
-ul.speakers a, ul.contact a, ul.sponsors a {
+ul.speakers a, ul.contact a, ul.sponsors a, ul.organizers a {
   font-size: 16px;
 }
 /* line 59, ../scss/pages/_home.scss */
-ul.speakers .phone, ul.contact .phone, ul.sponsors .phone {
+ul.speakers .phone, ul.contact .phone, ul.sponsors .phone, ul.organizers .phone {
   color: rgba(0, 0, 0, 0.6);
 }
 
 /* line 63, ../scss/pages/_home.scss */
-ul.sponsors li {
+ul.sponsors li, ul.organizers li {
   display: inline-block;
   width: 150px;
   margin: 15px;
 }
 /* line 68, ../scss/pages/_home.scss */
-ul.sponsors li img {
+ul.sponsors li img, ul.organizers li img {
   background: white;
   margin: 0;
   width: auto;
@@ -1450,21 +1450,21 @@ ul.sponsors li img {
   box-shadow: 0 0 0 4px white, 0 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 /* line 77, ../scss/pages/_home.scss */
-ul.sponsors li a:hover {
+ul.sponsors li a:hover, ul.organizers li a:hover {
   border: none;
 }
 /* line 79, ../scss/pages/_home.scss */
-ul.sponsors li a:hover img {
+ul.sponsors li a:hover img, ul.organizers li a:hover img {
   -webkit-box-shadow: 0 0 0 4px white, 0 0 4px 4px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0 0 0 4px white, 0 0 4px 4px rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 0 4px white, 0 0 4px 4px rgba(0, 0, 0, 0.4);
 }
 /* line 85, ../scss/pages/_home.scss */
-ul.sponsors.gold li {
+ul.sponsors.gold li, ul.organizers.gold li {
   width: 350px;
 }
 /* line 86, ../scss/pages/_home.scss */
-ul.sponsors.silver li {
+ul.sponsors.silver li, ul.organizers.silver li {
   width: 200px;
 }
 

@@ -33,7 +33,7 @@
   }
 }
 
-ul.speakers, ul.contact, ul.sponsors{
+ul.speakers, ul.contact, ul.sponsors, ul.organizers{
   margin: 0; padding: 0;
   text-align: center;
 
@@ -59,7 +59,7 @@ ul.speakers, ul.contact, ul.sponsors{
   .phone{color: $gray;}
 }
 
-ul.sponsors{
+ul.sponsors, ul.organizers{
   li{
     display: inline-block;
     width: 150px;
