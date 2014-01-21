@@ -1459,16 +1459,21 @@ ul.sponsors li a:hover img, ul.organizers li a:hover img {
   -moz-box-shadow: 0 0 0 4px white, 0 0 4px 4px rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 0 4px white, 0 0 4px 4px rgba(0, 0, 0, 0.4);
 }
-/* line 85, ../scss/pages/_home.scss */
-ul.sponsors.gold li, ul.organizers.gold li {
+
+/* line 87, ../scss/pages/_home.scss */
+ul.sponsors.gold li {
   width: 350px;
 }
-/* line 86, ../scss/pages/_home.scss */
-ul.sponsors.silver li, ul.organizers.silver li {
+/* line 88, ../scss/pages/_home.scss */
+ul.sponsors.silver li {
   width: 200px;
 }
-
 /* line 89, ../scss/pages/_home.scss */
+ul.sponsors.other li {
+  width: 180px;
+}
+
+/* line 92, ../scss/pages/_home.scss */
 h3.section {
   margin-top: 50px;
 }

@@ -81,9 +81,12 @@ ul.sponsors, ul.organizers{
       }
     }
   }
+}
 
+ul.sponsors {
   &.gold li{width: 350px;}
   &.silver li{width: 200px;}
+  &.other li{width: 180px;}
 }
 
 h3.section { margin-top: 50px; }
