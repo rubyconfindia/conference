@@ -444,7 +444,7 @@ h2 {
 /* line 20, ../scss/base/_typography.scss */
 h3 {
   font-size: 24px;
-  padding: 0.76em 0 .39em;
+  padding: 0.35em 0.0em 0.15em;
 }
 @media screen and (max-width: 900px) {
   /* line 20, ../scss/base/_typography.scss */
@@ -1432,7 +1432,7 @@ ul.speakers .phone, ul.contact .phone, ul.sponsors .phone, ul.organizers .phone 
 ul.sponsors li, ul.organizers li {
   display: inline-block;
   width: 150px;
-  margin: 15px;
+  margin: 5px 10px;
 }
 /* line 68, ../scss/pages/_home.scss */
 ul.sponsors li img, ul.organizers li img {
