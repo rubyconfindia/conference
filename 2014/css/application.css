@@ -1243,7 +1243,7 @@ nav, .page nav {
   position: absolute;
   text-align: center;
   margin: 0;
-  top: 5px;
+  top: 0;
   left: 0;
   right: 0;
 }
@@ -1266,16 +1266,21 @@ nav ul li:before, .page nav ul li:before {
 }
 /* line 23, ../scss/modules/_nav.scss */
 nav ul li a, .page nav ul li a {
-  color: white;
+  color: rgba(0, 0, 0, 0.5);
   display: block;
-  padding: 0 10px;
+  padding: 0 5px;
   text-transform: lowercase;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
 }
 /* line 30, ../scss/modules/_nav.scss */
 nav ul li a:hover, .page nav ul li a:hover {
   border-bottom: none;
-  text-shadow: 1px 1px 1px white;
+}
+@media screen and (max-width: 700px) {
+  /* line 15, ../scss/modules/_nav.scss */
+  nav ul li, .page nav ul li {
+    font-size: 15px;
+  }
 }
 
 /* line 2, ../scss/pages/_home.scss */
