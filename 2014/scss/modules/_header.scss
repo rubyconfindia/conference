@@ -17,18 +17,26 @@ header{
   h1{
     display: block;
     font-weight: bold;
-    padding: 5% 0% 8% 0%;
+    padding: 5% 0%;
     margin: 20px 0;
     text-align: center;
+
+    @media screen and (max-width: 500px){padding: 8% 0% 5% 0%;}
 
     a{
       color: $red;
       display: block;
-      font-size: 70px;
+      font-size: 100px;
       line-height: 0.9em;
       border: none;
       font-family: "bello-pro", georgia, serif;
       @include text-shadow(1px 1px 1px rgba(black, 0.2));
+
+      @media screen and (max-width: 900px){font-size: 76px;}
+      @media screen and (max-width: 800px){font-size: 68px;}
+      @media screen and (max-width: 700px){font-size: 54px; font-weight: normal;}
+      @media screen and (max-width: 600px){font-size: 47px;}
+      @media screen and (max-width: 500px){font-size: 34px;}
 
       span{ display: block;}
 
@@ -36,6 +44,8 @@ header{
         content: "";
         margin: 0 auto 12px auto;
         @include sprite-background('logo');
+        @media screen and (min-width: 900px){ @include sprite-background('logo-large');}
+        @media screen and (max-width: 900px){ @include sprite-background('logo'); margin-bottom: 12px;}
       }
 
       &:hover{

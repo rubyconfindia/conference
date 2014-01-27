@@ -1033,25 +1033,62 @@ header a.github {
 header h1 {
   display: block;
   font-weight: bold;
-  padding: 5% 0% 8% 0%;
+  padding: 5% 0%;
   margin: 20px 0;
   text-align: center;
 }
-/* line 24, ../scss/modules/_header.scss */
+@media screen and (max-width: 500px) {
+  /* line 17, ../scss/modules/_header.scss */
+  header h1 {
+    padding: 8% 0% 5% 0%;
+  }
+}
+/* line 26, ../scss/modules/_header.scss */
 header h1 a {
   color: #aa0000;
   display: block;
-  font-size: 70px;
+  font-size: 100px;
   line-height: 0.9em;
   border: none;
   font-family: "bello-pro", georgia, serif;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
-/* line 33, ../scss/modules/_header.scss */
+@media screen and (max-width: 900px) {
+  /* line 26, ../scss/modules/_header.scss */
+  header h1 a {
+    font-size: 76px;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 26, ../scss/modules/_header.scss */
+  header h1 a {
+    font-size: 68px;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 26, ../scss/modules/_header.scss */
+  header h1 a {
+    font-size: 54px;
+    font-weight: normal;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 26, ../scss/modules/_header.scss */
+  header h1 a {
+    font-size: 47px;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* line 26, ../scss/modules/_header.scss */
+  header h1 a {
+    font-size: 34px;
+  }
+}
+/* line 41, ../scss/modules/_header.scss */
 header h1 a span {
   display: block;
 }
-/* line 35, ../scss/modules/_header.scss */
+/* line 43, ../scss/modules/_header.scss */
 header h1 a:before {
   content: "";
   margin: 0 auto 12px auto;
@@ -1064,7 +1101,7 @@ header h1 a:before {
   width: 84px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
-  /* line 35, ../scss/modules/_header.scss */
+  /* line 43, ../scss/modules/_header.scss */
   header h1 a:before {
     background-image: url('../images/sprites-2x-s49afbe8350.png');
     background-size: 140px 1380px;
@@ -1073,18 +1110,63 @@ header h1 a:before {
     width: 84px;
   }
 }
-/* line 41, ../scss/modules/_header.scss */
+@media screen and (min-width: 900px) {
+  /* line 43, ../scss/modules/_header.scss */
+  header h1 a:before {
+    background-image: url('../images/sprites-s81af367ff4.png');
+    background-position: 0 -789px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    height: 124px;
+    width: 124px;
+  }
+}
+@media screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 900px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 900px) and (min-device-pixel-ratio: 2) {
+  /* line 43, ../scss/modules/_header.scss */
+  header h1 a:before {
+    background-image: url('../images/sprites-2x-s49afbe8350.png');
+    background-size: 140px 1380px;
+    background-position: 0 -789px;
+    height: 124px;
+    width: 124px;
+  }
+}
+@media screen and (max-width: 900px) {
+  /* line 43, ../scss/modules/_header.scss */
+  header h1 a:before {
+    background-image: url('../images/sprites-s81af367ff4.png');
+    background-position: 0 -450px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    height: 85px;
+    width: 84px;
+    margin-bottom: 12px;
+  }
+}
+@media screen and (max-width: 900px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 900px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (max-width: 900px) and (min-device-pixel-ratio: 2) {
+  /* line 43, ../scss/modules/_header.scss */
+  header h1 a:before {
+    background-image: url('../images/sprites-2x-s49afbe8350.png');
+    background-size: 140px 1380px;
+    background-position: 0 -450px;
+    height: 85px;
+    width: 84px;
+  }
+}
+/* line 51, ../scss/modules/_header.scss */
 header h1 a:hover {
   color: #aa0000;
   border: none;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
-/* line 49, ../scss/modules/_header.scss */
+/* line 59, ../scss/modules/_header.scss */
 header h3 a {
   color: rgba(0, 0, 0, 0.6);
   font-weight: 700;
 }
-/* line 50, ../scss/modules/_header.scss */
+/* line 60, ../scss/modules/_header.scss */
 header h3 a:hover {
   color: #aa0000;
 }
@@ -1284,117 +1366,27 @@ nav ul li a:hover, .page nav ul li a:hover {
 }
 
 /* line 2, ../scss/pages/_home.scss */
-.home h1 {
-  width: 100%;
-  padding: 8% 0 0 0;
-}
-/* line 6, ../scss/pages/_home.scss */
-.home h1 a {
-  font-size: 100px;
-}
-@media screen and (max-width: 900px) {
-  /* line 6, ../scss/pages/_home.scss */
-  .home h1 a {
-    font-size: 76px;
-  }
-}
-@media screen and (max-width: 800px) {
-  /* line 6, ../scss/pages/_home.scss */
-  .home h1 a {
-    font-size: 68px;
-  }
-}
-@media screen and (max-width: 700px) {
-  /* line 6, ../scss/pages/_home.scss */
-  .home h1 a {
-    font-size: 54px;
-    font-weight: normal;
-  }
-}
-@media screen and (max-width: 600px) {
-  /* line 6, ../scss/pages/_home.scss */
-  .home h1 a {
-    font-size: 47px;
-  }
-}
-@media screen and (max-width: 500px) {
-  /* line 6, ../scss/pages/_home.scss */
-  .home h1 a {
-    font-size: 34px;
-  }
-}
-/* line 15, ../scss/pages/_home.scss */
-.home h1 a:before {
-  content: "";
-  margin: 0 auto 20px auto;
-}
-@media screen and (min-width: 900px) {
-  /* line 15, ../scss/pages/_home.scss */
-  .home h1 a:before {
-    background-image: url('../images/sprites-s81af367ff4.png');
-    background-position: 0 -789px;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    display: block;
-    height: 124px;
-    width: 124px;
-  }
-}
-@media screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 900px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 900px) and (min-device-pixel-ratio: 2) {
-  /* line 15, ../scss/pages/_home.scss */
-  .home h1 a:before {
-    background-image: url('../images/sprites-2x-s49afbe8350.png');
-    background-size: 140px 1380px;
-    background-position: 0 -789px;
-    height: 124px;
-    width: 124px;
-  }
-}
-@media screen and (max-width: 900px) {
-  /* line 15, ../scss/pages/_home.scss */
-  .home h1 a:before {
-    background-image: url('../images/sprites-s81af367ff4.png');
-    background-position: 0 -450px;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    display: block;
-    height: 85px;
-    width: 84px;
-    margin-bottom: 12px;
-  }
-}
-@media screen and (max-width: 900px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 900px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (max-width: 900px) and (min-device-pixel-ratio: 2) {
-  /* line 15, ../scss/pages/_home.scss */
-  .home h1 a:before {
-    background-image: url('../images/sprites-2x-s49afbe8350.png');
-    background-size: 140px 1380px;
-    background-position: 0 -450px;
-    height: 85px;
-    width: 84px;
-  }
-}
-/* line 23, ../scss/pages/_home.scss */
 .home h3 {
   text-align: center;
 }
-/* line 25, ../scss/pages/_home.scss */
+/* line 4, ../scss/pages/_home.scss */
 .home p {
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
 }
-/* line 31, ../scss/pages/_home.scss */
+/* line 10, ../scss/pages/_home.scss */
 .home .page {
   top: 0px;
 }
 
-/* line 36, ../scss/pages/_home.scss */
+/* line 15, ../scss/pages/_home.scss */
 ul.speakers, ul.contact, ul.sponsors, ul.organizers {
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 40, ../scss/pages/_home.scss */
+/* line 19, ../scss/pages/_home.scss */
 ul.speakers li, ul.contact li, ul.sponsors li, ul.organizers li {
   display: inline-block;
   width: 140px;
@@ -1403,7 +1395,7 @@ ul.speakers li, ul.contact li, ul.sponsors li, ul.organizers li {
   margin: 10px;
   line-height: 1em;
 }
-/* line 47, ../scss/pages/_home.scss */
+/* line 26, ../scss/pages/_home.scss */
 ul.speakers li img, ul.contact li img, ul.sponsors li img, ul.organizers li img {
   display: inline-block;
   width: 120px;
@@ -1415,31 +1407,31 @@ ul.speakers li img, ul.contact li img, ul.sponsors li img, ul.organizers li img 
   border-radius: 60px;
   border: solid 4px white;
 }
-/* line 54, ../scss/pages/_home.scss */
+/* line 33, ../scss/pages/_home.scss */
 ul.speakers li:before, ul.contact li:before, ul.sponsors li:before, ul.organizers li:before {
   display: none;
 }
-/* line 57, ../scss/pages/_home.scss */
+/* line 36, ../scss/pages/_home.scss */
 ul.speakers h4, ul.contact h4, ul.sponsors h4, ul.organizers h4 {
   font-size: 16px;
   font-weight: 700;
 }
-/* line 58, ../scss/pages/_home.scss */
+/* line 37, ../scss/pages/_home.scss */
 ul.speakers a, ul.contact a, ul.sponsors a, ul.organizers a {
   font-size: 16px;
 }
-/* line 59, ../scss/pages/_home.scss */
+/* line 38, ../scss/pages/_home.scss */
 ul.speakers .phone, ul.contact .phone, ul.sponsors .phone, ul.organizers .phone {
   color: rgba(0, 0, 0, 0.6);
 }
 
-/* line 63, ../scss/pages/_home.scss */
+/* line 42, ../scss/pages/_home.scss */
 ul.sponsors li, ul.organizers li {
   display: inline-block;
   width: 150px;
   margin: 5px 10px;
 }
-/* line 68, ../scss/pages/_home.scss */
+/* line 47, ../scss/pages/_home.scss */
 ul.sponsors li img, ul.organizers li img {
   background: white;
   margin: 0;
@@ -1454,31 +1446,31 @@ ul.sponsors li img, ul.organizers li img {
   -moz-box-shadow: 0 0 0 4px white, 0 0 4px 4px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 0 4px white, 0 0 4px 4px rgba(0, 0, 0, 0.1);
 }
-/* line 77, ../scss/pages/_home.scss */
+/* line 56, ../scss/pages/_home.scss */
 ul.sponsors li a:hover, ul.organizers li a:hover {
   border: none;
 }
-/* line 79, ../scss/pages/_home.scss */
+/* line 58, ../scss/pages/_home.scss */
 ul.sponsors li a:hover img, ul.organizers li a:hover img {
   -webkit-box-shadow: 0 0 0 4px white, 0 0 4px 4px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0 0 0 4px white, 0 0 4px 4px rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 0 4px white, 0 0 4px 4px rgba(0, 0, 0, 0.4);
 }
 
-/* line 87, ../scss/pages/_home.scss */
+/* line 66, ../scss/pages/_home.scss */
 ul.sponsors.gold li {
   width: 350px;
 }
-/* line 88, ../scss/pages/_home.scss */
+/* line 67, ../scss/pages/_home.scss */
 ul.sponsors.silver li {
   width: 200px;
 }
-/* line 89, ../scss/pages/_home.scss */
+/* line 68, ../scss/pages/_home.scss */
 ul.sponsors.other li {
   width: 180px;
 }
 
-/* line 92, ../scss/pages/_home.scss */
+/* line 71, ../scss/pages/_home.scss */
 h3.section {
   margin-top: 50px;
 }
