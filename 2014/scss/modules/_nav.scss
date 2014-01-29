@@ -3,7 +3,7 @@ nav, .page nav{
   position: absolute;
   text-align: center;
   margin: 0;
-  top: 5px;
+  top: 0;
   left: 0;
   right: 0;
 
@@ -21,18 +21,18 @@ nav, .page nav{
       &:before{display: none;}
 
       a{
-        color: $white;
+        color: $gray-light;
         display: block;
-        padding: 0 10px;
+        padding: 0 5px;
         text-transform: lowercase;
-        @include text-shadow(1px 1px 1px rgba($black, 0.5));
+        @include text-shadow(1px 1px 1px rgba($white, 0.5));
 
         &:hover{
           border-bottom: none;
-          @include text-shadow(1px 1px 1px rgba($white, 1));
         }
       }
 
+      @media screen and (max-width: 700px) { font-size: 15px; }
     }
 
   }

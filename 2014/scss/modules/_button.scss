@@ -9,7 +9,7 @@
   border: solid 2px;
   text-decoration: none;
   text-align: center;
-  width: 270px;
+  width: 280px;
   @include border-radius(8px);
 
   &:hover{ border: solid 2px; color: $blue;}
