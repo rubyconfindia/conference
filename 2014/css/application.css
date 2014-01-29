@@ -1630,6 +1630,28 @@ ul.sponsors.silver li {
   margin: 50px auto 0px auto;
 }
 
+/* line 1, ../scss/pages/_badges.scss */
+.badges ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 4, ../scss/pages/_badges.scss */
+.badges ul li {
+  display: block;
+  list-style-type: none;
+  margin: 20px auto 40px auto;
+  width: 800px;
+  max-width: 100%;
+  text-align: center;
+}
+/* line 14, ../scss/pages/_badges.scss */
+.badges ul pre {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  font-size: 13px;
+  padding: 10px;
+}
+
 /* line 14, ../scss/base/susy/_grid.scss */
 * {
   -webkit-box-sizing: border-box;
@@ -1637,17 +1659,17 @@ ul.sponsors.silver li {
   box-sizing: border-box;
 }
 
-/* line 24, ../scss/application.scss */
+/* line 25, ../scss/application.scss */
 html {
   background: #fef0c4 url("../images/texture.png") repeat-y center center;
 }
 
-/* line 25, ../scss/application.scss */
+/* line 26, ../scss/application.scss */
 body {
   position: relative;
 }
 
-/* line 27, ../scss/application.scss */
+/* line 28, ../scss/application.scss */
 .page {
   padding: 0 20px 200px 20px;
   margin: 0 auto;
@@ -1656,16 +1678,16 @@ body {
   top: -110px;
 }
 @media screen and (max-width: 720px) {
-  /* line 27, ../scss/application.scss */
+  /* line 28, ../scss/application.scss */
   .page {
     top: -50px;
   }
 }
-/* line 36, ../scss/application.scss */
+/* line 37, ../scss/application.scss */
 .page ul {
   padding: 0;
 }
-/* line 37, ../scss/application.scss */
+/* line 38, ../scss/application.scss */
 .page li {
   position: relative;
   list-style: none;
@@ -1673,7 +1695,7 @@ body {
   padding: 0 0 0 24px;
   margin: 5px 0 0 0;
 }
-/* line 44, ../scss/application.scss */
+/* line 45, ../scss/application.scss */
 .page li:before {
   position: absolute;
   left: 0;
@@ -1682,13 +1704,13 @@ body {
   height: 24px;
   width: 24px;
 }
-/* line 53, ../scss/application.scss */
+/* line 54, ../scss/application.scss */
 .page li h3 {
   padding-top: 4px;
   font-weight: 500;
 }
 
-/* line 57, ../scss/application.scss */
+/* line 58, ../scss/application.scss */
 #event {
   margin-bottom: 3em !important;
 }
