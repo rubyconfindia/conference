@@ -1,0 +1,8 @@
+.scholarship.page iframe {
+  width: 100%;
+  height: 1810px;
+  border: none !important;
+  margin: 0 auto;
+
+  @media screen and (max-width: 800px) { height: 1840px; }
+}
