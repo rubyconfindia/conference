@@ -1469,8 +1469,12 @@ ul.sponsors.silver li {
 ul.sponsors.other li {
   width: 180px;
 }
+/* line 69, ../scss/pages/_home.scss */
+ul.sponsors.scholarship li {
+  width: auto;
+}
 
-/* line 71, ../scss/pages/_home.scss */
+/* line 72, ../scss/pages/_home.scss */
 h3.section {
   margin-top: 50px;
 }
@@ -1665,6 +1669,28 @@ h3.section {
   /* line 1, ../scss/pages/_scholarship.scss */
   .scholarship.page iframe {
     height: 1840px;
+  }
+}
+
+/* line 11, ../scss/pages/_scholarship.scss */
+.scholarship h3 {
+  text-align: center;
+}
+/* line 12, ../scss/pages/_scholarship.scss */
+.scholarship ul li {
+  display: inline-block;
+  width: 32%;
+}
+@media screen and (max-width: 800px) {
+  /* line 12, ../scss/pages/_scholarship.scss */
+  .scholarship ul li {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 12, ../scss/pages/_scholarship.scss */
+  .scholarship ul li {
+    width: 100%;
   }
 }
 
