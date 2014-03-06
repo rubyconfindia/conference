@@ -1658,44 +1658,43 @@ h3.section {
   padding: 10px;
 }
 
-/* line 1, ../scss/pages/_scholarship.scss */
-.scholarship.page iframe {
+/* line 2, ../scss/pages/_scholarship.scss */
+.scholarship h2, .scholarship h3 {
+  text-align: center;
+}
+/* line 4, ../scss/pages/_scholarship.scss */
+.scholarship ul li {
+  display: inline-block;
+  text-align: center;
+  width: 32%;
+}
+/* line 9, ../scss/pages/_scholarship.scss */
+.scholarship ul li:before {
+  content: '';
+}
+@media screen and (max-width: 800px) {
+  /* line 4, ../scss/pages/_scholarship.scss */
+  .scholarship ul li {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 4, ../scss/pages/_scholarship.scss */
+  .scholarship ul li {
+    width: 100%;
+  }
+}
+/* line 15, ../scss/pages/_scholarship.scss */
+.scholarship iframe {
   width: 100%;
   height: 1810px;
   border: none !important;
   margin: 0 auto;
 }
 @media screen and (max-width: 800px) {
-  /* line 1, ../scss/pages/_scholarship.scss */
-  .scholarship.page iframe {
+  /* line 15, ../scss/pages/_scholarship.scss */
+  .scholarship iframe {
     height: 1840px;
-  }
-}
-
-/* line 11, ../scss/pages/_scholarship.scss */
-.scholarship h3 {
-  text-align: center;
-}
-/* line 12, ../scss/pages/_scholarship.scss */
-.scholarship ul li {
-  display: inline-block;
-  text-align: center;
-  width: 32%;
-}
-/* line 17, ../scss/pages/_scholarship.scss */
-.scholarship ul li:before {
-  content: '';
-}
-@media screen and (max-width: 800px) {
-  /* line 12, ../scss/pages/_scholarship.scss */
-  .scholarship ul li {
-    width: 49%;
-  }
-}
-@media screen and (max-width: 600px) {
-  /* line 12, ../scss/pages/_scholarship.scss */
-  .scholarship ul li {
-    width: 100%;
   }
 }
 
