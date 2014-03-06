@@ -1679,7 +1679,12 @@ h3.section {
 /* line 12, ../scss/pages/_scholarship.scss */
 .scholarship ul li {
   display: inline-block;
+  text-align: center;
   width: 32%;
+}
+/* line 17, ../scss/pages/_scholarship.scss */
+.scholarship ul li:before {
+  content: '';
 }
 @media screen and (max-width: 800px) {
   /* line 12, ../scss/pages/_scholarship.scss */
